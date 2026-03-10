@@ -6,7 +6,7 @@
     "excerpt": "This is an example of a post with a sidebar layout, demonstrating the sidebar position option.",
     "category": "Design",
     "tags": ["UX","Interface","Prototype"],
-    "url": "/blog/sidebar-post-layout-example/",
+    "url": "/test-fbm-site/blog/sidebar-post-layout-example/",
     "date": "14 Feb 2025",
     "author": "Tortoiz Themes",
     "image": ""
@@ -18,7 +18,7 @@
     "excerpt": "This is an example of a post with overlay header style and a background image.",
     "category": "Marketing",
     "tags": ["Analytics","Social Media","Content"],
-    "url": "/blog/overlay-post-layout-example/",
+    "url": "/test-fbm-site/blog/overlay-post-layout-example/",
     "date": "13 Feb 2025",
     "author": "Jane Smith",
     "image": ""
@@ -30,7 +30,7 @@
     "excerpt": "This is an example of a standard post layout with the header at the top.",
     "category": "Teamwork",
     "tags": ["Strategy","Development","Design"],
-    "url": "/blog/standard-post-layout-example/",
+    "url": "/test-fbm-site/blog/standard-post-layout-example/",
     "date": "12 Feb 2025",
     "author": "John Doe",
     "image": ""
@@ -42,7 +42,7 @@
     "excerpt": "Learn how cloud computing and DevOps practices come together to build modern, scalable, and reliable infrastructure solutions.",
     "category": "Development",
     "tags": ["Cloud Computing","DevOps","Infrastructure"],
-    "url": "/blog/cloud-devops-practices/",
+    "url": "/test-fbm-site/blog/cloud-devops-practices/",
     "date": "08 Feb 2025",
     "author": "John Doe",
     "image": ""
@@ -54,7 +54,7 @@
     "excerpt": "Discover essential backend development best practices for building robust, scalable APIs that can handle growth and evolving needs.",
     "category": "Development",
     "tags": ["Backend Development","API Design","Scalability"],
-    "url": "/blog/backend-development-best-practices/",
+    "url": "/test-fbm-site/blog/backend-development-best-practices/",
     "date": "05 Feb 2025",
     "author": "Jane Smith",
     "image": ""
@@ -66,7 +66,7 @@
     "excerpt": "Explore the most popular modern JavaScript frameworks and learn how to choose the right one for your next web development project.",
     "category": "Development",
     "tags": ["JavaScript","Web Development","Frameworks"],
-    "url": "/blog/modern-javascript-frameworks/",
+    "url": "/test-fbm-site/blog/modern-javascript-frameworks/",
     "date": "02 Feb 2025",
     "author": "John Doe",
     "image": ""
@@ -78,7 +78,7 @@
     "excerpt": "Learn how to leverage email marketing automation to nurture leads, build lasting customer relationships, and scale engagement.",
     "category": "Marketing",
     "tags": ["Email Marketing","Automation","Lead Nurturing"],
-    "url": "/blog/email-marketing-automation/",
+    "url": "/test-fbm-site/blog/email-marketing-automation/",
     "date": "30 Jan 2025",
     "author": "John Doe",
     "image": ""
@@ -90,7 +90,7 @@
     "excerpt": "Discover proven social media marketing strategies that increase engagement, build brand presence, and drive business growth.",
     "category": "Marketing",
     "tags": ["Social Media","Digital Marketing","Brand Building"],
-    "url": "/blog/social-media-marketing-strategies/",
+    "url": "/test-fbm-site/blog/social-media-marketing-strategies/",
     "date": "28 Jan 2025",
     "author": "Jane Smith",
     "image": ""
@@ -102,7 +102,7 @@
     "excerpt": "A comprehensive guide to building a successful content marketing strategy for 2024, focusing on SEO and digital trends.",
     "category": "Marketing",
     "tags": ["Content Marketing","Digital Strategy","SEO"],
-    "url": "/blog/content-marketing-strategy/",
+    "url": "/test-fbm-site/blog/content-marketing-strategy/",
     "date": "25 Jan 2025",
     "author": "John Doe",
     "image": ""
@@ -114,7 +114,7 @@
     "excerpt": "Learn the fundamentals of typography in digital design and how to create highly readable, visually appealing experiences.",
     "category": "Design",
     "tags": ["Typography","Design","Web Fonts"],
-    "url": "/blog/typography-design-fundamentals/",
+    "url": "/test-fbm-site/blog/typography-design-fundamentals/",
     "date": "22 Jan 2025",
     "author": "Jane Smith",
     "image": ""
@@ -126,7 +126,7 @@
     "excerpt": "A comprehensive guide to protecting your small business from cyber threats with practical steps and affordable solutions.",
     "category": "Technology",
     "tags": ["Cybersecurity","Small Business","Data Protection"],
-    "url": "/blog/cybersecurity-essentials/",
+    "url": "/test-fbm-site/blog/cybersecurity-essentials/",
     "date": "22 Jan 2025",
     "author": "John Doe",
     "image": ""
@@ -138,7 +138,7 @@
     "excerpt": "Explore how color theory influences digital design and how to use it for strong brand identity and engaging user experiences.",
     "category": "Design",
     "tags": ["Color Theory","Visual Design","Brand Identity"],
-    "url": "/blog/color-theory-digital-design/",
+    "url": "/test-fbm-site/blog/color-theory-digital-design/",
     "date": "20 Jan 2025",
     "author": "John Doe",
     "image": ""
@@ -150,7 +150,7 @@
     "excerpt": "Key principles and best practices for designing responsive, mobile-first websites that adapt beautifully across devices.",
     "category": "Design",
     "tags": ["Web Design","Responsive Design","Mobile First"],
-    "url": "/blog/responsive-web-design-principles/",
+    "url": "/test-fbm-site/blog/responsive-web-design-principles/",
     "date": "18 Jan 2025",
     "author": "Jane Smith",
     "image": ""
@@ -162,7 +162,7 @@
     "excerpt": "Learn how design thinking has evolved over the past decade and how it is transforming user experiences in the digital age.",
     "category": "AI",
     "tags": ["UX Design","Design Thinking","Digital Transformation"],
-    "url": "/blog/demo-3/",
+    "url": "/test-fbm-site/blog/demo-3/",
     "date": "15 Jan 2025",
     "author": "Jane Smith",
     "image": ""
@@ -174,7 +174,7 @@
     "excerpt": "Learn how design thinking has evolved over the past decade and how it is transforming user experiences in the digital age.",
     "category": "AI",
     "tags": ["UX Design","Design Thinking","Digital Transformation"],
-    "url": "/blog/demo-3-5/",
+    "url": "/test-fbm-site/blog/demo-3-5/",
     "date": "15 Jan 2025",
     "author": "Jane Smith",
     "image": ""
@@ -186,7 +186,7 @@
     "excerpt": "Learn how design thinking has evolved over the past decade and how it is transforming user experiences in the digital age.",
     "category": "AI",
     "tags": ["UX Design","Design Thinking","Digital Transformation"],
-    "url": "/blog/demo-3-4/",
+    "url": "/test-fbm-site/blog/demo-3-4/",
     "date": "15 Jan 2025",
     "author": "Jane Smith",
     "image": ""
@@ -198,7 +198,7 @@
     "excerpt": "Learn how design thinking has evolved over the past decade and how it is transforming user experiences in the digital age.",
     "category": "AI",
     "tags": ["UX Design","Design Thinking","Digital Transformation"],
-    "url": "/blog/demo-3-3/",
+    "url": "/test-fbm-site/blog/demo-3-3/",
     "date": "15 Jan 2025",
     "author": "Jane Smith",
     "image": ""
@@ -210,7 +210,7 @@
     "excerpt": "Learn how design thinking has evolved over the past decade and how it is transforming user experiences in the digital age.",
     "category": "AI",
     "tags": ["UX Design","Design Thinking","Digital Transformation"],
-    "url": "/blog/demo-3-2/",
+    "url": "/test-fbm-site/blog/demo-3-2/",
     "date": "15 Jan 2025",
     "author": "Jane Smith",
     "image": ""
@@ -222,7 +222,7 @@
     "excerpt": "Learn how design thinking has evolved over the past decade and how it is transforming user experiences in the digital age.",
     "category": "AI",
     "tags": ["UX Design","Design Thinking","Digital Transformation"],
-    "url": "/blog/demo-3-1/",
+    "url": "/test-fbm-site/blog/demo-3-1/",
     "date": "15 Jan 2025",
     "author": "Jane Smith",
     "image": ""
@@ -234,7 +234,7 @@
     "excerpt": "Learn how design thinking has evolved over the past decade and how it is transforming user experiences in the digital age.",
     "category": "Design",
     "tags": ["UX Design","Design Thinking","Digital Transformation"],
-    "url": "/blog/design-thinking-digital-age/",
+    "url": "/test-fbm-site/blog/design-thinking-digital-age/",
     "date": "15 Jan 2025",
     "author": "Jane Smith",
     "image": ""
@@ -246,7 +246,7 @@
     "excerpt": "Discover the future of content marketing and how to capitalize on emerging trends and technologies to create successful content strategies.",
     "category": "Marketing",
     "tags": ["Content Marketing","Digital Strategy","SEO"],
-    "url": "/blog/future-of-content-marketing/",
+    "url": "/test-fbm-site/blog/future-of-content-marketing/",
     "date": "10 Jan 2025",
     "author": "John Doe",
     "image": ""
