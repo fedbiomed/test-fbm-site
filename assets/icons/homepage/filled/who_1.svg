@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Sfumatura_senza_nome_18);
+      }
+
+      .cls-2 {
+        fill: url(#Sfumatura_senza_nome_11);
+      }
+
+      .cls-3 {
+        fill: url(#Sfumatura_senza_nome_8);
+      }
+
+      .cls-4 {
+        fill: url(#Sfumatura_senza_nome_8-2);
+      }
+    </style>
+    <linearGradient id="Sfumatura_senza_nome_8" data-name="Sfumatura senza nome 8" x1="130.24" y1="609.61" x2="869.76" y2="609.61" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00b4d8"/>
+      <stop offset="1" stop-color="#0077b6"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_11" data-name="Sfumatura senza nome 11" x1="278.58" y1="542.43" x2="721.42" y2="542.43" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#90e0ef"/>
+      <stop offset="1" stop-color="#00b4d8"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_8-2" data-name="Sfumatura senza nome 8" x1="410.22" y1="15445.48" x2="589.8" y2="15445.48" gradientTransform="translate(0 16139.74) scale(1 -1)" xlink:href="#Sfumatura_senza_nome_8"/>
+    <linearGradient id="Sfumatura_senza_nome_18" data-name="Sfumatura senza nome 18" x1="405.31" y1="313.44" x2="594.71" y2="313.44" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0077b6"/>
+      <stop offset="1" stop-color="#03045e"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-3" d="M869.76,456.32v306.57c0,4.71-3.82,8.52-8.52,8.52H138.76c-4.71,0-8.52-3.82-8.52-8.52v-306.57c0-4.71,3.82-8.52,8.52-8.52h199.7v127.26c0,10.21,8.31,18.52,18.52,18.52h286.04c10.22,0,18.52-8.31,18.52-18.52v-127.26h199.7c4.71,0,8.52,3.82,8.52,8.52Z"/>
+  <path class="cls-2" d="M712.9,313.44h-103.19v79.53c0,11.2-9.11,20.32-20.32,20.32h-178.75c-11.21,0-20.33-9.12-20.33-20.32v-79.53h-103.21c-4.7,0-8.52,3.82-8.52,8.52v440.93c0,4.7,3.82,8.52,8.52,8.52h425.8c4.71,0,8.52-3.82,8.52-8.52v-440.93c0-4.7-3.81-8.52-8.52-8.52Z"/>
+  <path class="cls-4" d="M410.22,625.63h0c0,4.7,3.81,8.52,8.52,8.52h4.12c4.7,0,8.52,3.81,8.52,8.52v120.22c0,4.7,3.81,8.52,8.52,8.52h120.22c4.7,0,8.52-3.81,8.52-8.52v-120.22c0-4.7,3.81-8.52,8.52-8.52h4.12c4.7,0,8.52-3.81,8.52-8.52h0c0-4.7-3.81-8.52-8.52-8.52h-162.53c-4.7,0-8.52,3.81-8.52,8.52h-.01Z"/>
+  <path class="cls-1" d="M589.39,228.58h-178.75c-2.94,0-5.33,2.38-5.33,5.32v159.07c0,2.94,2.39,5.32,5.33,5.32h178.75c2.94,0,5.32-2.38,5.32-5.32v-159.07c0-2.94-2.38-5.32-5.32-5.32ZM567.21,336.29c0,3.72-3.01,6.73-6.73,6.73h-24.18c-3.72,0-6.73,3.01-6.73,6.73v24.18c0,3.72-3.01,6.73-6.73,6.73h-45.7c-3.72,0-6.73-3.01-6.73-6.73v-24.18c0-3.72-3.01-6.73-6.73-6.73h-24.18c-3.72,0-6.73-3.01-6.73-6.73v-45.7c0-3.72,3.01-6.73,6.73-6.73h24.18c3.72,0,6.73-3.01,6.73-6.73v-24.18c0-3.72,3.01-6.73,6.73-6.73h45.7c3.72,0,6.73,3.01,6.73,6.73v24.18c0,3.72,3.01,6.73,6.73,6.73h24.18c3.72,0,6.73,3.01,6.73,6.73v45.7Z"/>
+</svg>

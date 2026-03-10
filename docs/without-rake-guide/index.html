@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- Primary Meta Tags -->
+<title> Using Sandbox Without Rake </title>
+<meta name="title" content=" Using Sandbox Without Rake ">
+<meta name="description" content=" Comprehensive guide to using the Sandbox theme without the Rake build system ">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content=" /docs/without-rake-guide/ ">
+<meta property="og:title" content=" Using Sandbox Without Rake ">
+<meta property="og:description" content=" Comprehensive guide to using the Sandbox theme without the Rake build system ">
+
+<meta property="og:image" content="/assets/img/meta-image.webp" />
+
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="/docs/without-rake-guide/">
+<meta property="twitter:title" content=" Using Sandbox Without Rake ">
+<meta property="twitter:description" content=" Comprehensive guide to using the Sandbox theme without the Rake build system ">
+
+<meta property="twitter:image" content="/assets/img/meta-image.webp" />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Stylesheets-->
+  <link rel="shortcut icon" href="/assets/img/favicon.webp" />
+<link rel="stylesheet" href="/assets/css/plugins.css">
+
+<link rel="stylesheet" href="/assets/css/styles.css">
+
+
+
+
+
+
+  
+</head>
+<body class="">
+    <div class="content-wrapper">
+        <header class="wrapper bg-soft-primary">
+        
+
+<nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
+  
+    <div class="container flex-lg-row flex-nowrap align-items-center">
+  
+    <div class="navbar-brand w-100">
+      <a href="/">
+        
+          <img src="/assets/img/logo_full.webp" 
+               srcset="/assets/img/logo_full@2x.webp 2x" alt="" />
+        
+      </a>
+    </div>
+    <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+      <!-- DEBUG START -->
+      <div class="offcanvas-header d-lg-none">
+        <h3 class="text-white fs-30 mb-0">Fed-BioMed</h3>
+        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <!-- DEBUG END -->
+      <div class="offcanvas-body  d-flex flex-column h-100">
+        
+          <!-- Standard Navigation -->
+          
+<ul class="navbar-nav"> 
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/project/"><span class="hover">Project</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/how-it-works/"><span class="hover">How it works</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/about/"><span class="hover">About</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/news/"><span class="hover">News</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/faq/"><span class="hover">FAQ</span></a>
+  </li>
+  
+  
+</ul>
+
+
+        
+        
+        <div class="offcanvas-footer d-lg-none">
+          <div>
+            <a href="mailto:fedbiomed@inria.fr" class="link-inverse">fedbiomed@inria.fr</a>
+            <nav class="nav social social-white mt-4">
+              
+            </nav>
+          </div>
+        </div>
+        <!-- /.offcanvas-footer -->
+      </div>
+      <!-- /.offcanvas-body -->
+    </div>
+    <!-- /.navbar-collapse -->
+    
+    <div class="navbar-other w-100 d-flex ms-auto">
+      <ul class="navbar-nav flex-row align-items-center ms-auto">
+        
+        <li class="nav-item dropdown language-select text-uppercase">
+          <a class="nav-link dropdown-item dropdown-toggle hover" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            En
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="nav-item"><a class="dropdown-item" href="#">En</a></li>
+            
+            <li class="nav-item"><a class="dropdown-item" href="#">De</a></li>
+            
+            <li class="nav-item"><a class="dropdown-item" href="#">Es</a></li>
+            
+          </ul>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="nav-item d-none d-md-block">
+          
+          <a href="/contact" 
+             class="btn btn-sm btn-primary rounded-pill"
+             >Contact</a>
+          
+        </li>
+        
+        
+        
+        
+        
+        
+        <li class="nav-item d-lg-none">
+          <button class="hamburger offcanvas-nav-btn"><span></span></button>
+        </li>
+      </ul>
+    </div>
+  
+    </div>
+    <!-- /.container -->
+  
+</nav>
+<!-- /.navbar -->
+
+
+
+
+
+
+
+
+
+
+        </header>
+        <!-- /header -->
+        <section class="wrapper bg-soft-primary">
+          <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+            <div class="row">
+              <div class="col-md-9 col-lg-7 col-xl-5 mx-auto">
+                <h1 class="display-1 mb-3">Using Sandbox Without Rake</h1>
+                <p class="lead px-xxl-11">Comprehensive guide to using the Sandbox theme without the Rake build system</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        
+         <div class="container">
+          <div class="row">
+            <aside class="col-xl-2 sidebar doc-sidebar mt-md-0 py-16 d-none d-xl-block">
+    
+    
+  </aside>
+  
+            <aside class="col-xl-2 order-xl-3 sidebar sticky-sidebar mt-md-0 py-16 d-none d-xl-block">
+              <div class="widget">
+                <h6 class="widget-title fs-17 mb-2 ps-xl-5">On this page</h6>
+                <nav class="ps-xl-5" id="sidebar-nav">
+                  <ul id="toc" class="list-unstyled fs-sm lh-sm text-reset">
+<li class="nav-link scroll snippet-h2"><a href="#basic-setup">Basic Setup</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#direct-jekyll-usage">Direct Jekyll Usage</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#prerequisites">Prerequisites</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#built-in-features">Built-in Features</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#sass-processing">Sass Processing</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#image-processing">Image Processing</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#manual-image-optimization">Manual Image Optimization</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#development-workflow">Development Workflow</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#recommended-steps">Recommended Steps</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#troubleshooting">Troubleshooting</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#common-issues">Common Issues</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#debugging">Debugging</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#shell-scripts">Shell Scripts</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#automation-scripts">Automation Scripts</a></li>
+</ul>
+                </nav>
+              </div>
+            </aside>
+        
+            <div class="col-xl-8 order-xl-2">
+              <div class="content"> 
+                <section id="snippet-1" class="wrapper pt-16">
+  <h2 class="display-5 mb-8">Basic Setup</h2>
+
+  <section id="snippet-1-1">
+    <h2 class="mb-5 mt-n15 pt-15 zindex-n">Direct Jekyll Usage</h2>
+    <div class="card mb-12">
+      <div class="card-body">
+        <p class="mb-0">The Sandbox theme can be run directly with Jekyll commands:</p>
+        <ul>
+          <li>Development server with live reload</li>
+          <li>Production builds</li>
+          <li>Built-in Sass compilation</li>
+          <li>Asset processing</li>
+        </ul>
+      </div>
+      <div class="card-footer position-relative">
+        <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-1-1">View commands</a>
+      </div>
+      <div id="collapse-1-1" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+<pre class="language-bash"><code># Start development server
+bundle exec jekyll serve --livereload --livereload-min-delay 5
+
+# Build for production
+JEKYLL_ENV=production bundle exec jekyll build</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="snippet-1-2">
+    <h2 class="mb-5 mt-n15 pt-15 zindex-n">Prerequisites</h2>
+    <div class="card mb-12">
+      <div class="card-body">
+        <p class="mb-0">Required software:</p>
+        <ul>
+          <li>Ruby (version 2.7.0 or higher)</li>
+          <li>RubyGems</li>
+          <li>Bundler gem</li>
+          <li>ImageMagick or Vips (for image processing)</li>
+        </ul>
+      </div>
+      <div class="card-footer position-relative">
+        <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-1-2">View installation</a>
+      </div>
+      <div id="collapse-1-2" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+<pre class="language-bash"><code># Install Ruby dependencies
+gem install bundler
+
+# Install project dependencies
+bundle install</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section id="snippet-2" class="wrapper pt-16">
+  <h2 class="display-5 mb-8">Built-in Features</h2>
+
+  <section id="snippet-2-1">
+    <h2 class="mb-5 mt-n15 pt-15 zindex-n">Sass Processing</h2>
+    <div class="card mb-12">
+      <div class="card-body">
+        <p class="mb-0">Jekyll includes built-in Sass compilation:</p>
+        <ul>
+          <li>Automatic processing of Sass files</li>
+          <li>Production minification</li>
+          <li>Source mapping options</li>
+          <li>Custom import paths</li>
+        </ul>
+      </div>
+      <div class="card-footer position-relative">
+        <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-2-1">View configuration</a>
+      </div>
+      <div id="collapse-2-1" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+<pre class="language-yaml"><code># _config.yml
+sass:
+  style: compressed
+  sass_dir: _sass
+  sourcemap: never</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section id="snippet-3" class="wrapper pt-16">
+  <h2 class="display-5 mb-8">Image Processing</h2>
+
+  <section id="snippet-3-1">
+    <h2 class="mb-5 mt-n15 pt-15 zindex-n">Manual Image Optimization</h2>
+    <div class="card mb-12">
+      <div class="card-body">
+        <p class="mb-0">Using ImageMagick directly for image processing:</p>
+        <ul>
+          <li>WebP conversion</li>
+          <li>Batch processing</li>
+          <li>Image optimization</li>
+          <li>Format conversion</li>
+        </ul>
+      </div>
+      <div class="card-footer position-relative">
+        <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-3-1">View commands</a>
+      </div>
+      <div id="collapse-3-1" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+<pre class="language-bash"><code># Convert single image
+magick convert input.jpg -quality 90 output.webp
+
+# Batch convert (PowerShell)
+Get-ChildItem -Path "assets/img" -Recurse -Include *.jpg,*.png | 
+ForEach-Object { magick convert $_.FullName -quality 90 "$($_.DirectoryName)\$($_.BaseName).webp" }
+
+# Batch convert (Bash/Linux)
+find assets/img -type f \( -iname "*.jpg" -o -iname "*.png" \) -exec convert {} -quality 90 {}.webp \;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section id="snippet-4" class="wrapper pt-16">
+  <h2 class="display-5 mb-8">Development Workflow</h2>
+
+  <section id="snippet-4-1">
+    <h2 class="mb-5 mt-n15 pt-15 zindex-n">Recommended Steps</h2>
+    <div class="card mb-12">
+      <div class="card-body">
+        <p class="mb-0">Development workflow without Rake:</p>
+        <ol>
+          <li>Start Jekyll server: <code>bundle exec jekyll serve --livereload</code></li>
+          <li>Make changes to source files (Sass compiles automatically)</li>
+          <li>Process images manually as needed</li>
+          <li>Build for production: <code>JEKYLL_ENV=production bundle exec jekyll build</code></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section id="snippet-5" class="wrapper pt-16">
+  <h2 class="display-5 mb-8">Troubleshooting</h2>
+
+  <section id="snippet-5-1">
+    <h2 class="mb-5 mt-n15 pt-15 zindex-n">Common Issues</h2>
+    <div class="card mb-12">
+      <div class="card-body">
+        <p class="mb-0">Solutions for frequent problems:</p>
+        <ul>
+          <li><strong>Sass Compilation Errors:</strong> Check <code>_sass</code> directory structure</li>
+          <li><strong>Server Start Issues:</strong> Verify port availability</li>
+          <li><strong>Build Failures:</strong> Check Jekyll environment settings</li>
+          <li><strong>Image Processing:</strong> Confirm ImageMagick installation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="snippet-5-2">
+    <h2 class="mb-5 mt-n15 pt-15 zindex-n">Debugging</h2>
+    <div class="card mb-12">
+      <div class="card-body">
+        <p class="mb-0">Debug Jekyll processes:</p>
+        <ul>
+          <li>Use verbose mode: <code>jekyll serve --verbose</code></li>
+          <li>Check build output in <code>_site</code> directory</li>
+          <li>Enable trace mode with <code>--trace</code></li>
+          <li>Review Jekyll's error messages</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section id="snippet-6" class="wrapper pt-16">
+  <h2 class="display-5 mb-8">Shell Scripts</h2>
+
+  <section id="snippet-6-1">
+    <h2 class="mb-5 mt-n15 pt-15 zindex-n">Automation Scripts</h2>
+    <div class="card mb-12">
+      <div class="card-body">
+        <p class="mb-0">Create shell scripts for common tasks:</p>
+      </div>
+      <div class="card-footer position-relative">
+        <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-6-1">View example</a>
+      </div>
+      <div id="collapse-6-1" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+<pre class="language-bash"><code>#!/bin/bash
+# build.sh - Production build script
+
+echo "Building site for production..."
+JEKYLL_ENV=production bundle exec jekyll build
+
+echo "Processing images..."
+find assets/img -type f \( -iname "*.jpg" -o -iname "*.png" \) -exec convert {} -quality 90 {}.webp \;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+              </div>
+            </div>
+          </div>
+        </div> 
+        
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-dark text-inverse">
+  
+  
+  
+  
+  
+  
+
+    <div class="container py-13 py-md-15">
+      
+      <div class="row gy-6 gy-lg-0">
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      
+        <img class="mb-4" src="/assets/img/logo_full.webp" 
+             srcset="/assets/img/logo_full@2x.webp 2x" alt="" />
+      
+      <p class="mb-4">© 2026 Sandbox. <br class="d-none d-lg-block" />All rights reserved.</p>
+      <nav class="nav social social-white">
+        
+          <a href="#"><i class="uil uil-twitter"></i></a>
+        
+          <a href="#"><i class="uil uil-facebook-f"></i></a>
+        
+          <a href="#"><i class="uil uil-instagram"></i></a>
+        
+          <a href="#"><i class="uil uil-youtube"></i></a>
+        
+          <a href="#"><i class="uil uil-dribbble"></i></a>
+        
+      </nav>
+      <!-- /.social -->
+    </div>
+    <!-- /.widget -->
+  </div>
+  <!-- /column -->
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      <h4 class="widget-title text-white mb-3">Get in Touch</h4>
+      <address class="pe-xl-15 pe-xxl-17">2004 Rte des Lucioles, 06902 Sophia Antipolis, France</address>
+      <a href="mailto:fedbiomed@inria.fr" class="link-body">
+        fedbiomed@inria.fr
+      </a><br /> 
+      00 (123) 456 78 90
+    </div>
+    <!-- /.widget -->
+  </div>
+  <!-- /column -->
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      <h4 class="widget-title text-white mb-3">Learn More</h4>
+      <ul class="list-unstyled  text-reset mb-0">
+        
+        
+      </ul>
+    </div>
+    <!-- /.widget -->
+  </div>
+  <!-- /column -->
+  
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      <h4 class="widget-title text-white mb-3">Our Newsletter</h4>
+      <p class="mb-5">Subscribe to our newsletter to get our news & deals delivered to you.</p>
+      <div class="newsletter-wrapper">
+        
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a" 
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" 
+                class="validate dark-fields" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <div class="mc-field-group input-group form-floating">
+                <input type="email" value="" name="EMAIL" class="required email form-control" placeholder="Email Address" id="mce-EMAIL">
+                <label for="mce-EMAIL">Email Address</label>
+                <input type="submit" value="Join" 
+                       name="subscribe" id="mc-embedded-subscribe" 
+                       class="btn btn-primary ">
+              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_ddc180777a163e0f9f66ee014_4b1bcfa0bc" tabindex="-1" value="">
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--End mc_embed_signup-->
+        
+      </div>
+      <!-- /.newsletter-wrapper -->
+    </div>
+    <!-- /.widget -->
+  </div>
+  <!-- /column -->
+  
+</div>
+<!--/.row -->
+
+    </div>
+
+  <!-- /.container -->
+</footer>
+
+  <!-- Modals -->
+  
+
+  
+
+  <!-- Scroll To Top Button -->
+  
+  <!-- Site Scripts-->
+  <script src="/assets/js/bootstrap.bundle.js"></script>
+<script src="/assets/js/plugins.js"></script>
+<script src="/assets/js/theme.js"></script>
+
+</body>
+</html>

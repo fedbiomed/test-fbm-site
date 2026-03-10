@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1268.45 1268.45">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        filter: url(#drop-shadow-32);
+        stroke: #00b4d8;
+        stroke-miterlimit: 10;
+        stroke-width: 8px;
+      }
+
+      .cls-2 {
+        fill: url(#Sfumatura_senza_nome_11);
+        filter: url(#drop-shadow-31);
+      }
+    </style>
+    <linearGradient id="Sfumatura_senza_nome_11" data-name="Sfumatura senza nome 11" x1="264.17" y1="703.6" x2="1126.05" y2="703.6" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#90e0ef"/>
+      <stop offset="1" stop-color="#00b4d8"/>
+    </linearGradient>
+    <filter id="drop-shadow-31" x="244.3" y="431.04" width="911" height="555" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5"/>
+      <feGaussianBlur result="blur" stdDeviation="8"/>
+      <feFlood flood-color="#000" flood-opacity=".2"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-32" x="368.3" y="474.04" width="667" height="421" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5"/>
+      <feGaussianBlur result="blur-2" stdDeviation="8"/>
+      <feFlood flood-color="#000" flood-opacity=".2"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path class="cls-2" d="M1105.32,876.53h-32.43c-11.44,0-20.72-9.28-20.72-20.72v-384.26c0-11.44-9.28-20.72-20.72-20.72H358.77c-11.44,0-20.72,9.28-20.72,20.72v384.26c0,11.44-9.28,20.72-20.72,20.72h-32.43c-11.44,0-20.72,9.28-20.72,20.72v38.39c0,11.44,9.28,20.72,20.72,20.72h820.43c11.44,0,20.72-9.28,20.72-20.72v-38.39c0-11.44-9.28-20.72-20.72-20.72ZM1017.89,864.42c0,6.01-4.87,10.89-10.89,10.89H383.22c-6.01,0-10.89-4.87-10.89-10.89v-368.74c0-6.01,4.87-10.89,10.89-10.89h623.78c6.01,0,10.89,4.87,10.89,10.89v368.74Z"/>
+  <path class="cls-1" d="M1002.12,851.75c0,5.61-4.62,10.15-10.32,10.15H400.43c-5.7,0-10.32-4.54-10.32-10.15v-343.73c0-5.61,4.62-10.15,10.32-10.15h591.37c5.7,0,10.32,4.54,10.32,10.15v343.73Z"/>
+</svg>

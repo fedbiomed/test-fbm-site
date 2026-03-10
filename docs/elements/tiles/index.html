@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- Primary Meta Tags -->
+<title> Tiles </title>
+<meta name="title" content=" Tiles ">
+<meta name="description" content=" Learn how to use tiles in Sandbox. ">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content=" /docs/elements/tiles/ ">
+<meta property="og:title" content=" Tiles ">
+<meta property="og:description" content=" Learn how to use tiles in Sandbox. ">
+
+<meta property="og:image" content="/assets/img/meta-image.webp" />
+
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="/docs/elements/tiles/">
+<meta property="twitter:title" content=" Tiles ">
+<meta property="twitter:description" content=" Learn how to use tiles in Sandbox. ">
+
+<meta property="twitter:image" content="/assets/img/meta-image.webp" />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Stylesheets-->
+  <link rel="shortcut icon" href="/assets/img/favicon.webp" />
+<link rel="stylesheet" href="/assets/css/plugins.css">
+
+<link rel="stylesheet" href="/assets/css/styles.css">
+
+
+
+
+
+
+  
+</head>
+<body class="">
+    <div class="content-wrapper">
+        <header class="wrapper bg-soft-primary">
+        
+
+<nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
+  
+    <div class="container flex-lg-row flex-nowrap align-items-center">
+  
+    <div class="navbar-brand w-100">
+      <a href="/">
+        
+          <img src="/assets/img/logo_full.webp" 
+               srcset="/assets/img/logo_full@2x.webp 2x" alt="" />
+        
+      </a>
+    </div>
+    <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+      <!-- DEBUG START -->
+      <div class="offcanvas-header d-lg-none">
+        <h3 class="text-white fs-30 mb-0">Fed-BioMed</h3>
+        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <!-- DEBUG END -->
+      <div class="offcanvas-body  d-flex flex-column h-100">
+        
+          <!-- Standard Navigation -->
+          
+<ul class="navbar-nav"> 
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/project/"><span class="hover">Project</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/how-it-works/"><span class="hover">How it works</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/about/"><span class="hover">About</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/news/"><span class="hover">News</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/faq/"><span class="hover">FAQ</span></a>
+  </li>
+  
+  
+</ul>
+
+
+        
+        
+        <div class="offcanvas-footer d-lg-none">
+          <div>
+            <a href="mailto:fedbiomed@inria.fr" class="link-inverse">fedbiomed@inria.fr</a>
+            <nav class="nav social social-white mt-4">
+              
+            </nav>
+          </div>
+        </div>
+        <!-- /.offcanvas-footer -->
+      </div>
+      <!-- /.offcanvas-body -->
+    </div>
+    <!-- /.navbar-collapse -->
+    
+    <div class="navbar-other w-100 d-flex ms-auto">
+      <ul class="navbar-nav flex-row align-items-center ms-auto">
+        
+        <li class="nav-item dropdown language-select text-uppercase">
+          <a class="nav-link dropdown-item dropdown-toggle hover" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            En
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="nav-item"><a class="dropdown-item" href="#">En</a></li>
+            
+            <li class="nav-item"><a class="dropdown-item" href="#">De</a></li>
+            
+            <li class="nav-item"><a class="dropdown-item" href="#">Es</a></li>
+            
+          </ul>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="nav-item d-none d-md-block">
+          
+          <a href="/contact" 
+             class="btn btn-sm btn-primary rounded-pill"
+             >Contact</a>
+          
+        </li>
+        
+        
+        
+        
+        
+        
+        <li class="nav-item d-lg-none">
+          <button class="hamburger offcanvas-nav-btn"><span></span></button>
+        </li>
+      </ul>
+    </div>
+  
+    </div>
+    <!-- /.container -->
+  
+</nav>
+<!-- /.navbar -->
+
+
+
+
+
+
+
+
+
+
+        </header>
+        <!-- /header -->
+        <section class="wrapper bg-soft-primary">
+          <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+            <div class="row">
+              <div class="col-md-9 col-lg-7 col-xl-5 mx-auto">
+                <h1 class="display-1 mb-3">Tiles</h1>
+                <p class="lead px-xxl-11">Learn how to use tiles in Sandbox.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        
+         <div class="container">
+          <div class="row">
+            <aside class="col-xl-2 sidebar doc-sidebar mt-md-0 py-16 d-none d-xl-block">
+    
+    
+  </aside>
+  
+            <aside class="col-xl-2 order-xl-3 sidebar sticky-sidebar mt-md-0 py-16 d-none d-xl-block">
+              <div class="widget">
+                <h6 class="widget-title fs-17 mb-2 ps-xl-5">On this page</h6>
+                <nav class="ps-xl-5" id="sidebar-nav">
+                  <ul id="toc" class="list-unstyled fs-sm lh-sm text-reset">
+<li class="nav-link scroll snippet-h2"><a href="#tiles-1">Tiles 1</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#tiles-2">Tiles 2</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#tiles-3">Tiles 3</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#tiles-4">Tiles 4</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#tiles-5">Tiles 5</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#tiles-6">Tiles 6</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#tiles-7">Tiles 7</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#tiles-8">Tiles 8</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#tiles-9">Tiles 9</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#tiles-10">Tiles 10</a></li>
+</ul>
+                </nav>
+              </div>
+            </aside>
+        
+            <div class="col-xl-8 order-xl-2">
+              <div class="content"> 
+                          <section id="snippet-1" class="wrapper pt-16">
+            <h2 class="mb-5">Tiles 1</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="row gx-lg-8 gx-xl-12 gy-12 align-items-center">
+                  <div class="col-lg-9 mx-auto">
+                    <div class="row gx-md-5 gy-5 align-items-center">
+                      <div class="col-md-6">
+                        <div class="row gx-md-5 gy-5">
+                          <div class="col-md-10 offset-md-2">
+                            <figure class="rounded"><img src="/assets/img/photos/ab1.jpg" srcset="/assets/img/photos/ab1@2x.jpg 2x" alt=""></figure>
+                          </div>
+                          <!--/column -->
+                          <div class="col-md-12">
+                            <figure class="rounded"><img src="/assets/img/photos/ab2.jpg" srcset="/assets/img/photos/ab2@2x.jpg 2x" alt=""></figure>
+                          </div>
+                          <!--/column -->
+                        </div>
+                        <!--/.row -->
+                      </div>
+                      <!--/column -->
+                      <div class="col-md-6">
+                        <figure class="rounded"><img src="/assets/img/photos/ab3.jpg" srcset="/assets/img/photos/ab3@2x.jpg 2x" alt=""></figure>
+                      </div>
+                      <!--/column -->
+                    </div>
+                    <!--/.row -->
+                  </div>
+                  <!--/column -->
+                </div>
+                <!--/.row -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-1">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-1" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div class=&quot;row gx-md-5 gy-5 align-items-center&quot;&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;div class=&quot;row gx-md-5 gy-5&quot;&gt;
+      &lt;div class=&quot;col-md-10 offset-md-2&quot;&gt;
+        &lt;figure class=&quot;rounded&quot;&gt;&lt;img src=&quot;./assets/img/photos/ab1.jpg&quot; srcset=&quot;./assets/img/photos/ab1@2x.jpg 2x&quot; alt=&quot;&quot;&gt;&lt;/figure&gt;
+      &lt;/div&gt;
+      &lt;!--/column --&gt;
+      &lt;div class=&quot;col-md-12&quot;&gt;
+        &lt;figure class=&quot;rounded&quot;&gt;&lt;img src=&quot;./assets/img/photos/ab2.jpg&quot; srcset=&quot;./assets/img/photos/ab2@2x.jpg 2x&quot; alt=&quot;&quot;&gt;&lt;/figure&gt;
+      &lt;/div&gt;
+      &lt;!--/column --&gt;
+    &lt;/div&gt;
+    &lt;!--/.row --&gt;
+  &lt;/div&gt;
+  &lt;!--/column --&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;figure class=&quot;rounded&quot;&gt;&lt;img src=&quot;./assets/img/photos/ab3.jpg&quot; srcset=&quot;./assets/img/photos/ab3@2x.jpg 2x&quot; alt=&quot;&quot;&gt;&lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;!--/column --&gt;
+&lt;/div&gt;
+&lt;!--/.row --&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-2" class="wrapper pt-16">
+            <h2 class="mb-5">Tiles 2</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="row gx-lg-8 gy-8 align-items-center">
+                  <div class="col-lg-10 mx-auto">
+                    <div class="row gx-md-5 gy-5">
+                      <div class="col-md-4 offset-md-1 align-self-end">
+                        <figure class="rounded"><img src="/assets/img/photos/g1.jpg" srcset="/assets/img/photos/g1@2x.jpg 2x" alt=""></figure>
+                      </div>
+                      <!--/column -->
+                      <div class="col-md-6 align-self-end">
+                        <figure class="rounded"><img src="/assets/img/photos/g2.jpg" srcset="/assets/img/photos/g2@2x.jpg 2x" alt=""></figure>
+                      </div>
+                      <!--/column -->
+                      <div class="col-md-6">
+                        <figure class="rounded"><img src="/assets/img/photos/g3.jpg" srcset="/assets/img/photos/g3@2x.jpg 2x" alt=""></figure>
+                      </div>
+                      <!--/column -->
+                      <div class="col-md-4 align-self-start">
+                        <figure class="rounded"><img src="/assets/img/photos/g4.jpg" srcset="/assets/img/photos/g4@2x.jpg 2x" alt=""></figure>
+                      </div>
+                      <!--/column -->
+                    </div>
+                    <!--/.row -->
+                  </div>
+                  <!--/column -->
+                </div>
+                <!--/.row -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-2">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-2" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div class=&quot;row gx-md-5 gy-5&quot;&gt;
+  &lt;div class=&quot;col-md-4 offset-md-1 align-self-end&quot;&gt;
+    &lt;figure class=&quot;rounded&quot;&gt;&lt;img src=&quot;./assets/img/photos/g1.jpg&quot; srcset=&quot;./assets/img/photos/g1@2x.jpg 2x&quot; alt=&quot;&quot;&gt;&lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;!--/column --&gt;
+  &lt;div class=&quot;col-md-6 align-self-end&quot;&gt;
+    &lt;figure class=&quot;rounded&quot;&gt;&lt;img src=&quot;./assets/img/photos/g2.jpg&quot; srcset=&quot;./assets/img/photos/g2@2x.jpg 2x&quot; alt=&quot;&quot;&gt;&lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;!--/column --&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;figure class=&quot;rounded&quot;&gt;&lt;img src=&quot;./assets/img/photos/g3.jpg&quot; srcset=&quot;./assets/img/photos/g3@2x.jpg 2x&quot; alt=&quot;&quot;&gt;&lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;!--/column --&gt;
+  &lt;div class=&quot;col-md-4 align-self-start&quot;&gt;
+    &lt;figure class=&quot;rounded&quot;&gt;&lt;img src=&quot;./assets/img/photos/g4.jpg&quot; srcset=&quot;./assets/img/photos/g4@2x.jpg 2x&quot; alt=&quot;&quot;&gt;&lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;!--/column --&gt;
+&lt;/div&gt;
+&lt;!--/.row --&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-3" class="wrapper pt-16">
+            <h2 class="mb-5">Tiles 3</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+                  <div class="col-lg-10 mx-auto">
+                    <div class="row gx-md-5 gy-5 align-items-center">
+                      <div class="col-6">
+                        <img class="img-fluid rounded shadow-lg d-flex ms-auto" src="/assets/img/photos/sa13.jpg" srcset="/assets/img/photos/sa13@2x.jpg 2x" alt="" />
+                      </div>
+                      <!-- /column -->
+                      <div class="col-6">
+                        <img class="img-fluid rounded shadow-lg mb-5" src="/assets/img/photos/sa14.jpg" srcset="/assets/img/photos/sa14@2x.jpg 2x" alt="" />
+                        <img class="img-fluid rounded shadow-lg d-flex col-10" src="/assets/img/photos/sa15.jpg" srcset="/assets/img/photos/sa15@2x.jpg 2x" alt="" />
+                      </div>
+                      <!-- /column -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!--/column -->
+                </div>
+                <!--/.row -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-3">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-3" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div class=&quot;row gx-md-5 gy-5 align-items-center&quot;&gt;
+  &lt;div class=&quot;col-6&quot;&gt;
+    &lt;img class=&quot;img-fluid rounded shadow-lg d-flex ms-auto&quot; src=&quot;./assets/img/photos/sa13.jpg&quot; srcset=&quot;./assets/img/photos/sa13@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;!-- /column --&gt;
+  &lt;div class=&quot;col-6&quot;&gt;
+    &lt;img class=&quot;img-fluid rounded shadow-lg mb-5&quot; src=&quot;./assets/img/photos/sa14.jpg&quot; srcset=&quot;./assets/img/photos/sa14@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;
+    &lt;img class=&quot;img-fluid rounded shadow-lg d-flex col-10&quot; src=&quot;./assets/img/photos/sa15.jpg&quot; srcset=&quot;./assets/img/photos/sa15@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;!-- /column --&gt;
+&lt;/div&gt;
+&lt;!-- /.row --&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-4" class="wrapper pt-16">
+            <h2 class="mb-5">Tiles 4</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+                  <div class="col-lg-10 mx-auto">
+                    <div class="row gx-md-5 gy-5">
+                      <div class="col-5">
+                        <img class="img-fluid rounded shadow-lg my-5 d-flex ms-auto" src="/assets/img/photos/sa9.jpg" srcset="/assets/img/photos/sa9@2x.jpg 2x" alt="" />
+                        <img class="img-fluid rounded shadow-lg d-flex col-10 ms-auto" src="/assets/img/photos/sa10.jpg" srcset="/assets/img/photos/sa10@2x.jpg 2x" alt="" />
+                      </div>
+                      <!-- /column -->
+                      <div class="col-7">
+                        <img class="img-fluid rounded shadow-lg mb-5" src="/assets/img/photos/sa11.jpg" srcset="/assets/img/photos/sa11@2x.jpg 2x" alt="" />
+                        <img class="img-fluid rounded shadow-lg d-flex col-11" src="/assets/img/photos/sa12.jpg" srcset="/assets/img/photos/sa12@2x.jpg 2x" alt="" />
+                      </div>
+                      <!-- /column -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!--/column -->
+                </div>
+                <!--/.row -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-4">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-4" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div class=&quot;row gx-md-5 gy-5&quot;&gt;
+  &lt;div class=&quot;col-5&quot;&gt;
+    &lt;img class=&quot;img-fluid rounded shadow-lg my-5 d-flex ms-auto&quot; src=&quot;./assets/img/photos/sa9.jpg&quot; srcset=&quot;./assets/img/photos/sa9@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;
+    &lt;img class=&quot;img-fluid rounded shadow-lg d-flex col-10 ms-auto&quot; src=&quot;./assets/img/photos/sa10.jpg&quot; srcset=&quot;./assets/img/photos/sa10@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;!-- /column --&gt;
+  &lt;div class=&quot;col-7&quot;&gt;
+    &lt;img class=&quot;img-fluid rounded shadow-lg mb-5&quot; src=&quot;./assets/img/photos/sa11.jpg&quot; srcset=&quot;./assets/img/photos/sa11@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;
+    &lt;img class=&quot;img-fluid rounded shadow-lg d-flex col-11&quot; src=&quot;./assets/img/photos/sa12.jpg&quot; srcset=&quot;./assets/img/photos/sa12@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;!-- /column --&gt;
+&lt;/div&gt;
+&lt;!-- /.row --&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-5" class="wrapper pt-16">
+            <h2 class="mb-5">Tiles 5</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+                  <div class="col-lg-10 mx-auto">
+                    <div class="row gx-md-5 gy-5">
+                      <div class="col-6">
+                        <img class="img-fluid rounded shadow-lg mb-5" src="/assets/img/photos/sa5.jpg" srcset="/assets/img/photos/sa5@2x.jpg 2x" alt="" />
+                        <img class="img-fluid rounded shadow-lg d-flex col-10 ms-auto" src="/assets/img/photos/sa6.jpg" srcset="/assets/img/photos/sa6@2x.jpg 2x" alt="" />
+                      </div>
+                      <!-- /column -->
+                      <div class="col-6">
+                        <img class="img-fluid rounded shadow-lg my-5" src="/assets/img/photos/sa7.jpg" srcset="/assets/img/photos/sa7@2x.jpg 2x" alt="" />
+                        <img class="img-fluid rounded shadow-lg d-flex col-10" src="/assets/img/photos/sa8.jpg" srcset="/assets/img/photos/sa8@2x.jpg 2x" alt="" />
+                      </div>
+                      <!-- /column -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!--/column -->
+                </div>
+                <!--/.row -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-5">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-5" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div class=&quot;row gx-md-5 gy-5&quot;&gt;
+  &lt;div class=&quot;col-6&quot;&gt;
+    &lt;img class=&quot;img-fluid rounded shadow-lg mb-5&quot; src=&quot;./assets/img/photos/sa5.jpg&quot; srcset=&quot;./assets/img/photos/sa5@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;
+    &lt;img class=&quot;img-fluid rounded shadow-lg d-flex col-10 ms-auto&quot; src=&quot;./assets/img/photos/sa6.jpg&quot; srcset=&quot;./assets/img/photos/sa6@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;!-- /column --&gt;
+  &lt;div class=&quot;col-6&quot;&gt;
+    &lt;img class=&quot;img-fluid rounded shadow-lg my-5&quot; src=&quot;./assets/img/photos/sa7.jpg&quot; srcset=&quot;./assets/img/photos/sa7@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;
+    &lt;img class=&quot;img-fluid rounded shadow-lg d-flex col-10&quot; src=&quot;./assets/img/photos/sa8.jpg&quot; srcset=&quot;./assets/img/photos/sa8@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;!-- /column --&gt;
+&lt;/div&gt;
+&lt;!-- /.row --&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-6" class="wrapper pt-16">
+            <h2 class="mb-5">Tiles 6</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="row gx-lg-8 gx-xl-12 gy-6 align-items-center">
+                  <div class="col-lg-10 mx-auto">
+                    <div class="row gx-md-5 gy-5">
+                      <div class="col-md-6">
+                        <figure class="rounded mt-md-10 position-relative"><img src="/assets/img/photos/g5.jpg" srcset="/assets/img/photos/g5@2x.jpg 2x" alt=""></figure>
+                      </div>
+                      <!--/column -->
+                      <div class="col-md-6">
+                        <div class="row gx-md-5 gy-5">
+                          <div class="col-md-12 order-md-2">
+                            <figure class="rounded"><img src="/assets/img/photos/g6.jpg" srcset="/assets/img/photos/g6@2x.jpg 2x" alt=""></figure>
+                          </div>
+                          <!--/column -->
+                          <div class="col-md-10">
+                            <figure class="rounded"><img src="/assets/img/photos/g7.jpg" srcset="/assets/img/photos/g7@2x.jpg 2x" alt=""></figure>
+                          </div>
+                          <!--/column -->
+                        </div>
+                        <!--/.row -->
+                      </div>
+                      <!--/column -->
+                    </div>
+                    <!--/.row -->
+                  </div>
+                  <!--/column -->
+                </div>
+                <!--/.row -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-6">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-6" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div class=&quot;row gx-md-5 gy-5&quot;&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;figure class=&quot;rounded mt-md-10 position-relative&quot;&gt;&lt;img src=&quot;./assets/img/photos/g5.jpg&quot; srcset=&quot;./assets/img/photos/g5@2x.jpg 2x&quot; alt=&quot;&quot;&gt;&lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;!--/column --&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;div class=&quot;row gx-md-5 gy-5&quot;&gt;
+      &lt;div class=&quot;col-md-12 order-md-2&quot;&gt;
+        &lt;figure class=&quot;rounded&quot;&gt;&lt;img src=&quot;./assets/img/photos/g6.jpg&quot; srcset=&quot;./assets/img/photos/g6@2x.jpg 2x&quot; alt=&quot;&quot;&gt;&lt;/figure&gt;
+      &lt;/div&gt;
+      &lt;!--/column --&gt;
+      &lt;div class=&quot;col-md-10&quot;&gt;
+        &lt;figure class=&quot;rounded&quot;&gt;&lt;img src=&quot;./assets/img/photos/g7.jpg&quot; srcset=&quot;./assets/img/photos/g7@2x.jpg 2x&quot; alt=&quot;&quot;&gt;&lt;/figure&gt;
+      &lt;/div&gt;
+      &lt;!--/column --&gt;
+    &lt;/div&gt;
+    &lt;!--/.row --&gt;
+  &lt;/div&gt;
+  &lt;!--/column --&gt;
+&lt;/div&gt;
+&lt;!--/.row --&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-7" class="wrapper pt-16">
+            <h2 class="mb-5">Tiles 7</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="row gx-2 gy-10 align-items-center">
+                  <div class="col-lg-10 mx-auto">
+                    <div class="row g-4">
+                      <div class="col-4 d-flex flex-column ms-auto">
+                        <div class="ms-auto mt-6"><img class="img-fluid rounded shadow-lg" src="/assets/img/demos/vc1.jpg" srcset="/assets/img/demos/vc1@2x.jpg 2x" alt="" /></div>
+                        <div class="ms-auto mt-4"><img class="img-fluid rounded shadow-lg" src="/assets/img/demos/vc2.jpg" srcset="/assets/img/demos/vc2@2x.jpg 2x" alt="" /></div>
+                        <div class="ms-auto mt-4"><img class="img-fluid rounded shadow-lg" src="/assets/img/demos/vc3.jpg" srcset="/assets/img/demos/vc3@2x.jpg 2x" alt="" /></div>
+                      </div>
+                      <!-- /column -->
+                      <div class="col-4">
+                        <div><img class="w-100 img-fluid rounded shadow-lg" src="/assets/img/demos/vc4.jpg" srcset="/assets/img/demos/vc4@2x.jpg 2x" alt="" /></div>
+                        <div><img class="w-100 img-fluid rounded shadow-lg mt-4" src="/assets/img/demos/vc5.jpg" srcset="/assets/img/demos/vc5@2x.jpg 2x" alt="" /></div>
+                        <div><img class="w-100 img-fluid rounded shadow-lg mt-4" src="/assets/img/demos/vc6.jpg" srcset="/assets/img/demos/vc6@2x.jpg 2x" alt="" /></div>
+                      </div>
+                      <!-- /column -->
+                      <div class="col-4 d-flex flex-column">
+                        <div class="mt-8"><img class="img-fluid rounded shadow-lg" src="/assets/img/demos/vc7.jpg" srcset="/assets/img/demos/vc7@2x.jpg 2x" alt="" /></div>
+                        <div class="mt-4 mb-10"><img class="img-fluid rounded shadow-lg" src="/assets/img/demos/vc8.jpg" srcset="/assets/img/demos/vc8@2x.jpg 2x" alt="" /></div>
+                      </div>
+                      <!-- /column -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /column -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-7">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-7" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div class=&quot;row g-4&quot;&gt;
+  &lt;div class=&quot;col-4 d-flex flex-column ms-auto&quot;&gt;
+    &lt;div class=&quot;ms-auto mt-6&quot;&gt;&lt;img class=&quot;img-fluid rounded shadow-lg&quot; src=&quot;./assets/img/demos/vc1.jpg&quot; srcset=&quot;./assets/img/demos/vc1@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
+    &lt;div class=&quot;ms-auto mt-4&quot;&gt;&lt;img class=&quot;img-fluid rounded shadow-lg&quot; src=&quot;./assets/img/demos/vc2.jpg&quot; srcset=&quot;./assets/img/demos/vc2@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
+    &lt;div class=&quot;ms-auto mt-4&quot;&gt;&lt;img class=&quot;img-fluid rounded shadow-lg&quot; src=&quot;./assets/img/demos/vc3.jpg&quot; srcset=&quot;./assets/img/demos/vc3@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- /column --&gt;
+  &lt;div class=&quot;col-4&quot;&gt;
+    &lt;div&gt;&lt;img class=&quot;w-100 img-fluid rounded shadow-lg&quot; src=&quot;./assets/img/demos/vc4.jpg&quot; srcset=&quot;./assets/img/demos/vc4@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;img class=&quot;w-100 img-fluid rounded shadow-lg mt-4&quot; src=&quot;./assets/img/demos/vc5.jpg&quot; srcset=&quot;./assets/img/demos/vc5@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;img class=&quot;w-100 img-fluid rounded shadow-lg mt-4&quot; src=&quot;./assets/img/demos/vc6.jpg&quot; srcset=&quot;./assets/img/demos/vc6@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- /column --&gt;
+  &lt;div class=&quot;col-4 d-flex flex-column&quot;&gt;
+    &lt;div class=&quot;mt-8&quot;&gt;&lt;img class=&quot;img-fluid rounded shadow-lg&quot; src=&quot;./assets/img/demos/vc7.jpg&quot; srcset=&quot;./assets/img/demos/vc7@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
+    &lt;div class=&quot;mt-4 mb-10&quot;&gt;&lt;img class=&quot;img-fluid rounded shadow-lg&quot; src=&quot;./assets/img/demos/vc8.jpg&quot; srcset=&quot;./assets/img/demos/vc8@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- /column --&gt;
+&lt;/div&gt;
+&lt;!-- /.row --&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-8" class="wrapper pt-16">
+            <h2 class="mb-5">Tiles 8</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+                  <div class="col-lg-9 mx-auto">
+                    <div class="overlap-grid overlap-grid-2">
+                      <div class="item">
+                        <figure class="rounded shadow"><img src="/assets/img/photos/about2.jpg" srcset="/assets/img/photos/about2@2x.jpg 2x" alt=""></figure>
+                      </div>
+                      <!--/.item -->
+                      <div class="item">
+                        <figure class="rounded shadow"><img src="/assets/img/photos/about3.jpg" srcset="/assets/img/photos/about3@2x.jpg 2x" alt=""></figure>
+                      </div>
+                      <!--/.item -->
+                    </div>
+                    <!--/.overlap-grid -->
+                  </div>
+                  <!--/column -->
+                </div>
+                <!--/.row -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-8">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-8" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div class=&quot;overlap-grid overlap-grid-2&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;figure class=&quot;rounded shadow&quot;&gt;&lt;img src=&quot;./assets/img/photos/about2.jpg&quot; srcset=&quot;./assets/img/photos/about2@2x.jpg 2x&quot; alt=&quot;&quot;&gt;&lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;!--/.item --&gt;
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;figure class=&quot;rounded shadow&quot;&gt;&lt;img src=&quot;./assets/img/photos/about3.jpg&quot; srcset=&quot;./assets/img/photos/about3@2x.jpg 2x&quot; alt=&quot;&quot;&gt;&lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;!--/.item --&gt;
+&lt;/div&gt;
+&lt;!--/.overlap-grid --&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-9" class="wrapper pt-16">
+            <h2 class="mb-5">Tiles 9</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="row col-lg-10 mx-auto gx-md-5 gy-5">
+                  <div class="col-12">
+                    <figure class="rounded mx-md-5"><img src="/assets/img/photos/g8.jpg" srcset="/assets/img/photos/g8@2x.jpg 2x" alt=""></figure>
+                  </div>
+                  <!--/column -->
+                  <div class="col-md-6">
+                    <figure class="rounded"><img src="/assets/img/photos/g9.jpg" srcset="/assets/img/photos/g9@2x.jpg 2x" alt=""></figure>
+                  </div>
+                  <!--/column -->
+                  <div class="col-md-6">
+                    <figure class="rounded"><img src="/assets/img/photos/g10.jpg" srcset="/assets/img/photos/g10@2x.jpg 2x" alt=""></figure>
+                  </div>
+                  <!--/column -->
+                </div>
+                <!--/.row -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-9">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-9" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div class=&quot;row gx-md-5 gy-5&quot;&gt;
+  &lt;div class=&quot;col-12&quot;&gt;
+    &lt;figure class=&quot;rounded mx-md-5&quot;&gt;&lt;img src=&quot;/assets/img/photos/g8.jpg&quot; srcset=&quot;/assets/img/photos/g8@2x.jpg 2x&quot; alt=&quot;&quot;&gt;&lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;!--/column --&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;figure class=&quot;rounded&quot;&gt;&lt;img src=&quot;/assets/img/photos/g9.jpg&quot; srcset=&quot;/assets/img/photos/g9@2x.jpg 2x&quot; alt=&quot;&quot;&gt;&lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;!--/column --&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;figure class=&quot;rounded&quot;&gt;&lt;img src=&quot;/assets/img/photos/g10.jpg&quot; srcset=&quot;/assets/img/photos/g10@2x.jpg 2x&quot; alt=&quot;&quot;&gt;&lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;!--/column --&gt;
+&lt;/div&gt;
+&lt;!--/.row --&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-10" class="wrapper py-16">
+            <h2 class="mb-5">Tiles 10</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="row col-lg-10 mx-auto gx-md-5 gy-5">
+                  <div class="col-md-6">
+                    <figure class="rounded"><img src="/assets/img/photos/g12.jpg" srcset="/assets/img/photos/g12@2x.jpg 2x" alt=""></figure>
+                  </div>
+                  <!--/column -->
+                  <div class="col-md-6 align-self-end">
+                    <figure class="rounded"><img src="/assets/img/photos/g13.jpg" srcset="/assets/img/photos/g13@2x.jpg 2x" alt=""></figure>
+                  </div>
+                  <!--/column -->
+                  <div class="col-12">
+                    <figure class="rounded mx-md-5"><img src="/assets/img/photos/g11.jpg" srcset="/assets/img/photos/g11@2x.jpg 2x" alt=""></figure>
+                  </div>
+                  <!--/column -->
+                </div>
+                <!--/.row -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-10">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-10" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div class=&quot;row gx-md-5 gy-5&quot;&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;figure class=&quot;rounded&quot;&gt;&lt;img src=&quot;/assets/img/photos/g12.jpg&quot; srcset=&quot;/assets/img/photos/g12@2x.jpg 2x&quot; alt=&quot;&quot;&gt;&lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;!--/column --&gt;
+  &lt;div class=&quot;col-md-6 align-self-end&quot;&gt;
+    &lt;figure class=&quot;rounded&quot;&gt;&lt;img src=&quot;/assets/img/photos/g13.jpg&quot; srcset=&quot;/assets/img/photos/g13@2x.jpg 2x&quot; alt=&quot;&quot;&gt;&lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;!--/column --&gt;
+  &lt;div class=&quot;col-12&quot;&gt;
+    &lt;figure class=&quot;rounded mx-md-5&quot;&gt;&lt;img src=&quot;/assets/img/photos/g11.jpg&quot; srcset=&quot;/assets/img/photos/g11@2x.jpg 2x&quot; alt=&quot;&quot;&gt;&lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;!--/column --&gt;
+&lt;/div&gt;
+&lt;!--/.row --&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+        
+
+              </div>
+            </div>
+          </div>
+        </div> 
+        
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-dark text-inverse">
+  
+  
+  
+  
+  
+  
+
+    <div class="container py-13 py-md-15">
+      
+      <div class="row gy-6 gy-lg-0">
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      
+        <img class="mb-4" src="/assets/img/logo_full.webp" 
+             srcset="/assets/img/logo_full@2x.webp 2x" alt="" />
+      
+      <p class="mb-4">© 2026 Sandbox. <br class="d-none d-lg-block" />All rights reserved.</p>
+      <nav class="nav social social-white">
+        
+          <a href="#"><i class="uil uil-twitter"></i></a>
+        
+          <a href="#"><i class="uil uil-facebook-f"></i></a>
+        
+          <a href="#"><i class="uil uil-instagram"></i></a>
+        
+          <a href="#"><i class="uil uil-youtube"></i></a>
+        
+          <a href="#"><i class="uil uil-dribbble"></i></a>
+        
+      </nav>
+      <!-- /.social -->
+    </div>
+    <!-- /.widget -->
+  </div>
+  <!-- /column -->
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      <h4 class="widget-title text-white mb-3">Get in Touch</h4>
+      <address class="pe-xl-15 pe-xxl-17">2004 Rte des Lucioles, 06902 Sophia Antipolis, France</address>
+      <a href="mailto:fedbiomed@inria.fr" class="link-body">
+        fedbiomed@inria.fr
+      </a><br /> 
+      00 (123) 456 78 90
+    </div>
+    <!-- /.widget -->
+  </div>
+  <!-- /column -->
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      <h4 class="widget-title text-white mb-3">Learn More</h4>
+      <ul class="list-unstyled  text-reset mb-0">
+        
+        
+      </ul>
+    </div>
+    <!-- /.widget -->
+  </div>
+  <!-- /column -->
+  
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      <h4 class="widget-title text-white mb-3">Our Newsletter</h4>
+      <p class="mb-5">Subscribe to our newsletter to get our news & deals delivered to you.</p>
+      <div class="newsletter-wrapper">
+        
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a" 
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" 
+                class="validate dark-fields" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <div class="mc-field-group input-group form-floating">
+                <input type="email" value="" name="EMAIL" class="required email form-control" placeholder="Email Address" id="mce-EMAIL">
+                <label for="mce-EMAIL">Email Address</label>
+                <input type="submit" value="Join" 
+                       name="subscribe" id="mc-embedded-subscribe" 
+                       class="btn btn-primary ">
+              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_ddc180777a163e0f9f66ee014_4b1bcfa0bc" tabindex="-1" value="">
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--End mc_embed_signup-->
+        
+      </div>
+      <!-- /.newsletter-wrapper -->
+    </div>
+    <!-- /.widget -->
+  </div>
+  <!-- /column -->
+  
+</div>
+<!--/.row -->
+
+    </div>
+
+  <!-- /.container -->
+</footer>
+
+  <!-- Modals -->
+  
+
+  
+
+  <!-- Scroll To Top Button -->
+  
+  <!-- Site Scripts-->
+  <script src="/assets/js/bootstrap.bundle.js"></script>
+<script src="/assets/js/plugins.js"></script>
+<script src="/assets/js/theme.js"></script>
+
+</body>
+</html>

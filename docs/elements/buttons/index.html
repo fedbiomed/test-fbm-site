@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- Primary Meta Tags -->
+<title> Buttons </title>
+<meta name="title" content=" Buttons ">
+<meta name="description" content=" Learn how to use buttons in Sandbox. ">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content=" /docs/elements/buttons/ ">
+<meta property="og:title" content=" Buttons ">
+<meta property="og:description" content=" Learn how to use buttons in Sandbox. ">
+
+<meta property="og:image" content="/assets/img/meta-image.webp" />
+
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="/docs/elements/buttons/">
+<meta property="twitter:title" content=" Buttons ">
+<meta property="twitter:description" content=" Learn how to use buttons in Sandbox. ">
+
+<meta property="twitter:image" content="/assets/img/meta-image.webp" />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Stylesheets-->
+  <link rel="shortcut icon" href="/assets/img/favicon.webp" />
+<link rel="stylesheet" href="/assets/css/plugins.css">
+
+<link rel="stylesheet" href="/assets/css/styles.css">
+
+
+
+
+
+
+  
+</head>
+<body class="">
+    <div class="content-wrapper">
+        <header class="wrapper bg-soft-primary">
+        
+
+<nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
+  
+    <div class="container flex-lg-row flex-nowrap align-items-center">
+  
+    <div class="navbar-brand w-100">
+      <a href="/">
+        
+          <img src="/assets/img/logo_full.webp" 
+               srcset="/assets/img/logo_full@2x.webp 2x" alt="" />
+        
+      </a>
+    </div>
+    <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+      <!-- DEBUG START -->
+      <div class="offcanvas-header d-lg-none">
+        <h3 class="text-white fs-30 mb-0">Fed-BioMed</h3>
+        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <!-- DEBUG END -->
+      <div class="offcanvas-body  d-flex flex-column h-100">
+        
+          <!-- Standard Navigation -->
+          
+<ul class="navbar-nav"> 
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/project/"><span class="hover">Project</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/how-it-works/"><span class="hover">How it works</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/about/"><span class="hover">About</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/news/"><span class="hover">News</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/faq/"><span class="hover">FAQ</span></a>
+  </li>
+  
+  
+</ul>
+
+
+        
+        
+        <div class="offcanvas-footer d-lg-none">
+          <div>
+            <a href="mailto:fedbiomed@inria.fr" class="link-inverse">fedbiomed@inria.fr</a>
+            <nav class="nav social social-white mt-4">
+              
+            </nav>
+          </div>
+        </div>
+        <!-- /.offcanvas-footer -->
+      </div>
+      <!-- /.offcanvas-body -->
+    </div>
+    <!-- /.navbar-collapse -->
+    
+    <div class="navbar-other w-100 d-flex ms-auto">
+      <ul class="navbar-nav flex-row align-items-center ms-auto">
+        
+        <li class="nav-item dropdown language-select text-uppercase">
+          <a class="nav-link dropdown-item dropdown-toggle hover" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            En
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="nav-item"><a class="dropdown-item" href="#">En</a></li>
+            
+            <li class="nav-item"><a class="dropdown-item" href="#">De</a></li>
+            
+            <li class="nav-item"><a class="dropdown-item" href="#">Es</a></li>
+            
+          </ul>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="nav-item d-none d-md-block">
+          
+          <a href="/contact" 
+             class="btn btn-sm btn-primary rounded-pill"
+             >Contact</a>
+          
+        </li>
+        
+        
+        
+        
+        
+        
+        <li class="nav-item d-lg-none">
+          <button class="hamburger offcanvas-nav-btn"><span></span></button>
+        </li>
+      </ul>
+    </div>
+  
+    </div>
+    <!-- /.container -->
+  
+</nav>
+<!-- /.navbar -->
+
+
+
+
+
+
+
+
+
+
+        </header>
+        <!-- /header -->
+        <section class="wrapper bg-soft-primary">
+          <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+            <div class="row">
+              <div class="col-md-9 col-lg-7 col-xl-5 mx-auto">
+                <h1 class="display-1 mb-3">Buttons</h1>
+                <p class="lead px-xxl-11">Learn how to use buttons in Sandbox.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        
+         <div class="container">
+          <div class="row">
+            <aside class="col-xl-2 sidebar doc-sidebar mt-md-0 py-16 d-none d-xl-block">
+    
+    
+  </aside>
+  
+            <aside class="col-xl-2 order-xl-3 sidebar sticky-sidebar mt-md-0 py-16 d-none d-xl-block">
+              <div class="widget">
+                <h6 class="widget-title fs-17 mb-2 ps-xl-5">On this page</h6>
+                <nav class="ps-xl-5" id="sidebar-nav">
+                  <ul id="toc" class="list-unstyled fs-sm lh-sm text-reset">
+<li class="nav-link scroll snippet-h2"><a href="#colors">Colors</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#gradients">Gradients</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#sizes">Sizes</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#shapes">Shapes</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#style">Style</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#circle">Circle</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#social">Social</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#icon">Icon</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#expand">Expand</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#play">Play</a></li>
+</ul>
+                </nav>
+              </div>
+            </aside>
+        
+            <div class="col-xl-8 order-xl-2">
+              <div class="content"> 
+                					<section id="colors" class="wrapper pt-16">
+						<h2 class="mb-5">Colors</h2>
+						<div class="card">
+							<div class="card-body">
+								<a href="#" class="btn btn-yellow rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-orange rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-red rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-pink rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-violet rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-purple rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-blue rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-aqua rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-green rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-leaf rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-fuchsia rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-sky rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-grape rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-navy rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-ash rounded-pill mb-2 me-1">Button</a>
+								<br class="d-none d-lg-block">
+								<a href="#" class="btn btn-soft-yellow rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-orange rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-red rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-pink rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-violet rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-purple rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-blue rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-aqua rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-green rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-leaf rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-fuchsia rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-sky rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-grape rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-dark rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-ash rounded-pill mb-2 me-1">Button</a>
+							</div>
+							<!--/.card-body -->
+							<div class="card-footer position-relative">
+								<a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-colors">View example's code</a>
+							</div>
+							<!--/.card-footer -->
+							<div id="collapse-colors" class="card-footer bg-dark p-0 accordion-collapse collapse">
+								<div class="code-wrapper">
+									<div class="code-wrapper-inner">
+										<pre class="language-html"><code>&lt;a href=&quot;#&quot; class=&quot;btn btn-yellow rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-orange rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-red rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-pink rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-violet rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-purple rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-blue rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-aqua rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-green rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-leaf rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-navy rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-fuchsia rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-sky rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-grape rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-ash rounded-pill&quot;&gt;Button&lt;/a&gt;
+
+&lt;a href=&quot;#&quot; class=&quot;btn btn-primary rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-white rounded-pill&quot;&gt;Button&lt;/a&gt;
+										
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-yellow rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-orange rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-red rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-pink rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-violet rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-purple rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-blue rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-aqua rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-green rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-leaf rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-fuchsia rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-sky rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-grape rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-dark rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-ash rounded-pill&quot;&gt;Button&lt;/a&gt;</code></pre>
+									</div>
+									<!--/.code-wrapper-inner -->
+								</div>
+								<!--/.code-wrapper -->
+							</div>
+							<!--/.card-footer -->
+						</div>
+						<!--/.card -->
+					</section>
+					<!-- /section -->
+					<section id="gradients" class="wrapper pt-16">
+						<h2 class="mb-5">Gradients</h2>
+						<div class="card">
+							<div class="card-body">
+								<a href="#" class="btn btn-gradient gradient-1 rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-gradient gradient-2 rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-gradient gradient-3 rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-gradient gradient-4 rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-gradient gradient-5 rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-gradient gradient-6 rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-gradient gradient-7 rounded-pill mb-2 me-1">Button</a>
+								<br class="d-none d-lg-block">
+								<a href="#" class="btn btn-outline-gradient gradient-1 rounded-pill mb-2 me-1"><span>Button</span></a>
+								<a href="#" class="btn btn-outline-gradient gradient-2 rounded-pill mb-2 me-1"><span>Button</span></a>
+								<a href="#" class="btn btn-outline-gradient gradient-3 rounded-pill mb-2 me-1"><span>Button</span></a>
+								<a href="#" class="btn btn-outline-gradient gradient-4 rounded-pill mb-2 me-1"><span>Button</span></a>
+								<a href="#" class="btn btn-outline-gradient gradient-5 rounded-pill mb-2 me-1"><span>Button</span></a>
+								<a href="#" class="btn btn-outline-gradient gradient-6 rounded-pill mb-2 me-1"><span>Button</span></a>
+								<a href="#" class="btn btn-outline-gradient gradient-7 rounded-pill mb-2 me-1"><span>Button</span></a>
+							</div>
+							<!--/.card-body -->
+							<div class="card-footer position-relative">
+								<a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-gradients">View example's code</a>
+							</div>
+							<!--/.card-footer -->
+							<div id="collapse-gradients" class="card-footer bg-dark p-0 accordion-collapse collapse">
+								<div class="code-wrapper">
+									<div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;a href=&quot;#&quot; class=&quot;btn btn-gradient gradient-1 rounded-pill&quot;&gt;Text&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-gradient gradient-2 rounded-pill&quot;&gt;Text&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-gradient gradient-3 rounded-pill&quot;&gt;Text&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-gradient gradient-4 rounded-pill&quot;&gt;Text&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-gradient gradient-5 rounded-pill&quot;&gt;Text&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-gradient gradient-6 rounded-pill&quot;&gt;Text&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-gradient gradient-7 rounded-pill&quot;&gt;Text&lt;/a&gt;
+	
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-gradient gradient-1 rounded-pill&quot;&gt;&lt;span&gt;Text&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-gradient gradient-2 rounded-pill&quot;&gt;&lt;span&gt;Text&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-gradient gradient-3 rounded-pill&quot;&gt;&lt;span&gt;Text&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-gradient gradient-4 rounded-pill&quot;&gt;&lt;span&gt;Text&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-gradient gradient-5 rounded-pill&quot;&gt;&lt;span&gt;Text&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-gradient gradient-6 rounded-pill&quot;&gt;&lt;span&gt;Text&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-gradient gradient-7 rounded-pill&quot;&gt;&lt;span&gt;Text&lt;/span&gt;&lt;/a&gt;</code></pre>
+									</div>
+									<!--/.code-wrapper-inner -->
+								</div>
+								<!--/.code-wrapper -->
+							</div>
+							<!--/.card-footer -->
+						</div>
+						<!--/.card -->
+					</section>
+					<!-- /section -->
+					<section id="sizes" class="wrapper pt-16">
+						<h2 class="mb-5">Sizes</h2>
+						<div class="card">
+							<div class="card-body">
+								<a href="#" class="btn btn-primary btn-lg rounded-pill me-1 mb-2 mb-md-0">Large Button</a>
+								<a href="#" class="btn btn-primary rounded-pill me-1 mb-2 mb-md-0">Default Button</a>
+								<a href="#" class="btn btn-primary btn-sm rounded-pill me-1 mb-2 mb-md-0">Small Button</a>
+							</div>
+							<!--/.card-body -->
+							<div class="card-footer position-relative">
+								<a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-sizes">View example's code</a>
+							</div>
+							<!--/.card-footer -->
+							<div id="collapse-sizes" class="card-footer bg-dark p-0 accordion-collapse collapse">
+								<div class="code-wrapper">
+									<div class="code-wrapper-inner">
+										<pre class="language-html"><code>&lt;a href="#" class="btn btn-primary btn-lg rounded-pill"&gt;Large Button&lt;/a&gt; 
+&lt;a href="#" class="btn btn-primary rounded-pill"&gt;Default Button&lt;/a&gt; 
+&lt;a href="#" class="btn btn-primary btn-sm rounded-pill"&gt;Small Button&lt;/a&gt;</code></pre>
+									</div>
+									<!--/.code-wrapper-inner -->
+								</div>
+								<!--/.code-wrapper -->
+							</div>
+							<!--/.card-footer -->
+						</div>
+						<!--/.card -->
+					</section>
+					<!-- /section -->
+					<section id="shapes" class="wrapper pt-16">
+						<h2 class="mb-5">Shapes</h2>
+						<div class="card">
+							<div class="card-body">
+								<a href="#" class="btn btn-primary rounded-0 me-1 mb-2 mb-md-0">Square</a>
+								<a href="#" class="btn btn-primary me-1 mb-2 mb-md-0">Rounded</a>
+								<a href="#" class="btn btn-primary rounded-xl me-1 mb-2 mb-md-0">Rounder</a>
+								<a href="#" class="btn btn-primary rounded-pill me-1 mb-2 mb-md-0">Pill</a>
+							</div>
+							<!--/.card-body -->
+							<div class="card-footer position-relative">
+								<a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-shapes">View example's code</a>
+							</div>
+							<!--/.card-footer -->
+							<div id="collapse-shapes" class="card-footer bg-dark p-0 accordion-collapse collapse">
+								<div class="code-wrapper">
+									<div class="code-wrapper-inner">
+										<pre class="language-html"><code>&lt;a href=&quot;#&quot; class=&quot;btn btn-primary rounded-0&quot;&gt;Square&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Rounded&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-primary rounded-xl&quot;&gt;Rounder&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-primary rounded-pill&quot;&gt;Pill&lt;/a&gt;</code></pre>
+									</div>
+									<!--/.code-wrapper-inner -->
+								</div>
+								<!--/.code-wrapper -->
+							</div>
+							<!--/.card-footer -->
+						</div>
+						<!--/.card -->
+					</section>
+					<!-- /section -->
+					<section id="style" class="wrapper pt-16">
+						<h2 class="mb-5">Style</h2>
+						<div class="card">
+							<div class="card-body">
+								<a href="#" class="btn btn-primary rounded-pill me-1 mb-2 mb-md-0">Solid</a>
+								<a href="#" class="btn btn-soft-primary rounded-pill me-1 mb-2 mb-md-0">Soft</a>
+								<a href="#" class="btn btn-outline-primary rounded-pill me-1 mb-2 mb-md-0">Outline</a>
+								<a href="#" class="btn btn-gradient gradient-1 rounded-pill me-1 mb-2 mb-md-0">Gradient</a>
+								<a href="#" class="btn btn-outline-gradient gradient-1 rounded-pill me-1 mb-2 mb-md-0"><span>Outline Gradient</span></a>
+							</div>
+							<!--/.card-body -->
+							<div class="card-footer position-relative">
+								<a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-styles">View example's code</a>
+							</div>
+							<!--/.card-footer -->
+							<div id="collapse-styles" class="card-footer bg-dark p-0 accordion-collapse collapse">
+								<div class="code-wrapper">
+									<div class="code-wrapper-inner">
+										<pre class="language-html"><code>&lt;a href=&quot;#&quot; class=&quot;btn btn-primary rounded-pill&quot;&gt;Solid&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-primary rounded-pill&quot;&gt;Soft&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-primary rounded-pill&quot;&gt;Outline&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-gradient gradient-1 rounded-pill me-1 mb-2 mb-md-0&quot;&gt;Gradient&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-gradient gradient-1 rounded-pill me-1 mb-2 mb-md-0&quot;&gt;&lt;span&gt;Outline Gradient&lt;/span&gt;&lt;/a&gt;</code></pre>
+									</div>
+									<!--/.code-wrapper-inner -->
+								</div>
+								<!--/.code-wrapper -->
+							</div>
+							<!--/.card-footer -->
+						</div>
+						<!--/.card -->
+					</section>
+					<!-- /section -->
+					<section id="circle" class="wrapper pt-16">
+						<h2 class="mb-5">Circle</h2>
+						<div class="card">
+							<div class="card-body">
+								<a href="#" class="btn btn-circle btn-primary btn-lg me-2 mb-2"><i class="uil uil-check"></i></a>
+								<a href="#" class="btn btn-circle btn-primary me-2 mb-2"><i class="uil uil-check"></i></a>
+								<a href="#" class="btn btn-circle btn-primary btn-sm me-2 mb-2"><i class="uil uil-check"></i></a>
+								<a href="#" class="btn btn-circle btn-soft-primary btn-lg me-2 mb-2"><i class="uil uil-check"></i></a>
+								<a href="#" class="btn btn-circle btn-soft-primary me-2 mb-2"><i class="uil uil-check"></i></a>
+								<a href="#" class="btn btn-circle btn-soft-primary btn-sm me-2 mb-2"><i class="uil uil-check"></i></a>
+								<a href="#" class="btn btn-circle btn-outline-primary btn-lg me-2 mb-2"><i class="uil uil-check"></i></a>
+								<a href="#" class="btn btn-circle btn-outline-primary me-2 mb-2"><i class="uil uil-check"></i></a>
+								<a href="#" class="btn btn-circle btn-outline-primary btn-sm me-2 mb-2"><i class="uil uil-check"></i></a>
+								<br class="d-none d-lg-block">
+								<a href="#" class="btn btn-circle btn-gradient gradient-1 btn-lg me-2 mb-2"><i class="uil uil-check"></i></a>
+								<a href="#" class="btn btn-circle btn-gradient gradient-1 me-2 mb-2"><i class="uil uil-check"></i></a>
+								<a href="#" class="btn btn-circle btn-gradient gradient-1 btn-sm me-2 mb-2"><i class="uil uil-check"></i></a>
+								<a href="#" class="btn btn-circle btn-outline-gradient gradient-1 btn-lg me-2 mb-2"><span><i class="uil uil-check"></i></span></a>
+								<a href="#" class="btn btn-circle btn-outline-gradient gradient-1 me-2 mb-2"><span><i class="uil uil-check"></i></span></a>
+								<a href="#" class="btn btn-circle btn-outline-gradient gradient-1 btn-sm me-2 mb-2"><span><i class="uil uil-check"></i></span></a>
+							</div>
+							<!--/.card-body -->
+							<div class="card-footer position-relative">
+								<a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-circle">View example's code</a>
+							</div>
+							<!--/.card-footer -->
+							<div id="collapse-circle" class="card-footer bg-dark p-0 accordion-collapse collapse">
+								<div class="code-wrapper">
+									<div class="code-wrapper-inner">
+										<pre class="language-html"><code>&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-primary btn-lg&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-primary&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-primary btn-sm&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-soft-primary btn-lg&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-soft-primary&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-soft-primary btn-sm&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-outline-primary btn-lg&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-outline-primary&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-outline-primary btn-sm&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-gradient gradient-1 btn-lg&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-gradient gradient-1&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-gradient gradient-1 btn-sm&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-outline-gradient gradient-1 btn-lg&quot;&gt;&lt;span&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-outline-gradient gradient-1&quot;&gt;&lt;span&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-outline-gradient gradient-1 btn-sm&quot;&gt;&lt;span&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;</code></pre>
+									</div>
+									<!--/.code-wrapper-inner -->
+								</div>
+								<!--/.code-wrapper -->
+							</div>
+							<!--/.card-footer -->
+						</div>
+						<!--/.card -->
+					</section>
+					<!-- /section -->
+					<section id="social" class="wrapper pt-16">
+						<h2 class="mb-5">Social</h2>
+						<div class="card">
+							<div class="card-body">
+								<div class="d-md-flex">
+									<div class="me-8 mb-2 mb-md-0">
+										<nav class="nav social">
+											<a href="#" class="btn btn-circle btn-sm btn-twitter"><i class="uil uil-twitter"></i></a>
+											<a href="#" class="btn btn-circle btn-sm btn-facebook"><i class="uil uil-facebook-f"></i></a>
+											<a href="#" class="btn btn-circle btn-sm btn-dribbble"><i class="uil uil-dribbble"></i></a>
+										</nav>
+									</div>
+									<div class="me-8">
+										<nav class="nav social social-muted">
+											<a href="#"><i class="uil uil-twitter"></i></a>
+											<a href="#"><i class="uil uil-facebook-f"></i></a>
+											<a href="#"><i class="uil uil-dribbble"></i></a>
+										</nav>
+									</div>
+									<div class="me-8">
+										<nav class="nav social">
+											<a href="#"><i class="uil uil-twitter"></i></a>
+											<a href="#"><i class="uil uil-facebook-f"></i></a>
+											<a href="#"><i class="uil uil-dribbble"></i></a>
+										</nav>
+									</div>
+								</div>
+							</div>
+							<!--/.card-body -->
+							<div class="card-footer position-relative">
+								<a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-social">View example's code</a>
+							</div>
+							<!--/.card-footer -->
+							<div id="collapse-social" class="card-footer bg-dark p-0 accordion-collapse collapse">
+								<div class="code-wrapper">
+									<div class="code-wrapper-inner">
+										<pre class="language-html"><code>&lt;nav class=&quot;nav social&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-sm btn-twitter&quot;&gt;
+		&lt;i class=&quot;uil uil-twitter&quot;&gt;&lt;/i&gt;
+	&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-sm btn-facebook&quot;&gt;
+		&lt;i class=&quot;uil uil-facebook-f&quot;&gt;&lt;/i&gt;
+	&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-sm btn-dribbble&quot;&gt;
+		&lt;i class=&quot;uil uil-dribbble&quot;&gt;&lt;/i&gt;
+	&lt;/a&gt;
+&lt;/nav&gt;
+										
+&lt;nav class=&quot;nav social social-muted&quot;&gt;
+	&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;uil uil-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;uil uil-facebook-f&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;uil uil-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/nav&gt;
+										
+&lt;nav class=&quot;nav social&quot;&gt;
+	&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;uil uil-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;uil uil-facebook-f&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;uil uil-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+																		</div>
+									<!--/.code-wrapper-inner -->
+								</div>
+								<!--/.code-wrapper -->
+							</div>
+							<!--/.card-footer -->
+						</div>
+						<!--/.card -->
+					</section>
+					<!-- /section -->
+					<section id="icon" class="wrapper pt-16">
+						<h2 class="mb-5">Icon</h2>
+						<div class="card">
+							<div class="card-body">
+								<a class="btn btn-primary btn-icon btn-icon-start rounded me-2"><i class="uil uil-apple"></i> App Store</a>
+								<a class="btn btn-primary btn-icon btn-icon-end rounded">Google Play <i class="uil uil-google-play"></i></a>
+							</div>
+							<!--/.card-body -->
+							<div class="card-footer position-relative">
+								<a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-icon">View example's code</a>
+							</div>
+							<!--/.card-footer -->
+							<div id="collapse-icon" class="card-footer bg-dark p-0 accordion-collapse collapse">
+								<div class="code-wrapper">
+									<div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;a class=&quot;btn btn-primary btn-icon btn-icon-start rounded&quot;&gt;
+ &lt;i class=&quot;uil uil-apple&quot;&gt;&lt;/i&gt; App Store
+&lt;/a&gt;
+
+&lt;a class=&quot;btn btn-primary btn-icon btn-icon-end rounded&quot;&gt;
+ Google Play &lt;i class=&quot;uil uil-google-play&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;</code></pre>
+									</div>
+									<!--/.code-wrapper-inner -->
+								</div>
+								<!--/.code-wrapper -->
+							</div>
+							<!--/.card-footer -->
+						</div>
+						<!--/.card -->
+					</section>
+					<section id="expand" class="wrapper pt-16">
+						<h2 class="mb-5">Expand</h2>
+						<div class="card">
+							<div class="card-body">
+								<a href="#" class="btn btn-expand btn-primary rounded-pill me-5 mb-3 mb-lg-0"><i class="uil uil-arrow-right"></i><span>Learn More</span></a>
+								<br class="d-lg-none">
+								<a href="#" class="btn btn-expand btn-soft-primary rounded-pill me-5"><i class="uil uil-arrow-right"></i><span>Learn More</span></a>
+							</div>
+							<!--/.card-body -->
+							<div class="card-footer position-relative">
+								<a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-expand">View example's code</a>
+							</div>
+							<!--/.card-footer -->
+							<div id="collapse-expand" class="card-footer bg-dark p-0 accordion-collapse collapse">
+								<div class="code-wrapper">
+									<div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;a href=&quot;#&quot; class=&quot;btn btn-expand btn-primary rounded-pill&quot;&gt;
+	&lt;i class=&quot;uil uil-arrow-right&quot;&gt;&lt;/i&gt;
+	&lt;span&gt;Learn More&lt;/span&gt;
+&lt;/a&gt;
+
+&lt;a href=&quot;#&quot; class=&quot;btn btn-expand btn-soft-primary rounded-pill&quot;&gt;
+	&lt;i class=&quot;uil uil-arrow-right&quot;&gt;&lt;/i&gt;
+	&lt;span&gt;Learn More&lt;/span&gt;
+&lt;/a&gt;</code></pre>
+									</div>
+									<!--/.code-wrapper-inner -->
+								</div>
+								<!--/.code-wrapper -->
+							</div>
+							<!--/.card-footer -->
+						</div>
+						<!--/.card -->
+					</section>
+					<section id="play" class="wrapper py-16">
+						<h2 class="mb-5">Play</h2>
+						<div class="card">
+							<div class="card-body">
+								<a href="#" class="btn btn-circle btn-primary btn-play ripple me-5"><i class="icn-caret-right"></i></a>
+								<a href="#" class="btn btn-circle btn-soft-primary btn-play ripple"><i class="icn-caret-right"></i></a>
+							</div>
+							<!--/.card-body -->
+							<div class="card-footer position-relative">
+								<a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-play">View example's code</a>
+							</div>
+							<!--/.card-footer -->
+							<div id="collapse-play" class="card-footer bg-dark p-0 accordion-collapse collapse">
+								<div class="code-wrapper">
+									<div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-primary btn-play ripple&quot;&gt;
+	&lt;i class=&quot;icn-caret-right&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+	
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-soft-primary btn-play ripple&quot;&gt;
+	&lt;i class=&quot;icn-caret-right&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;</code></pre>
+									</div>
+									<!--/.code-wrapper-inner -->
+								</div>
+								<!--/.code-wrapper -->
+							</div>
+							<!--/.card-footer -->
+						</div>
+						<!--/.card -->
+					</section>
+				
+
+              </div>
+            </div>
+          </div>
+        </div> 
+        
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-dark text-inverse">
+  
+  
+  
+  
+  
+  
+
+    <div class="container py-13 py-md-15">
+      
+      <div class="row gy-6 gy-lg-0">
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      
+        <img class="mb-4" src="/assets/img/logo_full.webp" 
+             srcset="/assets/img/logo_full@2x.webp 2x" alt="" />
+      
+      <p class="mb-4">© 2026 Sandbox. <br class="d-none d-lg-block" />All rights reserved.</p>
+      <nav class="nav social social-white">
+        
+          <a href="#"><i class="uil uil-twitter"></i></a>
+        
+          <a href="#"><i class="uil uil-facebook-f"></i></a>
+        
+          <a href="#"><i class="uil uil-instagram"></i></a>
+        
+          <a href="#"><i class="uil uil-youtube"></i></a>
+        
+          <a href="#"><i class="uil uil-dribbble"></i></a>
+        
+      </nav>
+      <!-- /.social -->
+    </div>
+    <!-- /.widget -->
+  </div>
+  <!-- /column -->
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      <h4 class="widget-title text-white mb-3">Get in Touch</h4>
+      <address class="pe-xl-15 pe-xxl-17">2004 Rte des Lucioles, 06902 Sophia Antipolis, France</address>
+      <a href="mailto:fedbiomed@inria.fr" class="link-body">
+        fedbiomed@inria.fr
+      </a><br /> 
+      00 (123) 456 78 90
+    </div>
+    <!-- /.widget -->
+  </div>
+  <!-- /column -->
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      <h4 class="widget-title text-white mb-3">Learn More</h4>
+      <ul class="list-unstyled  text-reset mb-0">
+        
+        
+      </ul>
+    </div>
+    <!-- /.widget -->
+  </div>
+  <!-- /column -->
+  
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      <h4 class="widget-title text-white mb-3">Our Newsletter</h4>
+      <p class="mb-5">Subscribe to our newsletter to get our news & deals delivered to you.</p>
+      <div class="newsletter-wrapper">
+        
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a" 
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" 
+                class="validate dark-fields" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <div class="mc-field-group input-group form-floating">
+                <input type="email" value="" name="EMAIL" class="required email form-control" placeholder="Email Address" id="mce-EMAIL">
+                <label for="mce-EMAIL">Email Address</label>
+                <input type="submit" value="Join" 
+                       name="subscribe" id="mc-embedded-subscribe" 
+                       class="btn btn-primary ">
+              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_ddc180777a163e0f9f66ee014_4b1bcfa0bc" tabindex="-1" value="">
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--End mc_embed_signup-->
+        
+      </div>
+      <!-- /.newsletter-wrapper -->
+    </div>
+    <!-- /.widget -->
+  </div>
+  <!-- /column -->
+  
+</div>
+<!--/.row -->
+
+    </div>
+
+  <!-- /.container -->
+</footer>
+
+  <!-- Modals -->
+  
+
+  
+
+  <!-- Scroll To Top Button -->
+  
+  <!-- Site Scripts-->
+  <script src="/assets/js/bootstrap.bundle.js"></script>
+<script src="/assets/js/plugins.js"></script>
+<script src="/assets/js/theme.js"></script>
+
+</body>
+</html>

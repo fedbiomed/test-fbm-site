@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- Primary Meta Tags -->
+<title> Rake Build System </title>
+<meta name="title" content=" Rake Build System ">
+<meta name="description" content=" Comprehensive guide to the Rake build system in the Sandbox theme ">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content=" /docs/rake-guide/ ">
+<meta property="og:title" content=" Rake Build System ">
+<meta property="og:description" content=" Comprehensive guide to the Rake build system in the Sandbox theme ">
+
+<meta property="og:image" content="/assets/img/meta-image.webp" />
+
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="/docs/rake-guide/">
+<meta property="twitter:title" content=" Rake Build System ">
+<meta property="twitter:description" content=" Comprehensive guide to the Rake build system in the Sandbox theme ">
+
+<meta property="twitter:image" content="/assets/img/meta-image.webp" />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Stylesheets-->
+  <link rel="shortcut icon" href="/assets/img/favicon.webp" />
+<link rel="stylesheet" href="/assets/css/plugins.css">
+
+<link rel="stylesheet" href="/assets/css/styles.css">
+
+
+
+
+
+
+  
+</head>
+<body class="">
+    <div class="content-wrapper">
+        <header class="wrapper bg-soft-primary">
+        
+
+<nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
+  
+    <div class="container flex-lg-row flex-nowrap align-items-center">
+  
+    <div class="navbar-brand w-100">
+      <a href="/">
+        
+          <img src="/assets/img/logo_full.webp" 
+               srcset="/assets/img/logo_full@2x.webp 2x" alt="" />
+        
+      </a>
+    </div>
+    <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+      <!-- DEBUG START -->
+      <div class="offcanvas-header d-lg-none">
+        <h3 class="text-white fs-30 mb-0">Fed-BioMed</h3>
+        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <!-- DEBUG END -->
+      <div class="offcanvas-body  d-flex flex-column h-100">
+        
+          <!-- Standard Navigation -->
+          
+<ul class="navbar-nav"> 
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/project/"><span class="hover">Project</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/how-it-works/"><span class="hover">How it works</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/about/"><span class="hover">About</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/news/"><span class="hover">News</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/faq/"><span class="hover">FAQ</span></a>
+  </li>
+  
+  
+</ul>
+
+
+        
+        
+        <div class="offcanvas-footer d-lg-none">
+          <div>
+            <a href="mailto:fedbiomed@inria.fr" class="link-inverse">fedbiomed@inria.fr</a>
+            <nav class="nav social social-white mt-4">
+              
+            </nav>
+          </div>
+        </div>
+        <!-- /.offcanvas-footer -->
+      </div>
+      <!-- /.offcanvas-body -->
+    </div>
+    <!-- /.navbar-collapse -->
+    
+    <div class="navbar-other w-100 d-flex ms-auto">
+      <ul class="navbar-nav flex-row align-items-center ms-auto">
+        
+        <li class="nav-item dropdown language-select text-uppercase">
+          <a class="nav-link dropdown-item dropdown-toggle hover" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            En
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="nav-item"><a class="dropdown-item" href="#">En</a></li>
+            
+            <li class="nav-item"><a class="dropdown-item" href="#">De</a></li>
+            
+            <li class="nav-item"><a class="dropdown-item" href="#">Es</a></li>
+            
+          </ul>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="nav-item d-none d-md-block">
+          
+          <a href="/contact" 
+             class="btn btn-sm btn-primary rounded-pill"
+             >Contact</a>
+          
+        </li>
+        
+        
+        
+        
+        
+        
+        <li class="nav-item d-lg-none">
+          <button class="hamburger offcanvas-nav-btn"><span></span></button>
+        </li>
+      </ul>
+    </div>
+  
+    </div>
+    <!-- /.container -->
+  
+</nav>
+<!-- /.navbar -->
+
+
+
+
+
+
+
+
+
+
+        </header>
+        <!-- /header -->
+        <section class="wrapper bg-soft-primary">
+          <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+            <div class="row">
+              <div class="col-md-9 col-lg-7 col-xl-5 mx-auto">
+                <h1 class="display-1 mb-3">Rake Build System</h1>
+                <p class="lead px-xxl-11">Comprehensive guide to the Rake build system in the Sandbox theme</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        
+         <div class="container">
+          <div class="row">
+            <aside class="col-xl-2 sidebar doc-sidebar mt-md-0 py-16 d-none d-xl-block">
+    
+    
+  </aside>
+  
+            <aside class="col-xl-2 order-xl-3 sidebar sticky-sidebar mt-md-0 py-16 d-none d-xl-block">
+              <div class="widget">
+                <h6 class="widget-title fs-17 mb-2 ps-xl-5">On this page</h6>
+                <nav class="ps-xl-5" id="sidebar-nav">
+                  <ul id="toc" class="list-unstyled fs-sm lh-sm text-reset">
+<li class="nav-link scroll snippet-h2"><a href="#understanding-rake">Understanding Rake</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#what-is-rake">What is Rake?</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#prerequisites">Prerequisites</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#windows-installation-guide">Windows Installation Guide</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#system-requirements">System Requirements</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#core-functionality">Core Functionality</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#development-server">Development Server</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#production-build">Production Build</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#image-processing">Image Processing</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#webp-conversion">WebP Conversion</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#best-practices">Best Practices</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#development-workflow">Development Workflow</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#performance-tips">Performance Tips</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#troubleshooting">Troubleshooting</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#common-issues">Common Issues</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#debugging">Debugging</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#advanced-usage">Advanced Usage</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#custom-tasks">Custom Tasks</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#command-reference">Command Reference</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#available-commands">Available Commands</a></li>
+</ul>
+                </nav>
+              </div>
+            </aside>
+        
+            <div class="col-xl-8 order-xl-2">
+              <div class="content"> 
+                <section id="snippet-1" class="wrapper pt-16">
+  <h2 class="display-5 mb-8">Understanding Rake</h2>
+
+  <section id="snippet-1-1">
+    <h2 class="mb-5 mt-n15 pt-15 zindex-n">What is Rake?</h2>
+    <div class="card mb-12">
+      <div class="card-body">
+        <p class="mb-0">Rake (Ruby Make) is a build automation tool written in Ruby. In the Sandbox theme, it handles:</p>
+        <ul>
+          <li>Development server management</li>
+          <li>Production builds</li>
+          <li>Asset optimization</li>
+          <li>Image processing</li>
+          <li>Task automation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="snippet-1-2">
+    <h2 class="mb-5 mt-n15 pt-15 zindex-n">Prerequisites</h2>
+    <div class="card mb-12">
+      <div class="card-body">
+        <p class="mb-0">Required software and dependencies:</p>
+        <ul>
+          <li>Ruby (version 2.7.0 or higher)</li>
+          <li>RubyGems</li>
+          <li>Bundler gem</li>
+          <li>ImageMagick or Vips (for image processing)</li>
+        </ul>
+      </div>
+      <div class="card-footer position-relative">
+        <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-1-2">View installation commands</a>
+      </div>
+      <div id="collapse-1-2" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+<pre class="language-bash"><code># Install Ruby dependencies
+gem install bundler
+
+# Install ImageMagick (MacOS)
+brew install imagemagick
+
+# Install ImageMagick (Ubuntu/Debian)
+sudo apt-get install imagemagick
+
+# Install project dependencies
+bundle install</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="snippet-1-3">
+    <h2 class="mb-5 mt-n15 pt-15 zindex-n">Windows Installation Guide</h2>
+    <div class="card mb-12">
+      <div class="card-body">
+        <p class="mb-0">Installing ImageMagick on Windows:</p>
+        <ol>
+          <li>Download the appropriate installer:
+            <ul>
+              <li>Visit the <a href="https://imagemagick.org/script/download.php#windows" target="_blank">ImageMagick Windows Download Page</a></li>
+              <li>Choose the appropriate version (recommended: Q16-HDRI-x64)</li>
+              <li>Example filename: <code>ImageMagick-7.1.1-21-Q16-HDRI-x64-dll.exe</code></li>
+            </ul>
+          </li>
+          <li>During installation:
+            <ul>
+              <li>Check "Add to system PATH"</li>
+              <li>Check "Install development headers and libraries for C and C++"</li>
+              <li>Check "Install legacy utilities (e.g. convert)"</li>
+            </ul>
+          </li>
+          <li>Verify installation:
+            <ul>
+              <li>Open Command Prompt</li>
+              <li>Run <code>magick -version</code></li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+      <div class="card-footer position-relative">
+        <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-1-3">View troubleshooting steps</a>
+      </div>
+      <div id="collapse-1-3" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+<pre class="language-plaintext"><code>Common Windows Issues:
+
+1. "Convert not found" error:
+   - Rename "convert.exe" to "imagemagick-convert.exe" in ImageMagick installation directory
+   - This prevents conflicts with Windows system convert.exe
+
+2. PATH issues:
+   - Open System Properties
+   - Click "Environment Variables"
+   - Add ImageMagick directory to Path (typically C:\Program Files\ImageMagick-7.x.x-Q16)
+
+3. Ruby gem installation fails:
+   - Install Visual Studio Build Tools
+   - Run: `ridk install` (select options 1, 2, and 3)
+   - Reinstall the gem
+
+4. DLL load failed:
+   - Install Visual C++ Redistributable
+   - Download from Microsoft's website
+   - Install both x86 and x64 versions if unsure</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="snippet-1-4">
+    <h2 class="mb-5 mt-n15 pt-15 zindex-n">System Requirements</h2>
+    <div class="card mb-12">
+      <div class="card-body">
+        <p class="mb-0">Windows-specific requirements:</p>
+        <ul>
+          <li>Windows 10 or later (recommended)</li>
+          <li>Visual C++ Redistributable 2015-2022</li>
+          <li>Visual Studio Build Tools (for gem installation)</li>
+          <li>At least 2GB free disk space</li>
+          <li>Administrator privileges for installation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section id="snippet-2" class="wrapper pt-16">
+  <h2 class="display-5 mb-8">Core Functionality</h2>
+
+  <section id="snippet-2-1">
+    <h2 class="mb-5 mt-n15 pt-15 zindex-n">Development Server</h2>
+    <div class="card mb-12">
+      <div class="card-body">
+        <p class="mb-0">The <code>serve</code> task provides a development environment with:</p>
+        <ul>
+          <li>Live reload capability</li>
+          <li>Automatic Sass compilation</li>
+          <li>Vendor file processing</li>
+          <li>Asset watching</li>
+        </ul>
+      </div>
+      <div class="card-footer position-relative">
+        <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-2-1">View implementation</a>
+      </div>
+      <div id="collapse-2-1" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+<pre class="language-ruby"><code>desc "Serve the site"
+task :serve =&gt; [:prepare] do
+  begin
+    $logger.info "Starting development server..."
+    sh "bundle exec jekyll serve --livereload --livereload-min-delay 5 --trace"
+  rescue =&gt; e
+    $logger.error "Serve error: #{e.message}"
+    raise
+  end
+end</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="snippet-2-2">
+    <h2 class="mb-5 mt-n15 pt-15 zindex-n">Production Build</h2>
+    <div class="card mb-12">
+      <div class="card-body">
+        <p class="mb-0">The <code>build</code> task creates production-ready assets:</p>
+        <ul>
+          <li>Minified CSS and JavaScript</li>
+          <li>Optimized images</li>
+          <li>Compiled Jekyll site</li>
+          <li>Environment-specific configurations</li>
+        </ul>
+      </div>
+      <div class="card-footer position-relative">
+        <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-2-2">View implementation</a>
+      </div>
+      <div id="collapse-2-2" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+<pre class="language-ruby"><code>desc "Build the site"
+task :build =&gt; [:prepare] do
+  begin
+    $logger.info "Building site for production..."
+    sh "JEKYLL_ENV=production bundle exec jekyll build"
+  rescue =&gt; e
+    $logger.error "Build error: #{e.message}"
+    raise
+  end
+end</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section id="snippet-3" class="wrapper pt-16">
+  <h2 class="display-5 mb-8">Image Processing</h2>
+
+  <section id="snippet-3-1">
+    <h2 class="mb-5 mt-n15 pt-15 zindex-n">WebP Conversion</h2>
+    <div class="card mb-12">
+      <div class="card-body">
+        <p class="mb-0">Automated image optimization features:</p>
+        <ul>
+          <li>Batch conversion to WebP format</li>
+          <li>Original file preservation options</li>
+          <li>Size optimization reporting</li>
+          <li>Configurable quality settings</li>
+        </ul>
+      </div>
+      <div class="card-footer position-relative">
+        <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-3-1">View usage</a>
+      </div>
+      <div id="collapse-3-1" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+<pre class="language-bash"><code># Convert images to WebP
+bundle exec rake convert_to_webp
+
+# Optimize and remove originals
+bundle exec rake optimize_images[true]
+
+# Remove original files
+bundle exec rake remove_originals</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section id="snippet-4" class="wrapper pt-16">
+  <h2 class="display-5 mb-8">Best Practices</h2>
+
+  <section id="snippet-4-1">
+    <h2 class="mb-5 mt-n15 pt-15 zindex-n">Development Workflow</h2>
+    <div class="card mb-12">
+      <div class="card-body">
+        <p class="mb-0">Recommended development workflow:</p>
+        <ol>
+          <li>Start development server: <code>bundle exec rake serve</code></li>
+          <li>Make changes to source files</li>
+          <li>Test in development environment</li>
+          <li>Optimize images if needed</li>
+          <li>Build for production: <code>bundle exec rake build</code></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="snippet-4-2">
+    <h2 class="mb-5 mt-n15 pt-15 zindex-n">Performance Tips</h2>
+    <div class="card mb-12">
+      <div class="card-body">
+        <p class="mb-0">Optimize build performance:</p>
+        <ul>
+          <li>Use incremental builds during development</li>
+          <li>Process images in batches</li>
+          <li>Maintain clean asset directories</li>
+          <li>Regular cache clearing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section id="snippet-5" class="wrapper pt-16">
+  <h2 class="display-5 mb-8">Troubleshooting</h2>
+
+  <section id="snippet-5-1">
+    <h2 class="mb-5 mt-n15 pt-15 zindex-n">Common Issues</h2>
+    <div class="card mb-12">
+      <div class="card-body">
+        <p class="mb-0">Solutions for frequent problems:</p>
+        <ul>
+          <li><strong>Missing Dependencies:</strong> Run <code>bundle install</code></li>
+          <li><strong>Port Conflicts:</strong> Change port in configuration</li>
+          <li><strong>Build Failures:</strong> Check error logs and Jekyll environment</li>
+          <li><strong>Image Processing Errors:</strong> Verify ImageMagick installation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="snippet-5-2">
+    <h2 class="mb-5 mt-n15 pt-15 zindex-n">Debugging</h2>
+    <div class="card mb-12">
+      <div class="card-body">
+        <p class="mb-0">Debug Rake tasks:</p>
+        <ul>
+          <li>Enable verbose mode: <code>rake -v task_name</code></li>
+          <li>Check Jekyll logs in <code>_site/build.log</code></li>
+          <li>Use <code>--trace</code> flag for detailed stack traces</li>
+          <li>Monitor system resources during builds</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section id="snippet-6" class="wrapper pt-16">
+  <h2 class="display-5 mb-8">Advanced Usage</h2>
+
+  <section id="snippet-6-1">
+    <h2 class="mb-5 mt-n15 pt-15 zindex-n">Custom Tasks</h2>
+    <div class="card mb-12">
+      <div class="card-body">
+        <p class="mb-0">Create custom Rake tasks in <code>Rakefile</code>:</p>
+      </div>
+      <div class="card-footer position-relative">
+        <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-6-1">View example</a>
+      </div>
+      <div id="collapse-6-1" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+<pre class="language-ruby"><code>desc "Custom task description"
+task :custom_task do
+  puts "Executing custom task..."
+  # Add your custom logic here
+end
+
+# Task with dependencies
+task :custom_task_with_deps =&gt; [:prepare, :build] do
+  # This task runs after prepare and build
+end</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section id="snippet-7" class="wrapper pt-16">
+  <h2 class="display-5 mb-8">Command Reference</h2>
+
+  <section id="snippet-7-1">
+    <h2 class="mb-5 mt-n15 pt-15 zindex-n">Available Commands</h2>
+    <div class="card mb-12">
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>Usage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>serve</code></td>
+                <td>Start development server</td>
+                <td><code>bundle exec rake serve</code></td>
+              </tr>
+              <tr>
+                <td><code>build</code></td>
+                <td>Build for production</td>
+                <td><code>bundle exec rake build</code></td>
+              </tr>
+              <tr>
+                <td><code>convert_to_webp</code></td>
+                <td>Convert images to WebP</td>
+                <td><code>bundle exec rake convert_to_webp</code></td>
+              </tr>
+              <tr>
+                <td><code>optimize_images</code></td>
+                <td>Convert and optionally remove originals</td>
+                <td><code>bundle exec rake optimize_images[true]</code></td>
+              </tr>
+              <tr>
+                <td><code>prepare</code></td>
+                <td>Run preparation tasks</td>
+                <td><code>bundle exec rake prepare</code></td>
+              </tr>
+              <tr>
+                <td><code>remove_originals</code></td>
+                <td>Remove original images</td>
+                <td><code>bundle exec rake remove_originals</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+              </div>
+            </div>
+          </div>
+        </div> 
+        
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-dark text-inverse">
+  
+  
+  
+  
+  
+  
+
+    <div class="container py-13 py-md-15">
+      
+      <div class="row gy-6 gy-lg-0">
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      
+        <img class="mb-4" src="/assets/img/logo_full.webp" 
+             srcset="/assets/img/logo_full@2x.webp 2x" alt="" />
+      
+      <p class="mb-4">© 2026 Sandbox. <br class="d-none d-lg-block" />All rights reserved.</p>
+      <nav class="nav social social-white">
+        
+          <a href="#"><i class="uil uil-twitter"></i></a>
+        
+          <a href="#"><i class="uil uil-facebook-f"></i></a>
+        
+          <a href="#"><i class="uil uil-instagram"></i></a>
+        
+          <a href="#"><i class="uil uil-youtube"></i></a>
+        
+          <a href="#"><i class="uil uil-dribbble"></i></a>
+        
+      </nav>
+      <!-- /.social -->
+    </div>
+    <!-- /.widget -->
+  </div>
+  <!-- /column -->
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      <h4 class="widget-title text-white mb-3">Get in Touch</h4>
+      <address class="pe-xl-15 pe-xxl-17">2004 Rte des Lucioles, 06902 Sophia Antipolis, France</address>
+      <a href="mailto:fedbiomed@inria.fr" class="link-body">
+        fedbiomed@inria.fr
+      </a><br /> 
+      00 (123) 456 78 90
+    </div>
+    <!-- /.widget -->
+  </div>
+  <!-- /column -->
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      <h4 class="widget-title text-white mb-3">Learn More</h4>
+      <ul class="list-unstyled  text-reset mb-0">
+        
+        
+      </ul>
+    </div>
+    <!-- /.widget -->
+  </div>
+  <!-- /column -->
+  
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      <h4 class="widget-title text-white mb-3">Our Newsletter</h4>
+      <p class="mb-5">Subscribe to our newsletter to get our news & deals delivered to you.</p>
+      <div class="newsletter-wrapper">
+        
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a" 
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" 
+                class="validate dark-fields" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <div class="mc-field-group input-group form-floating">
+                <input type="email" value="" name="EMAIL" class="required email form-control" placeholder="Email Address" id="mce-EMAIL">
+                <label for="mce-EMAIL">Email Address</label>
+                <input type="submit" value="Join" 
+                       name="subscribe" id="mc-embedded-subscribe" 
+                       class="btn btn-primary ">
+              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_ddc180777a163e0f9f66ee014_4b1bcfa0bc" tabindex="-1" value="">
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--End mc_embed_signup-->
+        
+      </div>
+      <!-- /.newsletter-wrapper -->
+    </div>
+    <!-- /.widget -->
+  </div>
+  <!-- /column -->
+  
+</div>
+<!--/.row -->
+
+    </div>
+
+  <!-- /.container -->
+</footer>
+
+  <!-- Modals -->
+  
+
+  
+
+  <!-- Scroll To Top Button -->
+  
+  <!-- Site Scripts-->
+  <script src="/assets/js/bootstrap.bundle.js"></script>
+<script src="/assets/js/plugins.js"></script>
+<script src="/assets/js/theme.js"></script>
+
+</body>
+</html>

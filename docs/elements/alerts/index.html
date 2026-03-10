@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- Primary Meta Tags -->
+<title> Alerts </title>
+<meta name="title" content=" Alerts ">
+<meta name="description" content=" Learn how to use alerts in Sandbox. ">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content=" /docs/elements/alerts/ ">
+<meta property="og:title" content=" Alerts ">
+<meta property="og:description" content=" Learn how to use alerts in Sandbox. ">
+
+<meta property="og:image" content="/assets/img/meta-image.webp" />
+
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="/docs/elements/alerts/">
+<meta property="twitter:title" content=" Alerts ">
+<meta property="twitter:description" content=" Learn how to use alerts in Sandbox. ">
+
+<meta property="twitter:image" content="/assets/img/meta-image.webp" />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Stylesheets-->
+  <link rel="shortcut icon" href="/assets/img/favicon.webp" />
+<link rel="stylesheet" href="/assets/css/plugins.css">
+
+<link rel="stylesheet" href="/assets/css/styles.css">
+
+
+
+
+
+
+  
+</head>
+<body class="">
+    <div class="content-wrapper">
+        <header class="wrapper bg-soft-primary">
+        
+
+<nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
+  
+    <div class="container flex-lg-row flex-nowrap align-items-center">
+  
+    <div class="navbar-brand w-100">
+      <a href="/">
+        
+          <img src="/assets/img/logo_full.webp" 
+               srcset="/assets/img/logo_full@2x.webp 2x" alt="" />
+        
+      </a>
+    </div>
+    <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+      <!-- DEBUG START -->
+      <div class="offcanvas-header d-lg-none">
+        <h3 class="text-white fs-30 mb-0">Fed-BioMed</h3>
+        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <!-- DEBUG END -->
+      <div class="offcanvas-body  d-flex flex-column h-100">
+        
+          <!-- Standard Navigation -->
+          
+<ul class="navbar-nav"> 
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/project/"><span class="hover">Project</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/how-it-works/"><span class="hover">How it works</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/about/"><span class="hover">About</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/news/"><span class="hover">News</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/faq/"><span class="hover">FAQ</span></a>
+  </li>
+  
+  
+</ul>
+
+
+        
+        
+        <div class="offcanvas-footer d-lg-none">
+          <div>
+            <a href="mailto:fedbiomed@inria.fr" class="link-inverse">fedbiomed@inria.fr</a>
+            <nav class="nav social social-white mt-4">
+              
+            </nav>
+          </div>
+        </div>
+        <!-- /.offcanvas-footer -->
+      </div>
+      <!-- /.offcanvas-body -->
+    </div>
+    <!-- /.navbar-collapse -->
+    
+    <div class="navbar-other w-100 d-flex ms-auto">
+      <ul class="navbar-nav flex-row align-items-center ms-auto">
+        
+        <li class="nav-item dropdown language-select text-uppercase">
+          <a class="nav-link dropdown-item dropdown-toggle hover" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            En
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="nav-item"><a class="dropdown-item" href="#">En</a></li>
+            
+            <li class="nav-item"><a class="dropdown-item" href="#">De</a></li>
+            
+            <li class="nav-item"><a class="dropdown-item" href="#">Es</a></li>
+            
+          </ul>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="nav-item d-none d-md-block">
+          
+          <a href="/contact" 
+             class="btn btn-sm btn-primary rounded-pill"
+             >Contact</a>
+          
+        </li>
+        
+        
+        
+        
+        
+        
+        <li class="nav-item d-lg-none">
+          <button class="hamburger offcanvas-nav-btn"><span></span></button>
+        </li>
+      </ul>
+    </div>
+  
+    </div>
+    <!-- /.container -->
+  
+</nav>
+<!-- /.navbar -->
+
+
+
+
+
+
+
+
+
+
+        </header>
+        <!-- /header -->
+        <section class="wrapper bg-soft-primary">
+          <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+            <div class="row">
+              <div class="col-md-9 col-lg-7 col-xl-5 mx-auto">
+                <h1 class="display-1 mb-3">Alerts</h1>
+                <p class="lead px-xxl-11">Learn how to use alerts in Sandbox.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        
+         <div class="container">
+          <div class="row">
+            <aside class="col-xl-2 sidebar doc-sidebar mt-md-0 py-16 d-none d-xl-block">
+    
+    
+  </aside>
+  
+            <aside class="col-xl-2 order-xl-3 sidebar sticky-sidebar mt-md-0 py-16 d-none d-xl-block">
+              <div class="widget">
+                <h6 class="widget-title fs-17 mb-2 ps-xl-5">On this page</h6>
+                <nav class="ps-xl-5" id="sidebar-nav">
+                  <ul id="toc" class="list-unstyled fs-sm lh-sm text-reset">
+<li class="nav-link scroll snippet-h2"><a href="#simple">Simple</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#dismissing">Dismissing</a></li>
+</ul>
+                </nav>
+              </div>
+            </aside>
+        
+            <div class="col-xl-8 order-xl-2">
+              <div class="content"> 
+                          <section id="snippet-1" class="wrapper pt-16">
+            <h2 class="mb-5">Simple</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="alert alert-primary alert-icon" role="alert"><i class="uil uil-star"></i> A simple primary alert with <a href="#" class="alert-link hover">an example link</a>.</div>
+                <div class="alert alert-secondary alert-icon" role="alert"><i class="uil uil-clock"></i> A simple secondary alert with <a href="#" class="alert-link hover">an example link</a>.</div>
+                <div class="alert alert-success alert-icon" role="alert"><i class="uil uil-check-circle"></i> A simple success alert with <a href="#" class="alert-link hover">an example link</a>.</div>
+                <div class="alert alert-danger alert-icon" role="alert"><i class="uil uil-times-circle"></i> A simple danger alert with <a href="#" class="alert-link hover">an example link</a>.</div>
+                <div class="alert alert-warning alert-icon" role="alert"><i class="uil uil-exclamation-triangle"></i> A simple warning alert with <a href="#" class="alert-link hover">an example link</a>.</div>
+                <div class="alert alert-info alert-icon" role="alert"><i class="uil uil-exclamation-circle"></i> A simple info alert with <a href="#" class="alert-link hover">an example link</a>.</div>
+                <div class="alert alert-light alert-icon" role="alert"><i class="uil uil-lock"></i> A simple light alert with <a href="#" class="alert-link hover">an example link</a>.</div>
+                <div class="alert alert-dark alert-icon" role="alert"><i class="uil uil-map-marker-info"></i> A simple dark alert with <a href="#" class="alert-link hover">an example link</a>.</div>
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-1">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-1" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div class=&quot;alert alert-primary alert-icon&quot; role=&quot;alert&quot;&gt;
+  &lt;i class=&quot;uil uil-star&quot;&gt;&lt;/i&gt; A simple primary alert with &lt;a href=&quot;#&quot; class=&quot;alert-link hover&quot;&gt;an example link&lt;/a&gt;.
+&lt;/div&gt;
+  
+&lt;div class=&quot;alert alert-secondary alert-icon&quot; role=&quot;alert&quot;&gt;
+  &lt;i class=&quot;uil uil-clock&quot;&gt;&lt;/i&gt; A simple secondary alert with &lt;a href=&quot;#&quot; class=&quot;alert-link hover&quot;&gt;an example link&lt;/a&gt;.
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-success alert-icon&quot; role=&quot;alert&quot;&gt;
+  &lt;i class=&quot;uil uil-check-circle&quot;&gt;&lt;/i&gt; A simple success alert with &lt;a href=&quot;#&quot; class=&quot;alert-link hover&quot;&gt;an example link&lt;/a&gt;.
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-danger alert-icon&quot; role=&quot;alert&quot;&gt;
+  &lt;i class=&quot;uil uil-times-circle&quot;&gt;&lt;/i&gt; A simple danger alert with &lt;a href=&quot;#&quot; class=&quot;alert-link hover&quot;&gt;an example link&lt;/a&gt;.
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-warning alert-icon&quot; role=&quot;alert&quot;&gt;
+  &lt;i class=&quot;uil uil-exclamation-triangle&quot;&gt;&lt;/i&gt; A simple warning alert with &lt;a href=&quot;#&quot; class=&quot;alert-link hover&quot;&gt;an example link&lt;/a&gt;.
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-info alert-icon&quot; role=&quot;alert&quot;&gt;
+  &lt;i class=&quot;uil uil-exclamation-circle&quot;&gt;&lt;/i&gt; A simple info alert with &lt;a href=&quot;#&quot; class=&quot;alert-link hover&quot;&gt;an example link&lt;/a&gt;.
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-light alert-icon&quot; role=&quot;alert&quot;&gt;
+  &lt;i class=&quot;uil uil-lock&quot;&gt;&lt;/i&gt; A simple light alert with &lt;a href=&quot;#&quot; class=&quot;alert-link hover&quot;&gt;an example link&lt;/a&gt;.
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-dark alert-icon&quot; role=&quot;alert&quot;&gt;
+  &lt;i class=&quot;uil uil-map-marker-info&quot;&gt;&lt;/i&gt; A simple dark alert with &lt;a href=&quot;#&quot; class=&quot;alert-link hover&quot;&gt;an example link&lt;/a&gt;.
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-2" class="wrapper py-16">
+            <h2 class="mb-5">Dismissing</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="alert alert-primary alert-icon alert-dismissible fade show" role="alert"><i class="uil uil-star"></i> A simple primary alert with <a href="#" class="alert-link hover">an example link</a>.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="alert alert-secondary alert-icon alert-dismissible fade show" role="alert"><i class="uil uil-clock"></i> A simple secondary alert with <a href="#" class="alert-link hover">an example link</a>.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="alert alert-success alert-icon alert-dismissible fade show" role="alert"><i class="uil uil-check-circle"></i> A simple success alert with <a href="#" class="alert-link hover">an example link</a>.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="alert alert-danger alert-icon alert-dismissible fade show" role="alert"><i class="uil uil-times-circle"></i> A simple danger alert with <a href="#" class="alert-link hover">an example link</a>.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="alert alert-warning alert-icon alert-dismissible fade show" role="alert"><i class="uil uil-exclamation-triangle"></i> A simple warning alert with <a href="#" class="alert-link hover">an example link</a>.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="alert alert-info alert-icon alert-dismissible fade show" role="alert"><i class="uil uil-exclamation-circle"></i> A simple info alert with <a href="#" class="alert-link hover">an example link</a>.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="alert alert-light alert-icon alert-dismissible fade show" role="alert"><i class="uil uil-lock"></i> A simple light alert with <a href="#" class="alert-link hover">an example link</a>.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="alert alert-dark alert-icon alert-dismissible fade show" role="alert"><i class="uil uil-map-marker-info"></i> A simple dark alert with <a href="#" class="alert-link hover">an example link</a>.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-2">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-2" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div class=&quot;alert alert-primary alert-icon alert-dismissible fade show&quot; role=&quot;alert&quot;&gt;
+  &lt;i class=&quot;uil uil-star&quot;&gt;&lt;/i&gt; A simple primary alert with &lt;a href=&quot;#&quot; class=&quot;alert-link hover&quot;&gt;an example link&lt;/a&gt;.
+  &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-secondary alert-icon alert-dismissible fade show&quot; role=&quot;alert&quot;&gt;
+  &lt;i class=&quot;uil uil-clock&quot;&gt;&lt;/i&gt; A simple secondary alert with &lt;a href=&quot;#&quot; class=&quot;alert-link hover&quot;&gt;an example link&lt;/a&gt;.
+  &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-success alert-icon alert-dismissible fade show&quot; role=&quot;alert&quot;&gt;
+  &lt;i class=&quot;uil uil-check-circle&quot;&gt;&lt;/i&gt; A simple success alert with &lt;a href=&quot;#&quot; class=&quot;alert-link hover&quot;&gt;an example link&lt;/a&gt;.
+  &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-danger alert-icon alert-dismissible fade show&quot; role=&quot;alert&quot;&gt;
+  &lt;i class=&quot;uil uil-times-circle&quot;&gt;&lt;/i&gt; A simple danger alert with &lt;a href=&quot;#&quot; class=&quot;alert-link hover&quot;&gt;an example link&lt;/a&gt;.
+  &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-warning alert-icon alert-dismissible fade show&quot; role=&quot;alert&quot;&gt;
+  &lt;i class=&quot;uil uil-exclamation-triangle&quot;&gt;&lt;/i&gt; A simple warning alert with &lt;a href=&quot;#&quot; class=&quot;alert-link hover&quot;&gt;an example link&lt;/a&gt;.
+  &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-info alert-icon alert-dismissible fade show&quot; role=&quot;alert&quot;&gt;
+  &lt;i class=&quot;uil uil-exclamation-circle&quot;&gt;&lt;/i&gt; A simple info alert with &lt;a href=&quot;#&quot; class=&quot;alert-link hover&quot;&gt;an example link&lt;/a&gt;.
+  &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-light alert-icon alert-dismissible fade show&quot; role=&quot;alert&quot;&gt;
+  &lt;i class=&quot;uil uil-lock&quot;&gt;&lt;/i&gt; A simple light alert with &lt;a href=&quot;#&quot; class=&quot;alert-link hover&quot;&gt;an example link&lt;/a&gt;.
+  &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-dark alert-icon alert-dismissible fade show&quot; role=&quot;alert&quot;&gt;
+  &lt;i class=&quot;uil uil-map-marker-info&quot;&gt;&lt;/i&gt; A simple dark alert with &lt;a href=&quot;#&quot; class=&quot;alert-link hover&quot;&gt;an example link&lt;/a&gt;.
+  &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+        
+              </div>
+            </div>
+          </div>
+        </div> 
+        
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-dark text-inverse">
+  
+  
+  
+  
+  
+  
+
+    <div class="container py-13 py-md-15">
+      
+      <div class="row gy-6 gy-lg-0">
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      
+        <img class="mb-4" src="/assets/img/logo_full.webp" 
+             srcset="/assets/img/logo_full@2x.webp 2x" alt="" />
+      
+      <p class="mb-4">© 2026 Sandbox. <br class="d-none d-lg-block" />All rights reserved.</p>
+      <nav class="nav social social-white">
+        
+          <a href="#"><i class="uil uil-twitter"></i></a>
+        
+          <a href="#"><i class="uil uil-facebook-f"></i></a>
+        
+          <a href="#"><i class="uil uil-instagram"></i></a>
+        
+          <a href="#"><i class="uil uil-youtube"></i></a>
+        
+          <a href="#"><i class="uil uil-dribbble"></i></a>
+        
+      </nav>
+      <!-- /.social -->
+    </div>
+    <!-- /.widget -->
+  </div>
+  <!-- /column -->
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      <h4 class="widget-title text-white mb-3">Get in Touch</h4>
+      <address class="pe-xl-15 pe-xxl-17">2004 Rte des Lucioles, 06902 Sophia Antipolis, France</address>
+      <a href="mailto:fedbiomed@inria.fr" class="link-body">
+        fedbiomed@inria.fr
+      </a><br /> 
+      00 (123) 456 78 90
+    </div>
+    <!-- /.widget -->
+  </div>
+  <!-- /column -->
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      <h4 class="widget-title text-white mb-3">Learn More</h4>
+      <ul class="list-unstyled  text-reset mb-0">
+        
+        
+      </ul>
+    </div>
+    <!-- /.widget -->
+  </div>
+  <!-- /column -->
+  
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      <h4 class="widget-title text-white mb-3">Our Newsletter</h4>
+      <p class="mb-5">Subscribe to our newsletter to get our news & deals delivered to you.</p>
+      <div class="newsletter-wrapper">
+        
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a" 
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" 
+                class="validate dark-fields" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <div class="mc-field-group input-group form-floating">
+                <input type="email" value="" name="EMAIL" class="required email form-control" placeholder="Email Address" id="mce-EMAIL">
+                <label for="mce-EMAIL">Email Address</label>
+                <input type="submit" value="Join" 
+                       name="subscribe" id="mc-embedded-subscribe" 
+                       class="btn btn-primary ">
+              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_ddc180777a163e0f9f66ee014_4b1bcfa0bc" tabindex="-1" value="">
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--End mc_embed_signup-->
+        
+      </div>
+      <!-- /.newsletter-wrapper -->
+    </div>
+    <!-- /.widget -->
+  </div>
+  <!-- /column -->
+  
+</div>
+<!--/.row -->
+
+    </div>
+
+  <!-- /.container -->
+</footer>
+
+  <!-- Modals -->
+  
+
+  
+
+  <!-- Scroll To Top Button -->
+  
+  <!-- Site Scripts-->
+  <script src="/assets/js/bootstrap.bundle.js"></script>
+<script src="/assets/js/plugins.js"></script>
+<script src="/assets/js/theme.js"></script>
+
+</body>
+</html>
