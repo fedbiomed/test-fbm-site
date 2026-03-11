@@ -455,9 +455,18 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   const steps = [
-    { start: 0, end: 60 },
-    { start: 61, end: 206 },
-    { start: 207, end: 297 }
+    {
+      start: 0,
+      end: 60
+    },
+    {
+      start: 61,
+      end: 206
+    },
+    {
+      start: 207,
+      end: 297
+    }
   ];
 
   const lastFrame = 297;
@@ -482,17 +491,9 @@ document.addEventListener("DOMContentLoaded", function () {
     return a + (b - a) * t;
   }
 
-  function isHorizontalTextAnimation() {
-    return window.innerWidth <= 991.98;
-  }
-
   function getStepTravel() {
-    if (isHorizontalTextAnimation()) {
-      if (window.innerWidth <= 767.98) return Math.round(window.innerWidth * 0.24);
-      return Math.round(window.innerWidth * 0.18);
-    }
-
-    if (window.innerWidth <= 1199.98) return Math.round(window.innerHeight * 0.46);
+    if (window.innerWidth <= 767.98) return Math.round(window.innerWidth * 0.24);
+    if (window.innerWidth <= 991.98) return Math.round(window.innerWidth * 0.18);
     return Math.round(window.innerHeight * 0.52);
   }
 
@@ -549,35 +550,63 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!stepStage) return;
 
     const travel = getStepTravel();
-    const useHorizontal = isHorizontalTextAnimation();
+    const isHorizontal = window.innerWidth <= 991.98;
 
     const values = [
-      { move: travel, o: 0, z: 1 },
-      { move: travel, o: 0, z: 1 },
-      { move: travel, o: 0, z: 1 }
+      { x: 0, y: travel, o: 0, z: 1 },
+      { x: 0, y: travel, o: 0, z: 1 },
+      { x: 0, y: travel, o: 0, z: 1 }
     ];
 
     function setState(currentIndex, nextIndex, progress) {
       const p = clamp(progress, 0, 1);
 
-      values[currentIndex] = {
-        move: 0,
-        o: lerp(1, 0, p),
-        z: 1
-      };
-
-      values[nextIndex] = {
-        move: lerp(travel, 0, p),
-        o: lerp(0, 1, p),
-        z: 2
-      };
-
-      if (p >= 0.999) {
+      if (isHorizontal) {
         values[currentIndex] = {
-          move: -travel,
-          o: 0,
+          x: 0,
+          y: 0,
+          o: lerp(1, 0, p),
           z: 1
         };
+
+        values[nextIndex] = {
+          x: lerp(travel, 0, p),
+          y: 0,
+          o: lerp(0, 1, p),
+          z: 2
+        };
+
+        if (p >= 0.999) {
+          values[currentIndex] = {
+            x: -travel,
+            y: 0,
+            o: 0,
+            z: 1
+          };
+        }
+      } else {
+        values[currentIndex] = {
+          x: 0,
+          y: 0,
+          o: lerp(1, 0, p),
+          z: 1
+        };
+
+        values[nextIndex] = {
+          x: 0,
+          y: lerp(travel, 0, p),
+          o: lerp(0, 1, p),
+          z: 2
+        };
+
+        if (p >= 0.999) {
+          values[currentIndex] = {
+            x: 0,
+            y: -travel,
+            o: 0,
+            z: 1
+          };
+        }
       }
     }
 
@@ -587,21 +616,28 @@ document.addEventListener("DOMContentLoaded", function () {
     } else if (frame <= steps[1].end) {
       const p = getTransitionProgress(frame, 1);
 
-      values[0] = { move: -travel, o: 0, z: 1 };
+      if (isHorizontal) {
+        values[0] = { x: -travel, y: 0, o: 0, z: 1 };
+      } else {
+        values[0] = { x: 0, y: -travel, o: 0, z: 1 };
+      }
+
       setState(1, 2, p);
     } else {
-      values[0] = { move: -travel, o: 0, z: 1 };
-      values[1] = { move: -travel, o: 0, z: 1 };
-      values[2] = { move: 0, o: 1, z: 2 };
+      if (isHorizontal) {
+        values[0] = { x: -travel, y: 0, o: 0, z: 1 };
+        values[1] = { x: -travel, y: 0, o: 0, z: 1 };
+        values[2] = { x: 0, y: 0, o: 1, z: 2 };
+      } else {
+        values[0] = { x: 0, y: -travel, o: 0, z: 1 };
+        values[1] = { x: 0, y: -travel, o: 0, z: 1 };
+        values[2] = { x: 0, y: 0, o: 1, z: 2 };
+      }
     }
 
     stepPanels.forEach(function (panel, index) {
       if (!panel) return;
-
-      panel.style.transform = useHorizontal
-        ? "translate3d(" + values[index].move + "px, 0, 0)"
-        : "translate3d(0, " + values[index].move + "px, 0)";
-
+      panel.style.transform = "translate3d(" + values[index].x + "px, " + values[index].y + "px, 0)";
       panel.style.opacity = values[index].o;
       panel.style.zIndex = values[index].z;
     });
