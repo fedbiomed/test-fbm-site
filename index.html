@@ -455,18 +455,9 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   const steps = [
-    {
-      start: 0,
-      end: 60
-    },
-    {
-      start: 61,
-      end: 206
-    },
-    {
-      start: 207,
-      end: 297
-    }
+    { start: 0, end: 60 },
+    { start: 61, end: 206 },
+    { start: 207, end: 297 }
   ];
 
   const lastFrame = 297;
@@ -491,9 +482,17 @@ document.addEventListener("DOMContentLoaded", function () {
     return a + (b - a) * t;
   }
 
+  function isHorizontalTextAnimation() {
+    return window.innerWidth <= 991.98;
+  }
+
   function getStepTravel() {
-    if (window.innerWidth <= 767.98) return Math.round(window.innerHeight * 0.42);
-    if (window.innerWidth <= 991.98) return Math.round(window.innerHeight * 0.46);
+    if (isHorizontalTextAnimation()) {
+      if (window.innerWidth <= 767.98) return Math.round(window.innerWidth * 0.24);
+      return Math.round(window.innerWidth * 0.18);
+    }
+
+    if (window.innerWidth <= 1199.98) return Math.round(window.innerHeight * 0.46);
     return Math.round(window.innerHeight * 0.52);
   }
 
@@ -550,31 +549,32 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!stepStage) return;
 
     const travel = getStepTravel();
+    const useHorizontal = isHorizontalTextAnimation();
 
     const values = [
-      { y: travel, o: 0, z: 1 },
-      { y: travel, o: 0, z: 1 },
-      { y: travel, o: 0, z: 1 }
+      { move: travel, o: 0, z: 1 },
+      { move: travel, o: 0, z: 1 },
+      { move: travel, o: 0, z: 1 }
     ];
 
     function setState(currentIndex, nextIndex, progress) {
       const p = clamp(progress, 0, 1);
 
       values[currentIndex] = {
-        y: 0,
+        move: 0,
         o: lerp(1, 0, p),
         z: 1
       };
 
       values[nextIndex] = {
-        y: lerp(travel, 0, p),
+        move: lerp(travel, 0, p),
         o: lerp(0, 1, p),
         z: 2
       };
 
       if (p >= 0.999) {
         values[currentIndex] = {
-          y: -travel,
+          move: -travel,
           o: 0,
           z: 1
         };
@@ -587,17 +587,21 @@ document.addEventListener("DOMContentLoaded", function () {
     } else if (frame <= steps[1].end) {
       const p = getTransitionProgress(frame, 1);
 
-      values[0] = { y: -travel, o: 0, z: 1 };
+      values[0] = { move: -travel, o: 0, z: 1 };
       setState(1, 2, p);
     } else {
-      values[0] = { y: -travel, o: 0, z: 1 };
-      values[1] = { y: -travel, o: 0, z: 1 };
-      values[2] = { y: 0, o: 1, z: 2 };
+      values[0] = { move: -travel, o: 0, z: 1 };
+      values[1] = { move: -travel, o: 0, z: 1 };
+      values[2] = { move: 0, o: 1, z: 2 };
     }
 
     stepPanels.forEach(function (panel, index) {
       if (!panel) return;
-      panel.style.transform = "translateY(" + values[index].y + "px)";
+
+      panel.style.transform = useHorizontal
+        ? "translate3d(" + values[index].move + "px, 0, 0)"
+        : "translate3d(0, " + values[index].move + "px, 0)";
+
       panel.style.opacity = values[index].o;
       panel.style.zIndex = values[index].z;
     });
