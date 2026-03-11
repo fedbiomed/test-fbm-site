@@ -181,17 +181,21 @@
 <section class="wrapper bg-gradient-fedbiomed" aria-labelledby="hero-title">
   <div class="container pt-11 pt-md-13 pb-5 pb-md-10 pb-lg-15 text-center">
     <div class="row">
-      <div class="col-lg-8 col-xl-7 col-xxl-6 mx-auto" data-cues="slideInDown" data-group="page-title">
+      <div class="mx-auto" data-cues="slideInDown" data-group="page-title">
         
         <div class="mb-6">
           <video autoplay="" muted="" playsinline="" preload="metadata" class="hero-video" aria-hidden="true">
-            <source src="/test-fbm-site/assets/video/logo_alpha_safari.mov" type="video/quicktime" />
-            <source src="/test-fbm-site/assets/video/logo_alpha.webm" type="video/webm" />
-            <img src="/test-fbm-site/assets/img/logo_video_helper.webp" alt="Fed-BioMed logo" class="d-none" />
-          </video>
+          <!-- Safari -->
+          <source src="/test-fbm-site/assets/video/logo-alpha.mov" type="video/mp4" />
+          <!-- Chrome/Firefox -->
+          <source src="/test-fbm-site/assets/video/logo-alpha.webm" type="video/webm; codecs=vp9" />
+          <!-- Image fallback -->
+          <img src="/test-fbm-site/assets/img/logo_video_helper.webp" alt="Fed-BioMed logo" class="d-none" />
+        </video>
         </div>
         
-        <h1 class="display-1 fs-40 mb-4 px-md-15 px-lg-0 text-fedbiomed-primary" id="hero-title">Healthcare institutions can collaborate on AI without moving patient data</h1>
+        <h1 class="display-1 fs-70 mb-4 px-md-15 px-lg-0 text-fedbiomed-primary" id="hero-title">Fed-BioMed</h1>
+        <h2 class="display-4 mb-4 px-md-15 px-lg-0 text-fedbiomed-primary">Healthcare institutions can collaborate on AI without moving patient data</h2>
         <p class="lead fs-24 lh-sm mb-7 mx-md-13 mx-lg-10 fw-lighter text-fedbiomed-primary">Open, Transparent and Trusted Collaborative Learning for Real-World Healthcare Applications</p>
       </div>
       <!-- /column -->
@@ -376,153 +380,314 @@
 </section>
 <!-- /section -->
 
-<section class="wrapper bg-light text-fedbiomed-primary" aria-labelledby="how-it-works-title">
+<section class="wrapper bg-light text-fedbiomed-primary how-it-works-scroll" aria-labelledby="how-it-works-title">
   <div class="container pt-14 pt-md-17 pb-14">
-    <div class="row">
-      
-      <!-- Desktop left sticky -->
-      <div class="col-lg-5 d-none d-lg-block">
-        <div class="position-sticky how-sticky" style="top: 120px;">
-          <div class="how-sticky-inner">
-            <h2 id="how-it-works-title" class="display-3 mb-10 text-fedbiomed-primary">
-              How <span class="text-fedbiomed-tertiary">Fed-BioMed</span> works
-            </h2>
+    <div class="how-it-works-stage">
 
-            <div class="position-relative how-step-copy">
-              <span id="sticky-step-number" class="text-fedbiomed-tertiary fw-bold position-absolute top-0 start-0 lh-1 how-step-number" aria-hidden="true">
+      <div class="how-it-works-layout">
+        <!-- Sticky text -->
+        <div class="how-copy-sticky">
+          <h2 id="how-it-works-title" class="display-3 mb-7 text-fedbiomed-primary text-center text-lg-start">
+            How <span class="text-fedbiomed-tertiary">Fed-BioMed</span> works
+          </h2>
+
+          <div class="how-step-stage" id="how-step-stage" aria-live="polite">
+            <div class="how-step-panel is-active" id="how-step-panel-0">
+              <span class="text-fedbiomed-tertiary fw-bold how-step-number" aria-hidden="true">
                 1
               </span>
+              <p class="fw-lighter text-fedbiomed-primary mb-0 display-7 how-step-text">
+                Researchers define a training plan and send an encrypted version to healthcare institutions
+              </p>
+            </div>
 
-              <p id="sticky-step-text" class="fw-lighter text-fedbiomed-primary mb-0 position-relative display-7 how-step-text">
-                Researchers send training plan
+            <div class="how-step-panel" id="how-step-panel-1">
+              <span class="text-fedbiomed-tertiary fw-bold how-step-number" aria-hidden="true">
+                2
+              </span>
+              <p class="fw-lighter text-fedbiomed-primary mb-0 display-7 how-step-text">
+                Hospitals, clinics, and healthcare institutions train the model locally using their own data
+              </p>
+            </div>
+
+            <div class="how-step-panel" id="how-step-panel-2">
+              <span class="text-fedbiomed-tertiary fw-bold how-step-number" aria-hidden="true">
+                3
+              </span>
+              <p class="fw-lighter text-fedbiomed-primary mb-0 display-7 how-step-text">
+                Local models are securely aggregated, and the final model is shared back with participating institutions
               </p>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Right column -->
-      <div class="col-12 col-lg-7">
-        <div class="how-visuals position-relative">
-          
-          <!-- Mobile sticky INSIDE scrolling column -->
-          <div class="d-lg-none position-sticky how-sticky-mobile">
-            <div class="how-sticky-inner">
-              <div class="display-5 mb-6 text-fedbiomed-primary text-center" aria-hidden="true">
-                How <span class="text-fedbiomed-tertiary">Fed-BioMed</span> works
-              </div>
-
-              <div class="position-relative how-step-copy-mobile-wrap mx-5">
-                <span id="sticky-step-number-mobile" class="text-fedbiomed-tertiary fw-bold position-absolute top-0 start-0 lh-1 how-step-number" aria-hidden="true">
-                  1
-                </span>
-
-                <p id="sticky-step-text-mobile" class="fw-lighter text-fedbiomed-primary mb-0 position-relative how-step-text">
-                  Researchers send training plan
-                </p>
-              </div>
-            </div>
+        <!-- Sticky animation -->
+        <div class="how-animation-sticky">
+          <div class="how-animation-frame">
+            <canvas id="how-animation-canvas" aria-hidden="true"></canvas>
           </div>
-
-          <img class="nn-floating" alt="" aria-hidden="true" src="/test-fbm-site/assets/icons/homepage/outline/NN_blue.svg" />
-          <ol class="visually-hidden">
-            
-              <li>Step 1: Researchers send training plan</li>
-            
-              <li>Step 2: Hospitals train data locally</li>
-            
-              <li>Step 3: The models are then securely aggregated and the final model is sent back to the institutions</li>
-            
-          </ol>
-
-          
-          <div class="how-step-trigger d-flex align-items-center justify-content-center how-step-block" data-step-number="1" data-step-text="Researchers send training plan">
-            <div class="how-visual position-relative d-inline-block">
-              <img class="how-base-icon" alt="Step 1: Researchers send training plan" src="/test-fbm-site/assets/icons/homepage/outline/how-it-works_1.svg" />
-              <span class="nn-anchor"></span>
-            </div>
-          </div>
-          
-          <div class="how-step-trigger d-flex align-items-center justify-content-center how-step-block" data-step-number="2" data-step-text="Hospitals train data locally">
-            <div class="how-visual position-relative d-inline-block">
-              <img class="how-base-icon" alt="Step 2: Hospitals train data locally" src="/test-fbm-site/assets/icons/homepage/outline/how-it-works_2.svg" />
-              <span class="nn-anchor"></span>
-            </div>
-          </div>
-          
-          <div class="how-step-trigger d-flex align-items-center justify-content-center how-step-block" data-step-number="3" data-step-text="The models are then securely aggregated and the final model is sent back to the institutions">
-            <div class="how-visual position-relative d-inline-block">
-              <img class="how-base-icon" alt="Step 3: Models aggregated and final model sent back to the institutions" src="/test-fbm-site/assets/icons/homepage/outline/how-it-works_3.svg" />
-              <span class="nn-anchor"></span>
-            </div>
-          </div>
-          
         </div>
       </div>
+
+      <!-- Scroll area -->
+      <div id="how-animation-track" class="how-animation-track">
+        <div class="how-scroll-step"></div>
+        <div class="how-scroll-step"></div>
+        <div class="how-scroll-step"></div>
+      </div>
+
     </div>
   </div>
 </section>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const triggers = document.querySelectorAll(".how-step-trigger");
-  const numberEl = document.getElementById("sticky-step-number");
-  const textEl = document.getElementById("sticky-step-text");
-  const numberMobileEl = document.getElementById("sticky-step-number-mobile");
-  const textMobileEl = document.getElementById("sticky-step-text-mobile");
-  const floatingNN = document.querySelector(".nn-floating");
-  const visuals = document.querySelector(".how-visuals");
+  const canvas = document.getElementById("how-animation-canvas");
+  if (!canvas) return;
 
-  let activeTrigger = triggers[0] || null;
+  const ctx = canvas.getContext("2d");
+  const track = document.getElementById("how-animation-track");
+  const stepStage = document.getElementById("how-step-stage");
+  const stepPanels = [
+    document.getElementById("how-step-panel-0"),
+    document.getElementById("how-step-panel-1"),
+    document.getElementById("how-step-panel-2")
+  ];
 
-  function moveNNToAnchor(trigger) {
-    const anchor = trigger?.querySelector(".nn-anchor");
-    if (!anchor || !floatingNN || !visuals) return;
-
-    const anchorRect = anchor.getBoundingClientRect();
-    const visualsRect = visuals.getBoundingClientRect();
-
-    const x = anchorRect.left - visualsRect.left;
-    const y = anchorRect.top - visualsRect.top;
-
-    floatingNN.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
-  }
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          activeTrigger = entry.target;
-
-          if (numberEl) numberEl.textContent = entry.target.dataset.stepNumber;
-          if (textEl) textEl.textContent = entry.target.dataset.stepText;
-
-          if (numberMobileEl) numberMobileEl.textContent = entry.target.dataset.stepNumber;
-          if (textMobileEl) textMobileEl.textContent = entry.target.dataset.stepText;
-
-          moveNNToAnchor(entry.target);
-        }
-      });
+  const steps = [
+    {
+      start: 0,
+      end: 60
     },
     {
-      threshold: 0.55,
-      rootMargin: "-10% 0px -10% 0px"
+      start: 61,
+      end: 206
+    },
+    {
+      start: 207,
+      end: 297
     }
-  );
+  ];
 
-  triggers.forEach((trigger) => observer.observe(trigger));
+  const lastFrame = 297;
+  const frameCount = lastFrame + 1;
+  const frames = new Array(frameCount);
 
-  if (activeTrigger) {
-    moveNNToAnchor(activeTrigger);
+  let targetFrame = 0;
+  let displayFrame = 0;
+  let currentDrawnFrame = -1;
+  let animationStarted = false;
+
+  function getFramePath(index) {
+    const padded = String(index).padStart(5, "0");
+    return "/test-fbm-site/assets/img/how-it-works/" + "how-it-works_jpeg_" + padded + ".jpg";
   }
 
+  function clamp(value, min, max) {
+    return Math.max(min, Math.min(max, value));
+  }
+
+  function lerp(a, b, t) {
+    return a + (b - a) * t;
+  }
+
+  function getStepTravel() {
+    if (window.innerWidth <= 767.98) return Math.round(window.innerHeight * 0.42);
+    if (window.innerWidth <= 991.98) return Math.round(window.innerHeight * 0.46);
+    return Math.round(window.innerHeight * 0.52);
+  }
+
+  function resizeCanvas() {
+    const rect = canvas.getBoundingClientRect();
+    const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+
+    canvas.width = Math.round(rect.width * dpr);
+    canvas.height = Math.round(rect.height * dpr);
+
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.scale(dpr, dpr);
+
+    drawFrame(Math.round(displayFrame));
+    updateStepPanels(displayFrame);
+  }
+
+  function drawFrame(index) {
+    const img = frames[index];
+    if (!img || !img.complete) return false;
+
+    const w = canvas.clientWidth;
+    const h = canvas.clientHeight;
+
+    ctx.clearRect(0, 0, w, h);
+
+    const imageRatio = img.width / img.height;
+    const canvasRatio = w / h;
+
+    let drawWidth, drawHeight;
+
+    if (imageRatio > canvasRatio) {
+      drawWidth = w;
+      drawHeight = w / imageRatio;
+    } else {
+      drawHeight = h;
+      drawWidth = h * imageRatio;
+    }
+
+    const x = (w - drawWidth) / 2;
+    const y = (h - drawHeight) / 2;
+
+    ctx.drawImage(img, x, y, drawWidth, drawHeight);
+    return true;
+  }
+
+  function getTransitionProgress(frame, index) {
+    const step = steps[index];
+    const range = step.end - step.start + 1;
+    return clamp((frame - step.start) / range, 0, 1);
+  }
+
+  function updateStepPanels(frame) {
+    if (!stepStage) return;
+
+    const travel = getStepTravel();
+
+    const values = [
+      { y: travel, o: 0, z: 1 },
+      { y: travel, o: 0, z: 1 },
+      { y: travel, o: 0, z: 1 }
+    ];
+
+    function setState(currentIndex, nextIndex, progress) {
+      const p = clamp(progress, 0, 1);
+
+      values[currentIndex] = {
+        y: 0,
+        o: lerp(1, 0, p),
+        z: 1
+      };
+
+      values[nextIndex] = {
+        y: lerp(travel, 0, p),
+        o: lerp(0, 1, p),
+        z: 2
+      };
+
+      if (p >= 0.999) {
+        values[currentIndex] = {
+          y: -travel,
+          o: 0,
+          z: 1
+        };
+      }
+    }
+
+    if (frame <= steps[0].end) {
+      const p = getTransitionProgress(frame, 0);
+      setState(0, 1, p);
+    } else if (frame <= steps[1].end) {
+      const p = getTransitionProgress(frame, 1);
+
+      values[0] = { y: -travel, o: 0, z: 1 };
+      setState(1, 2, p);
+    } else {
+      values[0] = { y: -travel, o: 0, z: 1 };
+      values[1] = { y: -travel, o: 0, z: 1 };
+      values[2] = { y: 0, o: 1, z: 2 };
+    }
+
+    stepPanels.forEach(function (panel, index) {
+      if (!panel) return;
+      panel.style.transform = "translateY(" + values[index].y + "px)";
+      panel.style.opacity = values[index].o;
+      panel.style.zIndex = values[index].z;
+    });
+  }
+
+  function updateTargetFromScroll() {
+    if (!track) return;
+
+    const rect = track.getBoundingClientRect();
+    const viewportH = window.innerHeight;
+
+    const start = viewportH * 0.50;
+    const end = rect.height - viewportH * 0.35;
+    const distance = end - start;
+
+    if (distance <= 0) return;
+
+    let progress = (start - rect.top) / distance;
+    progress = clamp(progress, 0, 1);
+
+    targetFrame = progress * lastFrame;
+  }
+
+  function animate() {
+    const diff = targetFrame - displayFrame;
+
+    if (Math.abs(diff) > 0.01) {
+      displayFrame += diff * 0.22;
+    } else {
+      displayFrame = targetFrame;
+    }
+
+    const roundedFrame = Math.floor(displayFrame);
+
+    if (roundedFrame !== currentDrawnFrame) {
+      const drawn = drawFrame(roundedFrame);
+      if (drawn) {
+        currentDrawnFrame = roundedFrame;
+      }
+    }
+
+    updateStepPanels(displayFrame);
+    requestAnimationFrame(animate);
+  }
+
+  function preloadFrames() {
+    for (let i = 0; i < frameCount; i++) {
+      const img = new Image();
+      img.decoding = "async";
+      img.loading = "eager";
+      img.src = getFramePath(i);
+
+      img.onload = function () {
+        frames[i] = img;
+
+        if (!animationStarted && i === 0) {
+          animationStarted = true;
+          resizeCanvas();
+          updateTargetFromScroll();
+          drawFrame(0);
+          updateStepPanels(0);
+          requestAnimationFrame(animate);
+        }
+      };
+
+      img.onerror = function () {
+        console.error("Frame non trovato:", getFramePath(i));
+      };
+
+      frames[i] = img;
+    }
+  }
+
+  preloadFrames();
+
   window.addEventListener("resize", function () {
-    if (activeTrigger) moveNNToAnchor(activeTrigger);
+    resizeCanvas();
+    updateTargetFromScroll();
   });
+
+  window.addEventListener("scroll", updateTargetFromScroll, { passive: true });
+
+  setTimeout(function () {
+    resizeCanvas();
+    updateTargetFromScroll();
+  }, 100);
 });
 </script>
 <section class="wrapper bg-light text-fedbiomed-primary" aria-labelledby="who-title">
-  <div class="container pt-14 pt-md-17 pb-14 pb-md-17">
+  <div class="container pb-14 pb-md-17">
     <h2 id="who-title" class="display-3 mb-8 text-fedbiomed-primary text-center text-lg-start"><span class="text-fedbiomed-tertiary">Who</span> it is for</h2>
 
     
@@ -551,8 +716,8 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
 
         <div class="col-lg-3 col-md-6 col-12 text-center text-md-end">
-          <a href="#" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl mt-3">
-            Explore role ➤
+          <a href="#" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl mt-3" style="width: 10rem;">
+            Explore deployment ➤
           </a>
         </div>
 
@@ -583,8 +748,8 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
 
         <div class="col-lg-3 col-md-6 col-12 text-center text-md-end">
-          <a href="#" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl mt-3">
-            Explore role ➤
+          <a href="#" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl mt-3" style="width: 10rem;">
+            Explore research ➤
           </a>
         </div>
 
@@ -615,8 +780,8 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
 
         <div class="col-lg-3 col-md-6 col-12 text-center text-md-end">
-          <a href="#" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl mt-3">
-            Explore role ➤
+          <a href="#" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl mt-3" style="width: 10rem;">
+            Explore contribution ➤
           </a>
         </div>
 
@@ -666,7 +831,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <figure class="mb-0 d-flex justify-content-center align-items-center w-100">
           
           <a href="https://www.centreantoinelacassagne.org/" class="d-flex justify-content-center align-items-center w-50">
-            <img src="/assets/icons/homepage/logos/antoine_lacassagne.png" alt="Antoine Lacassagne unicancer" class="img-fluid" />
+            <img src="/test-fbm-site/assets/icons/homepage/logos/antoine_lacassagne.png" alt="Antoine Lacassagne unicancer logo" class="img-fluid" />
           </a>
           
         </figure>
@@ -676,7 +841,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <figure class="mb-0 d-flex justify-content-center align-items-center w-100">
           
           <a href="https://curie.fr/" class="d-flex justify-content-center align-items-center w-50">
-            <img src="/assets/icons/homepage/logos/institut_curie.png" alt="Institut Curie" class="img-fluid" />
+            <img src="/test-fbm-site/assets/icons/homepage/logos/institut_curie.png" alt="Institut Curie logo" class="img-fluid" />
           </a>
           
         </figure>
@@ -686,7 +851,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <figure class="mb-0 d-flex justify-content-center align-items-center w-100">
           
           <a href="https://www.becquerel.fr/" class="d-flex justify-content-center align-items-center w-50">
-            <img src="/assets/icons/homepage/logos/becquerel.png" alt="Becquerel unicancer" class="img-fluid" />
+            <img src="/test-fbm-site/assets/icons/homepage/logos/becquerel.png" alt="Becquerel unicancer logo" class="img-fluid" />
           </a>
           
         </figure>
