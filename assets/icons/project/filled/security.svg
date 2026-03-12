@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Sfumatura_senza_nome_11);
+      }
+
+      .cls-2 {
+        fill: url(#Sfumatura_senza_nome_113);
+      }
+    </style>
+    <linearGradient id="Sfumatura_senza_nome_113" data-name="Sfumatura senza nome 113" x1="4144.21" y1="-17476.84" x2="4644.03" y2="-17476.84" gradientTransform="translate(4894.12 -16927.64) rotate(-180)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0077b6"/>
+      <stop offset="1" stop-color="#03045e"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_11" data-name="Sfumatura senza nome 11" x1="388.97" y1="-1873.32" x2="611.03" y2="-1873.32" gradientTransform="translate(0 -1391.18) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#90e0ef"/>
+      <stop offset="1" stop-color="#00b4d8"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-2" d="M488.9,826.65c5.7,7.1,16.49,7.1,22.19,0,54.73-68.17,146.65-119.14,195.07-233.01,43.07-101.3,33.28-234.43,43.61-311.07,1.15-8.55-5.46-16.16-14.08-16.16h-471.38c-8.62,0-15.24,7.61-14.08,16.16,10.34,76.64.54,209.77,43.61,311.07,48.42,113.87,140.34,164.84,195.07,233.01Z"/>
+  <path class="cls-1" d="M585.65,436.67c.27-13.55.45-32.74-.36-41.32-3.87-40.81-42.11-69.9-81.98-71.4-42.21-1.59-84.46,28.13-88.6,71.4-.82,8.58-.64,27.77-.36,41.32h-14.31c-6.11,0-11.06,4.95-11.06,11.06v181.61c0,6.11,4.95,11.06,11.06,11.06h199.93c6.11,0,11.06-4.95,11.06-11.06v-181.61c0-6.11-4.95-11.06-11.06-11.06h-14.31ZM514.33,570.61h-28.67l7.36-29.23c-5.27-2.62-8.86-8.1-8.7-14.42.2-8.04,6.63-14.74,14.65-15.25,9.11-.57,16.69,6.65,16.69,15.64,0,6.15-3.55,11.45-8.7,14.02l7.36,29.23h0ZM558.34,435.97h-115.94c-4.39,0-7.96-3.53-8-7.91-.1-9.31-.07-19.19.42-24.5,3.24-35.45,32.02-60.73,65.18-61.29,31.35-.53,62.9,27.86,65.94,61.29.48,5.32.52,15.18.41,24.5-.05,4.39-3.62,7.91-8,7.91h0Z"/>
+</svg>
