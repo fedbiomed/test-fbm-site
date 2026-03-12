@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://fedbiomed.org/test-fbm-site/authors/jane-smith/</loc>
-<lastmod>2026-03-12T16:22:04+01:00</lastmod>
+<lastmod>2026-03-12T16:44:09+01:00</lastmod>
 </url>
 <url>
 <loc>https://fedbiomed.org/test-fbm-site/authors/john-doe/</loc>
-<lastmod>2026-03-12T16:22:04+01:00</lastmod>
+<lastmod>2026-03-12T16:44:09+01:00</lastmod>
 </url>
 <url>
 <loc>https://fedbiomed.org/test-fbm-site/authors/tortoiz-themes/</loc>
-<lastmod>2026-03-12T16:22:04+01:00</lastmod>
+<lastmod>2026-03-12T16:44:09+01:00</lastmod>
 </url>
 <url>
 <loc>https://fedbiomed.org/test-fbm-site/projects/sample-with-slider-2/</loc>
@@ -471,7 +471,7 @@
 <loc>https://fedbiomed.org/test-fbm-site/docs/elements/progressbar/</loc>
 </url>
 <url>
-<loc>https://fedbiomed.org/test-fbm-site/project</loc>
+<loc>https://fedbiomed.org/test-fbm-site/project/</loc>
 </url>
 <url>
 <loc>https://fedbiomed.org/test-fbm-site/projects-filter-grid/</loc>
