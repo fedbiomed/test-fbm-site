@@ -226,42 +226,6 @@
         <div class="row gx-md-8 gx-xl-12 gy-10 gy-md-12 isotope">
           
           
-          <div class="item col-md-5">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/sample-banner-image-4/">
-                <img src="/assets/img/photos/rp3.webp" 
-                     srcset="/assets/img/photos/rp3@2x.webp 2x" 
-                     alt="Creative Branding Campaign" />
-              </a>
-            </figure>
-            <div class="post-category mb-3 text-branding">Branding</div>
-            <h3 class="post-title">Creative Branding Campaign</h3>
-          </div>
-          
-          <div class="item col-md-7 mt-md-17">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/demo-19-1/">
-                <img src="/assets/img/photos/pd8.webp" 
-                     srcset="/assets/img/photos/pd8@2x.webp 2x" 
-                     alt="Demo 19-1 Ipsum Decoration Lorem Ipsum" />
-              </a>
-            </figure>
-            <div class="post-category mb-3 text-decoration">Decoration</div>
-            <h3 class="post-title">Demo 19-1 Ipsum Decoration Lorem Ipsum</h3>
-          </div>
-          
-          <div class="item col-md-5">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/demo-19-2/">
-                <img src="/assets/img/photos/pd9.webp" 
-                     srcset="/assets/img/photos/pd9@2x.webp 2x" 
-                     alt="Demo 19-2 Lorem Decoration Lorem Ipsum" />
-              </a>
-            </figure>
-            <div class="post-category mb-3 text-decoration">Decoration</div>
-            <h3 class="post-title">Demo 19-2 Lorem Decoration Lorem Ipsum</h3>
-          </div>
-          
         </div>
       </div>
     </div>
@@ -291,7 +255,7 @@
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"projects-tiles"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"project grid grid-view"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row gx-md-8 gx-xl-12 gy-10 gy-md-12 isotope"</span><span class="nt">&gt;</span>
-          {% assign featured_projects = site.projects | where: "featured", true | limit: 3 %}
+          {% assign featured_projects = site.real_projects | where: "featured", true | limit: 3 %}
           {% for project in featured_projects %}
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item {% if forloop.index == 2 %}col-md-7 mt-md-17{% else %}col-md-5{% endif %}"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"lift rounded mb-6"</span><span class="nt">&gt;</span>
@@ -372,106 +336,85 @@
           
           <div class="swiper-slide">
             <figure class="rounded mb-6">
-              <img src="/assets/img/photos/pp26.webp" 
-                   srcset="/assets/img/photos/pp26@2x.webp 2x" 
-                   alt="Modern Brand Identity Design" />
-              
-              <a class="item-link" 
-                 href="/assets/img/photos/pp2.webp" 
-                 data-glightbox 
-                 data-gallery="projects-group">
-                <i class="uil uil-focus-add"></i>
-              </a>
+              <img src="/assets/img/projects/research.png" 
+                   srcset="/assets/img/projects/research.png 2x" 
+                   alt="Federated Research on Multicenter Medical Imaging" />
               
             </figure>
             <div class="project-details d-flex justify-content-center flex-column">
               <div class="post-header">
                 <h2 class="post-title h3">
-                  <a href="/projects/sample-featured-image/" class="link-dark">Modern Brand Identity Design</a>
+                  <a href="/real_projects/2026-01-15-multicenter-medical-imaging%20copy%204/" class="link-dark">Federated Research on Multicenter Medical Imaging</a>
                 </h2>
-                <div class="post-category text-ash">Design</div>
+                <div class="post-category text-ash">Research Context</div>
               </div>
             </div>
           </div>
           
           <div class="swiper-slide">
             <figure class="rounded mb-6">
-              <img src="/assets/img/photos/pp27.webp" 
-                   srcset="/assets/img/photos/pp27@2x.webp 2x" 
-                   alt="Luxury Packaging Design" />
+              <img src="/assets/img/projects/research.png" 
+                   srcset="/assets/img/projects/research.png 2x" 
+                   alt="Federated Research on Multicenter Medical Imaging" />
               
             </figure>
             <div class="project-details d-flex justify-content-center flex-column">
               <div class="post-header">
                 <h2 class="post-title h3">
-                  <a href="/projects/sample-with-slider-4/" class="link-dark">Luxury Packaging Design</a>
+                  <a href="/real_projects/2026-01-15-multicenter-medical-imaging%20copy%203/" class="link-dark">Federated Research on Multicenter Medical Imaging</a>
                 </h2>
-                <div class="post-category text-ash">Packaging</div>
+                <div class="post-category text-ash">Research Context</div>
               </div>
             </div>
           </div>
           
           <div class="swiper-slide">
             <figure class="rounded mb-6">
-              <img src="/assets/img/photos/rp2.webp" 
-                   srcset="/assets/img/photos/rp2@2x.webp 2x" 
-                   alt="Interactive Museum Experience" />
-              
-              <a class="item-link" 
-                 href="" 
-                 data-glightbox 
-                 data-gallery="projects-group">
-                <i class="uil uil-focus-add"></i>
-              </a>
+              <img src="/assets/img/projects/research.png" 
+                   srcset="/assets/img/projects/research.png 2x" 
+                   alt="Federated Research on Multicenter Medical Imaging" />
               
             </figure>
             <div class="project-details d-flex justify-content-center flex-column">
               <div class="post-header">
                 <h2 class="post-title h3">
-                  <a href="/projects/sample-banner-image-3/" class="link-dark">Interactive Museum Experience</a>
+                  <a href="/real_projects/2026-01-15-multicenter-medical-imaging%20copy%202/" class="link-dark">Federated Research on Multicenter Medical Imaging</a>
                 </h2>
-                <div class="post-category text-ash">Branding</div>
+                <div class="post-category text-ash">Research Context</div>
               </div>
             </div>
           </div>
           
           <div class="swiper-slide">
             <figure class="rounded mb-6">
-              <img src="/assets/img/photos/pd7.webp" 
-                   srcset="/assets/img/photos/pd7@2x.webp 2x" 
-                   alt="Fashion Editorial Photography" />
+              <img src="/assets/img/projects/usecase.png" 
+                   srcset="/assets/img/projects/usecase.png 2x" 
+                   alt="Federated Learning Across European Institutions" />
               
             </figure>
             <div class="project-details d-flex justify-content-center flex-column">
               <div class="post-header">
                 <h2 class="post-title h3">
-                  <a href="/projects/sample-bg-overlay-2/" class="link-dark">Fashion Editorial Photography</a>
+                  <a href="/real_projects/2026-01-15-federated-learning-european-hospitals%20copy%2015/" class="link-dark">Federated Learning Across European Institutions</a>
                 </h2>
-                <div class="post-category text-ash">Photography</div>
+                <div class="post-category text-ash">Use Case</div>
               </div>
             </div>
           </div>
           
           <div class="swiper-slide">
             <figure class="rounded mb-6">
-              <img src="/assets/img/photos/sp2.webp" 
-                   srcset="/assets/img/photos/sp2@2x.webp 2x" 
-                   alt="Demo 7-1 Augmented Reality" />
-              
-              <a class="item-link" 
-                 href="" 
-                 data-glightbox 
-                 data-gallery="projects-group">
-                <i class="uil uil-focus-add"></i>
-              </a>
+              <img src="/assets/img/projects/usecase.png" 
+                   srcset="/assets/img/projects/usecase.png 2x" 
+                   alt="Federated Learning Across European Institutions" />
               
             </figure>
             <div class="project-details d-flex justify-content-center flex-column">
               <div class="post-header">
                 <h2 class="post-title h3">
-                  <a href="/projects/demo-7-1/" class="link-dark">Demo 7-1 Augmented Reality</a>
+                  <a href="/real_projects/2026-01-15-federated-learning-european-hospitals%20copy%2014/" class="link-dark">Federated Learning Across European Institutions</a>
                 </h2>
-                <div class="post-category text-ash">Augmented Reality</div>
+                <div class="post-category text-ash">Use Case</div>
               </div>
             </div>
           </div>
@@ -510,7 +453,7 @@
          <span class="na">data-items-xs=</span><span class="s">"1"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper-wrapper"</span><span class="nt">&gt;</span>
-          {% assign projects = site.projects | sort: 'date' | reverse %}
+          {% assign projects = site.real_projects | sort: 'date' | reverse %}
           {% for project in projects %}
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper-slide"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"rounded mb-6"</span><span class="nt">&gt;</span>
@@ -605,270 +548,6 @@
 
           
           
-          <div class="item col-md-6">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/sample-banner-image-4/">
-                <img src="/assets/img/photos/rp3.webp" 
-                     srcset="/assets/img/photos/rp3@2x.webp 2x" 
-                     alt="Creative Branding Campaign" />
-              </a>
-            </figure>
-            <div class="post-category text-line mb-3 text-branding">Branding</div>
-            <h2 class="post-title h3">Creative Branding Campaign</h2>
-          </div>
-          
-          <div class="item col-md-6">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/demo-19-1/">
-                <img src="/assets/img/photos/pd8.webp" 
-                     srcset="/assets/img/photos/pd8@2x.webp 2x" 
-                     alt="Demo 19-1 Ipsum Decoration Lorem Ipsum" />
-              </a>
-            </figure>
-            <div class="post-category text-line mb-3 text-decoration">Decoration</div>
-            <h2 class="post-title h3">Demo 19-1 Ipsum Decoration Lorem Ipsum</h2>
-          </div>
-          
-          <div class="item col-md-6">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/demo-19-2/">
-                <img src="/assets/img/photos/pd9.webp" 
-                     srcset="/assets/img/photos/pd9@2x.webp 2x" 
-                     alt="Demo 19-2 Lorem Decoration Lorem Ipsum" />
-              </a>
-            </figure>
-            <div class="post-category text-line mb-3 text-decoration">Decoration</div>
-            <h2 class="post-title h3">Demo 19-2 Lorem Decoration Lorem Ipsum</h2>
-          </div>
-          
-          <div class="item col-md-6">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/demo-19-3/">
-                <img src="/assets/img/photos/pd10.webp" 
-                     srcset="/assets/img/photos/pd10@2x.webp 2x" 
-                     alt="Demo 19-3 Curve Decoration Lorem Ipsum" />
-              </a>
-            </figure>
-            <div class="post-category text-line mb-3 text-decoration">Decoration</div>
-            <h2 class="post-title h3">Demo 19-3 Curve Decoration Lorem Ipsum</h2>
-          </div>
-          
-          <div class="item col-md-6">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/demo-19-4/">
-                <img src="/assets/img/photos/pd11.webp" 
-                     srcset="/assets/img/photos/pd11@2x.webp 2x" 
-                     alt="Demo 19-4 Round Decoration Lorem Ipsum" />
-              </a>
-            </figure>
-            <div class="post-category text-line mb-3 text-decoration">Decoration</div>
-            <h2 class="post-title h3">Demo 19-4 Round Decoration Lorem Ipsum</h2>
-          </div>
-          
-          <div class="item col-md-6">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/demo-19/">
-                <img src="/assets/img/photos/pd7.webp" 
-                     srcset="/assets/img/photos/pd7@2x.webp 2x" 
-                     alt="Demo 19 Curate Decoration Lorem Ipsum" />
-              </a>
-            </figure>
-            <div class="post-category text-line mb-3 text-decoration">Decoration</div>
-            <h2 class="post-title h3">Demo 19 Curate Decoration Lorem Ipsum</h2>
-          </div>
-          
-          <div class="item col-md-6">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/demo-2-1/">
-                <img src="/assets/img/photos/pp13.webp" 
-                     srcset="/assets/img/photos/pp13@2x.webp 2x" 
-                     alt="Demo 2" />
-              </a>
-            </figure>
-            <div class="post-category text-line mb-3 text-products">Products</div>
-            <h2 class="post-title h3">Demo 2</h2>
-          </div>
-          
-          <div class="item col-md-6">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/demo-2-2/">
-                <img src="/assets/img/photos/pp14.webp" 
-                     srcset="/assets/img/photos/pp14@2x.webp 2x" 
-                     alt="Demo 2" />
-              </a>
-            </figure>
-            <div class="post-category text-line mb-3 text-products">Products</div>
-            <h2 class="post-title h3">Demo 2</h2>
-          </div>
-          
-          <div class="item col-md-6">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/demo-2-3/">
-                <img src="/assets/img/photos/pp15.webp" 
-                     srcset="/assets/img/photos/pp15@2x.webp 2x" 
-                     alt="Demo 2" />
-              </a>
-            </figure>
-            <div class="post-category text-line mb-3 text-products">Products</div>
-            <h2 class="post-title h3">Demo 2</h2>
-          </div>
-          
-          <div class="item col-md-6">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/demo-2-4/">
-                <img src="/assets/img/photos/pp16.webp" 
-                     srcset="/assets/img/photos/pp16@2x.webp 2x" 
-                     alt="Demo 2" />
-              </a>
-            </figure>
-            <div class="post-category text-line mb-3 text-products">Products</div>
-            <h2 class="post-title h3">Demo 2</h2>
-          </div>
-          
-          <div class="item col-md-6">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/demo-2-5/">
-                <img src="/assets/img/photos/pp17.webp" 
-                     srcset="/assets/img/photos/pp17@2x.webp 2x" 
-                     alt="Demo 2" />
-              </a>
-            </figure>
-            <div class="post-category text-line mb-3 text-products">Products</div>
-            <h2 class="post-title h3">Demo 2</h2>
-          </div>
-          
-          <div class="item col-md-6">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/demo-2-6/">
-                <img src="/assets/img/photos/pp18.webp" 
-                     srcset="/assets/img/photos/pp18@2x.webp 2x" 
-                     alt="Demo 2" />
-              </a>
-            </figure>
-            <div class="post-category text-line mb-3 text-products">Products</div>
-            <h2 class="post-title h3">Demo 2</h2>
-          </div>
-          
-          <div class="item col-md-6">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/demo-2/">
-                <img src="/assets/img/photos/pp12.webp" 
-                     srcset="/assets/img/photos/pp12@2x.webp 2x" 
-                     alt="Demo 2" />
-              </a>
-            </figure>
-            <div class="post-category text-line mb-3 text-products">Products</div>
-            <h2 class="post-title h3">Demo 2</h2>
-          </div>
-          
-          <div class="item col-md-6">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/demo-7-1/">
-                <img src="/assets/img/photos/sp2.webp" 
-                     srcset="/assets/img/photos/sp2@2x.webp 2x" 
-                     alt="Demo 7-1 Augmented Reality" />
-              </a>
-            </figure>
-            <div class="post-category text-line mb-3 text-augmented reality">Augmented Reality</div>
-            <h2 class="post-title h3">Demo 7-1 Augmented Reality</h2>
-          </div>
-          
-          <div class="item col-md-6">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/demo-7-2/">
-                <img src="/assets/img/photos/sp3.webp" 
-                     srcset="/assets/img/photos/sp3@2x.webp 2x" 
-                     alt="Demo 7-2 LOrem Ipsum Reality" />
-              </a>
-            </figure>
-            <div class="post-category text-line mb-3 text-augmented reality">Augmented Reality</div>
-            <h2 class="post-title h3">Demo 7-2 LOrem Ipsum Reality</h2>
-          </div>
-          
-          <div class="item col-md-6">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/demo-7-3/">
-                <img src="/assets/img/photos/sp4.webp" 
-                     srcset="/assets/img/photos/sp4@2x.webp 2x" 
-                     alt="Demo 7-3 Luvelle Ipsum Reality" />
-              </a>
-            </figure>
-            <div class="post-category text-line mb-3 text-augmented reality">Augmented Reality</div>
-            <h2 class="post-title h3">Demo 7-3 Luvelle Ipsum Reality</h2>
-          </div>
-          
-          <div class="item col-md-6">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/demo-7-4/">
-                <img src="/assets/img/photos/sp5.webp" 
-                     srcset="/assets/img/photos/sp5@2x.webp 2x" 
-                     alt="Demo 7-4 Luvelle Ipsum Reality" />
-              </a>
-            </figure>
-            <div class="post-category text-line mb-3 text-augmented reality">Augmented Reality</div>
-            <h2 class="post-title h3">Demo 7-4 Luvelle Ipsum Reality</h2>
-          </div>
-          
-          <div class="item col-md-6">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/demo-7-5/">
-                <img src="/assets/img/photos/sp6.webp" 
-                     srcset="/assets/img/photos/sp6@2x.webp 2x" 
-                     alt="Demo 7-5 Luvelle Ipsum Reality" />
-              </a>
-            </figure>
-            <div class="post-category text-line mb-3 text-augmented reality">Augmented Reality</div>
-            <h2 class="post-title h3">Demo 7-5 Luvelle Ipsum Reality</h2>
-          </div>
-          
-          <div class="item col-md-6">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/demo-7-6/">
-                <img src="/assets/img/photos/sp5.webp" 
-                     srcset="/assets/img/photos/sp5@2x.webp 2x" 
-                     alt="Demo 7-6 Luvelle Ipsum Reality" />
-              </a>
-            </figure>
-            <div class="post-category text-line mb-3 text-augmented reality">Augmented Reality</div>
-            <h2 class="post-title h3">Demo 7-6 Luvelle Ipsum Reality</h2>
-          </div>
-          
-          <div class="item col-md-6">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/demo-7/">
-                <img src="/assets/img/photos/sp1.webp" 
-                     srcset="/assets/img/photos/sp1@2x.webp 2x" 
-                     alt="Demo 7 Reality is Augmented" />
-              </a>
-            </figure>
-            <div class="post-category text-line mb-3 text-augmented reality">Augmented Reality</div>
-            <h2 class="post-title h3">Demo 7 Reality is Augmented</h2>
-          </div>
-          
-          <div class="item col-md-6">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/sample-banner-image-2/">
-                <img src="/assets/img/photos/rp1.webp" 
-                     srcset="/assets/img/photos/rp1@2x.webp 2x" 
-                     alt="Mountain Resort Architecture" />
-              </a>
-            </figure>
-            <div class="post-category text-line mb-3 text-branding">Branding</div>
-            <h2 class="post-title h3">Mountain Resort Architecture</h2>
-          </div>
-          
-          <div class="item col-md-6">
-            <figure class="lift rounded mb-6">
-              <a href="/projects/sample-banner-image-3/">
-                <img src="/assets/img/photos/rp2.webp" 
-                     srcset="/assets/img/photos/rp2@2x.webp 2x" 
-                     alt="Interactive Museum Experience" />
-              </a>
-            </figure>
-            <div class="post-category text-line mb-3 text-branding">Branding</div>
-            <h2 class="post-title h3">Interactive Museum Experience</h2>
-          </div>
-          
         </div>
       </div>
     </div>
@@ -900,7 +579,7 @@
             <span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
 
-          {% assign featured_projects = site.projects | where: "featured", true | limit: 3 %}
+          {% assign featured_projects = site.real_projects | where: "featured", true | limit: 3 %}
           {% for project in featured_projects %}
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item col-md-6"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"lift rounded mb-6"</span><span class="nt">&gt;</span>
@@ -986,33 +665,33 @@
           
           <div class="swiper-slide">
             <figure class="rounded">
-              <img src="/assets/img/photos/pp26.webp" 
-                   srcset="/assets/img/photos/pp26@2x.webp 2x" 
-                   alt="Modern Brand Identity Design" />
+              <img src="/assets/img/projects/research.png" 
+                   srcset="/assets/img/projects/research.png 2x" 
+                   alt="Federated Research on Multicenter Medical Imaging" />
             </figure>
           </div>
           
           <div class="swiper-slide">
             <figure class="rounded">
-              <img src="/assets/img/photos/pp27.webp" 
-                   srcset="/assets/img/photos/pp27@2x.webp 2x" 
-                   alt="Luxury Packaging Design" />
+              <img src="/assets/img/projects/research.png" 
+                   srcset="/assets/img/projects/research.png 2x" 
+                   alt="Federated Research on Multicenter Medical Imaging" />
             </figure>
           </div>
           
           <div class="swiper-slide">
             <figure class="rounded">
-              <img src="/assets/img/photos/rp2.webp" 
-                   srcset="/assets/img/photos/rp2@2x.webp 2x" 
-                   alt="Interactive Museum Experience" />
+              <img src="/assets/img/projects/research.png" 
+                   srcset="/assets/img/projects/research.png 2x" 
+                   alt="Federated Research on Multicenter Medical Imaging" />
             </figure>
           </div>
           
           <div class="swiper-slide">
             <figure class="rounded">
-              <img src="/assets/img/photos/pd7.webp" 
-                   srcset="/assets/img/photos/pd7@2x.webp 2x" 
-                   alt="Fashion Editorial Photography" />
+              <img src="/assets/img/projects/usecase.png" 
+                   srcset="/assets/img/projects/usecase.png 2x" 
+                   alt="Federated Learning Across European Institutions" />
             </figure>
           </div>
           
@@ -1053,7 +732,7 @@
          <span class="na">data-items-xs=</span><span class="s">"1"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper-wrapper"</span><span class="nt">&gt;</span>
-          {% assign projects = site.projects | sort: 'date' | reverse %}
+          {% assign projects = site.real_projects | sort: 'date' | reverse %}
           {% for project in projects %}
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper-slide"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"rounded"</span><span class="nt">&gt;</span>
@@ -1127,594 +806,82 @@
       <div class="row gx-md-8 gy-10 gy-md-13 isotope">
         
         
-        <div class="project item col-md-6 col-xl-4 packaging">
+        <div class="project item col-md-6 col-xl-4 use-case">
           <figure class="lift rounded mb-6">
-            <a href="/projects/sample-with-slider-2/">
-              <img src="/assets/img/photos/pp30.webp" 
-                   srcset="/assets/img/photos/pp30@2x.webp 2x" 
-                   alt="Interior Design: Urban Loft Renovation" />
+            <a href="/real_projects/2026-01-15-federated-learning-european-hospitals%20copy%2014/">
+              <img src="/assets/img/projects/usecase.png" 
+                   srcset="/assets/img/projects/usecase.png 2x" 
+                   alt="Federated Learning Across European Institutions" />
             </a>
           </figure>
           <div class="project-details d-flex justify-content-center flex-column">
             <div class="post-header">
-              <div class="post-category text-line mb-3 text-packaging">Packaging</div>
-              <h2 class="post-title h3">Interior Design: Urban Loft Renovation</h2>
+              <div class="post-category text-line mb-3 text-use case">Use Case</div>
+              <h2 class="post-title h3">Federated Learning Across European Institutions</h2>
             </div>
           </div>
         </div>
         
-        <div class="project item col-md-6 col-xl-4 demo">
+        <div class="project item col-md-6 col-xl-4 use-case">
           <figure class="lift rounded mb-6">
-            <a href="/projects/sample-banner-image-5/">
-              <img src="/assets/img/photos/f2.webp" 
-                   srcset="/assets/img/photos/f2@2x.webp 2x" 
-                   alt="Sweden Brand Design" />
+            <a href="/real_projects/2026-01-15-federated-learning-european-hospitals%20copy%2015/">
+              <img src="/assets/img/projects/usecase.png" 
+                   srcset="/assets/img/projects/usecase.png 2x" 
+                   alt="Federated Learning Across European Institutions" />
             </a>
           </figure>
           <div class="project-details d-flex justify-content-center flex-column">
             <div class="post-header">
-              <div class="post-category text-line mb-3 text-demo">Demo</div>
-              <h2 class="post-title h3">Sweden Brand Design</h2>
+              <div class="post-category text-line mb-3 text-use case">Use Case</div>
+              <h2 class="post-title h3">Federated Learning Across European Institutions</h2>
             </div>
           </div>
         </div>
         
-        <div class="project item col-md-6 col-xl-4 demo">
+        <div class="project item col-md-6 col-xl-4 research-context">
           <figure class="lift rounded mb-6">
-            <a href="/projects/sample-banner-image-6/">
-              <img src="/assets/img/photos/f3.webp" 
-                   srcset="/assets/img/photos/f3@2x.webp 2x" 
-                   alt="Scotland Brand Design" />
+            <a href="/real_projects/2026-01-15-multicenter-medical-imaging%20copy%202/">
+              <img src="/assets/img/projects/research.png" 
+                   srcset="/assets/img/projects/research.png 2x" 
+                   alt="Federated Research on Multicenter Medical Imaging" />
             </a>
           </figure>
           <div class="project-details d-flex justify-content-center flex-column">
             <div class="post-header">
-              <div class="post-category text-line mb-3 text-demo">Demo</div>
-              <h2 class="post-title h3">Scotland Brand Design</h2>
+              <div class="post-category text-line mb-3 text-research context">Research Context</div>
+              <h2 class="post-title h3">Federated Research on Multicenter Medical Imaging</h2>
             </div>
           </div>
         </div>
         
-        <div class="project item col-md-6 col-xl-4 branding">
+        <div class="project item col-md-6 col-xl-4 research-context">
           <figure class="lift rounded mb-6">
-            <a href="/projects/sample-banner-image/">
-              <img src="/assets/img/photos/pd9.webp" 
-                   srcset="/assets/img/photos/pd9@2x.webp 2x" 
-                   alt="Memphis Brand Design" />
+            <a href="/real_projects/2026-01-15-multicenter-medical-imaging%20copy%203/">
+              <img src="/assets/img/projects/research.png" 
+                   srcset="/assets/img/projects/research.png 2x" 
+                   alt="Federated Research on Multicenter Medical Imaging" />
             </a>
           </figure>
           <div class="project-details d-flex justify-content-center flex-column">
             <div class="post-header">
-              <div class="post-category text-line mb-3 text-branding">Branding</div>
-              <h2 class="post-title h3">Memphis Brand Design</h2>
+              <div class="post-category text-line mb-3 text-research context">Research Context</div>
+              <h2 class="post-title h3">Federated Research on Multicenter Medical Imaging</h2>
             </div>
           </div>
         </div>
         
-        <div class="project item col-md-6 col-xl-4 packaging">
+        <div class="project item col-md-6 col-xl-4 research-context">
           <figure class="lift rounded mb-6">
-            <a href="/projects/sample-with-slider-3/">
-              <img src="/assets/img/photos/pp29.webp" 
-                   srcset="/assets/img/photos/pp29@2x.webp 2x" 
-                   alt="Tech Conference Event Design" />
+            <a href="/real_projects/2026-01-15-multicenter-medical-imaging%20copy%204/">
+              <img src="/assets/img/projects/research.png" 
+                   srcset="/assets/img/projects/research.png 2x" 
+                   alt="Federated Research on Multicenter Medical Imaging" />
             </a>
           </figure>
           <div class="project-details d-flex justify-content-center flex-column">
             <div class="post-header">
-              <div class="post-category text-line mb-3 text-packaging">Packaging</div>
-              <h2 class="post-title h3">Tech Conference Event Design</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 photography">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/sample-bg-overlay/">
-              <img src="/assets/img/photos/pd10.webp" 
-                   srcset="/assets/img/photos/pd10@2x.webp 2x" 
-                   alt="Architectural Photography Series Parturient Cursus" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-photography">Photography</div>
-              <h2 class="post-title h3">Architectural Photography Series Parturient Cursus</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 photography">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/sample-bg-overlay-3/">
-              <img src="/assets/img/photos/pd8.webp" 
-                   srcset="/assets/img/photos/pd8@2x.webp 2x" 
-                   alt="Motion Design Collection" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-photography">Photography</div>
-              <h2 class="post-title h3">Motion Design Collection</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 branding">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/sample-banner-image-4/">
-              <img src="/assets/img/photos/rp3.webp" 
-                   srcset="/assets/img/photos/rp3@2x.webp 2x" 
-                   alt="Creative Branding Campaign" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-branding">Branding</div>
-              <h2 class="post-title h3">Creative Branding Campaign</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 design">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/sample-featured-image-2/">
-              <img src="/assets/img/photos/pd11.webp" 
-                   srcset="/assets/img/photos/pd11@2x.webp 2x" 
-                   alt="Digital UX Research & Strategy" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-design">Design</div>
-              <h2 class="post-title h3">Digital UX Research & Strategy</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 design">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/sample-featured-image-3/">
-              <img src="/assets/img/photos/pp24.webp" 
-                   srcset="/assets/img/photos/pp24@2x.webp 2x" 
-                   alt="Eco-Friendly Packaging Redesign" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-design">Design</div>
-              <h2 class="post-title h3">Eco-Friendly Packaging Redesign</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 design">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/sample-featured-image-4/">
-              <img src="/assets/img/photos/pp25.webp" 
-                   srcset="/assets/img/photos/pp25@2x.webp 2x" 
-                   alt="Friendly Packaging Redesign" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-design">Design</div>
-              <h2 class="post-title h3">Friendly Packaging Redesign</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 photography">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/sample-bg-overlay-4/">
-              <img src="/assets/img/photos/pd9.webp" 
-                   srcset="/assets/img/photos/pd9@2x.webp 2x" 
-                   alt="Urban Landscape Photography" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-photography">Photography</div>
-              <h2 class="post-title h3">Urban Landscape Photography</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 packaging">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/sample-with-slider/">
-              <img src="/assets/img/photos/pp28.webp" 
-                   srcset="/assets/img/photos/pp28@2x.webp 2x" 
-                   alt="Coffee Packaging Design" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-packaging">Packaging</div>
-              <h2 class="post-title h3">Coffee Packaging Design</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 decoration">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/demo-19-1/">
-              <img src="/assets/img/photos/pd8.webp" 
-                   srcset="/assets/img/photos/pd8@2x.webp 2x" 
-                   alt="Demo 19-1 Ipsum Decoration Lorem Ipsum" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-decoration">Decoration</div>
-              <h2 class="post-title h3">Demo 19-1 Ipsum Decoration Lorem Ipsum</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 decoration">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/demo-19-2/">
-              <img src="/assets/img/photos/pd9.webp" 
-                   srcset="/assets/img/photos/pd9@2x.webp 2x" 
-                   alt="Demo 19-2 Lorem Decoration Lorem Ipsum" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-decoration">Decoration</div>
-              <h2 class="post-title h3">Demo 19-2 Lorem Decoration Lorem Ipsum</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 decoration">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/demo-19-3/">
-              <img src="/assets/img/photos/pd10.webp" 
-                   srcset="/assets/img/photos/pd10@2x.webp 2x" 
-                   alt="Demo 19-3 Curve Decoration Lorem Ipsum" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-decoration">Decoration</div>
-              <h2 class="post-title h3">Demo 19-3 Curve Decoration Lorem Ipsum</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 decoration">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/demo-19-4/">
-              <img src="/assets/img/photos/pd11.webp" 
-                   srcset="/assets/img/photos/pd11@2x.webp 2x" 
-                   alt="Demo 19-4 Round Decoration Lorem Ipsum" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-decoration">Decoration</div>
-              <h2 class="post-title h3">Demo 19-4 Round Decoration Lorem Ipsum</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 decoration">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/demo-19/">
-              <img src="/assets/img/photos/pd7.webp" 
-                   srcset="/assets/img/photos/pd7@2x.webp 2x" 
-                   alt="Demo 19 Curate Decoration Lorem Ipsum" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-decoration">Decoration</div>
-              <h2 class="post-title h3">Demo 19 Curate Decoration Lorem Ipsum</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 products">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/demo-2-1/">
-              <img src="/assets/img/photos/pp13.webp" 
-                   srcset="/assets/img/photos/pp13@2x.webp 2x" 
-                   alt="Demo 2" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-products">Products</div>
-              <h2 class="post-title h3">Demo 2</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 products">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/demo-2-2/">
-              <img src="/assets/img/photos/pp14.webp" 
-                   srcset="/assets/img/photos/pp14@2x.webp 2x" 
-                   alt="Demo 2" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-products">Products</div>
-              <h2 class="post-title h3">Demo 2</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 products">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/demo-2-3/">
-              <img src="/assets/img/photos/pp15.webp" 
-                   srcset="/assets/img/photos/pp15@2x.webp 2x" 
-                   alt="Demo 2" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-products">Products</div>
-              <h2 class="post-title h3">Demo 2</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 products">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/demo-2-4/">
-              <img src="/assets/img/photos/pp16.webp" 
-                   srcset="/assets/img/photos/pp16@2x.webp 2x" 
-                   alt="Demo 2" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-products">Products</div>
-              <h2 class="post-title h3">Demo 2</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 products">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/demo-2-5/">
-              <img src="/assets/img/photos/pp17.webp" 
-                   srcset="/assets/img/photos/pp17@2x.webp 2x" 
-                   alt="Demo 2" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-products">Products</div>
-              <h2 class="post-title h3">Demo 2</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 products">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/demo-2-6/">
-              <img src="/assets/img/photos/pp18.webp" 
-                   srcset="/assets/img/photos/pp18@2x.webp 2x" 
-                   alt="Demo 2" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-products">Products</div>
-              <h2 class="post-title h3">Demo 2</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 products">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/demo-2/">
-              <img src="/assets/img/photos/pp12.webp" 
-                   srcset="/assets/img/photos/pp12@2x.webp 2x" 
-                   alt="Demo 2" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-products">Products</div>
-              <h2 class="post-title h3">Demo 2</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 augmented-reality">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/demo-7-1/">
-              <img src="/assets/img/photos/sp2.webp" 
-                   srcset="/assets/img/photos/sp2@2x.webp 2x" 
-                   alt="Demo 7-1 Augmented Reality" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-augmented reality">Augmented Reality</div>
-              <h2 class="post-title h3">Demo 7-1 Augmented Reality</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 augmented-reality">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/demo-7-2/">
-              <img src="/assets/img/photos/sp3.webp" 
-                   srcset="/assets/img/photos/sp3@2x.webp 2x" 
-                   alt="Demo 7-2 LOrem Ipsum Reality" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-augmented reality">Augmented Reality</div>
-              <h2 class="post-title h3">Demo 7-2 LOrem Ipsum Reality</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 augmented-reality">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/demo-7-3/">
-              <img src="/assets/img/photos/sp4.webp" 
-                   srcset="/assets/img/photos/sp4@2x.webp 2x" 
-                   alt="Demo 7-3 Luvelle Ipsum Reality" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-augmented reality">Augmented Reality</div>
-              <h2 class="post-title h3">Demo 7-3 Luvelle Ipsum Reality</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 augmented-reality">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/demo-7-4/">
-              <img src="/assets/img/photos/sp5.webp" 
-                   srcset="/assets/img/photos/sp5@2x.webp 2x" 
-                   alt="Demo 7-4 Luvelle Ipsum Reality" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-augmented reality">Augmented Reality</div>
-              <h2 class="post-title h3">Demo 7-4 Luvelle Ipsum Reality</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 augmented-reality">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/demo-7-5/">
-              <img src="/assets/img/photos/sp6.webp" 
-                   srcset="/assets/img/photos/sp6@2x.webp 2x" 
-                   alt="Demo 7-5 Luvelle Ipsum Reality" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-augmented reality">Augmented Reality</div>
-              <h2 class="post-title h3">Demo 7-5 Luvelle Ipsum Reality</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 augmented-reality">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/demo-7-6/">
-              <img src="/assets/img/photos/sp5.webp" 
-                   srcset="/assets/img/photos/sp5@2x.webp 2x" 
-                   alt="Demo 7-6 Luvelle Ipsum Reality" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-augmented reality">Augmented Reality</div>
-              <h2 class="post-title h3">Demo 7-6 Luvelle Ipsum Reality</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 augmented-reality">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/demo-7/">
-              <img src="/assets/img/photos/sp1.webp" 
-                   srcset="/assets/img/photos/sp1@2x.webp 2x" 
-                   alt="Demo 7 Reality is Augmented" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-augmented reality">Augmented Reality</div>
-              <h2 class="post-title h3">Demo 7 Reality is Augmented</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 branding">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/sample-banner-image-2/">
-              <img src="/assets/img/photos/rp1.webp" 
-                   srcset="/assets/img/photos/rp1@2x.webp 2x" 
-                   alt="Mountain Resort Architecture" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-branding">Branding</div>
-              <h2 class="post-title h3">Mountain Resort Architecture</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 photography">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/sample-bg-overlay-2/">
-              <img src="/assets/img/photos/pd7.webp" 
-                   srcset="/assets/img/photos/pd7@2x.webp 2x" 
-                   alt="Fashion Editorial Photography" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-photography">Photography</div>
-              <h2 class="post-title h3">Fashion Editorial Photography</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 branding">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/sample-banner-image-3/">
-              <img src="/assets/img/photos/rp2.webp" 
-                   srcset="/assets/img/photos/rp2@2x.webp 2x" 
-                   alt="Interactive Museum Experience" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-branding">Branding</div>
-              <h2 class="post-title h3">Interactive Museum Experience</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 packaging">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/sample-with-slider-4/">
-              <img src="/assets/img/photos/pp27.webp" 
-                   srcset="/assets/img/photos/pp27@2x.webp 2x" 
-                   alt="Luxury Packaging Design" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-packaging">Packaging</div>
-              <h2 class="post-title h3">Luxury Packaging Design</h2>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 design">
-          <figure class="lift rounded mb-6">
-            <a href="/projects/sample-featured-image/">
-              <img src="/assets/img/photos/pp26.webp" 
-                   srcset="/assets/img/photos/pp26@2x.webp 2x" 
-                   alt="Modern Brand Identity Design" />
-            </a>
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <div class="post-category text-line mb-3 text-design">Design</div>
-              <h2 class="post-title h3">Modern Brand Identity Design</h2>
+              <div class="post-category text-line mb-3 text-research context">Research Context</div>
+              <h2 class="post-title h3">Federated Research on Multicenter Medical Imaging</h2>
             </div>
           </div>
         </div>
@@ -1746,7 +913,7 @@
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid grid-view projects-masonry"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row gx-md-8 gy-10 gy-md-13 isotope"</span><span class="nt">&gt;</span>
-        {% assign projects = site.projects | where_exp: "item", "item.category != nil" %}
+        {% assign projects = site.real_projects | where_exp: "item", "item.category != nil" %}
         {% for project in projects %}
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"project item col-md-6 col-xl-4 {{ project.category | downcase | replace: ' ', '-' }}"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"lift rounded mb-6"</span><span class="nt">&gt;</span>
@@ -1833,17 +1000,17 @@
       <div class="card-body p-12 pb-0">
         <div class="row ">
           <div class="col-lg-4 pb-12 align-self-center">
-            <div class="post-category mb-3 text-violet">Decoration</div>
-            <h3 class="h1 post-title mb-3">Demo 19 Curate Decoration Lorem Ipsum</h3>
-            <p>Sustainable mountain resort design integrating modern luxury with environmental consciousness.</p>
-            <a href="/projects/demo-19/" class="more hover link-violet">See Project</a>
+            <div class="post-category mb-3 text-violet">Use Case</div>
+            <h3 class="h1 post-title mb-3">Federated Learning Across European Institutions</h3>
+            <p>A consortium of five European hospitals trained a shared oncology model without exchanging any patient data.</p>
+            <a href="/real_projects/2026-01-15-federated-learning-european-hospitals%20copy%2014/" class="more hover link-violet">See Project</a>
           </div>
           <div class="col-lg-7 offset-lg-1 align-self-end">
             <figure>
               <img class="img-fluid" 
-                   src="/assets/img/photos/pd7.webp" 
-                   srcset="/assets/img/photos/pd7@2x.webp 2x" 
-                   alt="Demo 19 Curate Decoration Lorem Ipsum" />
+                   src="/assets/img/projects/usecase.png" 
+                   srcset="/assets/img/projects/usecase.png 2x" 
+                   alt="Federated Learning Across European Institutions" />
             </figure>
           </div>
         </div>
@@ -1855,17 +1022,17 @@
       <div class="card-body p-12 ">
         <div class="row gy-10 align-items-center">
           <div class="col-lg-4 order-lg-2 offset-lg-1">
-            <div class="post-category mb-3 text-blue">Products</div>
-            <h3 class="h1 post-title mb-3">Demo 2</h3>
-            <p>Sustainable mountain resort design integrating modern luxury with environmental consciousness.</p>
-            <a href="/projects/demo-2-3/" class="more hover link-blue">See Project</a>
+            <div class="post-category mb-3 text-blue">Research Context</div>
+            <h3 class="h1 post-title mb-3">Federated Research on Multicenter Medical Imaging</h3>
+            <p>Multiple research institutions collaboratively evaluated federated learning strategies for medical imaging without centralizing sensitive datasets.</p>
+            <a href="/real_projects/2026-01-15-multicenter-medical-imaging%20copy%204/" class="more hover link-blue">See Project</a>
           </div>
           <div class="col-lg-7">
             <figure>
               <img class="img-fluid" 
-                   src="/assets/img/photos/pp15.webp" 
-                   srcset="/assets/img/photos/pp15@2x.webp 2x" 
-                   alt="Demo 2" />
+                   src="/assets/img/projects/research.png" 
+                   srcset="/assets/img/projects/research.png 2x" 
+                   alt="Federated Research on Multicenter Medical Imaging" />
             </figure>
           </div>
         </div>
@@ -1880,15 +1047,15 @@
       <div class="col-lg-6">
         <div class="card bg-soft-leaf mb-10 mb-lg-0">
           <div class="card-body p-12 pb-0">
-            <div class="post-category mb-3 text-leaf">Packaging</div>
-            <h3 class="h1 post-title mb-3">Tech Conference Event Design</h3>
-            <p>Complete branding, environmental design, and digital experience for an annual technology conference.</p>
-            <a href="/projects/sample-with-slider-3/" class="more hover link-leaf mb-8">See Project</a>
+            <div class="post-category mb-3 text-leaf">Research Context</div>
+            <h3 class="h1 post-title mb-3">Federated Research on Multicenter Medical Imaging</h3>
+            <p>Multiple research institutions collaboratively evaluated federated learning strategies for medical imaging without centralizing sensitive datasets.</p>
+            <a href="/real_projects/2026-01-15-multicenter-medical-imaging%20copy%203/" class="more hover link-leaf mb-8">See Project</a>
           </div>
           <img class="card-img-bottom" 
-               src="/assets/img/photos/pp29.webp" 
-               srcset="/assets/img/photos/pp29@2x.webp 2x" 
-               alt="Tech Conference Event Design" />
+               src="/assets/img/projects/research.png" 
+               srcset="/assets/img/projects/research.png 2x" 
+               alt="Federated Research on Multicenter Medical Imaging" />
         </div>
       </div>
       
@@ -1896,15 +1063,15 @@
       <div class="col-lg-6">
         <div class="card bg-soft-pink ">
           <div class="card-body p-12 pb-0">
-            <div class="post-category mb-3 text-pink">Photography</div>
-            <h3 class="h1 post-title mb-3">Fashion Editorial Photography</h3>
-            <p>A contemporary fashion editorial exploring the intersection of urban architecture and haute couture.</p>
-            <a href="/projects/sample-bg-overlay-2/" class="more hover link-pink mb-8">See Project</a>
+            <div class="post-category mb-3 text-pink">Research Context</div>
+            <h3 class="h1 post-title mb-3">Federated Research on Multicenter Medical Imaging</h3>
+            <p>Multiple research institutions collaboratively evaluated federated learning strategies for medical imaging without centralizing sensitive datasets.</p>
+            <a href="/real_projects/2026-01-15-multicenter-medical-imaging%20copy%204/" class="more hover link-pink mb-8">See Project</a>
           </div>
           <img class="card-img-bottom" 
-               src="/assets/img/photos/pd7.webp" 
-               srcset="/assets/img/photos/pd7@2x.webp 2x" 
-               alt="Fashion Editorial Photography" />
+               src="/assets/img/projects/research.png" 
+               srcset="/assets/img/projects/research.png 2x" 
+               alt="Federated Research on Multicenter Medical Imaging" />
         </div>
       </div>
       
@@ -1938,7 +1105,7 @@
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
-    {% assign featured_projects = site.projects | where: "featured", true | limit: 2 %}
+    {% assign featured_projects = site.real_projects | where: "featured", true | limit: 2 %}
     {% for project in featured_projects %}
     {% assign config = page.portfolio6.featured_projects[forloop.index0] %}
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card bg-soft-{{ config.color }} mb-10"</span><span class="nt">&gt;</span>
@@ -1963,7 +1130,7 @@
     {% endfor %}
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row gx-md-8 gx-xl-10"</span><span class="nt">&gt;</span>
-      {% assign small_projects = site.projects | where: "featured", false | limit: 2 %}
+      {% assign small_projects = site.real_projects | where: "featured", false | limit: 2 %}
       {% for project in small_projects %}
       {% assign color = page.portfolio6.small_projects.colors[forloop.index0] %}
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"{{ page.portfolio6.small_projects.column_classes }}"</span><span class="nt">&gt;</span>
@@ -2062,666 +1229,90 @@
             
             <div class="swiper-slide">
               <figure class="rounded mb-7">
-                <a href="/projects/sample-featured-image/">
-                  <img src="/assets/img/photos/pp26.webp" 
-                       srcset="/assets/img/photos/pp26@2x.webp 2x" 
-                       alt="Modern Brand Identity Design" />
+                <a href="/real_projects/2026-01-15-multicenter-medical-imaging%20copy%204/">
+                  <img src="/assets/img/projects/research.png" 
+                       srcset="/assets/img/projects/research.png 2x" 
+                       alt="Federated Research on Multicenter Medical Imaging" />
                 </a>
               </figure>
               <div class="project-details d-flex justify-content-center flex-column">
                 <div class="post-header">
                   <h2 class="post-title h3">
-                    <a href="/projects/sample-featured-image/" class="link-dark">Modern Brand Identity Design</a>
+                    <a href="/real_projects/2026-01-15-multicenter-medical-imaging%20copy%204/" class="link-dark">Federated Research on Multicenter Medical Imaging</a>
                   </h2>
-                  <div class="post-category text-ash">Design</div>
+                  <div class="post-category text-ash">Research Context</div>
                 </div>
               </div>
             </div>
             
             <div class="swiper-slide">
               <figure class="rounded mb-7">
-                <a href="/projects/sample-with-slider-4/">
-                  <img src="/assets/img/photos/pp27.webp" 
-                       srcset="/assets/img/photos/pp27@2x.webp 2x" 
-                       alt="Luxury Packaging Design" />
+                <a href="/real_projects/2026-01-15-multicenter-medical-imaging%20copy%203/">
+                  <img src="/assets/img/projects/research.png" 
+                       srcset="/assets/img/projects/research.png 2x" 
+                       alt="Federated Research on Multicenter Medical Imaging" />
                 </a>
               </figure>
               <div class="project-details d-flex justify-content-center flex-column">
                 <div class="post-header">
                   <h2 class="post-title h3">
-                    <a href="/projects/sample-with-slider-4/" class="link-dark">Luxury Packaging Design</a>
+                    <a href="/real_projects/2026-01-15-multicenter-medical-imaging%20copy%203/" class="link-dark">Federated Research on Multicenter Medical Imaging</a>
                   </h2>
-                  <div class="post-category text-ash">Packaging</div>
+                  <div class="post-category text-ash">Research Context</div>
                 </div>
               </div>
             </div>
             
             <div class="swiper-slide">
               <figure class="rounded mb-7">
-                <a href="/projects/sample-banner-image-3/">
-                  <img src="/assets/img/photos/rp2.webp" 
-                       srcset="/assets/img/photos/rp2@2x.webp 2x" 
-                       alt="Interactive Museum Experience" />
+                <a href="/real_projects/2026-01-15-multicenter-medical-imaging%20copy%202/">
+                  <img src="/assets/img/projects/research.png" 
+                       srcset="/assets/img/projects/research.png 2x" 
+                       alt="Federated Research on Multicenter Medical Imaging" />
                 </a>
               </figure>
               <div class="project-details d-flex justify-content-center flex-column">
                 <div class="post-header">
                   <h2 class="post-title h3">
-                    <a href="/projects/sample-banner-image-3/" class="link-dark">Interactive Museum Experience</a>
+                    <a href="/real_projects/2026-01-15-multicenter-medical-imaging%20copy%202/" class="link-dark">Federated Research on Multicenter Medical Imaging</a>
                   </h2>
-                  <div class="post-category text-ash">Branding</div>
+                  <div class="post-category text-ash">Research Context</div>
                 </div>
               </div>
             </div>
             
             <div class="swiper-slide">
               <figure class="rounded mb-7">
-                <a href="/projects/sample-bg-overlay-2/">
-                  <img src="/assets/img/photos/pd7.webp" 
-                       srcset="/assets/img/photos/pd7@2x.webp 2x" 
-                       alt="Fashion Editorial Photography" />
+                <a href="/real_projects/2026-01-15-federated-learning-european-hospitals%20copy%2015/">
+                  <img src="/assets/img/projects/usecase.png" 
+                       srcset="/assets/img/projects/usecase.png 2x" 
+                       alt="Federated Learning Across European Institutions" />
                 </a>
               </figure>
               <div class="project-details d-flex justify-content-center flex-column">
                 <div class="post-header">
                   <h2 class="post-title h3">
-                    <a href="/projects/sample-bg-overlay-2/" class="link-dark">Fashion Editorial Photography</a>
+                    <a href="/real_projects/2026-01-15-federated-learning-european-hospitals%20copy%2015/" class="link-dark">Federated Learning Across European Institutions</a>
                   </h2>
-                  <div class="post-category text-ash">Photography</div>
+                  <div class="post-category text-ash">Use Case</div>
                 </div>
               </div>
             </div>
             
             <div class="swiper-slide">
               <figure class="rounded mb-7">
-                <a href="/projects/demo-7-1/">
-                  <img src="/assets/img/photos/sp2.webp" 
-                       srcset="/assets/img/photos/sp2@2x.webp 2x" 
-                       alt="Demo 7-1 Augmented Reality" />
+                <a href="/real_projects/2026-01-15-federated-learning-european-hospitals%20copy%2014/">
+                  <img src="/assets/img/projects/usecase.png" 
+                       srcset="/assets/img/projects/usecase.png 2x" 
+                       alt="Federated Learning Across European Institutions" />
                 </a>
               </figure>
               <div class="project-details d-flex justify-content-center flex-column">
                 <div class="post-header">
                   <h2 class="post-title h3">
-                    <a href="/projects/demo-7-1/" class="link-dark">Demo 7-1 Augmented Reality</a>
+                    <a href="/real_projects/2026-01-15-federated-learning-european-hospitals%20copy%2014/" class="link-dark">Federated Learning Across European Institutions</a>
                   </h2>
-                  <div class="post-category text-ash">Augmented Reality</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/demo-2/">
-                  <img src="/assets/img/photos/pp12.webp" 
-                       srcset="/assets/img/photos/pp12@2x.webp 2x" 
-                       alt="Demo 2" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/demo-2/" class="link-dark">Demo 2</a>
-                  </h2>
-                  <div class="post-category text-ash">Products</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/demo-2-6/">
-                  <img src="/assets/img/photos/pp18.webp" 
-                       srcset="/assets/img/photos/pp18@2x.webp 2x" 
-                       alt="Demo 2" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/demo-2-6/" class="link-dark">Demo 2</a>
-                  </h2>
-                  <div class="post-category text-ash">Products</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/demo-2-5/">
-                  <img src="/assets/img/photos/pp17.webp" 
-                       srcset="/assets/img/photos/pp17@2x.webp 2x" 
-                       alt="Demo 2" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/demo-2-5/" class="link-dark">Demo 2</a>
-                  </h2>
-                  <div class="post-category text-ash">Products</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/demo-2-4/">
-                  <img src="/assets/img/photos/pp16.webp" 
-                       srcset="/assets/img/photos/pp16@2x.webp 2x" 
-                       alt="Demo 2" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/demo-2-4/" class="link-dark">Demo 2</a>
-                  </h2>
-                  <div class="post-category text-ash">Products</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/demo-2-3/">
-                  <img src="/assets/img/photos/pp15.webp" 
-                       srcset="/assets/img/photos/pp15@2x.webp 2x" 
-                       alt="Demo 2" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/demo-2-3/" class="link-dark">Demo 2</a>
-                  </h2>
-                  <div class="post-category text-ash">Products</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/demo-2-2/">
-                  <img src="/assets/img/photos/pp14.webp" 
-                       srcset="/assets/img/photos/pp14@2x.webp 2x" 
-                       alt="Demo 2" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/demo-2-2/" class="link-dark">Demo 2</a>
-                  </h2>
-                  <div class="post-category text-ash">Products</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/demo-19/">
-                  <img src="/assets/img/photos/pd7.webp" 
-                       srcset="/assets/img/photos/pd7@2x.webp 2x" 
-                       alt="Demo 19 Curate Decoration Lorem Ipsum" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/demo-19/" class="link-dark">Demo 19 Curate Decoration Lorem Ipsum</a>
-                  </h2>
-                  <div class="post-category text-ash">Decoration</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/demo-19-4/">
-                  <img src="/assets/img/photos/pd11.webp" 
-                       srcset="/assets/img/photos/pd11@2x.webp 2x" 
-                       alt="Demo 19-4 Round Decoration Lorem Ipsum" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/demo-19-4/" class="link-dark">Demo 19-4 Round Decoration Lorem Ipsum</a>
-                  </h2>
-                  <div class="post-category text-ash">Decoration</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/demo-19-3/">
-                  <img src="/assets/img/photos/pd10.webp" 
-                       srcset="/assets/img/photos/pd10@2x.webp 2x" 
-                       alt="Demo 19-3 Curve Decoration Lorem Ipsum" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/demo-19-3/" class="link-dark">Demo 19-3 Curve Decoration Lorem Ipsum</a>
-                  </h2>
-                  <div class="post-category text-ash">Decoration</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/demo-19-2/">
-                  <img src="/assets/img/photos/pd9.webp" 
-                       srcset="/assets/img/photos/pd9@2x.webp 2x" 
-                       alt="Demo 19-2 Lorem Decoration Lorem Ipsum" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/demo-19-2/" class="link-dark">Demo 19-2 Lorem Decoration Lorem Ipsum</a>
-                  </h2>
-                  <div class="post-category text-ash">Decoration</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/demo-19-1/">
-                  <img src="/assets/img/photos/pd8.webp" 
-                       srcset="/assets/img/photos/pd8@2x.webp 2x" 
-                       alt="Demo 19-1 Ipsum Decoration Lorem Ipsum" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/demo-19-1/" class="link-dark">Demo 19-1 Ipsum Decoration Lorem Ipsum</a>
-                  </h2>
-                  <div class="post-category text-ash">Decoration</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/demo-2-1/">
-                  <img src="/assets/img/photos/pp13.webp" 
-                       srcset="/assets/img/photos/pp13@2x.webp 2x" 
-                       alt="Demo 2" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/demo-2-1/" class="link-dark">Demo 2</a>
-                  </h2>
-                  <div class="post-category text-ash">Products</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/sample-banner-image-2/">
-                  <img src="/assets/img/photos/rp1.webp" 
-                       srcset="/assets/img/photos/rp1@2x.webp 2x" 
-                       alt="Mountain Resort Architecture" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/sample-banner-image-2/" class="link-dark">Mountain Resort Architecture</a>
-                  </h2>
-                  <div class="post-category text-ash">Branding</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/demo-7/">
-                  <img src="/assets/img/photos/sp1.webp" 
-                       srcset="/assets/img/photos/sp1@2x.webp 2x" 
-                       alt="Demo 7 Reality is Augmented" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/demo-7/" class="link-dark">Demo 7 Reality is Augmented</a>
-                  </h2>
-                  <div class="post-category text-ash">Augmented Reality</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/demo-7-6/">
-                  <img src="/assets/img/photos/sp5.webp" 
-                       srcset="/assets/img/photos/sp5@2x.webp 2x" 
-                       alt="Demo 7-6 Luvelle Ipsum Reality" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/demo-7-6/" class="link-dark">Demo 7-6 Luvelle Ipsum Reality</a>
-                  </h2>
-                  <div class="post-category text-ash">Augmented Reality</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/demo-7-5/">
-                  <img src="/assets/img/photos/sp6.webp" 
-                       srcset="/assets/img/photos/sp6@2x.webp 2x" 
-                       alt="Demo 7-5 Luvelle Ipsum Reality" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/demo-7-5/" class="link-dark">Demo 7-5 Luvelle Ipsum Reality</a>
-                  </h2>
-                  <div class="post-category text-ash">Augmented Reality</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/demo-7-4/">
-                  <img src="/assets/img/photos/sp5.webp" 
-                       srcset="/assets/img/photos/sp5@2x.webp 2x" 
-                       alt="Demo 7-4 Luvelle Ipsum Reality" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/demo-7-4/" class="link-dark">Demo 7-4 Luvelle Ipsum Reality</a>
-                  </h2>
-                  <div class="post-category text-ash">Augmented Reality</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/demo-7-3/">
-                  <img src="/assets/img/photos/sp4.webp" 
-                       srcset="/assets/img/photos/sp4@2x.webp 2x" 
-                       alt="Demo 7-3 Luvelle Ipsum Reality" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/demo-7-3/" class="link-dark">Demo 7-3 Luvelle Ipsum Reality</a>
-                  </h2>
-                  <div class="post-category text-ash">Augmented Reality</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/demo-7-2/">
-                  <img src="/assets/img/photos/sp3.webp" 
-                       srcset="/assets/img/photos/sp3@2x.webp 2x" 
-                       alt="Demo 7-2 LOrem Ipsum Reality" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/demo-7-2/" class="link-dark">Demo 7-2 LOrem Ipsum Reality</a>
-                  </h2>
-                  <div class="post-category text-ash">Augmented Reality</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/sample-with-slider/">
-                  <img src="/assets/img/photos/pp28.webp" 
-                       srcset="/assets/img/photos/pp28@2x.webp 2x" 
-                       alt="Coffee Packaging Design" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/sample-with-slider/" class="link-dark">Coffee Packaging Design</a>
-                  </h2>
-                  <div class="post-category text-ash">Packaging</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/sample-bg-overlay-4/">
-                  <img src="/assets/img/photos/pd9.webp" 
-                       srcset="/assets/img/photos/pd9@2x.webp 2x" 
-                       alt="Urban Landscape Photography" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/sample-bg-overlay-4/" class="link-dark">Urban Landscape Photography</a>
-                  </h2>
-                  <div class="post-category text-ash">Photography</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/sample-featured-image-3/">
-                  <img src="/assets/img/photos/pp24.webp" 
-                       srcset="/assets/img/photos/pp24@2x.webp 2x" 
-                       alt="Eco-Friendly Packaging Redesign" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/sample-featured-image-3/" class="link-dark">Eco-Friendly Packaging Redesign</a>
-                  </h2>
-                  <div class="post-category text-ash">Design</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/sample-featured-image-4/">
-                  <img src="/assets/img/photos/pp25.webp" 
-                       srcset="/assets/img/photos/pp25@2x.webp 2x" 
-                       alt="Friendly Packaging Redesign" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/sample-featured-image-4/" class="link-dark">Friendly Packaging Redesign</a>
-                  </h2>
-                  <div class="post-category text-ash">Design</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/sample-featured-image-2/">
-                  <img src="/assets/img/photos/pd11.webp" 
-                       srcset="/assets/img/photos/pd11@2x.webp 2x" 
-                       alt="Digital UX Research & Strategy" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/sample-featured-image-2/" class="link-dark">Digital UX Research & Strategy</a>
-                  </h2>
-                  <div class="post-category text-ash">Design</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/sample-banner-image-4/">
-                  <img src="/assets/img/photos/rp3.webp" 
-                       srcset="/assets/img/photos/rp3@2x.webp 2x" 
-                       alt="Creative Branding Campaign" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/sample-banner-image-4/" class="link-dark">Creative Branding Campaign</a>
-                  </h2>
-                  <div class="post-category text-ash">Branding</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/sample-bg-overlay-3/">
-                  <img src="/assets/img/photos/pd8.webp" 
-                       srcset="/assets/img/photos/pd8@2x.webp 2x" 
-                       alt="Motion Design Collection" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/sample-bg-overlay-3/" class="link-dark">Motion Design Collection</a>
-                  </h2>
-                  <div class="post-category text-ash">Photography</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/sample-bg-overlay/">
-                  <img src="/assets/img/photos/pd10.webp" 
-                       srcset="/assets/img/photos/pd10@2x.webp 2x" 
-                       alt="Architectural Photography Series Parturient Cursus" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/sample-bg-overlay/" class="link-dark">Architectural Photography Series Parturient Cursus</a>
-                  </h2>
-                  <div class="post-category text-ash">Photography</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/sample-with-slider-3/">
-                  <img src="/assets/img/photos/pp29.webp" 
-                       srcset="/assets/img/photos/pp29@2x.webp 2x" 
-                       alt="Tech Conference Event Design" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/sample-with-slider-3/" class="link-dark">Tech Conference Event Design</a>
-                  </h2>
-                  <div class="post-category text-ash">Packaging</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/sample-banner-image-6/">
-                  <img src="/assets/img/photos/f3.webp" 
-                       srcset="/assets/img/photos/f3@2x.webp 2x" 
-                       alt="Scotland Brand Design" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/sample-banner-image-6/" class="link-dark">Scotland Brand Design</a>
-                  </h2>
-                  <div class="post-category text-ash">Demo</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/sample-banner-image/">
-                  <img src="/assets/img/photos/pd9.webp" 
-                       srcset="/assets/img/photos/pd9@2x.webp 2x" 
-                       alt="Memphis Brand Design" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/sample-banner-image/" class="link-dark">Memphis Brand Design</a>
-                  </h2>
-                  <div class="post-category text-ash">Branding</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/sample-banner-image-5/">
-                  <img src="/assets/img/photos/f2.webp" 
-                       srcset="/assets/img/photos/f2@2x.webp 2x" 
-                       alt="Sweden Brand Design" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/sample-banner-image-5/" class="link-dark">Sweden Brand Design</a>
-                  </h2>
-                  <div class="post-category text-ash">Demo</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <figure class="rounded mb-7">
-                <a href="/projects/sample-with-slider-2/">
-                  <img src="/assets/img/photos/pp30.webp" 
-                       srcset="/assets/img/photos/pp30@2x.webp 2x" 
-                       alt="Interior Design: Urban Loft Renovation" />
-                </a>
-              </figure>
-              <div class="project-details d-flex justify-content-center flex-column">
-                <div class="post-header">
-                  <h2 class="post-title h3">
-                    <a href="/projects/sample-with-slider-2/" class="link-dark">Interior Design: Urban Loft Renovation</a>
-                  </h2>
-                  <div class="post-category text-ash">Packaging</div>
+                  <div class="post-category text-ash">Use Case</div>
                 </div>
               </div>
             </div>
@@ -2762,7 +1353,7 @@
            <span class="na">data-items-xs=</span><span class="s">"{{ page.portfolio7.swiper.items.xs }}"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper overflow-visible"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper-wrapper"</span><span class="nt">&gt;</span>
-            {% assign projects = site.projects | sort: 'date' | reverse %}
+            {% assign projects = site.real_projects | sort: 'date' | reverse %}
             {% for project in projects %}
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper-slide"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"{{ page.portfolio7.project.figure_classes }}"</span><span class="nt">&gt;</span>
@@ -2854,12 +1445,12 @@
         
         <div class="project item col-md-6 col-xl-4">
           <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pp30.webp" 
-                 srcset="/assets/img/photos/pp30@2x.webp 2x" 
-                 alt="Interior Design: Urban Loft Renovation" />
+            <img src="/assets/img/projects/usecase.png" 
+                 srcset="/assets/img/projects/usecase.png 2x" 
+                 alt="Federated Learning Across European Institutions" />
             
             <a class="item-link" 
-               href="" 
+               href="/assets/img/projects/usecase.png" 
                data-glightbox 
                data-gallery="projects-group">
               <i class="uil uil-focus-add"></i>
@@ -2869,21 +1460,21 @@
           <div class="project-details d-flex justify-content-center flex-column">
             <div class="post-header">
               <h2 class="post-title h3 fs-22">
-                <a href="/projects/sample-with-slider-2/" class="link-dark">Interior Design: Urban Loft Renovation</a>
+                <a href="/real_projects/2026-01-15-federated-learning-european-hospitals%20copy%2014/" class="link-dark">Federated Learning Across European Institutions</a>
               </h2>
-              <div class="post-category text-ash">Packaging</div>
+              <div class="post-category text-ash">Use Case</div>
             </div>
           </div>
         </div>
         
         <div class="project item col-md-6 col-xl-4">
           <figure class="rounded mb-6">
-            <img src="/assets/img/photos/f2.webp" 
-                 srcset="/assets/img/photos/f2@2x.webp 2x" 
-                 alt="Sweden Brand Design" />
+            <img src="/assets/img/projects/usecase.png" 
+                 srcset="/assets/img/projects/usecase.png 2x" 
+                 alt="Federated Learning Across European Institutions" />
             
             <a class="item-link" 
-               href="" 
+               href="/assets/img/projects/usecase.png" 
                data-glightbox 
                data-gallery="projects-group">
               <i class="uil uil-focus-add"></i>
@@ -2893,21 +1484,21 @@
           <div class="project-details d-flex justify-content-center flex-column">
             <div class="post-header">
               <h2 class="post-title h3 fs-22">
-                <a href="/projects/sample-banner-image-5/" class="link-dark">Sweden Brand Design</a>
+                <a href="/real_projects/2026-01-15-federated-learning-european-hospitals%20copy%2015/" class="link-dark">Federated Learning Across European Institutions</a>
               </h2>
-              <div class="post-category text-ash">Demo</div>
+              <div class="post-category text-ash">Use Case</div>
             </div>
           </div>
         </div>
         
         <div class="project item col-md-6 col-xl-4">
           <figure class="rounded mb-6">
-            <img src="/assets/img/photos/f3.webp" 
-                 srcset="/assets/img/photos/f3@2x.webp 2x" 
-                 alt="Scotland Brand Design" />
+            <img src="/assets/img/projects/research.png" 
+                 srcset="/assets/img/projects/research.png 2x" 
+                 alt="Federated Research on Multicenter Medical Imaging" />
             
             <a class="item-link" 
-               href="" 
+               href="/assets/img/projects/research.png" 
                data-glightbox 
                data-gallery="projects-group">
               <i class="uil uil-focus-add"></i>
@@ -2917,21 +1508,21 @@
           <div class="project-details d-flex justify-content-center flex-column">
             <div class="post-header">
               <h2 class="post-title h3 fs-22">
-                <a href="/projects/sample-banner-image-6/" class="link-dark">Scotland Brand Design</a>
+                <a href="/real_projects/2026-01-15-multicenter-medical-imaging%20copy%202/" class="link-dark">Federated Research on Multicenter Medical Imaging</a>
               </h2>
-              <div class="post-category text-ash">Demo</div>
+              <div class="post-category text-ash">Research Context</div>
             </div>
           </div>
         </div>
         
         <div class="project item col-md-6 col-xl-4">
           <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pd9.webp" 
-                 srcset="/assets/img/photos/pd9@2x.webp 2x" 
-                 alt="Memphis Brand Design" />
+            <img src="/assets/img/projects/research.png" 
+                 srcset="/assets/img/projects/research.png 2x" 
+                 alt="Federated Research on Multicenter Medical Imaging" />
             
             <a class="item-link" 
-               href="" 
+               href="/assets/img/projects/research.png" 
                data-glightbox 
                data-gallery="projects-group">
               <i class="uil uil-focus-add"></i>
@@ -2941,21 +1532,21 @@
           <div class="project-details d-flex justify-content-center flex-column">
             <div class="post-header">
               <h2 class="post-title h3 fs-22">
-                <a href="/projects/sample-banner-image/" class="link-dark">Memphis Brand Design</a>
+                <a href="/real_projects/2026-01-15-multicenter-medical-imaging%20copy%203/" class="link-dark">Federated Research on Multicenter Medical Imaging</a>
               </h2>
-              <div class="post-category text-ash">Branding</div>
+              <div class="post-category text-ash">Research Context</div>
             </div>
           </div>
         </div>
         
         <div class="project item col-md-6 col-xl-4">
           <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pp29.webp" 
-                 srcset="/assets/img/photos/pp29@2x.webp 2x" 
-                 alt="Tech Conference Event Design" />
+            <img src="/assets/img/projects/research.png" 
+                 srcset="/assets/img/projects/research.png 2x" 
+                 alt="Federated Research on Multicenter Medical Imaging" />
             
             <a class="item-link" 
-               href="" 
+               href="/assets/img/projects/research.png" 
                data-glightbox 
                data-gallery="projects-group">
               <i class="uil uil-focus-add"></i>
@@ -2965,777 +1556,9 @@
           <div class="project-details d-flex justify-content-center flex-column">
             <div class="post-header">
               <h2 class="post-title h3 fs-22">
-                <a href="/projects/sample-with-slider-3/" class="link-dark">Tech Conference Event Design</a>
+                <a href="/real_projects/2026-01-15-multicenter-medical-imaging%20copy%204/" class="link-dark">Federated Research on Multicenter Medical Imaging</a>
               </h2>
-              <div class="post-category text-ash">Packaging</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pd10.webp" 
-                 srcset="/assets/img/photos/pd10@2x.webp 2x" 
-                 alt="Architectural Photography Series Parturient Cursus" />
-            
-            <a class="item-link" 
-               href="" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/sample-bg-overlay/" class="link-dark">Architectural Photography Series Parturient Cursus</a>
-              </h2>
-              <div class="post-category text-ash">Photography</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pd8.webp" 
-                 srcset="/assets/img/photos/pd8@2x.webp 2x" 
-                 alt="Motion Design Collection" />
-            
-            <a class="item-link" 
-               href="" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/sample-bg-overlay-3/" class="link-dark">Motion Design Collection</a>
-              </h2>
-              <div class="post-category text-ash">Photography</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/rp3.webp" 
-                 srcset="/assets/img/photos/rp3@2x.webp 2x" 
-                 alt="Creative Branding Campaign" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/rp3.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/sample-banner-image-4/" class="link-dark">Creative Branding Campaign</a>
-              </h2>
-              <div class="post-category text-ash">Branding</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pd11.webp" 
-                 srcset="/assets/img/photos/pd11@2x.webp 2x" 
-                 alt="Digital UX Research & Strategy" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/pd11.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/sample-featured-image-2/" class="link-dark">Digital UX Research & Strategy</a>
-              </h2>
-              <div class="post-category text-ash">Design</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pp24.webp" 
-                 srcset="/assets/img/photos/pp24@2x.webp 2x" 
-                 alt="Eco-Friendly Packaging Redesign" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/pp24.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/sample-featured-image-3/" class="link-dark">Eco-Friendly Packaging Redesign</a>
-              </h2>
-              <div class="post-category text-ash">Design</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pp25.webp" 
-                 srcset="/assets/img/photos/pp25@2x.webp 2x" 
-                 alt="Friendly Packaging Redesign" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/pp25.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/sample-featured-image-4/" class="link-dark">Friendly Packaging Redesign</a>
-              </h2>
-              <div class="post-category text-ash">Design</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pd9.webp" 
-                 srcset="/assets/img/photos/pd9@2x.webp 2x" 
-                 alt="Urban Landscape Photography" />
-            
-            <a class="item-link" 
-               href="" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/sample-bg-overlay-4/" class="link-dark">Urban Landscape Photography</a>
-              </h2>
-              <div class="post-category text-ash">Photography</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pp28.webp" 
-                 srcset="/assets/img/photos/pp28@2x.webp 2x" 
-                 alt="Coffee Packaging Design" />
-            
-            <a class="item-link" 
-               href="" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/sample-with-slider/" class="link-dark">Coffee Packaging Design</a>
-              </h2>
-              <div class="post-category text-ash">Packaging</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pd8.webp" 
-                 srcset="/assets/img/photos/pd8@2x.webp 2x" 
-                 alt="Demo 19-1 Ipsum Decoration Lorem Ipsum" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/demo-19-1/" class="link-dark">Demo 19-1 Ipsum Decoration Lorem Ipsum</a>
-              </h2>
-              <div class="post-category text-ash">Decoration</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pd9.webp" 
-                 srcset="/assets/img/photos/pd9@2x.webp 2x" 
-                 alt="Demo 19-2 Lorem Decoration Lorem Ipsum" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/demo-19-2/" class="link-dark">Demo 19-2 Lorem Decoration Lorem Ipsum</a>
-              </h2>
-              <div class="post-category text-ash">Decoration</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pd10.webp" 
-                 srcset="/assets/img/photos/pd10@2x.webp 2x" 
-                 alt="Demo 19-3 Curve Decoration Lorem Ipsum" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/demo-19-3/" class="link-dark">Demo 19-3 Curve Decoration Lorem Ipsum</a>
-              </h2>
-              <div class="post-category text-ash">Decoration</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pd11.webp" 
-                 srcset="/assets/img/photos/pd11@2x.webp 2x" 
-                 alt="Demo 19-4 Round Decoration Lorem Ipsum" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/demo-19-4/" class="link-dark">Demo 19-4 Round Decoration Lorem Ipsum</a>
-              </h2>
-              <div class="post-category text-ash">Decoration</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pd7.webp" 
-                 srcset="/assets/img/photos/pd7@2x.webp 2x" 
-                 alt="Demo 19 Curate Decoration Lorem Ipsum" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/demo-19/" class="link-dark">Demo 19 Curate Decoration Lorem Ipsum</a>
-              </h2>
-              <div class="post-category text-ash">Decoration</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pp13.webp" 
-                 srcset="/assets/img/photos/pp13@2x.webp 2x" 
-                 alt="Demo 2" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/demo-2-1/" class="link-dark">Demo 2</a>
-              </h2>
-              <div class="post-category text-ash">Products</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pp14.webp" 
-                 srcset="/assets/img/photos/pp14@2x.webp 2x" 
-                 alt="Demo 2" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/demo-2-2/" class="link-dark">Demo 2</a>
-              </h2>
-              <div class="post-category text-ash">Products</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pp15.webp" 
-                 srcset="/assets/img/photos/pp15@2x.webp 2x" 
-                 alt="Demo 2" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/demo-2-3/" class="link-dark">Demo 2</a>
-              </h2>
-              <div class="post-category text-ash">Products</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pp16.webp" 
-                 srcset="/assets/img/photos/pp16@2x.webp 2x" 
-                 alt="Demo 2" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/demo-2-4/" class="link-dark">Demo 2</a>
-              </h2>
-              <div class="post-category text-ash">Products</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pp17.webp" 
-                 srcset="/assets/img/photos/pp17@2x.webp 2x" 
-                 alt="Demo 2" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/demo-2-5/" class="link-dark">Demo 2</a>
-              </h2>
-              <div class="post-category text-ash">Products</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pp18.webp" 
-                 srcset="/assets/img/photos/pp18@2x.webp 2x" 
-                 alt="Demo 2" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/demo-2-6/" class="link-dark">Demo 2</a>
-              </h2>
-              <div class="post-category text-ash">Products</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pp12.webp" 
-                 srcset="/assets/img/photos/pp12@2x.webp 2x" 
-                 alt="Demo 2" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/demo-2/" class="link-dark">Demo 2</a>
-              </h2>
-              <div class="post-category text-ash">Products</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/sp2.webp" 
-                 srcset="/assets/img/photos/sp2@2x.webp 2x" 
-                 alt="Demo 7-1 Augmented Reality" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/rp17.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/demo-7-1/" class="link-dark">Demo 7-1 Augmented Reality</a>
-              </h2>
-              <div class="post-category text-ash">Augmented Reality</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/sp3.webp" 
-                 srcset="/assets/img/photos/sp3@2x.webp 2x" 
-                 alt="Demo 7-2 LOrem Ipsum Reality" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/rp17.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/demo-7-2/" class="link-dark">Demo 7-2 LOrem Ipsum Reality</a>
-              </h2>
-              <div class="post-category text-ash">Augmented Reality</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/sp4.webp" 
-                 srcset="/assets/img/photos/sp4@2x.webp 2x" 
-                 alt="Demo 7-3 Luvelle Ipsum Reality" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/rp17.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/demo-7-3/" class="link-dark">Demo 7-3 Luvelle Ipsum Reality</a>
-              </h2>
-              <div class="post-category text-ash">Augmented Reality</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/sp5.webp" 
-                 srcset="/assets/img/photos/sp5@2x.webp 2x" 
-                 alt="Demo 7-4 Luvelle Ipsum Reality" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/rp17.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/demo-7-4/" class="link-dark">Demo 7-4 Luvelle Ipsum Reality</a>
-              </h2>
-              <div class="post-category text-ash">Augmented Reality</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/sp6.webp" 
-                 srcset="/assets/img/photos/sp6@2x.webp 2x" 
-                 alt="Demo 7-5 Luvelle Ipsum Reality" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/rp17.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/demo-7-5/" class="link-dark">Demo 7-5 Luvelle Ipsum Reality</a>
-              </h2>
-              <div class="post-category text-ash">Augmented Reality</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/sp5.webp" 
-                 srcset="/assets/img/photos/sp5@2x.webp 2x" 
-                 alt="Demo 7-6 Luvelle Ipsum Reality" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/rp17.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/demo-7-6/" class="link-dark">Demo 7-6 Luvelle Ipsum Reality</a>
-              </h2>
-              <div class="post-category text-ash">Augmented Reality</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/sp1.webp" 
-                 srcset="/assets/img/photos/sp1@2x.webp 2x" 
-                 alt="Demo 7 Reality is Augmented" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/demo-7/" class="link-dark">Demo 7 Reality is Augmented</a>
-              </h2>
-              <div class="post-category text-ash">Augmented Reality</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/rp1.webp" 
-                 srcset="/assets/img/photos/rp1@2x.webp 2x" 
-                 alt="Mountain Resort Architecture" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/sample-banner-image-2/" class="link-dark">Mountain Resort Architecture</a>
-              </h2>
-              <div class="post-category text-ash">Branding</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pd7.webp" 
-                 srcset="/assets/img/photos/pd7@2x.webp 2x" 
-                 alt="Fashion Editorial Photography" />
-            
-            <a class="item-link" 
-               href="" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/sample-bg-overlay-2/" class="link-dark">Fashion Editorial Photography</a>
-              </h2>
-              <div class="post-category text-ash">Photography</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/rp2.webp" 
-                 srcset="/assets/img/photos/rp2@2x.webp 2x" 
-                 alt="Interactive Museum Experience" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/rp2.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/sample-banner-image-3/" class="link-dark">Interactive Museum Experience</a>
-              </h2>
-              <div class="post-category text-ash">Branding</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pp27.webp" 
-                 srcset="/assets/img/photos/pp27@2x.webp 2x" 
-                 alt="Luxury Packaging Design" />
-            
-            <a class="item-link" 
-               href="" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/sample-with-slider-4/" class="link-dark">Luxury Packaging Design</a>
-              </h2>
-              <div class="post-category text-ash">Packaging</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4">
-          <figure class="rounded mb-6">
-            <img src="/assets/img/photos/pp26.webp" 
-                 srcset="/assets/img/photos/pp26@2x.webp 2x" 
-                 alt="Modern Brand Identity Design" />
-            
-            <a class="item-link" 
-               href="/assets/img/photos/pp7.webp" 
-               data-glightbox 
-               data-gallery="projects-group">
-              <i class="uil uil-focus-add"></i>
-            </a>
-            
-          </figure>
-          <div class="project-details d-flex justify-content-center flex-column">
-            <div class="post-header">
-              <h2 class="post-title h3 fs-22">
-                <a href="/projects/sample-featured-image/" class="link-dark">Modern Brand Identity Design</a>
-              </h2>
-              <div class="post-category text-ash">Design</div>
+              <div class="post-category text-ash">Research Context</div>
             </div>
           </div>
         </div>
@@ -3771,7 +1594,7 @@
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"{{ page.portfolio8.layout.grid_classes }}"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row {{ page.portfolio8.layout.row_classes }}"</span><span class="nt">&gt;</span>
-        {% assign projects = site.projects %}
+        {% assign projects = site.real_projects %}
         {% for project in projects %}
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"project item {{ page.portfolio8.project.column_classes }}"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"{{ page.portfolio8.project.figure_classes }}"</span><span class="nt">&gt;</span>
@@ -3901,481 +1724,65 @@
         
         <div class="project item col-md-6 col-xl-4 ">
           <figure class="overlay overlay-1 rounded">
-            <a href="" 
+            <a href="/assets/img/projects/usecase.png" 
                data-glightbox 
                data-gallery="shots-group">
-              <img src="/assets/img/photos/pp30.webp" alt="Interior Design: Urban Loft Renovation" />
+              <img src="/assets/img/projects/usecase.png" alt="Federated Learning Across European Institutions" />
             </a>
             <figcaption>
-              <h5 class="from-top mb-0">Interior Design: Urban Loft Renovation</h5>
+              <h5 class="from-top mb-0">Federated Learning Across European Institutions</h5>
             </figcaption>
           </figure>
         </div>
         
         <div class="project item col-md-6 col-xl-4 ">
           <figure class="overlay overlay-1 rounded">
-            <a href="" 
+            <a href="/assets/img/projects/usecase.png" 
                data-glightbox 
                data-gallery="shots-group">
-              <img src="/assets/img/photos/f2.webp" alt="Sweden Brand Design" />
+              <img src="/assets/img/projects/usecase.png" alt="Federated Learning Across European Institutions" />
             </a>
             <figcaption>
-              <h5 class="from-top mb-0">Sweden Brand Design</h5>
+              <h5 class="from-top mb-0">Federated Learning Across European Institutions</h5>
             </figcaption>
           </figure>
         </div>
         
         <div class="project item col-md-6 col-xl-4 ">
           <figure class="overlay overlay-1 rounded">
-            <a href="" 
+            <a href="/assets/img/projects/research.png" 
                data-glightbox 
                data-gallery="shots-group">
-              <img src="/assets/img/photos/f3.webp" alt="Scotland Brand Design" />
+              <img src="/assets/img/projects/research.png" alt="Federated Research on Multicenter Medical Imaging" />
             </a>
             <figcaption>
-              <h5 class="from-top mb-0">Scotland Brand Design</h5>
+              <h5 class="from-top mb-0">Federated Research on Multicenter Medical Imaging</h5>
             </figcaption>
           </figure>
         </div>
         
         <div class="project item col-md-6 col-xl-4 ">
           <figure class="overlay overlay-1 rounded">
-            <a href="" 
+            <a href="/assets/img/projects/research.png" 
                data-glightbox 
                data-gallery="shots-group">
-              <img src="/assets/img/photos/pd9.webp" alt="Memphis Brand Design" />
+              <img src="/assets/img/projects/research.png" alt="Federated Research on Multicenter Medical Imaging" />
             </a>
             <figcaption>
-              <h5 class="from-top mb-0">Memphis Brand Design</h5>
+              <h5 class="from-top mb-0">Federated Research on Multicenter Medical Imaging</h5>
             </figcaption>
           </figure>
         </div>
         
         <div class="project item col-md-6 col-xl-4 ">
           <figure class="overlay overlay-1 rounded">
-            <a href="" 
+            <a href="/assets/img/projects/research.png" 
                data-glightbox 
                data-gallery="shots-group">
-              <img src="/assets/img/photos/pp29.webp" alt="Tech Conference Event Design" />
+              <img src="/assets/img/projects/research.png" alt="Federated Research on Multicenter Medical Imaging" />
             </a>
             <figcaption>
-              <h5 class="from-top mb-0">Tech Conference Event Design</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/pd10.webp" alt="Architectural Photography Series Parturient Cursus" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Architectural Photography Series Parturient Cursus</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/pd8.webp" alt="Motion Design Collection" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Motion Design Collection</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/rp3.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/rp3.webp" alt="Creative Branding Campaign" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Creative Branding Campaign</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/pd11.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/pd11.webp" alt="Digital UX Research & Strategy" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Digital UX Research & Strategy</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/pp24.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/pp24.webp" alt="Eco-Friendly Packaging Redesign" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Eco-Friendly Packaging Redesign</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/pp25.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/pp25.webp" alt="Friendly Packaging Redesign" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Friendly Packaging Redesign</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/pd9.webp" alt="Urban Landscape Photography" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Urban Landscape Photography</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/pp28.webp" alt="Coffee Packaging Design" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Coffee Packaging Design</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/pd8.webp" alt="Demo 19-1 Ipsum Decoration Lorem Ipsum" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Demo 19-1 Ipsum Decoration Lorem Ipsum</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/pd9.webp" alt="Demo 19-2 Lorem Decoration Lorem Ipsum" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Demo 19-2 Lorem Decoration Lorem Ipsum</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/pd10.webp" alt="Demo 19-3 Curve Decoration Lorem Ipsum" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Demo 19-3 Curve Decoration Lorem Ipsum</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/pd11.webp" alt="Demo 19-4 Round Decoration Lorem Ipsum" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Demo 19-4 Round Decoration Lorem Ipsum</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/pd7.webp" alt="Demo 19 Curate Decoration Lorem Ipsum" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Demo 19 Curate Decoration Lorem Ipsum</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/pp13.webp" alt="Demo 2" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Demo 2</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/pp14.webp" alt="Demo 2" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Demo 2</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/pp15.webp" alt="Demo 2" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Demo 2</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/pp16.webp" alt="Demo 2" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Demo 2</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/pp17.webp" alt="Demo 2" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Demo 2</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/pp18.webp" alt="Demo 2" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Demo 2</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/pp12.webp" alt="Demo 2" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Demo 2</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/rp17.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/sp2.webp" alt="Demo 7-1 Augmented Reality" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Demo 7-1 Augmented Reality</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/rp17.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/sp3.webp" alt="Demo 7-2 LOrem Ipsum Reality" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Demo 7-2 LOrem Ipsum Reality</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/rp17.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/sp4.webp" alt="Demo 7-3 Luvelle Ipsum Reality" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Demo 7-3 Luvelle Ipsum Reality</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/rp17.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/sp5.webp" alt="Demo 7-4 Luvelle Ipsum Reality" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Demo 7-4 Luvelle Ipsum Reality</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/rp17.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/sp6.webp" alt="Demo 7-5 Luvelle Ipsum Reality" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Demo 7-5 Luvelle Ipsum Reality</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/rp17.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/sp5.webp" alt="Demo 7-6 Luvelle Ipsum Reality" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Demo 7-6 Luvelle Ipsum Reality</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/sp1.webp" alt="Demo 7 Reality is Augmented" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Demo 7 Reality is Augmented</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/rp1.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/rp1.webp" alt="Mountain Resort Architecture" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Mountain Resort Architecture</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/pd7.webp" alt="Fashion Editorial Photography" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Fashion Editorial Photography</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/rp2.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/rp2.webp" alt="Interactive Museum Experience" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Interactive Museum Experience</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/pp27.webp" alt="Luxury Packaging Design" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Luxury Packaging Design</h5>
-            </figcaption>
-          </figure>
-        </div>
-        
-        <div class="project item col-md-6 col-xl-4 ">
-          <figure class="overlay overlay-1 rounded">
-            <a href="/assets/img/photos/pp7.webp" 
-               data-glightbox 
-               data-gallery="shots-group">
-              <img src="/assets/img/photos/pp26.webp" alt="Modern Brand Identity Design" />
-            </a>
-            <figcaption>
-              <h5 class="from-top mb-0">Modern Brand Identity Design</h5>
+              <h5 class="from-top mb-0">Federated Research on Multicenter Medical Imaging</h5>
             </figcaption>
           </figure>
         </div>
@@ -4418,7 +1825,7 @@
       <span class="nt">&lt;/div&gt;</span>
 
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row {{ page.portfolio9.layout.row_classes }}"</span><span class="nt">&gt;</span>
-        {% assign photo_projects = site.projects | where: "category", "Photography" %}
+        {% assign photo_projects = site.real_projects | where: "category", "Photography" %}
         {% for project in photo_projects %}
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"project item {{ page.portfolio9.project.column_classes }} {{ project.tags | join: ' ' }}"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"{{ page.portfolio9.project.figure_classes }}"</span><span class="nt">&gt;</span>
@@ -4507,88 +1914,6 @@
 
     
     
-    
-    <div class="row gy-10 align-items-center mb-15 mb-md-17">
-      <div class="col-lg-7">
-        <div class="card bg-soft-grape">
-          <div class="card-body px-9 py-0 overflow-hidden">
-            
-            <div class="row gx-4 gx-md-9">
-              
-              <div class="col-6">
-                <figure class="mt-9">
-                  <a href="/projects/sample-banner-image-5/">
-                    <img class="shadow-lg rounded-top mt-9" 
-                         src="/assets/img/demos/d18.webp" 
-                         srcset="/assets/img/demos/d18@2x.webp 2x" 
-                         alt="Brand Guidelines Cover" />
-                  </a>
-                </figure>
-              </div>
-              
-              <div class="col-6">
-                <figure >
-                  <a href="/projects/sample-banner-image-5/">
-                    <img class="shadow-lg rounded-bottom" 
-                         src="/assets/img/demos/d18-2.webp" 
-                         srcset="/assets/img/demos/d18-2@2x.webp 2x" 
-                         alt="Logo System" />
-                  </a>
-                </figure>
-              </div>
-              
-            </div>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 ms-auto">
-        <h3 class="h1 post-title ls-sm mb-2">Sweden Brand Design</h3>
-        <div class="post-category text-muted mb-4">
-          
-          
-          <span>Demo</span>
-          
-        </div>
-        <p class="mb-6"><p>This comprehensive brand redesign embraced the playful aesthetics of Memphis Design, combining bold geometric patterns with vibrant colors to create a distinctive visual identity that stands out in a competitive market.</p>
-</p>
-        <a href="/projects/sample-banner-image-5/" class="btn btn-grape rounded">See Project</a>
-      </div>
-    </div>
-    
-    
-    <div class="row gy-10 align-items-center ">
-      <div class="col-lg-7 order-lg-2">
-        <div class="card bg-soft-primary">
-          <div class="card-body p-11 overflow-hidden">
-            
-            <figure>
-              <a href="/projects/sample-banner-image-6/">
-                <img src="/assets/img/photos/f3.webp" 
-                     srcset="/assets/img/photos/f3@2x.webp 2x" 
-                     alt="Scotland Brand Design" />
-              </a>
-            </figure>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 me-auto">
-        <h3 class="h1 post-title ls-sm mb-2">Scotland Brand Design</h3>
-        <div class="post-category text-muted mb-4">
-          
-          
-          <span>Demo</span>
-          
-        </div>
-        <p class="mb-6"><p>This comprehensive brand redesign embraced the playful aesthetics of Memphis Design, combining bold geometric patterns with vibrant colors to create a distinctive visual identity that stands out in a competitive market.</p>
-</p>
-        <a href="/projects/sample-banner-image-6/" class="btn btn-primary rounded">See Project</a>
-      </div>
-    </div>
-    
   </div>
 
   <div class="container pb-15 pb-md-17">
@@ -4612,7 +1937,7 @@
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
-    {% assign featured_projects = site.projects | where: "featured", true | limit: 2 %}
+    {% assign featured_projects = site.real_projects | where: "featured", true | limit: 2 %}
     {% for project in featured_projects %}
     {% assign config = page.portfolio10.featured_projects[forloop.index0] %}
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row gy-10 align-items-center {% unless forloop.last %}mb-15 mb-md-17{% endunless %}"</span><span class="nt">&gt;</span>
@@ -4736,160 +2061,6 @@
     <div class="demos-wrapper">
       
       
-      
-      <div class="project mb-10">
-        <div class="card bg-soft-grape">
-          <div class="card-body ps-xl-12 py-0 overflow-hidden">
-            <div class="row gx-md-8 gx-xl-12 d-flex align-items-center">
-              <div class="col-lg-7">
-                <div class="row gx-7">
-                  
-                  <div class="col-6">
-                    <figure class="itooltip itooltip-grape mt-9" 
-                            title='<h5 class="mb-0">Click to see the demo</h5>'>
-                      <a href="/projects/sample-banner-image-5/" target="_blank">
-                        <img class="shadow-lg rounded-top" 
-                             src="/assets/img/demos/d18.webp" 
-                             srcset="/assets/img/demos/d18@2x.webp 2x" 
-                             alt="Brand Guidelines Cover" />
-                      </a>
-                    </figure>
-                  </div>
-                  
-                  <div class="col-6">
-                    <figure class="itooltip itooltip-grape " 
-                            title='<h5 class="mb-0">Click to see the demo</h5>'>
-                      <a href="/projects/sample-banner-image-5/" target="_blank">
-                        <img class="shadow-lg rounded-bottom" 
-                             src="/assets/img/demos/d18-2.webp" 
-                             srcset="/assets/img/demos/d18-2@2x.webp 2x" 
-                             alt="Logo System" />
-                      </a>
-                    </figure>
-                  </div>
-                  
-                </div>
-              </div>
-
-              <div class="col-lg-5 d-none d-lg-block">
-                <h2 class="post-title fs-30 mb-4">Sweden Brand Design</h2>
-                <ul class="icon-list bullet-grape row ms-0 gy-2">
-                  
-                  <li class="col-md-6">
-                    <span><i class="uil uil-check"></i></span>
-                    <span>Responsive Design</span>
-                  </li>
-                  
-                  <li class="col-md-6">
-                    <span><i class="uil uil-check"></i></span>
-                    <span>Multiple Layouts</span>
-                  </li>
-                  
-                  <li class="col-md-6">
-                    <span><i class="uil uil-check"></i></span>
-                    <span>Custom Components</span>
-                  </li>
-                  
-                  <li class="col-md-6">
-                    <span><i class="uil uil-check"></i></span>
-                    <span>Modern Typography</span>
-                  </li>
-                  
-                  <li class="col-md-6">
-                    <span><i class="uil uil-check"></i></span>
-                    <span>Bootstrap Framework</span>
-                  </li>
-                  
-                  <li class="col-md-6">
-                    <span><i class="uil uil-check"></i></span>
-                    <span>Detailed Documentation</span>
-                  </li>
-                  
-                </ul>
-                <a href="/projects/sample-banner-image-5/" target="_blank" class="btn btn-sm btn-grape rounded-pill mt-1">See Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      
-      <div class="project ">
-        <div class="card bg-soft-fuchsia">
-          <div class="card-body ps-xl-12 py-0 overflow-hidden">
-            <div class="row gx-md-8 gx-xl-12 d-flex align-items-center">
-              <div class="col-lg-7">
-                <div class="row gx-7">
-                  
-                  <div class="col-6">
-                    <figure class="itooltip itooltip-fuchsia mt-9" 
-                            title='<h5 class="mb-0">Click to see the demo</h5>'>
-                      <a href="/projects/sample-banner-image-6/" target="_blank">
-                        <img class="shadow-lg rounded-top" 
-                             src="/assets/img/demos/d19.webp" 
-                             srcset="/assets/img/demos/d19@2x.webp 2x" 
-                             alt="Brand Guidelines Cover" />
-                      </a>
-                    </figure>
-                  </div>
-                  
-                  <div class="col-6">
-                    <figure class="itooltip itooltip-fuchsia " 
-                            title='<h5 class="mb-0">Click to see the demo</h5>'>
-                      <a href="/projects/sample-banner-image-6/" target="_blank">
-                        <img class="shadow-lg rounded-bottom" 
-                             src="/assets/img/demos/d19-2.webp" 
-                             srcset="/assets/img/demos/d19-2@2x.webp 2x" 
-                             alt="Logo System" />
-                      </a>
-                    </figure>
-                  </div>
-                  
-                </div>
-              </div>
-
-              <div class="col-lg-5 d-none d-lg-block">
-                <h2 class="post-title fs-30 mb-4">Scotland Brand Design</h2>
-                <ul class="icon-list bullet-fuchsia row ms-0 gy-2">
-                  
-                  <li class="col-md-6">
-                    <span><i class="uil uil-check"></i></span>
-                    <span>Responsive Design</span>
-                  </li>
-                  
-                  <li class="col-md-6">
-                    <span><i class="uil uil-check"></i></span>
-                    <span>Multiple Layouts</span>
-                  </li>
-                  
-                  <li class="col-md-6">
-                    <span><i class="uil uil-check"></i></span>
-                    <span>Custom Components</span>
-                  </li>
-                  
-                  <li class="col-md-6">
-                    <span><i class="uil uil-check"></i></span>
-                    <span>Modern Typography</span>
-                  </li>
-                  
-                  <li class="col-md-6">
-                    <span><i class="uil uil-check"></i></span>
-                    <span>Bootstrap Framework</span>
-                  </li>
-                  
-                  <li class="col-md-6">
-                    <span><i class="uil uil-check"></i></span>
-                    <span>Detailed Documentation</span>
-                  </li>
-                  
-                </ul>
-                <a href="/projects/sample-banner-image-6/" target="_blank" class="btn btn-sm btn-fuchsia rounded-pill mt-1">See Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
       <div class="text-center mt-12">
         <a href="#" class="btn btn-primary rounded-pill">
           See All Demos
@@ -4922,7 +2093,7 @@
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"demos-wrapper"</span><span class="nt">&gt;</span>
-      {% assign demo_projects = site.projects | where: "category", "Demo"  %}
+      {% assign demo_projects = site.real_projects | where: "category", "Demo"  %}
       {% for project in demo_projects | limit: 2 %}
       {% assign config = page.portfolio11.demos[forloop.index0] %}
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"project {% unless forloop.last %}mb-10{% endunless %}"</span><span class="nt">&gt;</span>
@@ -4931,7 +2102,7 @@
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row gx-md-8 gx-xl-12 d-flex align-items-center"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"{{ config.image_column }}"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row gx-7"</span><span class="nt">&gt;</span>
-                  {% for image in project.gallery_images | limit: 2 %}
+                  {% for image in project.gallery_images limit:2 %}
                   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"itooltip itooltip-{{ config.color }} {% if forloop.first %}mt-9{% endif %}"</span> 
                             <span class="na">title=</span><span class="s">'&lt;h5 class="mb-0"&gt;Click to see the demo&lt;/h5&gt;'</span><span class="nt">&gt;</span>

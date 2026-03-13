@@ -210,7 +210,7 @@
     <div class="row gx-lg-0 gy-10 align-items-center">
       <div class="col-lg-5 me-5">
         <h2 class="display-2 mb-3 text-fedbiomed-primary">Medical data <span class="text-fedbiomed-tertiary">cannot</span> move.<br />But medical research <span class="text-fedbiomed-tertiary">must</span>.</h2>
-        <a href="#" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl mt-3">Challenges in Healthcare ➤</a>
+        <a href="project#challenges-healthcare" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl mt-3">Challenges in Healthcare ➤</a>
       </div>
       <!-- /column -->
       <div class="col-lg-6">
@@ -305,7 +305,7 @@
         <div class="col-lg-5 order-1 order-lg-2">
             <h2 class="display-2 mb-3 text-fedbiomed-primary">Move the <span class="text-fedbiomed-tertiary">algorithm</span>, not the <span class="text-fedbiomed-tertiary">data</span>.</h2>
             <p class="lead fs-lg fw-lighter">Fed-BioMed enables hospitals to collaborate by training models locally and sharing only aggregated results.</p>
-            <a href="#" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl mt-3">Discover Fed-BioMed ➤</a>
+            <a href="project#what-is-fedbiomed" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl mt-3">Discover Fed-BioMed ➤</a>
         </div>
         <!--/column -->
     </div>
@@ -324,7 +324,7 @@
             <div class="card-body d-flex flex-column align-items-center justify-content-center">
               <h3 class="display-5 text-fedbiomed-primary">Security</h3>
               <p class="lead fs-lg mb-5 fw-lighter">Built-in protection at every stage of collaboration</p>
-              <a href="#" class="hover link-fedbiomed-tertiary">Explore Security ➤</a>
+              <a href="project#Security" class="hover link-fedbiomed-tertiary">Explore Security ➤</a>
             </div>
             <!--/.card-body -->
           </div>
@@ -337,7 +337,7 @@
             <div class="card-body d-flex flex-column align-items-center justify-content-center">
               <h3 class="display-5 text-fedbiomed-primary">Governance</h3>
               <p class="lead fs-lg mb-5 fw-lighter">Hospitals approve and control every training activity</p>
-              <a href="#" class="hover link-fedbiomed-tertiary">Explore Governance ➤</a>
+              <a href="project#Governance" class="hover link-fedbiomed-tertiary">Explore Governance ➤</a>
             </div>
             <!--/.card-body -->
           </div>
@@ -350,7 +350,7 @@
             <div class="card-body d-flex flex-column align-items-center justify-content-center">
               <h3 class="display-5 text-fedbiomed-primary">Usability</h3>
               <p class="lead fs-lg mb-5 fw-lighter">Designed for real-world teams, not only researchers</p>
-              <a href="#" class="hover link-fedbiomed-tertiary">Explore Usability ➤</a>
+              <a href="project#Usability" class="hover link-fedbiomed-tertiary">Explore Usability ➤</a>
             </div>
             <!--/.card-body -->
           </div>
@@ -363,7 +363,7 @@
             <div class="card-body d-flex flex-column align-items-center justify-content-center">
               <h3 class="display-5 text-fedbiomed-primary">Community-driven</h3>
               <p class="lead fs-lg mb-5 fw-lighter">Developed openly with hospitals and research partners</p>
-              <a href="#" class="hover link-fedbiomed-tertiary">Explore Community-driven ➤</a>
+              <a href="project#Community-driven" class="hover link-fedbiomed-tertiary">Explore Community-driven ➤</a>
             </div>
             <!--/.card-body -->
           </div>
@@ -433,7 +433,6 @@
       <div id="how-animation-track" class="how-animation-track">
         <div class="how-scroll-step"></div>
         <div class="how-scroll-step"></div>
-        <div class="how-scroll-step"></div>
       </div>
 
     </div>
@@ -444,286 +443,230 @@
 document.addEventListener("DOMContentLoaded", function () {
   const canvas = document.getElementById("how-animation-canvas");
   if (!canvas) return;
-
   const ctx = canvas.getContext("2d");
-  const track = document.getElementById("how-animation-track");
-  const stepStage = document.getElementById("how-step-stage");
-  const stepPanels = [
-    document.getElementById("how-step-panel-0"),
-    document.getElementById("how-step-panel-1"),
-    document.getElementById("how-step-panel-2")
-  ];
 
-  const steps = [
-    {
-      start: 0,
-      end: 60
-    },
-    {
-      start: 61,
-      end: 206
-    },
-    {
-      start: 207,
-      end: 297
-    }
+  const FPS_SPEED = 1.8;
+
+  const phases = [
+    { endFrame: 0,   textPanel: 0, speed: FPS_SPEED / 5},
+    { endFrame: 60,  textPanel: 1, speed: FPS_SPEED },
+    { endFrame: 206, textPanel: 1, speed: FPS_SPEED },
+    { endFrame: 255, textPanel: 2, speed: FPS_SPEED },
+    { endFrame: 297, textPanel: 2, speed: FPS_SPEED / 3 },  // ← più lento
   ];
 
   const lastFrame = 297;
   const frameCount = lastFrame + 1;
   const frames = new Array(frameCount);
 
-  let targetFrame = 0;
+  let currentPhase = 0;
   let displayFrame = 0;
-  let currentDrawnFrame = -1;
+  let targetFrame = 0;
+  let isTransitioning = false;
   let animationStarted = false;
+  let lastDrawn = -1;
 
+  // ── Frame path ─────────────────────────────────────────────
   function getFramePath(index) {
     const padded = String(index).padStart(5, "0");
     return "/test-fbm-site/assets/img/how-it-works/" + "how-it-works_jpeg_" + padded + ".jpg";
   }
 
-  function clamp(value, min, max) {
-    return Math.max(min, Math.min(max, value));
-  }
-
-  function lerp(a, b, t) {
-    return a + (b - a) * t;
-  }
-
-  function getStepTravel() {
-    if (window.innerWidth <= 767.98) return Math.round(window.innerWidth * 0.24);
-    if (window.innerWidth <= 991.98) return Math.round(window.innerWidth * 0.18);
-    return Math.round(window.innerHeight * 0.52);
-  }
-
+  // ── Canvas ─────────────────────────────────────────────────
   function resizeCanvas() {
     const rect = canvas.getBoundingClientRect();
     const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
-
     canvas.width = Math.round(rect.width * dpr);
     canvas.height = Math.round(rect.height * dpr);
-
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.scale(dpr, dpr);
-
     drawFrame(Math.round(displayFrame));
-    updateStepPanels(displayFrame);
   }
 
   function drawFrame(index) {
+    index = Math.max(0, Math.min(lastFrame, index));
     const img = frames[index];
     if (!img || !img.complete) return false;
-
     const w = canvas.clientWidth;
     const h = canvas.clientHeight;
-
     ctx.clearRect(0, 0, w, h);
-
     const imageRatio = img.width / img.height;
     const canvasRatio = w / h;
-
-    let drawWidth, drawHeight;
-
-    if (imageRatio > canvasRatio) {
-      drawWidth = w;
-      drawHeight = w / imageRatio;
-    } else {
-      drawHeight = h;
-      drawWidth = h * imageRatio;
-    }
-
-    const x = (w - drawWidth) / 2;
-    const y = (h - drawHeight) / 2;
-
-    ctx.drawImage(img, x, y, drawWidth, drawHeight);
+    let dw, dh;
+    if (imageRatio > canvasRatio) { dw = w; dh = w / imageRatio; }
+    else { dh = h; dw = h * imageRatio; }
+    ctx.drawImage(img, (w - dw) / 2, (h - dh) / 2, dw, dh);
     return true;
   }
 
-  function getTransitionProgress(frame, index) {
-    const step = steps[index];
-    const range = step.end - step.start + 1;
-    return clamp((frame - step.start) / range, 0, 1);
-  }
+  // ── Step panels ────────────────────────────────────────────
+  const stepPanels = [
+    document.getElementById("how-step-panel-0"),
+    document.getElementById("how-step-panel-1"),
+    document.getElementById("how-step-panel-2")
+  ];
 
-  function updateStepPanels(frame) {
-    if (!stepStage) return;
-
-    const travel = getStepTravel();
+  function updateStepPanels(panelIndex) {
+    const travel = window.innerWidth <= 991.98
+      ? Math.round(window.innerWidth * 0.22)
+      : Math.round(window.innerHeight * 0.52);
     const isHorizontal = window.innerWidth <= 991.98;
 
-    const values = [
-      { x: 0, y: travel, o: 0, z: 1 },
-      { x: 0, y: travel, o: 0, z: 1 },
-      { x: 0, y: travel, o: 0, z: 1 }
-    ];
-
-    function setState(currentIndex, nextIndex, progress) {
-      const p = clamp(progress, 0, 1);
-
-      if (isHorizontal) {
-        values[currentIndex] = {
-          x: 0,
-          y: 0,
-          o: lerp(1, 0, p),
-          z: 1
-        };
-
-        values[nextIndex] = {
-          x: lerp(travel, 0, p),
-          y: 0,
-          o: lerp(0, 1, p),
-          z: 2
-        };
-
-        if (p >= 0.999) {
-          values[currentIndex] = {
-            x: -travel,
-            y: 0,
-            o: 0,
-            z: 1
-          };
-        }
-      } else {
-        values[currentIndex] = {
-          x: 0,
-          y: 0,
-          o: lerp(1, 0, p),
-          z: 1
-        };
-
-        values[nextIndex] = {
-          x: 0,
-          y: lerp(travel, 0, p),
-          o: lerp(0, 1, p),
-          z: 2
-        };
-
-        if (p >= 0.999) {
-          values[currentIndex] = {
-            x: 0,
-            y: -travel,
-            o: 0,
-            z: 1
-          };
-        }
-      }
-    }
-
-    if (frame <= steps[0].end) {
-      const p = getTransitionProgress(frame, 0);
-      setState(0, 1, p);
-    } else if (frame <= steps[1].end) {
-      const p = getTransitionProgress(frame, 1);
-
-      if (isHorizontal) {
-        values[0] = { x: -travel, y: 0, o: 0, z: 1 };
-      } else {
-        values[0] = { x: 0, y: -travel, o: 0, z: 1 };
-      }
-
-      setState(1, 2, p);
-    } else {
-      if (isHorizontal) {
-        values[0] = { x: -travel, y: 0, o: 0, z: 1 };
-        values[1] = { x: -travel, y: 0, o: 0, z: 1 };
-        values[2] = { x: 0, y: 0, o: 1, z: 2 };
-      } else {
-        values[0] = { x: 0, y: -travel, o: 0, z: 1 };
-        values[1] = { x: 0, y: -travel, o: 0, z: 1 };
-        values[2] = { x: 0, y: 0, o: 1, z: 2 };
-      }
-    }
-
-    stepPanels.forEach(function (panel, index) {
+    stepPanels.forEach(function (panel, i) {
       if (!panel) return;
-      panel.style.transform = "translate3d(" + values[index].x + "px, " + values[index].y + "px, 0)";
-      panel.style.opacity = values[index].o;
-      panel.style.zIndex = values[index].z;
+      panel.style.transition = "opacity 0.4s ease, transform 0.4s ease";
+      if (i === panelIndex) {
+        panel.style.transform = "translate3d(0, 0, 0)";
+        panel.style.opacity = 1;
+        panel.style.zIndex = 2;
+      } else if (i < panelIndex) {
+        panel.style.transform = isHorizontal
+          ? "translate3d(" + (-travel) + "px, 0, 0)"
+          : "translate3d(0, " + (-travel) + "px, 0)";
+        panel.style.opacity = 0;
+        panel.style.zIndex = 1;
+      } else {
+        panel.style.transform = isHorizontal
+          ? "translate3d(" + travel + "px, 0, 0)"
+          : "translate3d(0, " + travel + "px, 0)";
+        panel.style.opacity = 0;
+        panel.style.zIndex = 1;
+      }
     });
   }
 
-  function updateTargetFromScroll() {
-    if (!track) return;
-
-    const rect = track.getBoundingClientRect();
-    const viewportH = window.innerHeight;
-
-    const start = viewportH * 0.50;
-    const end = rect.height - viewportH * 0.35;
-    const distance = end - start;
-
-    if (distance <= 0) return;
-
-    let progress = (start - rect.top) / distance;
-    progress = clamp(progress, 0, 1);
-
-    targetFrame = progress * lastFrame;
-  }
-
-  function animate() {
-    const diff = targetFrame - displayFrame;
-
-    if (Math.abs(diff) > 0.01) {
-      displayFrame += diff * 0.22;
-    } else {
-      displayFrame = targetFrame;
-    }
-
-    const roundedFrame = Math.floor(displayFrame);
-
-    if (roundedFrame !== currentDrawnFrame) {
-      const drawn = drawFrame(roundedFrame);
-      if (drawn) {
-        currentDrawnFrame = roundedFrame;
+  // ── Testo corretto in base al frame corrente ───────────────
+  function getTextPanelForFrame(frame) {
+    // Trova la fase in cui siamo in base al frame
+    for (let i = phases.length - 1; i >= 0; i--) {
+      if (frame >= phases[i].endFrame) {
+        return phases[i].textPanel;
       }
     }
-
-    updateStepPanels(displayFrame);
-    requestAnimationFrame(animate);
+    return phases[0].textPanel;
   }
 
+  // ── Loop a velocità costante ───────────────────────────────
+  function loop() {
+    const diff = targetFrame - displayFrame;
+
+    if (Math.abs(diff) > 0.1) {
+      const direction = diff > 0 ? 1 : -1;
+      displayFrame += direction * currentSpeed;
+      if ((direction > 0 && displayFrame > targetFrame) ||
+          (direction < 0 && displayFrame < targetFrame)) {
+        displayFrame = targetFrame;
+      }
+      isTransitioning = true;
+    } else {
+      displayFrame = targetFrame;
+      isTransitioning = false;
+    }
+
+    const rounded = Math.round(displayFrame);
+
+    if (rounded !== lastDrawn) {
+      drawFrame(rounded);
+      lastDrawn = rounded;
+    }
+
+    requestAnimationFrame(loop);
+  }
+
+  // ── Navigazione fasi ───────────────────────────────────────
+  let currentSpeed = FPS_SPEED;  // ← aggiungi questa variabile
+
+  function goToPhase(index) {
+    index = Math.max(0, Math.min(phases.length - 1, index));
+    if (index === currentPhase && !isTransitioning) return;
+
+    // Velocità sempre dalla fase con indice più alto
+    const higherPhase = index > currentPhase ? index : currentPhase;
+    currentSpeed = phases[higherPhase].speed;
+
+    currentPhase = index;
+    targetFrame = phases[index].endFrame;
+    isTransitioning = true;
+    updateStepPanels(phases[index].textPanel);
+  }
+
+  // ── Sezione visibile ───────────────────────────────────────
+  function isSectionActive() {
+    const section = document.querySelector(".how-it-works-scroll");
+    if (!section) return false;
+    const rect = section.getBoundingClientRect();
+    return rect.top <= 0 && rect.bottom >= window.innerHeight;
+  }
+
+  // ── Scroll wheel ───────────────────────────────────────────
+  let wheelAccum = 0;
+  const WHEEL_THRESHOLD = 60;
+  let wheelCooldown = false;
+
+  window.addEventListener("wheel", function (e) {
+    if (!isSectionActive()) return;
+
+    const scrollingDown = e.deltaY > 0;
+    const scrollingUp = e.deltaY < 0;
+
+    // Lascia scrollare la pagina agli estremi quando animazione finita
+    if (scrollingDown && currentPhase >= phases.length - 1 && !isTransitioning) return;
+    if (scrollingUp && currentPhase <= 0 && !isTransitioning) return;
+
+    // Blocca scroll pagina mentre siamo dentro la sezione
+    e.preventDefault();
+
+    if (wheelCooldown || isTransitioning) return;
+
+    wheelAccum += e.deltaY;
+    if (Math.abs(wheelAccum) >= WHEEL_THRESHOLD) {
+      const dir = wheelAccum > 0 ? 1 : -1;
+      goToPhase(currentPhase + dir);
+      wheelAccum = 0;
+      wheelCooldown = true;
+      setTimeout(function () { wheelCooldown = false; }, 800);
+    }
+  }, { passive: false });
+
+  // ── Touch ──────────────────────────────────────────────────
+  let touchStartY = 0;
+  window.addEventListener("touchstart", function (e) {
+    touchStartY = e.touches[0].clientY;
+  }, { passive: true });
+
+  window.addEventListener("touchend", function (e) {
+    if (!isSectionActive()) return;
+    if (isTransitioning) return;
+    const diff = touchStartY - e.changedTouches[0].clientY;
+    if (Math.abs(diff) < 40) return;
+    const dir = diff > 0 ? 1 : -1;
+    if (dir > 0 && currentPhase >= phases.length - 1) return;
+    if (dir < 0 && currentPhase <= 0) return;
+    goToPhase(currentPhase + dir);
+  }, { passive: true });
+
+  // ── Preload ────────────────────────────────────────────────
   function preloadFrames() {
     for (let i = 0; i < frameCount; i++) {
       const img = new Image();
       img.decoding = "async";
-      img.loading = "eager";
       img.src = getFramePath(i);
-
       img.onload = function () {
         frames[i] = img;
-
         if (!animationStarted && i === 0) {
           animationStarted = true;
           resizeCanvas();
-          updateTargetFromScroll();
           drawFrame(0);
           updateStepPanels(0);
-          requestAnimationFrame(animate);
+          requestAnimationFrame(loop);
         }
       };
-
-      img.onerror = function () {
-        console.error("Frame non trovato:", getFramePath(i));
-      };
-
       frames[i] = img;
     }
   }
 
   preloadFrames();
-
-  window.addEventListener("resize", function () {
-    resizeCanvas();
-    updateTargetFromScroll();
-  });
-
-  window.addEventListener("scroll", updateTargetFromScroll, { passive: true });
-
-  setTimeout(function () {
-    resizeCanvas();
-    updateTargetFromScroll();
-  }, 100);
+  window.addEventListener("resize", resizeCanvas);
 });
 </script>
 <section class="wrapper bg-light text-fedbiomed-primary" aria-labelledby="who-title">
@@ -862,7 +805,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </li>
           
         </ul>
-        <a href="#" class="btn btn-primary bg-gradient-dark-button border-0 rounded-xl mt-10">Explore real-world projects ➤</a>
+        <a href="project#real-projects" class="btn btn-primary bg-gradient-dark-button border-0 rounded-xl mt-10">Explore real-world projects ➤</a>
       </div>
     </div>
     <div class="d-flex flex-wrap justify-content-center align-items-center text-center">
