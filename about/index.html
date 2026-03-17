@@ -38,6 +38,16 @@
 
 
 
+<!-- custom color page wise-->
+<link rel="stylesheet" type="text/css" href="/test-fbm-site/assets/css/colors/grape.css">
+
+
+
+
+
+<!-- Custom Font Scheme Page Wise-->
+<link rel="preload" type="text/css" href="/test-fbm-site/assets/css/fonts/space.css" onload="this.rel='stylesheet'">
+
 
 
 
@@ -45,7 +55,8 @@
 </head>
 <body class="">
   <div class="content-wrapper">
-<header class="wrapper bg-gray">
+<header class="position-absolute w-100">
+
 
 
 <nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
@@ -124,21 +135,6 @@
     <div class="navbar-other w-100 d-flex ms-auto">
       <ul class="navbar-nav flex-row align-items-center ms-auto">
         
-        <li class="nav-item dropdown language-select text-uppercase">
-          <a class="nav-link dropdown-item dropdown-toggle hover" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            En
-          </a>
-          <ul class="dropdown-menu">
-            
-            <li class="nav-item"><a class="dropdown-item" href="#">En</a></li>
-            
-            <li class="nav-item"><a class="dropdown-item" href="#">De</a></li>
-            
-            <li class="nav-item"><a class="dropdown-item" href="#">Es</a></li>
-            
-          </ul>
-        </li>
-        
         
         
         
@@ -182,284 +178,302 @@
 </header>
 <!-- /header -->
 
-<section class="wrapper bg-gray">
-  <div class="container pt-10 pt-md-14 text-center">
-    <div class="row">
-      <div class="col-xl-6 mx-auto">
-        <h1 class="display-1 mb-4">Hello! This is Sandbox</h1>
-        <p class="lead fs-lg mb-0">A company turning ideas into beautiful things.</p>
+<section class="wrapper bg-gradient-fedbiomed">
+    <div class="container pt-10 pb-15 pt-md-14 text-center">
+      <div class="row">
+        <div class="mx-auto mb-5 mt-20">
+          <h1 class="display-1 mb-3 fw-lighter text-fedbiomed-primary">About</h1>
+        </div>
       </div>
-      <!-- /column -->
     </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container -->
-  <figure class="position-absoute" style="bottom: 0; left: 0; z-index: 2;"><img src="/assets/img/photos/bg12.jpg" alt="" /></figure>
-</section>
-<!-- /section -->
+  </section>
+  
+<section class="wrapper text-fedbiomed-primary">
+  <div class="container pt-10 pt-md-14 pb-8">
+    <div class="row align-items-center justify-content-center text-center text-lg-start gy-6 gx-lg-8 gx-xl-12">
 
-<section class="wrapper bg-light angled upper-end lower-end">
+      <!-- Logo -->
+      <div class="col-8 col-sm-6 col-md-4 col-lg-3 text-center">
+        <figure class="mb-0">
+          <img class="img-fluid w-100" src="/test-fbm-site/assets/img/logo_icon.png" alt="" />
+        </figure>
+      </div>
+
+      <!-- Content -->
+      <div class="col-12 col-lg-7">
+        <h1 class="display-1 fs-70 mb-4 px-md-15 px-lg-0 text-fedbiomed-primary" id="hero-title">
+          Fed-BioMed
+        </h1>
+
+        <p class="lead fs-lg mb-5 fw-lighter">
+          Open, Transparent and Trusted Collaborative Learning for Real-World Healthcare Applications
+        </p>
+
+        <div class="d-flex flex-row flex-wrap gap-3 justify-content-center justify-content-lg-start">
+          
+            <a href="https://inria.hal.science/hal-04081557v1/document" class="btn btn-primary bg-gradient-dark-button border-0 rounded-xl">
+              Read the paper ➤
+            </a>
+          
+            <a href="https://github.com/fedbiomed/fedbiomed" class="btn btn-primary bg-gradient-dark-button border-0 rounded-xl">
+              View GitHub ➤
+            </a>
+          
+            <a href="https://fedbiomed.org/latest/getting-started/what-is-fedbiomed/" class="btn btn-primary bg-gradient-dark-button border-0 rounded-xl">
+              Documentation ➤
+            </a>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section id="funding" class="wrapper bg-light text-fedbiomed-primary mt-15 mt-lg-20">
   <div class="container py-14 py-md-16">
-    <div class="row gx-lg-8 gx-xl-12 mb-14 mb-md-17 gy-10 align-items-center">
-      <div class="col-lg-6 position-relative order-lg-2">
-        <div class="shape bg-dot primary rellax w-16 h-20" data-rellax-speed="1" style="top: 3rem; left: 5.5rem"></div>
-        <div class="overlap-grid overlap-grid-2">
-          
-          <div class="item">
-            <figure class="rounded shadow"><img src="/assets/img/photos/about2.jpg" srcset="/assets/img/photos/about2@2x.jpg 2x" alt="" /></figure>
-          </div>
-          
-          <div class="item">
-            <figure class="rounded shadow"><img src="/assets/img/photos/about3.jpg" srcset="/assets/img/photos/about3@2x.jpg 2x" alt="" /></figure>
-          </div>
-          
-        </div>
+    <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-start">
+      
+      <div class="col-lg-4 position-lg-sticky" style="top: 8rem;">
+        <h2 class="display-2 pe-xxl-5 text-center text-lg-start text-fedbiomed-primary">
+          Funding &amp; Institutional Support
+        </h2>
+        <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
+        <p class="lead fs-lg mb-0 pe-xxl-5 text-center text-lg-start fw-lighter">
+          Fed-BioMed is maintained by a core research team within Inria and developed in collaboration with academic and clinical partners.
+        </p>
       </div>
-      <!--/column -->
-      <div class="col-lg-6">
-        <img src="/assets/img/icons/lineal/megaphone.svg" class="svg-inject icon-svg icon-svg-md mb-4" alt="" />
-        <h2 class="display-4 mb-3">Who Are We?</h2>
-        <p class="lead fs-lg">We are a digital and branding company that believes in the power of creative strategy and along with great design.</p>
-        <p class="mb-6">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-        <div class="row gy-3 gx-xl-8">
-          <div class="col-xl-6">
-            <ul class="icon-list bullet-bg bullet-soft-primary mb-0">
-              <li><span><i class="uil uil-check"></i></span><span>Aenean eu leo quam ornare curabitur blandit tempus.</span></li>
-              <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Nullam quis risus eget urna mollis ornare donec elit.</span></li>
-            </ul>
-          </div>
-          <!--/column -->
-          <div class="col-xl-6">
-            <ul class="icon-list bullet-bg bullet-soft-primary mb-0">
-              <li><span><i class="uil uil-check"></i></span><span>Etiam porta sem malesuada magna mollis euismod.</span></li>
-              <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Fermentum massa vivamus faucibus amet euismod.</span></li>
-            </ul>
-          </div>
-          <!--/column -->
-        </div>
-        <!--/.row -->
-      </div>
-      <!--/column -->
-    </div>
-    <!--/.row -->
-    <div class="row mb-5">
-      <div class="col-md-10 col-xl-8 col-xxl-7 mx-auto text-center">
-        <img src="/assets/img/icons/lineal/list.svg" class="svg-inject icon-svg icon-svg-md mb-4" alt="" />
-        <h2 class="display-4 mb-4 px-lg-14">Here are 3 working steps to organize our business projects.</h2>
-      </div>
-      <!-- /column -->
-    </div>
-    <!-- /.row -->
-    <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
-      <div class="col-lg-6 order-lg-2">
-        
-        <div class="card me-lg-6 ">
-          <div class="card-body p-6">
-            <div class="d-flex flex-row">
-              <div>
-                <span class="icon btn btn-circle btn-lg btn-soft-primary pe-none me-4"><span class="number">01</span></span>
-              </div>
-              <div>
-                <h4 class="mb-1">Collect Ideas</h4>
-                <p class="mb-0">Nulla vitae elit libero pharetra augue dapibus.</p>
-              </div>
-            </div>
-          </div>
-          <!--/.card-body -->
-        </div>
-        <!--/.card -->
-        
-        <div class="card ms-lg-13 mt-6">
-          <div class="card-body p-6">
-            <div class="d-flex flex-row">
-              <div>
-                <span class="icon btn btn-circle btn-lg btn-soft-primary pe-none me-4"><span class="number">02</span></span>
-              </div>
-              <div>
-                <h4 class="mb-1">Data Analysis</h4>
-                <p class="mb-0">Vivamus sagittis lacus vel augue laoreet.</p>
-              </div>
-            </div>
-          </div>
-          <!--/.card-body -->
-        </div>
-        <!--/.card -->
-        
-        <div class="card mx-lg-6 mt-6">
-          <div class="card-body p-6">
-            <div class="d-flex flex-row">
-              <div>
-                <span class="icon btn btn-circle btn-lg btn-soft-primary pe-none me-4"><span class="number">03</span></span>
-              </div>
-              <div>
-                <h4 class="mb-1">Finalize Product</h4>
-                <p class="mb-0">Cras mattis consectetur purus sit amet.</p>
-              </div>
-            </div>
-          </div>
-          <!--/.card-body -->
-        </div>
-        <!--/.card -->
-        
-      </div>
-      <!--/column -->
-      <div class="col-lg-6">
-        <h2 class="display-6 mb-3">How It Works?</h2>
-        <p class="lead fs-lg pe-lg-5">Find out everything you need to know and more about how we create our business process models.</p>
-        
-        
-        <p class="mb-6">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare.
 
-Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis.</p>
-        
-        <a href="#" class="btn btn-primary rounded-pill mb-0">Learn More</a>
+      <div class="col-lg-8 ms-auto">
+        <div class="row gy-20">
+          
+          <div class="col-12">
+            <h3 class="display-6 text-center mb-6 text-fedbiomed-primary fw-lighter">
+              Public Research Funding
+            </h3>
+
+            <div class="row row-cols-2 row-cols-md-3 gx-4 gx-md-5 gy-5 align-items-center justify-content-center text-center">
+              
+              <div class="col">
+                <figure class="mb-0 px-2 px-md-3">
+                  <img src="/test-fbm-site/assets/img/contributors/ANR.png" alt="Agence Nationale de la Recherche" class="img-fluid" />
+                </figure>
+              </div>
+              
+              <div class="col">
+                <figure class="mb-0 px-2 px-md-3">
+                  <img src="/test-fbm-site/assets/img/contributors/horizon_europe.png" alt="Horizon Europe" class="img-fluid" />
+                </figure>
+              </div>
+              
+              <div class="col">
+                <figure class="mb-0 px-2 px-md-3">
+                  <img src="/test-fbm-site/assets/img/contributors/france_2030.png" alt="France 2030" class="img-fluid" />
+                </figure>
+              </div>
+              
+            </div>
+          </div>
+          
+          <div class="col-12">
+            <h3 class="display-6 text-center mb-6 text-fedbiomed-primary fw-lighter">
+              Institutional Affiliation
+            </h3>
+
+            <div class="row row-cols-2 row-cols-md-3 gx-4 gx-md-5 gy-5 align-items-center justify-content-center text-center">
+              
+              <div class="col">
+                <figure class="mb-0 px-2 px-md-3">
+                  <img src="/test-fbm-site/assets/img/contributors/inria.png" alt="Inria" class="img-fluid" />
+                </figure>
+              </div>
+              
+              <div class="col">
+                <figure class="mb-0 px-2 px-md-3">
+                  <img src="/test-fbm-site/assets/img/contributors/UCA.png" alt="Université Côte d'Azur" class="img-fluid" />
+                </figure>
+              </div>
+              
+              <div class="col">
+                <figure class="mb-0 px-2 px-md-3">
+                  <img src="/test-fbm-site/assets/img/contributors/3iA.png" alt="3iA Côte d'Azur" class="img-fluid" />
+                </figure>
+              </div>
+              
+            </div>
+          </div>
+          
+          <div class="col-12">
+            <h3 class="display-6 text-center mb-6 text-fedbiomed-primary fw-lighter">
+              Industrial Contributors
+            </h3>
+
+            <div class="row row-cols-2 row-cols-md-3 gx-4 gx-md-5 gy-5 align-items-center justify-content-center text-center">
+              
+              <div class="col">
+                <figure class="mb-0 px-2 px-md-3">
+                  <img src="/test-fbm-site/assets/img/contributors/accenture.png" alt="Accenture" class="img-fluid" />
+                </figure>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
       </div>
-      <!--/column -->
+
     </div>
-    <!--/.row -->
   </div>
-  <!-- /.container -->
 </section>
-<!-- /section -->
+<section id="roadmap" class="wrapper bg-lightblue text-fedbiomed-primary">
+  <div class="container py-7 py-md-10">
 
-<section class="wrapper bg-soft-primary">
-  <div class="container pt-16 pb-14 pb-md-0">
-    <div class="row gx-lg-8 gx-xl-0 align-items-center">
-      <div class="col-md-5 col-lg-5 col-xl-4 offset-xl-1 d-none d-md-flex position-relative align-self-end">
-        <div class="shape rounded-circle bg-pale-primary rellax w-21 h-21 d-md-none d-lg-block" data-rellax-speed="1" style="top: 7rem; left: 1rem"></div>
-        <figure><img src="/assets/img/photos/co1.png" srcset="/assets/img/photos/co1@2x.png 2x" alt="" /></figure>
+    <!-- Header -->
+    <div class="row text-center text-lg-start">
+      <div class="col-12">
+        <h2 class="display-2 text-fedbiomed-primary mt-2 mb-0">
+          Roadmap
+        </h2>
+        <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
       </div>
-      <!--/column -->
-      <div class="col-md-7 col-lg-6 col-xl-6 col-xxl-5 offset-xl-1">
-        <div class="swiper-container dots-start dots-closer mt-md-10 mb-md-15" data-margin="30" data-dots="true">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              
-              <div class="swiper-slide">
-                <blockquote class="icon fs-lg">
-                  <p>"Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Vel augue laoreet rutrum faucibus dolor auctor "</p>
-                  <div class="blockquote-details">
-                    <div class="info ps-0">
-                      <h5 class="mb-1">Coriss Ambady</h5>
-                      <p class="mb-0">Financial Analyst</p>
-                    </div>
-                  </div>
-                </blockquote>
-              </div>
-              <!--/.swiper-slide -->
-              
-              <div class="swiper-slide">
-                <blockquote class="icon fs-lg">
-                  <p>"Fusce dapibus, tellus ac cursus tortor mauris condimentum fermentum massa justo sit amet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor."</p>
-                  <div class="blockquote-details">
-                    <div class="info ps-0">
-                      <h5 class="mb-1">Cory Zamora</h5>
-                      <p class="mb-0">Marketing Specialist</p>
-                    </div>
-                  </div>
-                </blockquote>
-              </div>
-              <!--/.swiper-slide -->
-              
-              <div class="swiper-slide">
-                <blockquote class="icon fs-lg">
-                  <p>"Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget porta ac consectetur vestibulum. "</p>
-                  <div class="blockquote-details">
-                    <div class="info ps-0">
-                      <h5 class="mb-1">Nikolas Brooten</h5>
-                      <p class="mb-0">Sales Manager</p>
-                    </div>
-                  </div>
-                </blockquote>
-              </div>
-              <!--/.swiper-slide -->
-              
-              <div class="swiper-slide">
-                <blockquote class="icon fs-lg">
-                  <p>"Etiam adipiscing tincidunt elit convallis felis suscipit ut. Phasellus rhoncus tincidunt auctor. Nullam eu sagittis mauris. Donec non dolor ac elit aliquam tincidunt at at sapien."</p>
-                  <div class="blockquote-details">
-                    <div class="info ps-0">
-                      <h5 class="mb-1">Coriss Juker</h5>
-                      <p class="mb-0">Market Analyst</p>
-                    </div>
-                  </div>
-                </blockquote>
-              </div>
-              <!--/.swiper-slide -->
-              
-              <div class="swiper-slide">
-                <blockquote class="icon fs-lg">
-                  <p>"Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus magnis dis montes, nascetur ridiculus mus."</p>
-                  <div class="blockquote-details">
-                    <div class="info ps-0">
-                      <h5 class="mb-1">Jackie Sanders</h5>
-                      <p class="mb-0">Investment Planner</p>
-                    </div>
-                  </div>
-                </blockquote>
-              </div>
-              <!--/.swiper-slide -->
-              
-              <div class="swiper-slide">
-                <blockquote class="icon fs-lg">
-                  <p>"Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue."</p>
-                  <div class="blockquote-details">
-                    <div class="info ps-0">
-                      <h5 class="mb-1">Laura Widerski</h5>
-                      <p class="mb-0">Sales Specialist</p>
-                    </div>
-                  </div>
-                </blockquote>
-              </div>
-              <!--/.swiper-slide -->
-              
-            </div>
-            <!--/.swiper-wrapper -->
-          </div>
-          <!-- /.swiper -->
-        </div>
-        <!-- /.swiper-container -->
-      </div>
-      <!--/column -->
     </div>
-    <!--/.row -->
-  </div>
-  <!-- /.container -->
-</section>
-<!-- /section -->
 
-<section class="wrapper bg-light">
+    <!-- Roadmap -->
+    <div class="row gx-lg-8 gx-xl-12 gy-6 process-wrapper line text-center text-lg-start position-relative">
+      
+      <div class="col-md-6 col-lg-4">
+        <span class="icon btn btn-circle btn-lg pe-none mb-4 roadmap-step-icon bg-gradient-light-button border-0">
+          <span class="number text-white">1</span>
+        </span>
+
+        <div class="card border-0 rounded-1 shadow-sm roadmap-card">
+          <div class="card-body p-5">
+            <h3 class="display-6 text-fedbiomed-primary fw-semibold mb-4">
+              Current Focus
+            </h3>
+
+            
+            <ul class="mb-0 ps-4 text-start">
+              
+              <li class="fw-lighter mb-2 display-9">
+                Multi-hospital collaboration robustness
+              </li>
+              
+              <li class="fw-lighter mb-2 display-9">
+                Governance-centered workflows
+              </li>
+              
+              <li class="fw-lighter mb-2 display-9">
+                Institutional deployment readiness
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4">
+        <span class="icon btn btn-circle btn-lg pe-none mb-4 roadmap-step-icon bg-gradient-light-button border-0">
+          <span class="number text-white">2</span>
+        </span>
+
+        <div class="card border-0 rounded-1 shadow-sm roadmap-card">
+          <div class="card-body p-5">
+            <h3 class="display-6 text-fedbiomed-primary fw-semibold mb-4">
+              Next Steps
+            </h3>
+
+            
+            <ul class="mb-0 ps-4 text-start">
+              
+              <li class="fw-lighter mb-2 display-9">
+                Advanced privacy mechanisms
+              </li>
+              
+              <li class="fw-lighter mb-2 display-9">
+                Usability improvements
+              </li>
+              
+              <li class="fw-lighter mb-2 display-9">
+                Expanded real-world validation
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4">
+        <span class="icon btn btn-circle btn-lg pe-none mb-4 roadmap-step-icon bg-gradient-light-button border-0">
+          <span class="number text-white">3</span>
+        </span>
+
+        <div class="card border-0 rounded-1 shadow-sm roadmap-card">
+          <div class="card-body p-5">
+            <h3 class="display-6 text-fedbiomed-primary fw-semibold mb-4">
+              Long-Term Vision
+            </h3>
+
+            
+            <ul class="mb-0 ps-4 text-start">
+              
+              <li class="fw-lighter mb-2 display-9">
+                Strong healthcare research ecosystem
+              </li>
+              
+              <li class="fw-lighter mb-2 display-9">
+                Sustainable open-source governance
+              </li>
+              
+              <li class="fw-lighter mb-2 display-9">
+                Secure-by-design collaborative AI
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+</section>
+<section id="team" class="wrapper bg-light text-fedbiomed-primary">
   <div class="container py-14 py-md-16">
     <div class="row mb-3">
-      <div class="col-md-10 col-xl-9 col-xxl-7 mx-auto text-center">
-        <img src="/assets/img/icons/lineal/team.svg" class="svg-inject icon-svg icon-svg-md mb-4" alt="" />
-        <h2 class="display-4 mb-3 px-lg-14">Save your time and money by choosing our professional team.</h2>
-      </div>
+      <div class="row text-center text-lg-start">
+        <div class="col-12">
+            <h2 class="display-2 text-fedbiomed-primary mt-2 mb-0">
+            Our Team
+            </h2>
+            <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
+        </div>
+        </div>
       <!--/column -->
     </div>
     <!--/.row -->
     <div class="position-relative">
-      <div class="shape rounded-circle bg-soft-yellow rellax w-16 h-16" data-rellax-speed="1" style="bottom: 0.5rem; right: -1.7rem;"></div>
-      <div class="shape rounded-circle bg-line red rellax w-16 h-16" data-rellax-speed="1" style="top: 0.5rem; left: -1.7rem;"></div>
       <div class="swiper-container dots-closer mb-6" data-margin="0" data-dots="true" data-items-xxl="4" data-items-xl="3" data-items-lg="3" data-items-md="2" data-items-xs="1">
         <div class="swiper">
           <div class="swiper-wrapper">
             
             <div class="swiper-slide">
               <div class="item-inner">
-                <div class="card">
+                <div class="card team-card">
                   <div class="card-body">
                     <img class="rounded-circle w-15 mb-4" src="/assets/img/avatars/te1.webp" srcset="/assets/img/avatars/te1@2x.webp 2x" alt="" />
-                    <h4 class="mb-1">Coriss Ambady</h4>
-                    <div class="meta mb-2">Financial Analyst</div>
-                    <p class="mb-2">Fermentum massa justo sit amet risus morbi leo.</p>
+                    <h4 class="mb-1 text-fedbiomed-primary">Coriss Ambady</h4>
+                    <div class="meta mb-2 text-fedbiomed-primary">Financial Analyst</div>
+                    <p class="mb-2 text-fedbiomed-primary">Fermentum massa justo sit amet risus morbi leo.</p>
                     <nav class="nav social mb-0">
                       
-                      <a href="#"><i class="uil uil-twitter"></i></a>
+                      <a href="#"><i class="uil uil-twitter text-fedbiomed-primary"></i></a>
                       
-                      <a href="#"><i class="uil uil-facebook-f"></i></a>
+                      <a href="#"><i class="uil uil-linkedin text-fedbiomed-primary"></i></a>
                       
-                      <a href="#"><i class="uil uil-dribbble"></i></a>
+                      <a href="#"><i class="uil uil-dribbble text-fedbiomed-primary"></i></a>
                       
                     </nav>
                     <!-- /.social -->
@@ -474,19 +488,19 @@ Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula port
             
             <div class="swiper-slide">
               <div class="item-inner">
-                <div class="card">
+                <div class="card team-card">
                   <div class="card-body">
                     <img class="rounded-circle w-15 mb-4" src="/assets/img/avatars/te2.webp" srcset="/assets/img/avatars/te2@2x.webp 2x" alt="" />
-                    <h4 class="mb-1">Cory Zamora</h4>
-                    <div class="meta mb-2">Marketing Specialist</div>
-                    <p class="mb-2">Fermentum massa justo sit amet risus morbi leo.</p>
+                    <h4 class="mb-1 text-fedbiomed-primary">Cory Zamora</h4>
+                    <div class="meta mb-2 text-fedbiomed-primary">Marketing Specialist</div>
+                    <p class="mb-2 text-fedbiomed-primary">Fermentum massa justo sit amet risus morbi leo.</p>
                     <nav class="nav social mb-0">
                       
-                      <a href="#"><i class="uil uil-twitter"></i></a>
+                      <a href="#"><i class="uil uil-twitter text-fedbiomed-primary"></i></a>
                       
-                      <a href="#"><i class="uil uil-facebook-f"></i></a>
+                      <a href="#"><i class="uil uil-linkedin text-fedbiomed-primary"></i></a>
                       
-                      <a href="#"><i class="uil uil-dribbble"></i></a>
+                      <a href="#"><i class="uil uil-dribbble text-fedbiomed-primary"></i></a>
                       
                     </nav>
                     <!-- /.social -->
@@ -501,19 +515,19 @@ Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula port
             
             <div class="swiper-slide">
               <div class="item-inner">
-                <div class="card">
+                <div class="card team-card">
                   <div class="card-body">
                     <img class="rounded-circle w-15 mb-4" src="/assets/img/avatars/te3.webp" srcset="/assets/img/avatars/te3@2x.webp 2x" alt="" />
-                    <h4 class="mb-1">Nikolas Brooten</h4>
-                    <div class="meta mb-2">Sales Manager</div>
-                    <p class="mb-2">Fermentum massa justo sit amet risus morbi leo.</p>
+                    <h4 class="mb-1 text-fedbiomed-primary">Nikolas Brooten</h4>
+                    <div class="meta mb-2 text-fedbiomed-primary">Sales Manager</div>
+                    <p class="mb-2 text-fedbiomed-primary">Fermentum massa justo sit amet risus morbi leo.</p>
                     <nav class="nav social mb-0">
                       
-                      <a href="#"><i class="uil uil-twitter"></i></a>
+                      <a href="#"><i class="uil uil-twitter text-fedbiomed-primary"></i></a>
                       
-                      <a href="#"><i class="uil uil-facebook-f"></i></a>
+                      <a href="#"><i class="uil uil-linkedin text-fedbiomed-primary"></i></a>
                       
-                      <a href="#"><i class="uil uil-dribbble"></i></a>
+                      <a href="#"><i class="uil uil-dribbble text-fedbiomed-primary"></i></a>
                       
                     </nav>
                     <!-- /.social -->
@@ -528,19 +542,19 @@ Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula port
             
             <div class="swiper-slide">
               <div class="item-inner">
-                <div class="card">
+                <div class="card team-card">
                   <div class="card-body">
                     <img class="rounded-circle w-15 mb-4" src="/assets/img/avatars/te4.webp" srcset="/assets/img/avatars/te4@2x.webp 2x" alt="" />
-                    <h4 class="mb-1">Jackie Sanders</h4>
-                    <div class="meta mb-2">Investment Planner</div>
-                    <p class="mb-2">Fermentum massa justo sit amet risus morbi leo.</p>
+                    <h4 class="mb-1 text-fedbiomed-primary">Jackie Sanders</h4>
+                    <div class="meta mb-2 text-fedbiomed-primary">Investment Planner</div>
+                    <p class="mb-2 text-fedbiomed-primary">Fermentum massa justo sit amet risus morbi leo.</p>
                     <nav class="nav social mb-0">
                       
-                      <a href="#"><i class="uil uil-twitter"></i></a>
+                      <a href="#"><i class="uil uil-twitter text-fedbiomed-primary"></i></a>
                       
-                      <a href="#"><i class="uil uil-facebook-f"></i></a>
+                      <a href="#"><i class="uil uil-linkedin text-fedbiomed-primary"></i></a>
                       
-                      <a href="#"><i class="uil uil-dribbble"></i></a>
+                      <a href="#"><i class="uil uil-dribbble text-fedbiomed-primary"></i></a>
                       
                     </nav>
                     <!-- /.social -->
@@ -555,19 +569,19 @@ Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula port
             
             <div class="swiper-slide">
               <div class="item-inner">
-                <div class="card">
+                <div class="card team-card">
                   <div class="card-body">
                     <img class="rounded-circle w-15 mb-4" src="./assets/img/avatars/te5.webp" srcset="/assets/img/avatars/te5@2x.webp 2x" alt="" />
-                    <h4 class="mb-1">Laura Widerski</h4>
-                    <div class="meta mb-2">Sales Specialist</div>
-                    <p class="mb-2">Fermentum massa justo sit amet risus morbi leo.</p>
+                    <h4 class="mb-1 text-fedbiomed-primary">Laura Widerski</h4>
+                    <div class="meta mb-2 text-fedbiomed-primary">Sales Specialist</div>
+                    <p class="mb-2 text-fedbiomed-primary">Fermentum massa justo sit amet risus morbi leo.</p>
                     <nav class="nav social mb-0">
                       
-                      <a href="#"><i class="uil uil-twitter"></i></a>
+                      <a href="#"><i class="uil uil-twitter text-fedbiomed-primary"></i></a>
                       
-                      <a href="#"><i class="uil uil-facebook-f"></i></a>
+                      <a href="#"><i class="uil uil-linkedin text-fedbiomed-primary"></i></a>
                       
-                      <a href="#"><i class="uil uil-dribbble"></i></a>
+                      <a href="#"><i class="uil uil-dribbble text-fedbiomed-primary"></i></a>
                       
                     </nav>
                     <!-- /.social -->
@@ -582,19 +596,19 @@ Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula port
             
             <div class="swiper-slide">
               <div class="item-inner">
-                <div class="card">
+                <div class="card team-card">
                   <div class="card-body">
                     <img class="rounded-circle w-15 mb-4" src="./assets/img/avatars/te6.webp" srcset="/assets/img/avatars/te6@2x.webp 2x" alt="" />
-                    <h4 class="mb-1">Tina Geller</h4>
-                    <div class="meta mb-2">Financial Analyst</div>
-                    <p class="mb-2">Fermentum massa justo sit amet risus morbi leo.</p>
+                    <h4 class="mb-1 text-fedbiomed-primary">Tina Geller</h4>
+                    <div class="meta mb-2 text-fedbiomed-primary">Financial Analyst</div>
+                    <p class="mb-2 text-fedbiomed-primary">Fermentum massa justo sit amet risus morbi leo.</p>
                     <nav class="nav social mb-0">
                       
-                      <a href="#"><i class="uil uil-twitter"></i></a>
+                      <a href="#"><i class="uil uil-twitter text-fedbiomed-primary"></i></a>
                       
-                      <a href="#"><i class="uil uil-facebook-f"></i></a>
+                      <a href="#"><i class="uil uil-linkedin text-fedbiomed-primary"></i></a>
                       
-                      <a href="#"><i class="uil uil-dribbble"></i></a>
+                      <a href="#"><i class="uil uil-dribbble text-fedbiomed-primary"></i></a>
                       
                     </nav>
                     <!-- /.social -->
@@ -620,227 +634,524 @@ Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula port
 </section>
 <!-- /section -->
 
-<section class="wrapper bg-soft-primary">
-  <div class="container py-14 py-md-16">
-    <div class="row mb-10">
-      <div class="col-xl-10 mx-auto">
-        <div class="row align-items-center counter-wrapper gy-6 text-center">
-          
-          <div class="col-md-3">
-            <img src="/assets/img/icons/lineal/check.svg" class="svg-inject icon-svg icon-svg-lg text-primary mb-3" alt="" />
-            <h3 class="counter">7518</h3>
-            <p>Completed Projects</p>
-          </div>
-          <!--/column -->
-          
-          <div class="col-md-3">
-            <img src="/assets/img/icons/lineal/user.svg" class="svg-inject icon-svg icon-svg-lg text-primary mb-3" alt="" />
-            <h3 class="counter">3472</h3>
-            <p>Satisfied Customers</p>
-          </div>
-          <!--/column -->
-          
-          <div class="col-md-3">
-            <img src="/assets/img/icons/lineal/briefcase-2.svg" class="svg-inject icon-svg icon-svg-lg text-primary mb-3" alt="" />
-            <h3 class="counter">2184</h3>
-            <p>Expert Employees</p>
-          </div>
-          <!--/column -->
-          
-          <div class="col-md-3">
-            <img src="/assets/img/icons/lineal/award-2.svg" class="svg-inject icon-svg icon-svg-lg text-primary mb-3" alt="" />
-            <h3 class="counter">4523</h3>
-            <p>Awards Won</p>
-          </div>
-          <!--/column -->
-          
-        </div>
-        <!--/.row -->
+<section id="how-to-cite-us" class="wrapper text-fedbiomed-primary" aria-labelledby="installation-title">
+  <div class="container pt-14 pt-md-17 pb-14 pb-md-17">
+
+    <div class="row">
+      <div class="text-center text-lg-start">
+        <h2 id="installation-title" class="display-3 fw-bold text-fedbiomed-primary">
+            How to <span class="text-fedbiomed-tertiary">cite us</span>?
+        </h2>
+        <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
+        <p class="display-7 mb-8 fw-lighter">
+          If you use Fed-BioMed in your research, please cite the following publication.
+        </p>
       </div>
-      <!-- /column -->
     </div>
-    <!-- /.row -->
+
+    <ul class="nav justify-content-center border-0 mb-3 gap-3 text-center" role="tablist">
+      
+      <li class="nav-item" role="presentation">
+        <a id="tab-BibTex" class="nav-link rounded-pill px-5 py-2 installation-tab active" data-bs-toggle="tab" href="#panel-BibTex" role="tab" aria-controls="panel-BibTex" aria-selected="true">
+          BibTex
+        </a>
+      </li>
+      
+      <li class="nav-item" role="presentation">
+        <a id="tab-APA" class="nav-link rounded-pill px-5 py-2 installation-tab " data-bs-toggle="tab" href="#panel-APA" role="tab" aria-controls="panel-APA" aria-selected="false">
+          APA
+        </a>
+      </li>
+      
+      <li class="nav-item" role="presentation">
+        <a id="tab-Plain_text" class="nav-link rounded-pill px-5 py-2 installation-tab " data-bs-toggle="tab" href="#panel-Plain_text" role="tab" aria-controls="panel-Plain_text" aria-selected="false">
+          Plain Text
+        </a>
+      </li>
+      
+    </ul>
+
+    <div class="tab-content mt-3">
+      
+      <div class="tab-pane fade show active" id="panel-BibTex" role="tabpanel" aria-labelledby="tab-BibTex">
+        <div class="how-to-cite-code-wrap mx-auto d-flex align-items-center justify-content-between px-7 px-md-5 py-2 position-relative">
+          <pre class="installation-pre mb-0 grow"><code class="installation-code">@inbook{fedbiomed2025,
+  author    = {Cremonesi, Francesco and Vesin, Marc and Cansiz, Sergen and Bouillard, Yannick and Balelli, Irene and Innocenti, Lucia and Taiello, Riccardo and Silva, Santiago and Ayed, Samy-Safwan and {\&quot;O}nen, Melek and Orlhac, Fanny and Nioche, Christophe and Houis, Bastien and Modzelewski, Romain and Lapel, Nathan and Schiappa, Renaud and Humbert, Olivier and Lorenzi, Marco},
+  editor    = {Rehman, Muhammad Habib ur and Gaber, Mohamed Medhat},
+  title     = {Fed-BioMed: Open, Transparent and Trusted Federated Learning for Real-world Healthcare Applications},
+  booktitle = {Federated Learning Systems: Towards Privacy-Preserving Distributed AI},
+  year      = {2025},
+  publisher = {Springer Nature Switzerland},
+  pages     = {19--41},
+  isbn      = {978-3-031-78841-3},
+  doi       = {10.1007/978-3-031-78841-3_2},
+  url       = {https://doi.org/10.1007/978-3-031-78841-3_2}
+}
+</code></pre>
+
+          <button type="button" class="btn p-0 border-0 bg-transparent shadow-none text-sky position-absolute top-0 end-0 mt-4 me-4" data-code="@inbook{fedbiomed2025,
+  author    = {Cremonesi, Francesco and Vesin, Marc and Cansiz, Sergen and Bouillard, Yannick and Balelli, Irene and Innocenti, Lucia and Taiello, Riccardo and Silva, Santiago and Ayed, Samy-Safwan and {\&quot;O}nen, Melek and Orlhac, Fanny and Nioche, Christophe and Houis, Bastien and Modzelewski, Romain and Lapel, Nathan and Schiappa, Renaud and Humbert, Olivier and Lorenzi, Marco},
+  editor    = {Rehman, Muhammad Habib ur and Gaber, Mohamed Medhat},
+  title     = {Fed-BioMed: Open, Transparent and Trusted Federated Learning for Real-world Healthcare Applications},
+  booktitle = {Federated Learning Systems: Towards Privacy-Preserving Distributed AI},
+  year      = {2025},
+  publisher = {Springer Nature Switzerland},
+  pages     = {19--41},
+  isbn      = {978-3-031-78841-3},
+  doi       = {10.1007/978-3-031-78841-3_2},
+  url       = {https://doi.org/10.1007/978-3-031-78841-3_2}
+}
+" onclick="
+              navigator.clipboard.writeText(this.dataset.code);
+              const copyWrap = document.getElementById(&quot;copy-wrap-1&quot;);
+              const doneWrap = document.getElementById(&quot;done-wrap-1&quot;);
+
+              copyWrap.style.display = &quot;none&quot;;
+              doneWrap.style.display = &quot;inline-block&quot;;
+
+              setTimeout(() =&gt; {
+                doneWrap.style.display = &quot;none&quot;;
+                copyWrap.style.display = &quot;inline-block&quot;;
+              }, 1000);
+            " aria-label="Copy command">
+            <span id="copy-wrap-1">
+              <img src="/test-fbm-site/assets/img/icons/solid/selected.svg" class="svg-inject icon-svg icon-svg-xs solid-mono text-sky w-50" aria-hidden="true" />
+            </span>
+
+            <span id="done-wrap-1" class="text-white fw-lighter p-1 border-0 bg-transparent shadow-none" style="display:none;">
+              ✓ Copied!
+            </span>
+          </button>
+        </div>
+      </div>
+      
+      <div class="tab-pane fade " id="panel-APA" role="tabpanel" aria-labelledby="tab-APA">
+        <div class="how-to-cite-code-wrap mx-auto d-flex align-items-center justify-content-between px-7 px-md-5 py-2 position-relative">
+          <pre class="installation-pre mb-0 grow"><code class="installation-code">Cremonesi, F., Vesin, M., Cansiz, S., Bouillard, Y., Balelli, I., Innocenti, L., Taiello, R., Silva, S., Ayed, S.-S., Önen, M., Orlhac, F., Nioche, C., Houis, B., Modzelewski, R., Lapel, N., Schiappa, R., Humbert, O., &amp; Lorenzi, M. (2025). Fed-BioMed: Open, transparent and trusted federated learning for real-world healthcare applications. In M. H. ur Rehman &amp; M. M. Gaber (Eds.), Federated Learning Systems: Towards Privacy-Preserving Distributed AI (pp. 19–41). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-78841-3_2
+</code></pre>
+
+          <button type="button" class="btn p-0 border-0 bg-transparent shadow-none text-sky position-absolute top-0 end-0 mt-4 me-4" data-code="Cremonesi, F., Vesin, M., Cansiz, S., Bouillard, Y., Balelli, I., Innocenti, L., Taiello, R., Silva, S., Ayed, S.-S., Önen, M., Orlhac, F., Nioche, C., Houis, B., Modzelewski, R., Lapel, N., Schiappa, R., Humbert, O., &amp; Lorenzi, M. (2025). Fed-BioMed: Open, transparent and trusted federated learning for real-world healthcare applications. In M. H. ur Rehman &amp; M. M. Gaber (Eds.), Federated Learning Systems: Towards Privacy-Preserving Distributed AI (pp. 19–41). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-78841-3_2
+" onclick="
+              navigator.clipboard.writeText(this.dataset.code);
+              const copyWrap = document.getElementById(&quot;copy-wrap-2&quot;);
+              const doneWrap = document.getElementById(&quot;done-wrap-2&quot;);
+
+              copyWrap.style.display = &quot;none&quot;;
+              doneWrap.style.display = &quot;inline-block&quot;;
+
+              setTimeout(() =&gt; {
+                doneWrap.style.display = &quot;none&quot;;
+                copyWrap.style.display = &quot;inline-block&quot;;
+              }, 1000);
+            " aria-label="Copy command">
+            <span id="copy-wrap-2">
+              <img src="/test-fbm-site/assets/img/icons/solid/selected.svg" class="svg-inject icon-svg icon-svg-xs solid-mono text-sky w-50" aria-hidden="true" />
+            </span>
+
+            <span id="done-wrap-2" class="text-white fw-lighter p-1 border-0 bg-transparent shadow-none" style="display:none;">
+              ✓ Copied!
+            </span>
+          </button>
+        </div>
+      </div>
+      
+      <div class="tab-pane fade " id="panel-Plain_text" role="tabpanel" aria-labelledby="tab-Plain_text">
+        <div class="how-to-cite-code-wrap mx-auto d-flex align-items-center justify-content-between px-7 px-md-5 py-2 position-relative">
+          <pre class="installation-pre mb-0 grow"><code class="installation-code">Cremonesi F., Vesin M., Cansiz S., Bouillard Y., Balelli I., Innocenti L., Taiello R., Silva S., Ayed S.-S., Önen M., Orlhac F., Nioche C., Houis B., Modzelewski R., Lapel N., Schiappa R., Humbert O., Lorenzi M. Fed-BioMed: Open, Transparent and Trusted Federated Learning for Real-world Healthcare Applications. In: Rehman M.H.U., Gaber M.M. (eds), Federated Learning Systems: Towards Privacy-Preserving Distributed AI. Springer Nature Switzerland, 2025, pp. 19–41. DOI: 10.1007/978-3-031-78841-3_2
+</code></pre>
+
+          <button type="button" class="btn p-0 border-0 bg-transparent shadow-none text-sky position-absolute top-0 end-0 mt-4 me-4" data-code="Cremonesi F., Vesin M., Cansiz S., Bouillard Y., Balelli I., Innocenti L., Taiello R., Silva S., Ayed S.-S., Önen M., Orlhac F., Nioche C., Houis B., Modzelewski R., Lapel N., Schiappa R., Humbert O., Lorenzi M. Fed-BioMed: Open, Transparent and Trusted Federated Learning for Real-world Healthcare Applications. In: Rehman M.H.U., Gaber M.M. (eds), Federated Learning Systems: Towards Privacy-Preserving Distributed AI. Springer Nature Switzerland, 2025, pp. 19–41. DOI: 10.1007/978-3-031-78841-3_2
+" onclick="
+              navigator.clipboard.writeText(this.dataset.code);
+              const copyWrap = document.getElementById(&quot;copy-wrap-3&quot;);
+              const doneWrap = document.getElementById(&quot;done-wrap-3&quot;);
+
+              copyWrap.style.display = &quot;none&quot;;
+              doneWrap.style.display = &quot;inline-block&quot;;
+
+              setTimeout(() =&gt; {
+                doneWrap.style.display = &quot;none&quot;;
+                copyWrap.style.display = &quot;inline-block&quot;;
+              }, 1000);
+            " aria-label="Copy command">
+            <span id="copy-wrap-3">
+              <img src="/test-fbm-site/assets/img/icons/solid/selected.svg" class="svg-inject icon-svg icon-svg-xs solid-mono text-sky w-50" aria-hidden="true" />
+            </span>
+
+            <span id="done-wrap-3" class="text-white fw-lighter p-1 border-0 bg-transparent shadow-none" style="display:none;">
+              ✓ Copied!
+            </span>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+
   </div>
-  <!-- /.container -->
 </section>
-<!-- /section -->
 
-<section class="wrapper bg-light angled upper-end lower-end">
-  <div class="container pt-18 pb-14 pt-md-19 pb-md-16">
-    <div class="row gx-md-8 gx-xl-12 gy-10 align-items-center">
-      <div class="col-md-8 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1 position-relative">
-        <div class="shape bg-dot primary rellax w-17 h-21" data-rellax-speed="1" style="top: -2rem; left: -1.4rem;"></div>
-        <figure class="rounded"><img src="/assets/img/photos/about4.jpg" srcset="/assets/img/photos/about4@2x.jpg 2x" alt="" /></figure>
+<section id="contacts" class="wrapper bg-light text-fedbiomed-primary">
+  <div class="container py-14 pb-md-14">
+
+    <!-- Header -->
+    <div class="row text-center text-lg-start">
+      <div class="col-12">
+        <h2 class="display-2 text-fedbiomed-primary mt-2">Support &amp; Contact</h2>
+        <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
+        <p class="lead fs-lg fw-lighter mb-0">Need help using Fed-BioMed? Our community and core team are available to support you.</p>
       </div>
-      <!--/column -->
-      <div class="col-lg-6">
-        <img src="/assets/img/icons/lineal/telemarketer.svg" class="svg-inject icon-svg icon-svg-md mb-4" alt="" />
-        <h2 class="display-4 mb-8">Convinced yet? Let's make something great together.</h2>
-        
-        <div class="d-flex flex-row">
-          <div>
-            <div class="icon text-primary fs-28 me-6 mt-n1"> <i class="uil uil-location-pin-alt"></i> </div>
-          </div>
-          <div>
-            <h5 class="mb-1">Address</h5>
-            
-            <address>Moonshine St. 14/05 Light City, London, United Kingdom</address>
-            
-          </div>
-        </div>
-        
-        <div class="d-flex flex-row">
-          <div>
-            <div class="icon text-primary fs-28 me-6 mt-n1"> <i class="uil uil-phone-volume"></i> </div>
-          </div>
-          <div>
-            <h5 class="mb-1">Phone</h5>
-            
-            <address>00 (123) 456 78 90</address>
-            
-          </div>
-        </div>
-        
-        <div class="d-flex flex-row">
-          <div>
-            <div class="icon text-primary fs-28 me-6 mt-n1"> <i class="uil uil-envelope"></i> </div>
-          </div>
-          <div>
-            <h5 class="mb-1">E-mail</h5>
-            
-            <p class="mb-0"><a href="mailto:sandbox@email.com" class="link-body">sandbox@email.com</a></p>
-            
-          </div>
-        </div>
-        
-      </div>
-      <!--/column -->
     </div>
-    <!--/.row -->
-  </div>
-  <!-- /.container -->
-</section>
-<!-- /section -->
 
+    <!-- Card 1 -->
+    <div class="row gy-8 mt-2 mb-10">
+      <div class="col-12">
+        <div class="contacts-card-wrap position-relative pt-4">
+          <div class="contacts-card position-relative overflow-visible">
+            <span class="contacts-card-number" aria-hidden="true">1</span>
 
+            <div class="card-body position-relative z-1 p-5 p-lg-8">
+              <h3 class="display-6 text-fedbiomed-primary mb-4">Check existing answers first</h3>
 
+              <div class="row align-items-center gy-4">
+                <div class="col-lg-7">
+                  <p class="lead fs-lg fw-lighter mb-3">Before posting a new question, please review:</p>
 
+                  <ul class="lead fs-lg fw-lighter mb-0 ps-4">
+                    
+                    <li>Support mailing list archive</li>
+                    
+                    <li>GitHub issues archive</li>
+                    
+                  </ul>
 
+                  <p class="lead fs-lg fw-lighter mt-3 mb-0">You may find that your question has already been addressed.</p>
+                </div>
 
+                <div class="col-lg-5">
+                  <div class="d-flex flex-column gap-3 align-items-center align-items-lg-end">
+                    <a href="https://lists.example.org" target="_blank" rel="noopener noreferrer" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl px-5 py-2">
+                      Support list archive ➤
+                    </a>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<footer class="bg-dark text-inverse">
-  
-  
-  
-  
-  
-  
-
-    <div class="container pt-16 pt-md-18 pb-13 pb-md-15">
-      
-      <div class="row gy-6 gy-lg-0">
-  <div class="col-md-4 col-lg-3">
-    <div class="widget">
-      
-        <img class="mb-4" src="/test-fbm-site/assets/img/logo_full.webp" srcset="/test-fbm-site/assets/img/logo_full@2x.webp 2x" alt="" />
-      
-      <p class="mb-4">© 2026 Sandbox. <br class="d-none d-lg-block" />All rights reserved.</p>
-      <nav class="nav social social-white">
-        
-          <a href="#"><i class="uil uil-twitter"></i></a>
-        
-          <a href="#"><i class="uil uil-facebook-f"></i></a>
-        
-          <a href="#"><i class="uil uil-instagram"></i></a>
-        
-          <a href="#"><i class="uil uil-youtube"></i></a>
-        
-          <a href="#"><i class="uil uil-dribbble"></i></a>
-        
-      </nav>
-      <!-- /.social -->
-    </div>
-    <!-- /.widget -->
-  </div>
-  <!-- /column -->
-  <div class="col-md-4 col-lg-3">
-    <div class="widget">
-      <h4 class="widget-title text-white mb-3">Get in Touch</h4>
-      <address class="pe-xl-15 pe-xxl-17">2004 Rte des Lucioles, 06902 Sophia Antipolis, France</address>
-      <a href="mailto:fedbiomed@inria.fr" class="link-body">
-        fedbiomed@inria.fr
-      </a><br /> 
-      00 (123) 456 78 90
-    </div>
-    <!-- /.widget -->
-  </div>
-  <!-- /column -->
-  <div class="col-md-4 col-lg-3">
-    <div class="widget">
-      <h4 class="widget-title text-white mb-3">Learn More</h4>
-      <ul class="list-unstyled  text-reset mb-0">
-        
-        
-      </ul>
-    </div>
-    <!-- /.widget -->
-  </div>
-  <!-- /column -->
-  
-  <div class="col-md-4 col-lg-3">
-    <div class="widget">
-      <h4 class="widget-title text-white mb-3">Our Newsletter</h4>
-      <p class="mb-5">Subscribe to our newsletter to get our news &amp; deals delivered to you.</p>
-      <div class="newsletter-wrapper">
-        
-        <!-- Begin Mailchimp Signup Form -->
-        <div id="mc_embed_signup">
-          <form action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate dark-fields" target="_blank" novalidate="">
-            <div id="mc_embed_signup_scroll">
-              <div class="mc-field-group input-group form-floating">
-                <input type="email" value="" name="EMAIL" class="required email form-control" placeholder="Email Address" id="mce-EMAIL" />
-                <label for="mce-EMAIL">Email Address</label>
-                <input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary " />
-              </div>
-              <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-              </div>
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <input type="text" name="b_ddc180777a163e0f9f66ee014_4b1bcfa0bc" tabindex="-1" value="" />
+                    <a href="https://github.com/fedbiomed/fedbiomed/issues" target="_blank" rel="noopener noreferrer" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl px-5 py-2">
+                      Issues archive ➤
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-          </form>
+          </div>
         </div>
-        <!--End mc_embed_signup-->
-        
       </div>
-      <!-- /.newsletter-wrapper -->
     </div>
-    <!-- /.widget -->
+
+    <!-- Card 2 -->
+    <div class="row gy-8 mb-10">
+      <div class="col-12">
+        <div class="contacts-card-wrap position-relative pt-4">
+          <div class="contacts-card position-relative overflow-visible">
+            <span class="contacts-card-number" aria-hidden="true">2</span>
+
+            <div class="card-body position-relative z-1 p-5 p-lg-8">
+              <h3 class="display-6 text-fedbiomed-primary mb-4">Community support</h3>
+
+              <div class="row gy-4">
+                <div class="col-lg-6">
+                  <p class="lead fs-lg fw-lighter mb-3">Write to our support email:</p>
+
+                  <ul class="lead fs-lg fw-lighter mb-0 ps-4">
+                    
+                    <li>Ask technical questions</li>
+                    
+                    <li>Report issues</li>
+                    
+                  </ul>
+                </div>
+
+                <div class="col-lg-6">
+                  <p class="lead fs-lg fw-lighter mb-3">To help us assist you efficiently, please include:</p>
+
+                  <ul class="lead fs-lg fw-lighter mb-0 ps-4">
+                    
+                    <li>What you expected to happen</li>
+                    
+                    <li>What happened instead</li>
+                    
+                    <li>Steps to reproduce the issue</li>
+                    
+                    <li>Relevant screenshots, logs, or code snippets</li>
+                    
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <a href="mailto:fedbiomed-support@inria.fr" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl px-5 py-2">
+                        <span class="fw-lighter me-3">To: </span> fedbiomed-support@inria.fr <span class="ms-3">➤</span>
+                    </a>
+                </div>
+              </div>
+
+              <div class="row mt-4">
+                <div class="col-12">
+                  <p class="lead fs-lg fw-lighter mb-3 text-center text-lg-start">
+                    Or join our Discord support channel
+                  </p>
+
+                  <div class="text-center">
+                    <a href="https://discord.gg/your-link" target="_blank" rel="noopener noreferrer" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl px-5 py-2">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-discord me-3" viewBox="0 0 16 16">
+                            <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612" />
+                        </svg>
+
+                        fedbiomed_discord_name
+                        <span class="ms-3">➤</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="row gy-8">
+      <div class="col-12">
+        <div class="contacts-card-wrap position-relative pt-4">
+          <div class="contacts-card position-relative overflow-visible">
+            <span class="contacts-card-number" aria-hidden="true">3</span>
+
+            <div class="card-body position-relative z-1 p-5 p-lg-8">
+              <h3 class="display-6 text-fedbiomed-primary mb-4">Contact</h3>
+
+              <p class="lead fs-lg fw-lighter mb-4">For institutional collaborations, research partnerships, or general inquiries:</p>
+
+              <div class="text-center">
+                <a href="mailto:fedbiomed@inria.fr" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl px-5 py-2">
+                        <span class="fw-lighter me-3">To: </span> fedbiomed@inria.fr <span class="ms-3">➤</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
-  <!-- /column -->
-  
-</div>
-<!--/.row -->
+</section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-gradient-reverse-primary ">
+  
+  
+  
+  
+  
+  
+
+    <div class="bg-white shadow-lg" aria-label="newsletter-title">
+  <div class="container  py-10">
+    <div class="row align-items-center justify-content-between">
+        <div class="col-lg-5 mb-4 mb-lg-0 text-center text-lg-start">
+            <h2 id="newsletter-title" class="display-2 mb-3 text-fedbiomed-primary">
+            Stay <span class="text-fedbiomed-tertiary">updated</span>
+            </h2>
+            <p class="mb-0 text-fedbiomed-primary fw-lighter">
+            Get the latest Fed-BioMed updates to your inbox
+            </p>
+        </div>
+
+        <div class="col-lg-4">
+            <form action="#" method="post" class="position-relative">
+            <label for="newsletter-email" class="visually-hidden">Email address</label>
+              <input id="newsletter-email" type="email" name="EMAIL" class="form-control rounded-pill pe-5 bg-soft-blue text-fedbiomed-primary" placeholder="Enter your email" />
+            <button type="submit" class="btn border-0 bg-transparent shadow-none position-absolute top-50 end-0 translate-middle-y pe-3 text-primary" aria-label="Subscribe to newsletter">
+                ➤
+            </button>
+            </form>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="container py-10 py-md-12">
+  <div class="row gy-8 align-items-stretch">
+
+    <!-- LOGO / BRAND -->
+    <div class="col-12 col-lg-4 order-1 order-lg-2 text-center d-flex">
+        <div class="d-flex flex-column align-items-center justify-content-center w-100">
+        
+          <img src="/test-fbm-site/assets/img/logo_icon.png" alt="Fed-BioMed" class="mb-4" style="max-width: 130px; height: auto;" />
+        
+
+        <h3 class="mb-1 text-fedbiomed-primary">
+          Fed-BioMed
+        </h3>
+
+        <p class="mb-0 text-fedbiomed-primary fw-lighter">
+          Copyright ©2026
+        </p>
+      </div>
     </div>
 
+    <!-- LEFT LINKS -->
+    <div class="col-12 col-md-6 col-lg-4 order-2 order-lg-1">
+      <div class="row gy-6 text-center text-md-start">
+        <div class="col-12">
+          <h4 class="mb-3 text-fedbiomed-primary">
+            Helpful links
+          </h4>
+          <div class="row row-cols-1 row-cols-sm-2 gy-2 text-fedbiomed-secondary fw-lighter">
+            
+              <div class="col">
+                <a href="/test-fbm-site/project#what-is-fedbiomed" class=" hover">Fed-BioMed</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/how-it-works#what-is-FL" class=" hover">Federated Learning</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/how-it-works#architecture" class=" hover">Architecture</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/how-it-works#workflow" class=" hover">Workflow</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/how-it-works#security-in-practice" class=" hover">Security in Practice</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/real_projects/" class=" hover">Real world projects</a>
+              </div>
+            
+          </div>
+        </div>
+
+        <div class="col-12 pt-8">
+          <h4 class="mb-3 text-fedbiomed-primary">
+            Documentation
+          </h4>
+          <div class="row row-cols-1 row-cols-sm-2 gy-2 text-fedbiomed-secondary fw-lighter">
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/latest/getting-started/what-is-fedbiomed/" class=" hover">Get Started</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/latest/getting-started/installation/" class=" hover">Installation</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/latest/tutorials/pytorch/01_PyTorch_MNIST_Single_Node_Tutorial/" class=" hover">Tutorials</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/latest/user-guide/" class=" hover">User Guide</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/latest/developer/usage_and_tools/" class=" hover">Developer</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/latest/getting-started/basic-example/" class=" hover">Examples</a>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT LINKS + SOCIAL + ADDRESS -->
+    <div class="col-12 col-md-6 col-lg-4 order-3 order-lg-3">
+      <div class="row gy-6 text-center text-md-start text-lg-end h-100">
+        <div class="col-12">
+          <h4 class="mb-3 text-fedbiomed-primary">
+            About
+          </h4>
+          <div class="row row-cols-1 row-cols-sm-2 gy-2 text-fedbiomed-secondary fw-lighter">
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#funding" class=" hover">Funding &amp; Institutional Support</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#roadmap" class=" hover">Roadmap</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/faq/" class=" hover">FAQ</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#contacts" class=" hover">Support &amp; Contacts</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#how-to-cite-us" class=" hover">How to cite</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#team" class=" hover">Team</a>
+              </div>
+            
+          </div>
+        </div>
+
+        <div class="col-12 pt-8 mt-lg-auto text-fedbiomed-primary">
+          <nav class="nav social justify-content-center justify-content-md-start justify-content-lg-end mb-4" aria-label="Social media">
+            
+              <a href="https://github.com/fedbiomed/fedbiomed" class="ms-2" style="font-size: 1.35rem;" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                <i class="uil uil-github text-fedbiomed-primary" aria-hidden="true"></i>
+              </a>
+            
+              <a href="https://www.linkedin.com/groups/12606640/" class="ms-2" style="font-size: 1.35rem;" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <i class="uil uil-linkedin text-fedbiomed-primary" aria-hidden="true"></i>
+              </a>
+            
+              <a href="mailto:fedbiomed@inria.fr" class="ms-2" style="font-size: 1.35rem;" aria-label="Email">
+                <i class="uil uil-envelope text-fedbiomed-primary" aria-hidden="true"></i>
+              </a>
+            
+          </nav>
+
+          <address class="mb-0 text-center text-md-start text-lg-end">
+            2004 Rte des Lucioles, 06902 Sophia Antipolis, France
+          </address>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+  
   <!-- /.container -->
 </footer>
 
