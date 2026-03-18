@@ -6,14 +6,14 @@
 <title> Check out some of our Use Cases and Research Context. </title>
 <meta name="title" content=" Check out some of our Use Cases and Research Context. ">
 <meta name="description" content="
-         Healthcare institutions can collaborate on AI without moving patient data.">
+         Healthcare institutions can collaboratively train AI models while keeping sensitive patient data securely on-site using federated learning.">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content=" /real_projects/ ">
 <meta property="og:title" content=" Check out some of our Use Cases and Research Context. ">
 <meta property="og:description" content="
-    Healthcare institutions can collaborate on AI without moving patient data.">
+    Healthcare institutions can collaboratively train AI models while keeping sensitive patient data securely on-site using federated learning.">
 
 <meta property="og:image" content="/test-fbm-site/assets/img/logo_fbm_og.webp" />
 
@@ -23,7 +23,7 @@
 <meta property="twitter:url" content="/real_projects/">
 <meta property="twitter:title" content=" Check out some of our Use Cases and Research Context. ">
 <meta property="twitter:description" content="
-    Healthcare institutions can collaborate on AI without moving patient data.">
+    Healthcare institutions can collaboratively train AI models while keeping sensitive patient data securely on-site using federated learning.">
 
 <meta property="twitter:image" content="/test-fbm-site/assets/img/logo_fbm_og.webp" />
 
@@ -31,7 +31,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Stylesheets-->
-  <link rel="shortcut icon" href="/test-fbm-site/website/assets/img/logo_icon.png" />
+  <link rel="shortcut icon" href="/test-fbm-site/assets/img/favicon.png" />
 <link rel="stylesheet" href="/test-fbm-site/assets/css/plugins.css">
 
 <link rel="stylesheet" href="/test-fbm-site/assets/css/styles.css">
@@ -220,7 +220,7 @@
 
           
             
-              <div class="project item col-md-6 use-case">
+              <div class="project item col-md-4 use-case">
                 
 
                 
@@ -251,7 +251,7 @@
             
           
             
-              <div class="project item col-md-6 research-context">
+              <div class="project item col-md-4 research-context">
                 
 
                 
@@ -281,7 +281,7 @@
             
           
             
-              <div class="project item col-md-6 research-context">
+              <div class="project item col-md-4 research-context">
                 
 
                 
@@ -311,7 +311,7 @@
             
           
             
-              <div class="project item col-md-6 research-context">
+              <div class="project item col-md-4 research-context">
                 
 
                 
@@ -342,7 +342,7 @@
             
           
             
-              <div class="project item col-md-6 research-context">
+              <div class="project item col-md-4 research-context">
                 
 
                 
@@ -628,7 +628,7 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const ITEMS_PER_PAGE = 4;
+  const ITEMS_PER_PAGE = 9;
 
   const grid       = document.getElementById("projects-grid");
   const paginNav   = document.getElementById("js-pagination");
@@ -648,8 +648,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function writeState(filter, page) {
     const p = new URLSearchParams();
-    // ← SEMPRE scrive filter nell'URL, anche per "*"
-    // Questo impedisce a Jekyll Paginate V2 di intercettare l'URL pulito
     p.set("filter", filter || "*");
     if (page > 1) p.set("page", String(page));
     const url = window.location.pathname + "?" + p.toString();
