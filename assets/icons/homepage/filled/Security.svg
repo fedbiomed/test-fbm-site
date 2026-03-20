@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Sfumatura_senza_nome_11);
+      }
+
+      .cls-2 {
+        fill: url(#Sfumatura_senza_nome_11-3);
+      }
+
+      .cls-3 {
+        fill: url(#Sfumatura_senza_nome_11-2);
+      }
+    </style>
+    <linearGradient id="Sfumatura_senza_nome_11" data-name="Sfumatura senza nome 11" x1="485.7" y1="503.79" x2="514.28" y2="503.79" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#90e0ef"/>
+      <stop offset="1" stop-color="#00b4d8"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_11-2" data-name="Sfumatura senza nome 11" x1="440.15" y1="365.18" x2="560.53" y2="365.18" xlink:href="#Sfumatura_senza_nome_11"/>
+    <linearGradient id="Sfumatura_senza_nome_11-3" data-name="Sfumatura senza nome 11" x1="250.09" y1="500" x2="749.91" y2="500" xlink:href="#Sfumatura_senza_nome_11"/>
+  </defs>
+  <path class="cls-1" d="M499.07,476.96c-7.32.46-13.17,6.57-13.36,13.9-.15,5.76,3.13,10.75,7.93,13.14l-6.71,26.65h26.13l-6.71-26.64c4.7-2.34,7.93-7.18,7.93-12.79,0-8.2-6.9-14.79-15.21-14.26Z"/>
+  <path class="cls-3" d="M500,322.46c-30.23.52-56.47,23.56-59.42,55.88-.45,4.85-.48,13.85-.38,22.34.04,4,3.3,7.21,7.3,7.21h105.7c4,0,7.25-3.22,7.3-7.21.1-8.49.06-17.49-.38-22.34-2.77-30.48-31.53-56.37-60.12-55.88Z"/>
+  <path class="cls-2" d="M735.69,217.22h-471.38c-8.62,0-15.24,7.61-14.08,16.16,10.34,76.64.54,209.77,43.61,311.07,48.42,113.87,140.34,164.84,195.07,233.01,5.7,7.1,16.49,7.1,22.19,0,54.73-68.17,146.65-119.14,195.07-233.01,43.07-101.3,33.28-234.43,43.61-311.07,1.15-8.55-5.46-16.16-14.08-16.16ZM601.22,584.2c0,5.57-4.51,10.09-10.09,10.09h-182.27c-5.57,0-10.09-4.51-10.09-10.09v-165.58c0-5.57,4.51-10.09,10.09-10.09h13.05c-.25-12.35-.41-29.85.33-37.67,3.77-39.45,42.29-66.55,80.77-65.1,36.35,1.37,71.22,27.89,74.74,65.1.74,7.82.57,25.32.33,37.67h13.05c5.57,0,10.09,4.51,10.09,10.09v165.58Z"/>
+</svg>

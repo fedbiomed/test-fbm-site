@@ -202,8 +202,8 @@
         </div>
         
         <h1 class="display-1 fs-70 mb-4 px-md-15 px-lg-0 text-fedbiomed-primary" id="hero-title">Fed-BioMed</h1>
-        <h2 class="display-4 mb-4 px-md-15 px-lg-0 text-fedbiomed-primary">Healthcare institutions can collaborate on AI without moving patient data</h2>
-        <p class="lead fs-24 lh-sm mb-7 mx-md-13 mx-lg-10 fw-lighter text-fedbiomed-primary">Open, Transparent and Trusted Collaborative Learning for Real-World Healthcare Applications</p>
+        <h2 class="display-4 mb-4 px-md-15 px-lg-0 text-fedbiomed-primary">Open-Source Federated Platform for Healthcare Secure Collaboration</h2>
+        <p class="lead fs-24 lh-sm mb-7 mx-md-13 mx-lg-10 fw-lighter text-fedbiomed-primary">Open, transparent and trusted federated technologies for real-world healthcare applications</p>
       </div>
       <!-- /column -->
     </div>
@@ -298,38 +298,204 @@
 </section>
 <!-- /section -->
 
-<section class="wrapper bg-light text-fedbiomed-primary">
+<section id="federated-capabilities" class="wrapper bg-transparent text-fedbiomed-primary">
   <div class="container py-10 py-md-12 text-center text-lg-start">
-    <div class="row gy-10 gx-lg-8 gx-xl-12 mb-10 mb-md-14 align-items-center">
-        
-        <div class="col-lg-7 position-relative order-2 order-lg-1">
-            <video autoplay="" muted="" playsinline="" preload="metadata" loop="" class="section-video" aria-label="Animation showing secure model exchange between aggregator and healthcare institutions">
-                <source src="/test-fbm-site/assets/video/outline/homepage_solution.mp4" type="video/mp4" />
-            </video>
-        </div>
-        
+    <div class="row gy-10 gx-lg-8 gx-xl-12 align-items-center">
 
-        <!--/column -->
-        <div class="col-lg-5 order-1 order-lg-2">
-            <h2 class="display-2 mb-3 text-fedbiomed-primary">Move the <span class="text-fedbiomed-tertiary">algorithm</span>, not the <span class="text-fedbiomed-tertiary">data</span>.</h2>
-            <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
-            <p class="lead fs-lg fw-lighter">Fed-BioMed enables hospitals to collaborate by training models locally and sharing only aggregated results.</p>
-            <a href="project#what-is-fedbiomed" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl mt-3">Discover Fed-BioMed ➤</a>
+      <!-- Header -->
+      <div class="col-12">
+        <h2 class="display-2 text-fedbiomed-primary mt-2">Move <span class="text-fedbiomed-tertiary">computation</span>, not the <span class="text-fedbiomed-tertiary">data</span>.</h2>
+        <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
+        <p class="lead fs-lg fw-lighter mb-0">Enable secure collaboration across institutions, without compromising data privacy.</p>
+      </div>
+
+      <!-- Left media -->
+      <div class="col-lg-7 position-relative order-1 mt-0">
+        <div class="architecture-image-hotspot solution-media-stage" id="solution-media-stage">
+          
+          <div class="solution-media-panel is-active" data-solution-media="collapse-1">
+            
+            <video autoplay="" muted="" playsinline="" preload="metadata" loop="" class="img-fluid rounded architecture-main-image" aria-label="Animation showing federated learning workflow">
+              <source src="/test-fbm-site/assets/video/outline/federated-learning.mp4" type="video/mp4" />
+            </video>
+            
+          </div>
+          
+          <div class="solution-media-panel " data-solution-media="collapse-2" hidden="">
+            
+            <video autoplay="" muted="" playsinline="" preload="metadata" loop="" class="img-fluid rounded architecture-main-image" aria-label="Animation showing federated analytics workflow">
+              <source src="/test-fbm-site/assets/video/outline/federated-analytics.mp4" type="video/mp4" />
+            </video>
+            
+          </div>
+          
+          <div class="solution-media-panel " data-solution-media="collapse-3" hidden="">
+            
+            <video autoplay="" muted="" playsinline="" preload="metadata" loop="" class="img-fluid rounded architecture-main-image" aria-label="Animation showing federated queries workflow">
+              <source src="/test-fbm-site/assets/video/outline/federated-queries.mp4" type="video/mp4" />
+            </video>
+            
+          </div>
+          
+          <div class="solution-media-panel " data-solution-media="collapse-4" hidden="">
+            
+            <video autoplay="" muted="" playsinline="" preload="metadata" loop="" class="img-fluid rounded architecture-main-image" aria-label="Animation showing federated infrastructure workflow">
+              <source src="/test-fbm-site/assets/video/outline/federated-infrastructure.mp4" type="video/mp4" />
+            </video>
+            
+          </div>
+          
         </div>
-        <!--/column -->
+      </div>
+
+      <!-- Right accordion -->
+      <div class="col-lg-5 order-2">
+        <div class="accordion accordion-wrapper" id="solutionAccordion">
+          
+          <div class="card accordion-item">
+            <div class="card-header" id="heading-1">
+              <button class="text-fedbiomed-primary fs-20" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                Federated Learning
+              </button>
+            </div>
+
+            <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#solutionAccordion">
+              <div class="card-body pb-5">
+                <p class="fw-lighter display-8">Train models collaboratively while keeping data within each institution.</p>
+
+                
+                <div class="text-center text-lg-end mt-4">
+                  <a href="/test-fbm-site/how-it-works/" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl">
+                    Explore ➤
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="card accordion-item">
+            <div class="card-header" id="heading-2">
+              <button class="collapsed text-fedbiomed-primary fs-20" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                Federated Analytics
+              </button>
+            </div>
+
+            <div id="collapse-2" class="accordion-collapse collapse " aria-labelledby="heading-2" data-bs-parent="#solutionAccordion">
+              <div class="card-body pb-5">
+                <p class="fw-lighter display-8">Run distributed analytics on local data without centralising datasets.</p>
+
+                
+                <div class="text-center text-lg-end mt-4">
+                  <a href="/test-fbm-site/federated-analytics/" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl">
+                    Explore ➤
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="card accordion-item">
+            <div class="card-header" id="heading-3">
+              <button class="collapsed text-fedbiomed-primary fs-20" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                Federated Queries
+              </button>
+            </div>
+
+            <div id="collapse-3" class="accordion-collapse collapse " aria-labelledby="heading-3" data-bs-parent="#solutionAccordion">
+              <div class="card-body pb-5">
+                <p class="fw-lighter display-8">Query distributed datasets securely across multiple institutions.</p>
+
+                
+                <div class="text-center text-lg-end mt-4">
+                  <a href="/test-fbm-site/federated-queries/" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl">
+                    Explore ➤
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="card accordion-item">
+            <div class="card-header" id="heading-4">
+              <button class="collapsed text-fedbiomed-primary fs-20" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                Federated Infrastructure
+              </button>
+            </div>
+
+            <div id="collapse-4" class="accordion-collapse collapse " aria-labelledby="heading-4" data-bs-parent="#solutionAccordion">
+              <div class="card-body pb-5">
+                <p class="fw-lighter display-8">Support orchestration, deployment and trusted multi-site collaboration.</p>
+
+                
+                <div class="text-center text-lg-end mt-4">
+                  <a href="/test-fbm-site/federated-infrastructure/" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl">
+                    Explore ➤
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
     </div>
-    <!--/.row -->
   </div>
-  <!-- /.container -->
 </section>
 
-<section class="wrapper bg-light text-fedbiomed-primary">
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const mediaStage = document.getElementById('solution-media-stage');
+  if (!mediaStage) return;
+
+  const mediaPanels = mediaStage.querySelectorAll('.solution-media-panel');
+  const collapses = document.querySelectorAll('#solutionAccordion .accordion-collapse');
+
+  function showMedia(panelId) {
+    mediaPanels.forEach(panel => {
+      const isActive = panel.getAttribute('data-solution-media') === panelId;
+      const video = panel.querySelector('video');
+
+      panel.classList.toggle('is-active', isActive);
+
+      if (isActive) {
+        panel.removeAttribute('hidden');
+        if (video) {
+          video.currentTime = 0;
+          video.play().catch(() => {});
+        }
+      } else {
+        panel.setAttribute('hidden', 'hidden');
+        if (video) {
+          video.pause();
+        }
+      }
+    });
+  }
+
+  collapses.forEach(collapse => {
+    collapse.addEventListener('show.bs.collapse', function () {
+      showMedia(this.id);
+    });
+  });
+
+  const initiallyOpen = document.querySelector('#solutionAccordion .accordion-collapse.show');
+  if (initiallyOpen) {
+    showMedia(initiallyOpen.id);
+  }
+});
+</script>
+<section class="wrapper bg-light text-fedbiomed-primary my-15">
   <div class="container pb-5 pb-md-10 pb-lg-15">
     <div class="position-relative">
       <div class="row gx-md-5 gy-5 text-center">
         
         <div class="col-md-6 col-lg-6">
-          <div class="card shadow-lg w-75 mx-auto pillar-card">
+          <div class="card shadow-lg w-75 mx-auto pillar-card" style="--icon: url('/test-fbm-site/assets/icons/homepage/outline/Security.svg');">
             <div class="card-body d-flex flex-column align-items-center justify-content-center">
               <h3 class="display-5 text-fedbiomed-primary">Security</h3>
               <p class="lead fs-lg mb-5 fw-lighter">Built-in protection at every stage of collaboration</p>
@@ -342,7 +508,7 @@
         <!--/column -->
         
         <div class="col-md-6 col-lg-6">
-          <div class="card shadow-lg w-75 mx-auto pillar-card">
+          <div class="card shadow-lg w-75 mx-auto pillar-card" style="--icon: url('/test-fbm-site/assets/icons/homepage/outline/Governance.svg');">
             <div class="card-body d-flex flex-column align-items-center justify-content-center">
               <h3 class="display-5 text-fedbiomed-primary">Governance</h3>
               <p class="lead fs-lg mb-5 fw-lighter">Hospitals approve and control every training activity</p>
@@ -355,7 +521,7 @@
         <!--/column -->
         
         <div class="col-md-6 col-lg-6">
-          <div class="card shadow-lg w-75 mx-auto pillar-card">
+          <div class="card shadow-lg w-75 mx-auto pillar-card" style="--icon: url('/test-fbm-site/assets/icons/homepage/outline/Usability.svg');">
             <div class="card-body d-flex flex-column align-items-center justify-content-center">
               <h3 class="display-5 text-fedbiomed-primary">Usability</h3>
               <p class="lead fs-lg mb-5 fw-lighter">Designed for real-world teams, not only researchers</p>
@@ -368,7 +534,7 @@
         <!--/column -->
         
         <div class="col-md-6 col-lg-6">
-          <div class="card shadow-lg w-75 mx-auto pillar-card">
+          <div class="card shadow-lg w-75 mx-auto pillar-card" style="--icon: url('/test-fbm-site/assets/icons/homepage/outline/Community-driven.svg');">
             <div class="card-body d-flex flex-column align-items-center justify-content-center">
               <h3 class="display-5 text-fedbiomed-primary">Community-driven</h3>
               <p class="lead fs-lg mb-5 fw-lighter">Developed openly with hospitals and research partners</p>
@@ -389,295 +555,7 @@
 </section>
 <!-- /section -->
 
-<section class="wrapper bg-light text-fedbiomed-primary how-it-works-scroll" aria-labelledby="how-it-works-title">
-  <div class="container pt-14 pt-md-17 pb-14">
-    <div class="how-it-works-stage">
-
-      <div class="how-it-works-layout">
-        <!-- Sticky text -->
-        <div class="how-copy-sticky">
-          <h2 id="how-it-works-title" class="display-3 mb-7 text-fedbiomed-primary text-center text-lg-start">
-            How <span class="text-fedbiomed-tertiary">Fed-BioMed</span> works?
-          </h2>
-
-          <div class="how-step-stage" id="how-step-stage" aria-live="polite">
-            <div class="how-step-panel is-active" id="how-step-panel-0">
-              <span class="text-fedbiomed-tertiary fw-bold how-step-number" aria-hidden="true">
-                1
-              </span>
-              <p class="fw-lighter text-fedbiomed-primary mb-0 display-7 how-step-text">
-                Researchers define a training plan and send an encrypted version to healthcare institutions
-              </p>
-            </div>
-
-            <div class="how-step-panel" id="how-step-panel-1">
-              <span class="text-fedbiomed-tertiary fw-bold how-step-number" aria-hidden="true">
-                2
-              </span>
-              <p class="fw-lighter text-fedbiomed-primary mb-0 display-7 how-step-text">
-                Hospitals, clinics, and healthcare institutions train the model locally using their own data
-              </p>
-            </div>
-
-            <div class="how-step-panel" id="how-step-panel-2">
-              <span class="text-fedbiomed-tertiary fw-bold how-step-number" aria-hidden="true">
-                3
-              </span>
-              <p class="fw-lighter text-fedbiomed-primary mb-0 display-7 how-step-text">
-                Local models are securely aggregated, and the final model is shared back with participating institutions
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sticky animation -->
-        <div class="how-animation-sticky">
-          <div class="how-animation-frame">
-            <canvas id="how-animation-canvas" aria-hidden="true"></canvas>
-          </div>
-        </div>
-      </div>
-
-      <!-- Scroll area -->
-      <div id="how-animation-track" class="how-animation-track">
-        <div class="how-scroll-step"></div>
-        <div class="how-scroll-step"></div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const canvas = document.getElementById("how-animation-canvas");
-  if (!canvas) return;
-  const ctx = canvas.getContext("2d");
-
-  const FPS_SPEED = 1.8;
-
-  const phases = [
-    { endFrame: 0,   textPanel: 0, speed: FPS_SPEED / 5},
-    { endFrame: 60,  textPanel: 1, speed: FPS_SPEED },
-    { endFrame: 206, textPanel: 1, speed: FPS_SPEED },
-    { endFrame: 255, textPanel: 2, speed: FPS_SPEED },
-    { endFrame: 297, textPanel: 2, speed: FPS_SPEED / 3 },  // ← più lento
-  ];
-
-  const lastFrame = 297;
-  const frameCount = lastFrame + 1;
-  const frames = new Array(frameCount);
-
-  let currentPhase = 0;
-  let displayFrame = 0;
-  let targetFrame = 0;
-  let isTransitioning = false;
-  let animationStarted = false;
-  let lastDrawn = -1;
-
-  // ── Frame path ─────────────────────────────────────────────
-  function getFramePath(index) {
-    const padded = String(index).padStart(5, "0");
-    return "/test-fbm-site/assets/img/how-it-works/" + "how-it-works_jpeg_" + padded + ".jpg";
-  }
-
-  // ── Canvas ─────────────────────────────────────────────────
-  function resizeCanvas() {
-    const rect = canvas.getBoundingClientRect();
-    const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
-    canvas.width = Math.round(rect.width * dpr);
-    canvas.height = Math.round(rect.height * dpr);
-    ctx.setTransform(1, 0, 0, 1, 0, 0);
-    ctx.scale(dpr, dpr);
-    drawFrame(Math.round(displayFrame));
-  }
-
-  function drawFrame(index) {
-    index = Math.max(0, Math.min(lastFrame, index));
-    const img = frames[index];
-    if (!img || !img.complete) return false;
-    const w = canvas.clientWidth;
-    const h = canvas.clientHeight;
-    ctx.clearRect(0, 0, w, h);
-    const imageRatio = img.width / img.height;
-    const canvasRatio = w / h;
-    let dw, dh;
-    if (imageRatio > canvasRatio) { dw = w; dh = w / imageRatio; }
-    else { dh = h; dw = h * imageRatio; }
-    ctx.drawImage(img, (w - dw) / 2, (h - dh) / 2, dw, dh);
-    return true;
-  }
-
-  // ── Step panels ────────────────────────────────────────────
-  const stepPanels = [
-    document.getElementById("how-step-panel-0"),
-    document.getElementById("how-step-panel-1"),
-    document.getElementById("how-step-panel-2")
-  ];
-
-  function updateStepPanels(panelIndex) {
-    const travel = window.innerWidth <= 991.98
-      ? Math.round(window.innerWidth * 0.22)
-      : Math.round(window.innerHeight * 0.52);
-    const isHorizontal = window.innerWidth <= 991.98;
-
-    stepPanels.forEach(function (panel, i) {
-      if (!panel) return;
-      panel.style.transition = "opacity 0.4s ease, transform 0.4s ease";
-      if (i === panelIndex) {
-        panel.style.transform = "translate3d(0, 0, 0)";
-        panel.style.opacity = 1;
-        panel.style.zIndex = 2;
-      } else if (i < panelIndex) {
-        panel.style.transform = isHorizontal
-          ? "translate3d(" + (-travel) + "px, 0, 0)"
-          : "translate3d(0, " + (-travel) + "px, 0)";
-        panel.style.opacity = 0;
-        panel.style.zIndex = 1;
-      } else {
-        panel.style.transform = isHorizontal
-          ? "translate3d(" + travel + "px, 0, 0)"
-          : "translate3d(0, " + travel + "px, 0)";
-        panel.style.opacity = 0;
-        panel.style.zIndex = 1;
-      }
-    });
-  }
-
-  // ── Testo corretto in base al frame corrente ───────────────
-  function getTextPanelForFrame(frame) {
-    // Trova la fase in cui siamo in base al frame
-    for (let i = phases.length - 1; i >= 0; i--) {
-      if (frame >= phases[i].endFrame) {
-        return phases[i].textPanel;
-      }
-    }
-    return phases[0].textPanel;
-  }
-
-  // ── Loop a velocità costante ───────────────────────────────
-  function loop() {
-    const diff = targetFrame - displayFrame;
-
-    if (Math.abs(diff) > 0.1) {
-      const direction = diff > 0 ? 1 : -1;
-      displayFrame += direction * currentSpeed;
-      if ((direction > 0 && displayFrame > targetFrame) ||
-          (direction < 0 && displayFrame < targetFrame)) {
-        displayFrame = targetFrame;
-      }
-      isTransitioning = true;
-    } else {
-      displayFrame = targetFrame;
-      isTransitioning = false;
-    }
-
-    const rounded = Math.round(displayFrame);
-
-    if (rounded !== lastDrawn) {
-      drawFrame(rounded);
-      lastDrawn = rounded;
-    }
-
-    requestAnimationFrame(loop);
-  }
-
-  // ── Navigazione fasi ───────────────────────────────────────
-  let currentSpeed = FPS_SPEED;  // ← aggiungi questa variabile
-
-  function goToPhase(index) {
-    index = Math.max(0, Math.min(phases.length - 1, index));
-    if (index === currentPhase && !isTransitioning) return;
-
-    // Velocità sempre dalla fase con indice più alto
-    const higherPhase = index > currentPhase ? index : currentPhase;
-    currentSpeed = phases[higherPhase].speed;
-
-    currentPhase = index;
-    targetFrame = phases[index].endFrame;
-    isTransitioning = true;
-    updateStepPanels(phases[index].textPanel);
-  }
-
-  // ── Sezione visibile ───────────────────────────────────────
-  function isSectionActive() {
-    const section = document.querySelector(".how-it-works-scroll");
-    if (!section) return false;
-    const rect = section.getBoundingClientRect();
-    return rect.top <= 0 && rect.bottom >= window.innerHeight;
-  }
-
-  // ── Scroll wheel ───────────────────────────────────────────
-  let wheelAccum = 0;
-  const WHEEL_THRESHOLD = 60;
-  let wheelCooldown = false;
-
-  window.addEventListener("wheel", function (e) {
-    if (!isSectionActive()) return;
-
-    const scrollingDown = e.deltaY > 0;
-    const scrollingUp = e.deltaY < 0;
-
-    // Lascia scrollare la pagina agli estremi quando animazione finita
-    if (scrollingDown && currentPhase >= phases.length - 1 && !isTransitioning) return;
-    if (scrollingUp && currentPhase <= 0 && !isTransitioning) return;
-
-    // Blocca scroll pagina mentre siamo dentro la sezione
-    e.preventDefault();
-
-    if (wheelCooldown || isTransitioning) return;
-
-    wheelAccum += e.deltaY;
-    if (Math.abs(wheelAccum) >= WHEEL_THRESHOLD) {
-      const dir = wheelAccum > 0 ? 1 : -1;
-      goToPhase(currentPhase + dir);
-      wheelAccum = 0;
-      wheelCooldown = true;
-      setTimeout(function () { wheelCooldown = false; }, 800);
-    }
-  }, { passive: false });
-
-  // ── Touch ──────────────────────────────────────────────────
-  let touchStartY = 0;
-  window.addEventListener("touchstart", function (e) {
-    touchStartY = e.touches[0].clientY;
-  }, { passive: true });
-
-  window.addEventListener("touchend", function (e) {
-    if (!isSectionActive()) return;
-    if (isTransitioning) return;
-    const diff = touchStartY - e.changedTouches[0].clientY;
-    if (Math.abs(diff) < 40) return;
-    const dir = diff > 0 ? 1 : -1;
-    if (dir > 0 && currentPhase >= phases.length - 1) return;
-    if (dir < 0 && currentPhase <= 0) return;
-    goToPhase(currentPhase + dir);
-  }, { passive: true });
-
-  // ── Preload ────────────────────────────────────────────────
-  function preloadFrames() {
-    for (let i = 0; i < frameCount; i++) {
-      const img = new Image();
-      img.decoding = "async";
-      img.src = getFramePath(i);
-      img.onload = function () {
-        frames[i] = img;
-        if (!animationStarted && i === 0) {
-          animationStarted = true;
-          resizeCanvas();
-          drawFrame(0);
-          updateStepPanels(0);
-          requestAnimationFrame(loop);
-        }
-      };
-      frames[i] = img;
-    }
-  }
-
-  preloadFrames();
-  window.addEventListener("resize", resizeCanvas);
-});
-</script>
+<!-- include components/sections/home/how-it-works.html  -->
 <section class="wrapper bg-light text-fedbiomed-primary" aria-labelledby="who-title">
   <div class="container pb-14 pb-md-17">
     <h2 id="who-title" class="display-3 text-fedbiomed-primary text-center text-lg-start"><span class="text-fedbiomed-tertiary">Who</span> it is for?</h2>
@@ -784,13 +662,16 @@ document.addEventListener("DOMContentLoaded", function () {
 <section class="wrapper bg-soft-primary shadow-lg text-fedbiomed-primary" aria-labelledby="real-environments-title">
   <div class="container">
     <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
-      <div class="col-lg-7 order-2 order-lg-2">
+      <div class="col-lg-8 order-2 order-lg-2">
         <figure class="map-figure mb-0">
-          <div id="real-environments-map" class="leaflet-map" aria-label="Map of Europe representing real healthcare deployment environments"></div>
+          <div class="leaflet-map-grid">
+            <div id="real-environments-map-canada" class="leaflet-map leaflet-map-canada order-2 order-lg-1" aria-label="Map of Canada partner location"></div>
+            <div id="real-environments-map-europe" class="leaflet-map leaflet-map-europe order-1 order-lg-2" aria-label="Map of Europe representing real healthcare deployment environments"></div>
+          </div>
         </figure>
       </div>
 
-      <div class="col-lg-5 text-center text-lg-start order-1 order-lg-1">
+      <div class="col-lg-4 text-center text-lg-start order-1 order-lg-1">
         <h2 id="real-environments-title" class="display-3 text-fedbiomed-primary">Used in real <span class="text-fedbiomed-tertiary">healthcare</span> environments.</h2>
         <div class="roadmap-title-accent mx-auto mx-lg-0 mb-6"></div>
 
@@ -923,6 +804,12 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         </div>
         
+        <div class="col d-flex justify-content-center">
+          <div class="partner-logo-grid">
+            <img src="/test-fbm-site/assets/icons/homepage/logos/iislafe.png" alt="partner: La Fe Health Research Institute" />
+          </div>
+        </div>
+        
       </div>
       
   </div>
@@ -930,11 +817,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const mapElement = document.getElementById("real-environments-map");
-  if (!mapElement || typeof L === "undefined") return;
+  const europeMapElement = document.getElementById("real-environments-map-europe");
+  const canadaMapElement = document.getElementById("real-environments-map-canada");
 
-  const map = L.map("real-environments-map", {
+  if ((!europeMapElement && !canadaMapElement) || typeof L === "undefined") return;
+
+  const commonMapOptions = {
     zoomControl: false,
+    attributionControl: false,
     dragging: false,
     scrollWheelZoom: false,
     doubleClickZoom: false,
@@ -942,26 +832,10 @@ document.addEventListener("DOMContentLoaded", function () {
     keyboard: false,
     tap: false,
     touchZoom: false
-  });
+  };
 
-  fetch("https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json")
-  .then(response => response.json())
-  .then(data => {
-    L.geoJSON(data, {
-      interactive: false,
-      style: {
-        color: "#03045e",      
-        weight: 0.5,
-        opacity: 0.6,
-        fillColor: "#caf0f6",  
-        fillOpacity: 1,
-        lineJoin: "round"        
-      }
-    }).addTo(map);
-  });
-  
-
-  
+  const europeMap = europeMapElement ? L.map("real-environments-map-europe", commonMapOptions) : null;
+  const canadaMap = canadaMapElement ? L.map("real-environments-map-canada", commonMapOptions) : null;
 
   const pinIcon = L.icon({
     iconUrl: "/test-fbm-site/assets/icons/homepage/outline/pin.png",
@@ -973,179 +847,214 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const partners = [
     
-      
-      {
-        name: "Institut Curie",
-        place: "Paris",
-        url: "https://institut-curie.org/",
-        lat: 48.8588897,
-        lon: 2.320041
-      },
-      
     
-      
-      {
-        name: "Centre Antoine Lacassagne",
-        place: "Nice",
-        url: "https://www.centreantoinelacassagne.org/",
-        lat: 43.7009358,
-        lon: 7.2683912
-      },
-      
+    {
+      name: "Institut Curie",
+      place: "Paris",
+      url: "https://institut-curie.org/",
+      lat: 48.8588897,
+      lon: 2.320041
+    },
     
-      
-      {
-        name: "Centre Henri-Becquerel",
-        place: "Rouen",
-        url: "https://www.centre-henri-becquerel.fr/",
-        lat: 49.4404591,
-        lon: 1.0939658
-      },
-      
+    {
+      name: "Centre Antoine Lacassagne",
+      place: "Nice",
+      url: "https://www.centreantoinelacassagne.org/",
+      lat: 43.7009358,
+      lon: 7.2683912
+    },
     
-      
-      {
-        name: "FORTH",
-        place: "Heraklion",
-        url: "https://www.forth.gr/",
-        lat: 35.336910265917254,
-        lon: 25.1294
-      },
-      
+    {
+      name: "Centre Henri-Becquerel",
+      place: "Rouen",
+      url: "https://www.centre-henri-becquerel.fr/",
+      lat: 49.4404591,
+      lon: 1.0939658
+    },
     
-      
-      {
-        name: "Grenoble Institut des Neurosciences",
-        place: "Grenoble",
-        url: "https://neurosciences.univ-grenoble-alpes.fr/",
-        lat: 45.1875602,
-        lon: 5.7357819
-      },
-      
+    {
+      name: "FORTH",
+      place: "Heraklion",
+      url: "https://www.forth.gr/",
+      lat: 35.336910265917254,
+      lon: 25.1294
+    },
     
-      
+    {
+      name: "Grenoble Institut des Neurosciences",
+      place: "Grenoble",
+      url: "https://neurosciences.univ-grenoble-alpes.fr/",
+      lat: 45.1875602,
+      lon: 5.7357819
+    },
     
-      
-      {
-        name: "Amsterdam UMC",
-        place: "Amsterdam",
-        url: "https://www.amsterdamumc.org/",
-        lat: 52.3730796,
-        lon: 4.8924534
-      },
-      
+    {
+      name: "McGill University",
+      place: "Montreal",
+      url: "https://www.mcgill.ca/",
+      lat: 45.5048,
+      lon: -73.5772
+    },
     
-      
+    {
+      name: "Amsterdam UMC",
+      place: "Amsterdam",
+      url: "https://www.amsterdamumc.org/",
+      lat: 52.3730796,
+      lon: 4.8924534
+    },
     
-      
-      {
-        name: "Heidelberg University Hospital",
-        place: "Heidelberg",
-        url: "https://www.heidelberg-university-hospital.com/",
-        lat: 49.4093582,
-        lon: 8.694724
-      },
-      
+    {
+      name: "Heidelberg University Hospital",
+      place: "Heidelberg",
+      url: "https://www.heidelberg-university-hospital.com/",
+      lat: 49.4093582,
+      lon: 8.694724
+    },
     
-      
-      {
-        name: "University Medicine Göttingen",
-        place: "Göttingen",
-        url: "https://www.umg.eu/en/",
-        lat: 51.5328328,
-        lon: 9.9351811
-      },
-      
+    {
+      name: "University Medicine Göttingen",
+      place: "Göttingen",
+      url: "https://www.umg.eu/en/",
+      lat: 51.5328328,
+      lon: 9.9351811
+    },
     
-      
-      {
-        name: "LMU University Hospital",
-        place: "Munich",
-        url: "https://www.lmu-klinikum.de/",
-        lat: 48.1371079,
-        lon: 11.5753822
-      },
-      
+    {
+      name: "LMU University Hospital",
+      place: "Munich",
+      url: "https://www.lmu-klinikum.de/",
+      lat: 48.1371079,
+      lon: 11.5753822
+    },
     
-      
-      {
-        name: "University Hospital Münster",
-        place: "Münster",
-        url: "https://www.ukm.de",
-        lat: 51.9625101,
-        lon: 7.6251879
-      },
-      
+    {
+      name: "University Hospital Münster",
+      place: "Münster",
+      url: "https://www.ukm.de",
+      lat: 51.9625101,
+      lon: 7.6251879
+    },
     
-      
-      {
-        name: "University Medical Center Hamburg-Eppendorf",
-        place: "Hamburg",
-        url: "https://www.uke.de/english/index.html",
-        lat: 53.5501721,
-        lon: 10.0013165
-      },
-      
+    {
+      name: "University Medical Center Hamburg-Eppendorf",
+      place: "Hamburg",
+      url: "https://www.uke.de/english/index.html",
+      lat: 53.5501721,
+      lon: 10.0013165
+    },
     
-      
-      {
-        name: "Deutsches Herzzentrum der Charité",
-        place: "Berlin",
-        url: "https://www.dhzc.charite.de/en/",
-        lat: 52.5173885,
-        lon: 13.3951309
-      },
-      
+    {
+      name: "Deutsches Herzzentrum der Charité",
+      place: "Berlin",
+      url: "https://www.dhzc.charite.de/en/",
+      lat: 52.5173885,
+      lon: 13.3951309
+    },
     
-      
-      {
-        name: "University Medicine Greifswald",
-        place: "Greifswald",
-        url: "https://www.medizin.uni-greifswald.de/en/home/",
-        lat: 54.095791,
-        lon: 13.3815238
-      },
-      
+    {
+      name: "University Medicine Greifswald",
+      place: "Greifswald",
+      url: "https://www.medizin.uni-greifswald.de/en/home/",
+      lat: 54.095791,
+      lon: 13.3815238
+    },
     
-      
-      {
-        name: "University Medicine Frankfurt",
-        place: "Frankfurt",
-        url: "https://www.unimedizin-ffm.de",
-        lat: 50.1106444,
-        lon: 8.6820917
-      }
-      
+    {
+      name: "University Medicine Frankfurt",
+      place: "Frankfurt",
+      url: "https://www.unimedizin-ffm.de",
+      lat: 50.1106444,
+      lon: 8.6820917
+    },
+    
+    {
+      name: "La Fe Health Research Institute",
+      place: "Valencia",
+      url: "https://www.iislafe.es/",
+      lat: 39.4697065,
+      lon: -0.3763353
+    }
     
   ];
 
-  const bounds = [];
-
-  partners.forEach((partner) => {
-    const marker = L.marker([partner.lat, partner.lon], { icon: pinIcon }).addTo(map);
-
+  function buildPopupContent(partner) {
     let popupContent = "<strong>" + partner.name + "</strong>";
+
     if (partner.place) {
       popupContent += "<div>" + partner.place + "</div>";
     }
+
     if (partner.url && partner.url !== "#") {
       popupContent += '<div><a href="' + partner.url + '" target="_blank" rel="noopener noreferrer">Visit website</a></div>';
     }
 
-    marker.bindPopup(popupContent);
-    bounds.push([partner.lat, partner.lon]);
-  });
+    return popupContent;
+  }
 
-  const europeBounds = L.latLngBounds(
-    [38, -5],
-    [60, 25]
-  );
+  function addWorldLayer(mapInstance, callback) {
+    fetch("https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json")
+      .then(response => response.json())
+      .then(data => {
+        L.geoJSON(data, {
+          interactive: false,
+          style: {
+            color: "#03045e",
+            weight: 0.5,
+            opacity: 0.6,
+            fillColor: "#caf0f6",
+            fillOpacity: 1,
+            lineJoin: "round"
+          }
+        }).addTo(mapInstance);
 
-  map.fitBounds(europeBounds, {
-    padding: [20, 20]
-  });
+        if (callback) callback();
+      });
+  }
 
-  map.setMaxBounds(europeBounds);
+  const europeanPartners = partners.filter(partner => partner.lon > -20);
+  const canadaPartners = partners.filter(partner => partner.lon <= -20);
+
+  if (europeMap) {
+    addWorldLayer(europeMap, function () {
+      const europeBounds = [];
+
+      europeanPartners.forEach((partner) => {
+        const marker = L.marker([partner.lat, partner.lon], { icon: pinIcon }).addTo(europeMap);
+        marker.bindPopup(buildPopupContent(partner));
+        europeBounds.push([partner.lat, partner.lon]);
+      });
+
+      if (europeBounds.length > 0) {
+        europeMap.fitBounds(europeBounds, {
+          paddingTopLeft: [120, 40],
+          paddingBottomRight: [40, 40],
+          maxZoom: 5
+        });
+      }
+    });
+  }
+
+  if (canadaMap) {
+    addWorldLayer(canadaMap, function () {
+      const canadaBounds = [];
+
+      canadaPartners.forEach((partner) => {
+        const marker = L.marker([partner.lat, partner.lon], { icon: pinIcon }).addTo(canadaMap);
+        marker.bindPopup(buildPopupContent(partner));
+        canadaBounds.push([partner.lat, partner.lon]);
+      });
+
+      if (canadaBounds.length > 0) {
+        canadaMap.fitBounds(canadaBounds, {
+          padding: [60, 60],
+          maxZoom: 3
+        });
+      } else {
+        canadaMap.setView([56, -96], 3);
+      }
+    });
+  }
 });
 </script>
 <section class="wrapper text-fedbiomed-primary" aria-labelledby="installation-title">
@@ -1279,9 +1188,9 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
 
         <div class="col-lg-4">
-            <form action="#" method="post" class="position-relative">
+            <form action="https://sympa.inria.fr/sympa/subscribe/fedbiomed-support" method="get" target="_blank" class="position-relative">
             <label for="newsletter-email" class="visually-hidden">Email address</label>
-              <input id="newsletter-email" type="email" name="EMAIL" class="form-control rounded-pill pe-5 bg-soft-blue text-fedbiomed-primary" placeholder="Enter your email" />
+              <input id="newsletter-email" type="email" name="email" class="form-control rounded-pill pe-5 bg-soft-blue text-fedbiomed-primary border-0" placeholder="Enter your email" required="" />
             <button type="submit" class="btn border-0 bg-transparent shadow-none position-absolute top-50 end-0 translate-middle-y pe-3 text-primary" aria-label="Subscribe to newsletter">
                 ➤
             </button>
