@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://fedbiomed.org/test-fbm-site/authors/fedbiomed-team/</loc>
-<lastmod>2026-03-20T16:24:10+01:00</lastmod>
+<lastmod>2026-03-23T16:11:42+01:00</lastmod>
 </url>
 <url>
 <loc>https://fedbiomed.org/test-fbm-site/news/2021-09-01-FLWorkshopParis/</loc>
@@ -98,6 +98,9 @@
 </url>
 <url>
 <loc>https://fedbiomed.org/test-fbm-site/faq/</loc>
+</url>
+<url>
+<loc>https://fedbiomed.org/test-fbm-site/FL/</loc>
 </url>
 <url>
 <loc>https://fedbiomed.org/test-fbm-site/docs/blocks/about/</loc>
@@ -196,9 +199,6 @@
 <loc>https://fedbiomed.org/test-fbm-site/docs/blocks/hero/</loc>
 </url>
 <url>
-<loc>https://fedbiomed.org/test-fbm-site/how-it-works/</loc>
-</url>
-<url>
 <loc>https://fedbiomed.org/test-fbm-site/docs/styleguide/icons-font/</loc>
 </url>
 <url>
@@ -214,10 +214,10 @@
 <loc>https://fedbiomed.org/test-fbm-site/docs/elements/image-mask/</loc>
 </url>
 <url>
-<loc>https://fedbiomed.org/test-fbm-site/</loc>
+<loc>https://fedbiomed.org/test-fbm-site/docs/</loc>
 </url>
 <url>
-<loc>https://fedbiomed.org/test-fbm-site/docs/</loc>
+<loc>https://fedbiomed.org/test-fbm-site/</loc>
 </url>
 <url>
 <loc>https://fedbiomed.org/test-fbm-site/docs/elements/lightbox/</loc>

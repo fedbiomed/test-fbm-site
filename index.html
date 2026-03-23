@@ -97,8 +97,27 @@
   
   
   
-  <li class="nav-item">
-    <a class="nav-link" href="/test-fbm-site/how-it-works/"><span class="hover">How it works</span></a>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><span class="hover">How it works</span></a>
+    <ul class="dropdown-menu">
+      
+      
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/FI/"><span class="hover">Federated Infrastructure</span></a></li>
+      
+      
+      
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/FD/"><span class="hover">Federated Discovery</span></a></li>
+      
+      
+      
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/FA/"><span class="hover">Federated Analytics</span></a></li>
+      
+      
+      
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/FL/"><span class="hover">Federated Learning</span></a></li>
+      
+      
+    </ul>
   </li>
   
   
@@ -315,21 +334,13 @@
           
           <div class="solution-media-panel is-active" data-solution-media="collapse-1">
             
-            <video autoplay="" muted="" playsinline="" preload="metadata" loop="" class="img-fluid rounded architecture-main-image" aria-label="Animation showing federated learning workflow">
-              <source src="/test-fbm-site/assets/video/outline/federated-learning.mp4" type="video/mp4" />
+            <video autoplay="" muted="" playsinline="" preload="metadata" loop="" class="img-fluid rounded architecture-main-image" aria-label="Animation showing federated infrastructure workflow">
+              <source src="/test-fbm-site/assets/video/outline/federated-infrastructure.mp4" type="video/mp4" />
             </video>
             
           </div>
           
           <div class="solution-media-panel " data-solution-media="collapse-2" hidden="">
-            
-            <video autoplay="" muted="" playsinline="" preload="metadata" loop="" class="img-fluid rounded architecture-main-image" aria-label="Animation showing federated analytics workflow">
-              <source src="/test-fbm-site/assets/video/outline/federated-analytics.mp4" type="video/mp4" />
-            </video>
-            
-          </div>
-          
-          <div class="solution-media-panel " data-solution-media="collapse-3" hidden="">
             
             <video autoplay="" muted="" playsinline="" preload="metadata" loop="" class="img-fluid rounded architecture-main-image" aria-label="Animation showing federated queries workflow">
               <source src="/test-fbm-site/assets/video/outline/federated-queries.mp4" type="video/mp4" />
@@ -337,10 +348,18 @@
             
           </div>
           
+          <div class="solution-media-panel " data-solution-media="collapse-3" hidden="">
+            
+            <video autoplay="" muted="" playsinline="" preload="metadata" loop="" class="img-fluid rounded architecture-main-image" aria-label="Animation showing federated analytics workflow">
+              <source src="/test-fbm-site/assets/video/outline/federated-analytics.mp4" type="video/mp4" />
+            </video>
+            
+          </div>
+          
           <div class="solution-media-panel " data-solution-media="collapse-4" hidden="">
             
-            <video autoplay="" muted="" playsinline="" preload="metadata" loop="" class="img-fluid rounded architecture-main-image" aria-label="Animation showing federated infrastructure workflow">
-              <source src="/test-fbm-site/assets/video/outline/federated-infrastructure.mp4" type="video/mp4" />
+            <video autoplay="" muted="" playsinline="" preload="metadata" loop="" class="img-fluid rounded architecture-main-image" aria-label="Animation showing federated learning workflow">
+              <source src="/test-fbm-site/assets/video/outline/federated-learning.mp4" type="video/mp4" />
             </video>
             
           </div>
@@ -355,17 +374,17 @@
           <div class="card accordion-item">
             <div class="card-header" id="heading-1">
               <button class="text-fedbiomed-primary fs-20" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
-                Federated Learning
+                Federated Infrastructure
               </button>
             </div>
 
             <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#solutionAccordion">
               <div class="card-body pb-5">
-                <p class="fw-lighter display-8">Train models collaboratively while keeping data within each institution.</p>
+                <p class="fw-lighter display-8">Support orchestration, deployment and trusted multi-site collaboration.</p>
 
                 
                 <div class="text-center text-lg-end mt-4">
-                  <a href="/test-fbm-site/how-it-works/" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl">
+                  <a href="/test-fbm-site/federated-infrastructure/" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl">
                     Explore ➤
                   </a>
                 </div>
@@ -377,33 +396,11 @@
           <div class="card accordion-item">
             <div class="card-header" id="heading-2">
               <button class="collapsed text-fedbiomed-primary fs-20" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-                Federated Analytics
-              </button>
-            </div>
-
-            <div id="collapse-2" class="accordion-collapse collapse " aria-labelledby="heading-2" data-bs-parent="#solutionAccordion">
-              <div class="card-body pb-5">
-                <p class="fw-lighter display-8">Run distributed analytics on local data without centralising datasets.</p>
-
-                
-                <div class="text-center text-lg-end mt-4">
-                  <a href="/test-fbm-site/federated-analytics/" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl">
-                    Explore ➤
-                  </a>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-          
-          <div class="card accordion-item">
-            <div class="card-header" id="heading-3">
-              <button class="collapsed text-fedbiomed-primary fs-20" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
                 Federated Queries
               </button>
             </div>
 
-            <div id="collapse-3" class="accordion-collapse collapse " aria-labelledby="heading-3" data-bs-parent="#solutionAccordion">
+            <div id="collapse-2" class="accordion-collapse collapse " aria-labelledby="heading-2" data-bs-parent="#solutionAccordion">
               <div class="card-body pb-5">
                 <p class="fw-lighter display-8">Query distributed datasets securely across multiple institutions.</p>
 
@@ -419,19 +416,41 @@
           </div>
           
           <div class="card accordion-item">
+            <div class="card-header" id="heading-3">
+              <button class="collapsed text-fedbiomed-primary fs-20" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                Federated Analytics
+              </button>
+            </div>
+
+            <div id="collapse-3" class="accordion-collapse collapse " aria-labelledby="heading-3" data-bs-parent="#solutionAccordion">
+              <div class="card-body pb-5">
+                <p class="fw-lighter display-8">Run distributed analytics on local data without centralising datasets.</p>
+
+                
+                <div class="text-center text-lg-end mt-4">
+                  <a href="/test-fbm-site/federated-analytics/" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl">
+                    Explore ➤
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="card accordion-item">
             <div class="card-header" id="heading-4">
               <button class="collapsed text-fedbiomed-primary fs-20" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
-                Federated Infrastructure
+                Federated Learning
               </button>
             </div>
 
             <div id="collapse-4" class="accordion-collapse collapse " aria-labelledby="heading-4" data-bs-parent="#solutionAccordion">
               <div class="card-body pb-5">
-                <p class="fw-lighter display-8">Support orchestration, deployment and trusted multi-site collaboration.</p>
+                <p class="fw-lighter display-8">Train models collaboratively while keeping data within each institution.</p>
 
                 
                 <div class="text-center text-lg-end mt-4">
-                  <a href="/test-fbm-site/federated-infrastructure/" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl">
+                  <a href="/test-fbm-site/how-it-works/" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl">
                     Explore ➤
                   </a>
                 </div>
