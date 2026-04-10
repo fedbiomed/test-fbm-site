@@ -133,7 +133,7 @@
   
   
   <li class="nav-item">
-    <a class="nav-link" href="/test-fbm-site/news/"><span class="hover">News</span></a>
+    <a class="nav-link" href="/test-fbm-site/real_projects/"><span class="hover">Use Cases</span></a>
   </li>
   
   
@@ -253,140 +253,6 @@
     </div>
   </div>
 </section>
-<section id="architecture" class="wrapper bg-transparent text-fedbiomed-primary">
-  <div class="container py-10 py-md-12 text-center text-lg-start">
-    <div class="row gy-10 gx-lg-8 gx-xl-12 align-items-center">
-
-      <!-- Header -->
-      <div class="col-12">
-        <h2 class="display-2 text-fedbiomed-primary mt-2">System <span class="text-fedbiomed-tertiary">Architecture</span></h2>
-        <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
-        <p class="lead fs-lg fw-lighter mb-0">Fed-BioMed is based on an architecture designed for <strong>healthcare environments</strong>. It separates local data environments from coordination mechanisms while ensuring secure communication between participants.</p>
-      </div>
-
-      
-      <div class="col-lg-7 position-relative order-1 mt-0">
-        <div class="architecture-image-hotspot" id="architecture-hotspot">
-          <img src="/test-fbm-site/assets/icons/FL/outline/architecture.svg" alt="Image illustrating that files stored in healthcare institution databases cannot leave the institutions" class="img-fluid rounded architecture-main-image" />
-
-          <div class="architecture-half-highlight architecture-half-highlight-left"></div>
-          <div class="architecture-half-highlight architecture-half-highlight-right"></div>
-
-          <button type="button" class="architecture-half-click architecture-half-click-left" aria-label="Show first architecture panel" data-target-collapse="collapse-1" data-highlight="left"></button>
-
-          <button type="button" class="architecture-half-click architecture-half-click-right" aria-label="Show second architecture panel" data-target-collapse="collapse-2" data-highlight="right"></button>
-        </div>
-      </div>
-      
-
-      <div class="col-lg-5 order-2">
-        <div class="accordion accordion-wrapper" id="accordionExample">
-          
-          <div class="card accordion-item">
-            <div class="card-header" id="heading-1">
-              <button class="collapsed text-fedbiomed-primary fs-20" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
-                Nodes
-              </button>
-            </div>
-
-            <div id="collapse-1" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#accordionExample">
-              <div class="card-body pb-5">
-                <p class="fw-lighter display-8">Autonomous hospital environments where data remains locally stored and protected. Each node hosts its own datasets, executes local model training, and operates under institutional governance and security policies. Only encrypted model updates, never raw patient data, are shared with the federation server.</p>
-
-                
-                <div class="text-center text-lg-end mt-4">
-                  <a href="https://fedbiomed.org/latest/getting-started/fedbiomed-architecture/#node" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl">
-                    Learn more ➤
-                  </a>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-          
-          <div class="card accordion-item">
-            <div class="card-header" id="heading-2">
-              <button class="collapsed text-fedbiomed-primary fs-20" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-                Researcher
-              </button>
-            </div>
-
-            <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#accordionExample">
-              <div class="card-body pb-5">
-                <p class="fw-lighter display-8">The researcher defines the training plan, configures the experiment, and coordinates the federated workflow without directly accessing institutional data. The researcher only receives aggregated model results and metadata needed to monitor the training process.</p>
-
-                
-                <div class="text-center text-lg-end mt-4">
-                  <a href="https://fedbiomed.org/latest/getting-started/fedbiomed-architecture/#researcher" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl">
-                    Learn more ➤
-                  </a>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const hotspot = document.getElementById('architecture-hotspot');
-  if (!hotspot) return;
-
-  const clickAreas = hotspot.querySelectorAll('.architecture-half-click');
-
-  function openAccordionPanel(panelId) {
-    const targetEl = document.getElementById(panelId);
-    if (!targetEl) return;
-
-    const bsCollapse = bootstrap.Collapse.getOrCreateInstance(targetEl, {
-      toggle: false
-    });
-
-    bsCollapse.show();
-  }
-
-  function setHighlight(side) {
-    hotspot.classList.remove('is-left-active', 'is-right-active');
-
-    if (side === 'left') {
-      hotspot.classList.add('is-left-active');
-    } else if (side === 'right') {
-      hotspot.classList.add('is-right-active');
-    }
-  }
-
-  clickAreas.forEach(area => {
-    area.addEventListener('click', function () {
-      const panelId = this.getAttribute('data-target-collapse');
-      const side = this.getAttribute('data-highlight');
-
-      setHighlight(side);
-      openAccordionPanel(panelId);
-    });
-  });
-
-  const collapse1 = document.getElementById('collapse-1');
-  const collapse2 = document.getElementById('collapse-2');
-
-  if (collapse1) {
-    collapse1.addEventListener('show.bs.collapse', function () {
-      setHighlight('left');
-    });
-  }
-
-  if (collapse2) {
-    collapse2.addEventListener('show.bs.collapse', function () {
-      setHighlight('right');
-    });
-  }
-});
-</script>
 <section id="workflow" class="wrapper bg-light text-fedbiomed-primary">
   <div class="container py-14 pb-md-14">
 
