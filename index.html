@@ -235,96 +235,160 @@
 <section class="wrapper text-fedbiomed-primary">
   <div class="container py-14 py-md-16 text-center text-lg-start">
     <div class="row gx-lg-0 gy-10 align-items-center">
+      
       <div class="col-lg-5 me-5">
         <h2 class="display-2 mb-3 text-fedbiomed-primary">Medical data <span class="text-fedbiomed-tertiary">cannot</span> move.<br />But medical research <span class="text-fedbiomed-tertiary">must</span>.</h2>
         <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
-        <a href="project#challenges-healthcare" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl mt-3">
+
+        <button type="button" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl mt-3 problem-flip-toggle" aria-expanded="false" aria-controls="problem-flip-panel">
           
             <i class="bi bi-exclamation-triangle me-2"></i>
           
-          Explore healthcare challenges ➤</a>
+          <span class="problem-flip-toggle-text">Explore healthcare challenges ➤</span>
+        </button>
       </div>
       <!-- /column -->
-      <div class="col-lg-6">
-        <div class="row g-6 text-center">
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="card card-problem shadow-lg mb-6 mx-10 mx-md-0">
-                  <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                    <div class="icon-custom mb-4">
-                      <img alt="Patient data cannot be freely shared" src="/test-fbm-site/assets/icons/homepage/outline/problem_1.svg" />
-                    </div>
-                    <p class="mb-2 display-8 fw-lighter">Patient data cannot be freely shared</p>
-                  </div>
-                  <!--/.card-body -->
-                </div>
-                <!--/.card -->
-              </div>
-              <!-- /column -->
-              <div class="col-lg-12">
-                <div class="card card-problem shadow-lg mx-10 mx-md-0">
-                  <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                    <div class="icon-custom mb-4">
-                      <img alt="Healthcare institutions must protect privacy and trust" src="/test-fbm-site/assets/icons/homepage/outline/problem_2.svg" />
-                    </div>
-                    <p class="mb-2 display-8 fw-lighter">Healthcare institutions must protect privacy and trust</p>
-                  </div>
-                  <!--/.card-body -->
-                </div>
-                <!--/.card -->
-              </div>
-              <!-- /column -->
-            </div>
-            <!-- /.row -->
-          </div>
-          <!-- /column -->
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-lg-12 order-md-2">
-                <div class="card card-problem shadow-lg mb-6 mb-md-0 mx-10 mx-md-0">
-                  <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                    <div class="icon-custom mb-4">
-                      <img alt="A single institution does not have enough data" src="/test-fbm-site/assets/icons/homepage/outline/problem_3.svg" />
-                    </div>
-                    <p class="mb-2 display-8 fw-lighter">A single institution does not have enough data</p>
-                  </div>
-                  <!--/.card-body -->
-                </div>
-                <!--/.card -->
-              </div>
-              <!-- /column -->
-              <div class="col-lg-12">
-                <div class="card card-problem shadow-lg mb-md-6 mt-lg-6 mx-10 mx-md-0">
-                  <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                    <div class="icon-custom mb-4">
-                      <img alt="Research requires collaboration across institutions" src="/test-fbm-site/assets/icons/homepage/outline/problem_4.svg" />
-                    </div>
-                    <p class="mb-2 display-8 fw-lighter">Research requires collaboration across institutions</p>
-                  </div>
-                  <!--/.card-body -->
-                </div>
-                <!--/.card -->
-              </div>
-              <!-- /column -->
-            </div>
-            <!-- /.row -->
-          </div>
-          <!-- /column -->
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /column -->
-    </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container -->
-</section>
-<!-- /section -->
 
+      <div class="col-lg-6">
+        <div class="problem-flip" id="problem-flip-panel">
+          
+          <div class="problem-flip-inner">
+
+            <!-- FRONT -->
+            <div class="problem-flip-front">
+              <div class="row g-6 text-center">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="card card-problem shadow-lg mb-6 mx-10 mx-md-0">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                          <div class="icon-custom mb-4">
+                            <img alt="Patient data cannot be freely shared" src="/test-fbm-site/assets/icons/homepage/outline/problem_1.svg" />
+                          </div>
+                          <p class="mb-2 display-8 fw-lighter">Patient data cannot be freely shared</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="card card-problem shadow-lg mx-10 mx-md-0">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                          <div class="icon-custom mb-4">
+                            <img alt="Healthcare institutions must protect privacy and trust" src="/test-fbm-site/assets/icons/homepage/outline/problem_2.svg" />
+                          </div>
+                          <p class="mb-2 display-8 fw-lighter">Healthcare institutions must protect privacy and trust</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /column -->
+
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-lg-12 order-md-2">
+                      <div class="card card-problem shadow-lg mb-6 mb-md-0 mx-10 mx-md-0">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                          <div class="icon-custom mb-4">
+                            <img alt="A single institution does not have enough data" src="/test-fbm-site/assets/icons/homepage/outline/problem_3.svg" />
+                          </div>
+                          <p class="mb-2 display-8 fw-lighter">A single institution does not have enough data</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="card card-problem shadow-lg mb-md-6 mt-lg-6 mx-10 mx-md-0">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                          <div class="icon-custom mb-4">
+                            <img alt="Research requires collaboration across institutions" src="/test-fbm-site/assets/icons/homepage/outline/problem_4.svg" />
+                          </div>
+                          <p class="mb-2 display-8 fw-lighter">Research requires collaboration across institutions</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /column -->
+              </div>
+              <!-- /.row -->
+            </div>
+
+            <!-- BACK -->
+            <div class="problem-flip-back">
+              <div class="card card-problem-detail shadow-lg">
+                <div class="card-body p-6 p-md-8 text-start d-flex flex-column justify-content-center">
+
+                  
+                  <p class="lead fs-lg"><strong>Healthcare institutions</strong> operate under strict responsibility.</p>
+                  
+
+                  
+                  <ul class="lead fs-lg fw-lighter text-start mb-4">
+                    
+                    <li>Patient data <strong>must remain protected</strong> at all times.</li>
+                    
+                    <li>Legal and ethical obligations limit data sharing.</li>
+                    
+                    <li>IT systems and infrastructures vary across institutions.</li>
+                    
+                    <li>Research collaboration requires clear <strong>governance and accountability</strong>.</li>
+                    
+                  </ul>
+                  
+
+                  
+                  <p class="lead fs-lg fw-lighter">At the same time, high-quality medical research increasingly depends on data from multiple institutions.</p>
+                  
+
+                  
+                  <p class="lead fs-lg mb-0"><strong>Balancing collaboration and responsibility remains a central challenge.</strong></p>
+                  
+
+                  
+                  <div class="mt-10 text-center">
+                    <img src="/test-fbm-site/assets/icons/project/outline/challenges.png" alt="Image illustrating that files stored in healthcare institution databases cannot leave the institutions" class="img-fluid rounded problem-detail-image" />
+                  </div>
+                  
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- /.problem-flip-inner -->
+
+        </div>
+      </div>
+      <!-- /column -->
+
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('.problem-flip-toggle');
+    const panel = document.querySelector('.problem-flip');
+    const toggleText = document.querySelector('.problem-flip-toggle-text');
+
+    if (toggle && panel) {
+      toggle.addEventListener('click', function () {
+        panel.classList.toggle('is-flipped');
+        const expanded = panel.classList.contains('is-flipped');
+        toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+        if (toggleText) {
+          toggleText.textContent = expanded
+            ? 'Back to overview ➤'
+            : 'Explore healthcare challenges ➤';
+        }
+      });
+    }
+  });
+</script>
 <section id="federated-capabilities" class="wrapper bg-transparent text-fedbiomed-primary">
   <div class="container py-10 py-md-12 text-center text-lg-start">
-    <div class="row gy-10 gx-lg-8 gx-xl-12 align-items-center">
+    <div class="row gy-6 gy-lg-10 gx-lg-8 gx-xl-12 align-items-center">
 
       <!-- Header -->
       <div class="col-12">
