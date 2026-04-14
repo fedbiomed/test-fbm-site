@@ -93,19 +93,19 @@
     <ul class="dropdown-menu">
       
       
-      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/FI/"><span class="hover">Federated Infrastructure</span></a></li>
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/federated_infrastructure/"><span class="hover">Federated Infrastructure</span></a></li>
       
       
       
-      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/FD/"><span class="hover">Federated Discovery</span></a></li>
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/federated_discovery/"><span class="hover">Federated Discovery</span></a></li>
       
       
       
-      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/FA/"><span class="hover">Federated Analytics</span></a></li>
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/federated_analytics/"><span class="hover">Federated Analytics</span></a></li>
       
       
       
-      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/FL/"><span class="hover">Federated Learning</span></a></li>
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/federated_learning/"><span class="hover">Federated Learning</span></a></li>
       
       
     </ul>
@@ -120,7 +120,7 @@
   
   
   <li class="nav-item">
-    <a class="nav-link" href="/test-fbm-site/real_projects/"><span class="hover">Use Cases</span></a>
+    <a class="nav-link" href="/test-fbm-site/realworld_projects/"><span class="hover">Real-world projects</span></a>
   </li>
   
   
@@ -279,7 +279,7 @@
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"projects-tiles"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"project grid grid-view"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row gx-md-8 gx-xl-12 gy-10 gy-md-12 isotope"</span><span class="nt">&gt;</span>
-          {% assign featured_projects = site.real_projects | where: "featured", true | limit: 3 %}
+          {% assign featured_projects = site.realworld_projects | where: "featured", true | limit: 3 %}
           {% for project in featured_projects %}
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item {% if forloop.index == 2 %}col-md-7 mt-md-17{% else %}col-md-5{% endif %}"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"lift rounded mb-6"</span><span class="nt">&gt;</span>
@@ -368,7 +368,7 @@
             <div class="project-details d-flex justify-content-center flex-column">
               <div class="post-header">
                 <h2 class="post-title h3">
-                  <a href="/real_projects/2026-01-15-FederatedPET/" class="link-dark">Fed-BioMed for Federated-PET project</a>
+                  <a href="/realworld_projects/2026-01-15-FederatedPET/" class="link-dark">Fed-BioMed for Federated-PET project</a>
                 </h2>
                 <div class="post-category text-ash">Research Context</div>
               </div>
@@ -385,7 +385,7 @@
             <div class="project-details d-flex justify-content-center flex-column">
               <div class="post-header">
                 <h2 class="post-title h3">
-                  <a href="/real_projects/2025-02-06-cardiacCTimaging/" class="link-dark">Real-world Federated Learning for Cardiac CT Imaging</a>
+                  <a href="/realworld_projects/2025-02-06-cardiacCTimaging/" class="link-dark">Real-world Federated Learning for Cardiac CT Imaging</a>
                 </h2>
                 <div class="post-category text-ash">Research Context</div>
               </div>
@@ -402,7 +402,7 @@
             <div class="project-details d-flex justify-content-center flex-column">
               <div class="post-header">
                 <h2 class="post-title h3">
-                  <a href="/real_projects/2022-03-01-cal/" class="link-dark">Fed-BioMed for oncology research</a>
+                  <a href="/realworld_projects/2022-03-01-cal/" class="link-dark">Fed-BioMed for oncology research</a>
                 </h2>
                 <div class="post-category text-ash">Research Context</div>
               </div>
@@ -419,7 +419,7 @@
             <div class="project-details d-flex justify-content-center flex-column">
               <div class="post-header">
                 <h2 class="post-title h3">
-                  <a href="/real_projects/2022-01-01-cal/" class="link-dark">CAL Fed-BioMed Experiment</a>
+                  <a href="/realworld_projects/2022-01-01-cal/" class="link-dark">CAL Fed-BioMed Experiment</a>
                 </h2>
                 <div class="post-category text-ash">Research Context</div>
               </div>
@@ -436,7 +436,7 @@
             <div class="project-details d-flex justify-content-center flex-column">
               <div class="post-header">
                 <h2 class="post-title h3">
-                  <a href="/real_projects/2022-01-01-becquerel/" class="link-dark">Fed-BioMed at Hospital Centre Henri Becquerel of Rouen</a>
+                  <a href="/realworld_projects/2022-01-01-becquerel/" class="link-dark">Fed-BioMed at Hospital Centre Henri Becquerel of Rouen</a>
                 </h2>
                 <div class="post-category text-ash">Research Context</div>
               </div>
@@ -477,7 +477,7 @@
          <span class="na">data-items-xs=</span><span class="s">"1"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper-wrapper"</span><span class="nt">&gt;</span>
-          {% assign projects = site.real_projects | sort: 'date' | reverse %}
+          {% assign projects = site.realworld_projects | sort: 'date' | reverse %}
           {% for project in projects %}
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper-slide"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"rounded mb-6"</span><span class="nt">&gt;</span>
@@ -603,7 +603,7 @@
             <span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
 
-          {% assign featured_projects = site.real_projects | where: "featured", true | limit: 3 %}
+          {% assign featured_projects = site.realworld_projects | where: "featured", true | limit: 3 %}
           {% for project in featured_projects %}
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item col-md-6"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"lift rounded mb-6"</span><span class="nt">&gt;</span>
@@ -756,7 +756,7 @@
          <span class="na">data-items-xs=</span><span class="s">"1"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper-wrapper"</span><span class="nt">&gt;</span>
-          {% assign projects = site.real_projects | sort: 'date' | reverse %}
+          {% assign projects = site.realworld_projects | sort: 'date' | reverse %}
           {% for project in projects %}
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper-slide"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"rounded"</span><span class="nt">&gt;</span>
@@ -832,7 +832,7 @@
         
         <div class="project item col-md-6 col-xl-4 use-case">
           <figure class="lift rounded mb-6">
-            <a href="/real_projects/2026-01-15-federated-learning-european-hospitals%20copy%2015/">
+            <a href="/realworld_projects/2026-01-15-federated-learning-european-hospitals%20copy%2015/">
               <img src="/assets/img/projects/research.png" 
                    srcset="/assets/img/projects/research.png 2x" 
                    alt="Federated Learning for Multi-Institution Oncology Collaboration" />
@@ -848,7 +848,7 @@
         
         <div class="project item col-md-6 col-xl-4 research-context">
           <figure class="lift rounded mb-6">
-            <a href="/real_projects/2022-01-01-becquerel/">
+            <a href="/realworld_projects/2022-01-01-becquerel/">
               <img src="/assets/img/projects/CHB_team.jpg" 
                    srcset="/assets/img/projects/CHB_team.jpg 2x" 
                    alt="Fed-BioMed at Hospital Centre Henri Becquerel of Rouen" />
@@ -864,7 +864,7 @@
         
         <div class="project item col-md-6 col-xl-4 research-context">
           <figure class="lift rounded mb-6">
-            <a href="/real_projects/2022-01-01-cal/">
+            <a href="/realworld_projects/2022-01-01-cal/">
               <img src="/assets/img/projects/Photo_CAL.jpg" 
                    srcset="/assets/img/projects/Photo_CAL.jpg 2x" 
                    alt="CAL Fed-BioMed Experiment" />
@@ -880,7 +880,7 @@
         
         <div class="project item col-md-6 col-xl-4 research-context">
           <figure class="lift rounded mb-6">
-            <a href="/real_projects/2022-03-01-cal/">
+            <a href="/realworld_projects/2022-03-01-cal/">
               <img src="/assets/img/projects/antoine_lacassagne.png" 
                    srcset="/assets/img/projects/antoine_lacassagne.png 2x" 
                    alt="Fed-BioMed for oncology research" />
@@ -896,7 +896,7 @@
         
         <div class="project item col-md-6 col-xl-4 research-context">
           <figure class="lift rounded mb-6">
-            <a href="/real_projects/2025-02-06-cardiacCTimaging/">
+            <a href="/realworld_projects/2025-02-06-cardiacCTimaging/">
               <img src="/assets/img/projects/CTimaging.png" 
                    srcset="/assets/img/projects/CTimaging.png 2x" 
                    alt="Real-world Federated Learning for Cardiac CT Imaging" />
@@ -912,7 +912,7 @@
         
         <div class="project item col-md-6 col-xl-4 research-context">
           <figure class="lift rounded mb-6">
-            <a href="/real_projects/2026-01-15-FederatedPET/">
+            <a href="/realworld_projects/2026-01-15-FederatedPET/">
               <img src="/assets/img/projects/usecase.png" 
                    srcset="/assets/img/projects/usecase.png 2x" 
                    alt="Fed-BioMed for Federated-PET project" />
@@ -953,7 +953,7 @@
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid grid-view projects-masonry"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row gx-md-8 gy-10 gy-md-13 isotope"</span><span class="nt">&gt;</span>
-        {% assign projects = site.real_projects | where_exp: "item", "item.category != nil" %}
+        {% assign projects = site.realworld_projects | where_exp: "item", "item.category != nil" %}
         {% for project in projects %}
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"project item col-md-6 col-xl-4 {{ project.category | downcase | replace: ' ', '-' }}"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"lift rounded mb-6"</span><span class="nt">&gt;</span>
@@ -1043,7 +1043,7 @@
             <div class="post-category mb-3 text-violet">Use Case</div>
             <h3 class="h1 post-title mb-3">Federated Learning for Multi-Institution Oncology Collaboration</h3>
             <p>Multiple hospitals collaborate to train oncology models without sharing patient data, using federated learning infrastructure.</p>
-            <a href="/real_projects/2026-01-15-federated-learning-european-hospitals%20copy%2015/" class="more hover link-violet">See Project</a>
+            <a href="/realworld_projects/2026-01-15-federated-learning-european-hospitals%20copy%2015/" class="more hover link-violet">See Project</a>
           </div>
           <div class="col-lg-7 offset-lg-1 align-self-end">
             <figure>
@@ -1063,16 +1063,16 @@
         <div class="row gy-10 align-items-center">
           <div class="col-lg-4 order-lg-2 offset-lg-1">
             <div class="post-category mb-3 text-blue">Research Context</div>
-            <h3 class="h1 post-title mb-3">Fed-BioMed at Hospital Centre Henri Becquerel of Rouen</h3>
-            <p>A big thanks to the IT team of the Centre Henri Becquerel (CHB) of Rouen for the successful deployment of Fed-BioMed!</p>
-            <a href="/real_projects/2022-01-01-becquerel/" class="more hover link-blue">See Project</a>
+            <h3 class="h1 post-title mb-3">Fed-BioMed for oncology research</h3>
+            <p>Fed-BioMed contributes to oncology research projects from Centre Antoine Lacassagne.</p>
+            <a href="/realworld_projects/2022-03-01-cal/" class="more hover link-blue">See Project</a>
           </div>
           <div class="col-lg-7">
             <figure>
               <img class="img-fluid" 
-                   src="/assets/img/projects/CHB_team.jpg" 
-                   srcset="/assets/img/projects/CHB_team.jpg 2x" 
-                   alt="Fed-BioMed at Hospital Centre Henri Becquerel of Rouen" />
+                   src="/assets/img/projects/antoine_lacassagne.png" 
+                   srcset="/assets/img/projects/antoine_lacassagne.png 2x" 
+                   alt="Fed-BioMed for oncology research" />
             </figure>
           </div>
         </div>
@@ -1087,15 +1087,15 @@
       <div class="col-lg-6">
         <div class="card bg-soft-leaf mb-10 mb-lg-0">
           <div class="card-body p-12 pb-0">
-            <div class="post-category mb-3 text-leaf">Research Context</div>
-            <h3 class="h1 post-title mb-3">CAL Fed-BioMed Experiment</h3>
-            <p>We are proud to announce the successful deployment and testing of Fed-BioMed into the Hospital Antoine Lacassagne (CAL) of Nice!</p>
-            <a href="/real_projects/2022-01-01-cal/" class="more hover link-leaf mb-8">See Project</a>
+            <div class="post-category mb-3 text-leaf">Use Case</div>
+            <h3 class="h1 post-title mb-3">Federated Learning for Multi-Institution Oncology Collaboration</h3>
+            <p>Multiple hospitals collaborate to train oncology models without sharing patient data, using federated learning infrastructure.</p>
+            <a href="/realworld_projects/2026-01-15-federated-learning-european-hospitals%20copy%2015/" class="more hover link-leaf mb-8">See Project</a>
           </div>
           <img class="card-img-bottom" 
-               src="/assets/img/projects/Photo_CAL.jpg" 
-               srcset="/assets/img/projects/Photo_CAL.jpg 2x" 
-               alt="CAL Fed-BioMed Experiment" />
+               src="/assets/img/projects/research.png" 
+               srcset="/assets/img/projects/research.png 2x" 
+               alt="Federated Learning for Multi-Institution Oncology Collaboration" />
         </div>
       </div>
       
@@ -1104,14 +1104,14 @@
         <div class="card bg-soft-pink ">
           <div class="card-body p-12 pb-0">
             <div class="post-category mb-3 text-pink">Research Context</div>
-            <h3 class="h1 post-title mb-3">Fed-BioMed for Federated-PET project</h3>
-            <p>Federated-PET groups 8 hospitals and 4 research centers in an oncology research project.</p>
-            <a href="/real_projects/2026-01-15-FederatedPET/" class="more hover link-pink mb-8">See Project</a>
+            <h3 class="h1 post-title mb-3">CAL Fed-BioMed Experiment</h3>
+            <p>We are proud to announce the successful deployment and testing of Fed-BioMed into the Hospital Antoine Lacassagne (CAL) of Nice!</p>
+            <a href="/realworld_projects/2022-01-01-cal/" class="more hover link-pink mb-8">See Project</a>
           </div>
           <img class="card-img-bottom" 
-               src="/assets/img/projects/usecase.png" 
-               srcset="/assets/img/projects/usecase.png 2x" 
-               alt="Fed-BioMed for Federated-PET project" />
+               src="/assets/img/projects/Photo_CAL.jpg" 
+               srcset="/assets/img/projects/Photo_CAL.jpg 2x" 
+               alt="CAL Fed-BioMed Experiment" />
         </div>
       </div>
       
@@ -1145,7 +1145,7 @@
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
-    {% assign featured_projects = site.real_projects | where: "featured", true | limit: 2 %}
+    {% assign featured_projects = site.realworld_projects | where: "featured", true | limit: 2 %}
     {% for project in featured_projects %}
     {% assign config = page.portfolio6.featured_projects[forloop.index0] %}
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card bg-soft-{{ config.color }} mb-10"</span><span class="nt">&gt;</span>
@@ -1170,7 +1170,7 @@
     {% endfor %}
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row gx-md-8 gx-xl-10"</span><span class="nt">&gt;</span>
-      {% assign small_projects = site.real_projects | where: "featured", false | limit: 2 %}
+      {% assign small_projects = site.realworld_projects | where: "featured", false | limit: 2 %}
       {% for project in small_projects %}
       {% assign color = page.portfolio6.small_projects.colors[forloop.index0] %}
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"{{ page.portfolio6.small_projects.column_classes }}"</span><span class="nt">&gt;</span>
@@ -1269,7 +1269,7 @@
             
             <div class="swiper-slide">
               <figure class="rounded mb-7">
-                <a href="/real_projects/2026-01-15-FederatedPET/">
+                <a href="/realworld_projects/2026-01-15-FederatedPET/">
                   <img src="/assets/img/projects/usecase.png" 
                        srcset="/assets/img/projects/usecase.png 2x" 
                        alt="Fed-BioMed for Federated-PET project" />
@@ -1278,7 +1278,7 @@
               <div class="project-details d-flex justify-content-center flex-column">
                 <div class="post-header">
                   <h2 class="post-title h3">
-                    <a href="/real_projects/2026-01-15-FederatedPET/" class="link-dark">Fed-BioMed for Federated-PET project</a>
+                    <a href="/realworld_projects/2026-01-15-FederatedPET/" class="link-dark">Fed-BioMed for Federated-PET project</a>
                   </h2>
                   <div class="post-category text-ash">Research Context</div>
                 </div>
@@ -1287,7 +1287,7 @@
             
             <div class="swiper-slide">
               <figure class="rounded mb-7">
-                <a href="/real_projects/2025-02-06-cardiacCTimaging/">
+                <a href="/realworld_projects/2025-02-06-cardiacCTimaging/">
                   <img src="/assets/img/projects/CTimaging.png" 
                        srcset="/assets/img/projects/CTimaging.png 2x" 
                        alt="Real-world Federated Learning for Cardiac CT Imaging" />
@@ -1296,7 +1296,7 @@
               <div class="project-details d-flex justify-content-center flex-column">
                 <div class="post-header">
                   <h2 class="post-title h3">
-                    <a href="/real_projects/2025-02-06-cardiacCTimaging/" class="link-dark">Real-world Federated Learning for Cardiac CT Imaging</a>
+                    <a href="/realworld_projects/2025-02-06-cardiacCTimaging/" class="link-dark">Real-world Federated Learning for Cardiac CT Imaging</a>
                   </h2>
                   <div class="post-category text-ash">Research Context</div>
                 </div>
@@ -1305,7 +1305,7 @@
             
             <div class="swiper-slide">
               <figure class="rounded mb-7">
-                <a href="/real_projects/2022-03-01-cal/">
+                <a href="/realworld_projects/2022-03-01-cal/">
                   <img src="/assets/img/projects/antoine_lacassagne.png" 
                        srcset="/assets/img/projects/antoine_lacassagne.png 2x" 
                        alt="Fed-BioMed for oncology research" />
@@ -1314,7 +1314,7 @@
               <div class="project-details d-flex justify-content-center flex-column">
                 <div class="post-header">
                   <h2 class="post-title h3">
-                    <a href="/real_projects/2022-03-01-cal/" class="link-dark">Fed-BioMed for oncology research</a>
+                    <a href="/realworld_projects/2022-03-01-cal/" class="link-dark">Fed-BioMed for oncology research</a>
                   </h2>
                   <div class="post-category text-ash">Research Context</div>
                 </div>
@@ -1323,7 +1323,7 @@
             
             <div class="swiper-slide">
               <figure class="rounded mb-7">
-                <a href="/real_projects/2022-01-01-cal/">
+                <a href="/realworld_projects/2022-01-01-cal/">
                   <img src="/assets/img/projects/Photo_CAL.jpg" 
                        srcset="/assets/img/projects/Photo_CAL.jpg 2x" 
                        alt="CAL Fed-BioMed Experiment" />
@@ -1332,7 +1332,7 @@
               <div class="project-details d-flex justify-content-center flex-column">
                 <div class="post-header">
                   <h2 class="post-title h3">
-                    <a href="/real_projects/2022-01-01-cal/" class="link-dark">CAL Fed-BioMed Experiment</a>
+                    <a href="/realworld_projects/2022-01-01-cal/" class="link-dark">CAL Fed-BioMed Experiment</a>
                   </h2>
                   <div class="post-category text-ash">Research Context</div>
                 </div>
@@ -1341,7 +1341,7 @@
             
             <div class="swiper-slide">
               <figure class="rounded mb-7">
-                <a href="/real_projects/2022-01-01-becquerel/">
+                <a href="/realworld_projects/2022-01-01-becquerel/">
                   <img src="/assets/img/projects/CHB_team.jpg" 
                        srcset="/assets/img/projects/CHB_team.jpg 2x" 
                        alt="Fed-BioMed at Hospital Centre Henri Becquerel of Rouen" />
@@ -1350,7 +1350,7 @@
               <div class="project-details d-flex justify-content-center flex-column">
                 <div class="post-header">
                   <h2 class="post-title h3">
-                    <a href="/real_projects/2022-01-01-becquerel/" class="link-dark">Fed-BioMed at Hospital Centre Henri Becquerel of Rouen</a>
+                    <a href="/realworld_projects/2022-01-01-becquerel/" class="link-dark">Fed-BioMed at Hospital Centre Henri Becquerel of Rouen</a>
                   </h2>
                   <div class="post-category text-ash">Research Context</div>
                 </div>
@@ -1359,7 +1359,7 @@
             
             <div class="swiper-slide">
               <figure class="rounded mb-7">
-                <a href="/real_projects/2026-01-15-federated-learning-european-hospitals%20copy%2015/">
+                <a href="/realworld_projects/2026-01-15-federated-learning-european-hospitals%20copy%2015/">
                   <img src="/assets/img/projects/research.png" 
                        srcset="/assets/img/projects/research.png 2x" 
                        alt="Federated Learning for Multi-Institution Oncology Collaboration" />
@@ -1368,7 +1368,7 @@
               <div class="project-details d-flex justify-content-center flex-column">
                 <div class="post-header">
                   <h2 class="post-title h3">
-                    <a href="/real_projects/2026-01-15-federated-learning-european-hospitals%20copy%2015/" class="link-dark">Federated Learning for Multi-Institution Oncology Collaboration</a>
+                    <a href="/realworld_projects/2026-01-15-federated-learning-european-hospitals%20copy%2015/" class="link-dark">Federated Learning for Multi-Institution Oncology Collaboration</a>
                   </h2>
                   <div class="post-category text-ash">Use Case</div>
                 </div>
@@ -1411,7 +1411,7 @@
            <span class="na">data-items-xs=</span><span class="s">"{{ page.portfolio7.swiper.items.xs }}"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper overflow-visible"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper-wrapper"</span><span class="nt">&gt;</span>
-            {% assign projects = site.real_projects | sort: 'date' | reverse %}
+            {% assign projects = site.realworld_projects | sort: 'date' | reverse %}
             {% for project in projects %}
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper-slide"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"{{ page.portfolio7.project.figure_classes }}"</span><span class="nt">&gt;</span>
@@ -1518,7 +1518,7 @@
           <div class="project-details d-flex justify-content-center flex-column">
             <div class="post-header">
               <h2 class="post-title h3 fs-22">
-                <a href="/real_projects/2026-01-15-federated-learning-european-hospitals%20copy%2015/" class="link-dark">Federated Learning for Multi-Institution Oncology Collaboration</a>
+                <a href="/realworld_projects/2026-01-15-federated-learning-european-hospitals%20copy%2015/" class="link-dark">Federated Learning for Multi-Institution Oncology Collaboration</a>
               </h2>
               <div class="post-category text-ash">Use Case</div>
             </div>
@@ -1542,7 +1542,7 @@
           <div class="project-details d-flex justify-content-center flex-column">
             <div class="post-header">
               <h2 class="post-title h3 fs-22">
-                <a href="/real_projects/2022-01-01-becquerel/" class="link-dark">Fed-BioMed at Hospital Centre Henri Becquerel of Rouen</a>
+                <a href="/realworld_projects/2022-01-01-becquerel/" class="link-dark">Fed-BioMed at Hospital Centre Henri Becquerel of Rouen</a>
               </h2>
               <div class="post-category text-ash">Research Context</div>
             </div>
@@ -1566,7 +1566,7 @@
           <div class="project-details d-flex justify-content-center flex-column">
             <div class="post-header">
               <h2 class="post-title h3 fs-22">
-                <a href="/real_projects/2022-01-01-cal/" class="link-dark">CAL Fed-BioMed Experiment</a>
+                <a href="/realworld_projects/2022-01-01-cal/" class="link-dark">CAL Fed-BioMed Experiment</a>
               </h2>
               <div class="post-category text-ash">Research Context</div>
             </div>
@@ -1590,7 +1590,7 @@
           <div class="project-details d-flex justify-content-center flex-column">
             <div class="post-header">
               <h2 class="post-title h3 fs-22">
-                <a href="/real_projects/2022-03-01-cal/" class="link-dark">Fed-BioMed for oncology research</a>
+                <a href="/realworld_projects/2022-03-01-cal/" class="link-dark">Fed-BioMed for oncology research</a>
               </h2>
               <div class="post-category text-ash">Research Context</div>
             </div>
@@ -1614,7 +1614,7 @@
           <div class="project-details d-flex justify-content-center flex-column">
             <div class="post-header">
               <h2 class="post-title h3 fs-22">
-                <a href="/real_projects/2025-02-06-cardiacCTimaging/" class="link-dark">Real-world Federated Learning for Cardiac CT Imaging</a>
+                <a href="/realworld_projects/2025-02-06-cardiacCTimaging/" class="link-dark">Real-world Federated Learning for Cardiac CT Imaging</a>
               </h2>
               <div class="post-category text-ash">Research Context</div>
             </div>
@@ -1638,7 +1638,7 @@
           <div class="project-details d-flex justify-content-center flex-column">
             <div class="post-header">
               <h2 class="post-title h3 fs-22">
-                <a href="/real_projects/2026-01-15-FederatedPET/" class="link-dark">Fed-BioMed for Federated-PET project</a>
+                <a href="/realworld_projects/2026-01-15-FederatedPET/" class="link-dark">Fed-BioMed for Federated-PET project</a>
               </h2>
               <div class="post-category text-ash">Research Context</div>
             </div>
@@ -1676,7 +1676,7 @@
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"{{ page.portfolio8.layout.grid_classes }}"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row {{ page.portfolio8.layout.row_classes }}"</span><span class="nt">&gt;</span>
-        {% assign projects = site.real_projects %}
+        {% assign projects = site.realworld_projects %}
         {% for project in projects %}
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"project item {{ page.portfolio8.project.column_classes }}"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"{{ page.portfolio8.project.figure_classes }}"</span><span class="nt">&gt;</span>
@@ -1920,7 +1920,7 @@
       <span class="nt">&lt;/div&gt;</span>
 
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row {{ page.portfolio9.layout.row_classes }}"</span><span class="nt">&gt;</span>
-        {% assign photo_projects = site.real_projects | where: "category", "Photography" %}
+        {% assign photo_projects = site.realworld_projects | where: "category", "Photography" %}
         {% for project in photo_projects %}
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"project item {{ page.portfolio9.project.column_classes }} {{ project.tags | join: ' ' }}"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"{{ page.portfolio9.project.figure_classes }}"</span><span class="nt">&gt;</span>
@@ -2032,7 +2032,7 @@
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
-    {% assign featured_projects = site.real_projects | where: "featured", true | limit: 2 %}
+    {% assign featured_projects = site.realworld_projects | where: "featured", true | limit: 2 %}
     {% for project in featured_projects %}
     {% assign config = page.portfolio10.featured_projects[forloop.index0] %}
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row gy-10 align-items-center {% unless forloop.last %}mb-15 mb-md-17{% endunless %}"</span><span class="nt">&gt;</span>
@@ -2188,7 +2188,7 @@
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"demos-wrapper"</span><span class="nt">&gt;</span>
-      {% assign demo_projects = site.real_projects | where: "category", "Demo"  %}
+      {% assign demo_projects = site.realworld_projects | where: "category", "Demo"  %}
       {% for project in demo_projects | limit: 2 %}
       {% assign config = page.portfolio11.demos[forloop.index0] %}
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"project {% unless forloop.last %}mb-10{% endunless %}"</span><span class="nt">&gt;</span>
