@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- Primary Meta Tags -->
+<title> Fed-BioMed Component configuration </title>
+<meta name="title" content=" Fed-BioMed Component configuration ">
+<meta name="description" content=" Fed-BioMed, an open-source collaborative learning framework ">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content=" /docs/getting-started/configuration/ ">
+<meta property="og:title" content=" Fed-BioMed Component configuration ">
+<meta property="og:description" content=" Fed-BioMed, an open-source collaborative learning framework ">
+
+<meta property="og:image" content="/test-fbm-site/assets/img/logo_fbm_og.webp" />
+
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="/docs/getting-started/configuration/">
+<meta property="twitter:title" content=" Fed-BioMed Component configuration ">
+<meta property="twitter:description" content=" Fed-BioMed, an open-source collaborative learning framework ">
+
+<meta property="twitter:image" content="/test-fbm-site/assets/img/logo_fbm_og.webp" />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Stylesheets-->
+  <link rel="shortcut icon" href="/test-fbm-site/assets/img/favicon.png" />
+<link rel="stylesheet" href="/test-fbm-site/assets/css/plugins.css">
+
+<link rel="stylesheet" href="/test-fbm-site/assets/css/styles.css">
+
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""
+/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""
+></script>
+  
+</head>
+<body class="">
+    <div class="content-wrapper">
+        <header class="wrapper bg-soft-primary">
+        
+
+<nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
+  
+    <div class="container flex-lg-row flex-nowrap align-items-center">
+  
+    <div class="navbar-brand w-100">
+      <a href="/test-fbm-site/">
+        
+          <img src="/test-fbm-site/assets/img/logo_full.webp" 
+               srcset="/test-fbm-site/assets/img/logo_full@2x.webp 2x" alt="" />
+        
+      </a>
+    </div>
+    <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+      <!-- DEBUG START -->
+      <div class="offcanvas-header d-lg-none">
+        <h3 class="text-white fs-30 mb-0">Fed-BioMed</h3>
+        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <!-- DEBUG END -->
+      <div class="offcanvas-body  d-flex flex-column h-100">
+        
+          <!-- Standard Navigation -->
+          
+<ul class="navbar-nav"> 
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/test-fbm-site/project/"><span class="hover">Project</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><span class="hover">How it works</span></a>
+    <ul class="dropdown-menu">
+      
+      
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/federated_infrastructure/"><span class="hover">Federated Infrastructure</span></a></li>
+      
+      
+      
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/federated_discovery/"><span class="hover">Federated Discovery</span></a></li>
+      
+      
+      
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/federated_analytics/"><span class="hover">Federated Analytics</span></a></li>
+      
+      
+      
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/federated_learning/"><span class="hover">Federated Learning</span></a></li>
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/test-fbm-site/about/"><span class="hover">About</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/test-fbm-site/realworld_projects/"><span class="hover">Real-world projects</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/test-fbm-site/faq/"><span class="hover">FAQ</span></a>
+  </li>
+  
+  
+</ul>
+
+
+        
+        
+        <div class="offcanvas-footer d-lg-none">
+          <div>
+            <a href="mailto:fedbiomed@inria.fr" class="link-inverse">fedbiomed@inria.fr</a>
+            <nav class="nav social social-white mt-4">
+              
+            </nav>
+          </div>
+        </div>
+        <!-- /.offcanvas-footer -->
+      </div>
+      <!-- /.offcanvas-body -->
+    </div>
+    <!-- /.navbar-collapse -->
+    
+    <div class="navbar-other w-100 d-flex ms-auto">
+      <ul class="navbar-nav flex-row align-items-center ms-auto">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          <li class="nav-item d-none d-md-block">
+            <a href="https://fedbiomed.org/fedbiomed-docs/latest/getting-started/what-is-fedbiomed/"
+              class="btn btn-primary btn-gradient bg-gradient-dark-button border-0 rounded-xl"
+              target="_blank">
+              Documentation
+            </a>
+          </li>
+        
+        
+        
+        
+        
+        
+        <li class="nav-item d-lg-none">
+          <button class="hamburger offcanvas-nav-btn"><span></span></button>
+        </li>
+      </ul>
+    </div>
+  
+    </div>
+    <!-- /.container -->
+  
+</nav>
+<!-- /.navbar -->
+
+
+
+
+
+
+
+
+
+
+        </header>
+        <!-- /header -->
+        <section class="wrapper bg-soft-primary">
+          <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+            <div class="row">
+              <div class="col-md-9 col-lg-7 col-xl-5 mx-auto">
+                <h1 class="display-1 mb-3">Fed-BioMed Component configuration</h1>
+                <p class="lead px-xxl-11">Fed-BioMed, an open-source collaborative learning framework</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        
+         <div class="container">
+          <div class="row">
+            <aside class="col-xl-2 sidebar doc-sidebar mt-md-0 py-16 d-none d-xl-block">
+    
+    
+  </aside>
+  
+            <aside class="col-xl-2 order-xl-3 sidebar sticky-sidebar mt-md-0 py-16 d-none d-xl-block">
+              <div class="widget">
+                <h6 class="widget-title fs-17 mb-2 ps-xl-5">On this page</h6>
+                <nav class="ps-xl-5" id="sidebar-nav">
+                  <ul id="toc" class="list-unstyled fs-sm lh-sm text-reset">
+<li class="nav-link scroll snippet-h2"><a href="#fed-biomed-components">Fed-BioMed Components</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#initializing-components">Initializing Components</a>
+<ul class="list-unstyled pt-2 ps-2 fs-sm lh-sm text-reset">
+<li class="nav-link scroll snippet-h3"><a href="#component-directories">Component directories</a></li>
+<li class="nav-link scroll snippet-h3"><a href="#creating-components-beforehand">Creating components beforehand</a></li>
+</ul>
+</li>
+<li class="nav-link scroll snippet-h2"><a href="#managing-components">Managing Components</a>
+<ul class="list-unstyled pt-2 ps-2 fs-sm lh-sm text-reset">
+<li class="nav-link scroll snippet-h3"><a href="#managing-node-component">Managing Node Component</a></li>
+<li class="nav-link scroll snippet-h3"><a href="#managing-researcher-component">Managing researcher component</a></li>
+</ul>
+</li>
+<li class="nav-link scroll snippet-h2"><a href="#cleaning">Cleaning</a></li>
+</ul>
+                </nav>
+              </div>
+            </aside>
+        
+            <div class="col-xl-8 order-xl-2">
+              <div class="content"> 
+                <h1 id="fed-biomed-component-configuration">Fed-BioMed Component configuration</h1>
+
+<p><strong>Fed-BioMed components need to be configured before using Fed-BioMed.</strong> The Fed-BioMed CLI simplifies this process by automating the setup of default components to enhance the user experience, especially for testing purposes. This article will guide you through the basic configuration steps required for the minimize initialization of Fed-BioMed components.</p>
+
+<p>For more detailed configuration instructions, please refer to the <a href="../user-guide/nodes/configuring-nodes.md">Configuring Nodes</a> and <a href="../user-guide/deployment/deployment.md">Deployment</a> user guides.</p>
+
+<hr />
+
+<h2 id="fed-biomed-components">Fed-BioMed Components</h2>
+
+<p>Fed-BioMed components are instances provided by Fed-BioMed with distinct responsibilities in a federated learning infrastructure. While they can operate independently and do not directly depend on each other, they are necessary to complete a federated learning infrastructure. These components may also include optional sub-components to enhance usability (e.g., the Node GUI, a user-friendly web application for managing nodes).</p>
+
+<p>This guide will be focusing on <strong>Node</strong> and <strong>Researcher</strong> components to create a basic infrastructure to follow the examples and the tutorials in the documentation. To find out more about Fed-BioMed architecture and component please refer to <a href="./fedbiomed-architecture.md">Fed-BioMed architecture</a></p>
+
+<hr />
+
+<h2 id="initializing-components">Initializing Components</h2>
+
+<p><strong>The Fed-BioMed CLI is configured to initialize components if they do not already exist.</strong> Initializing component means creating a specific folder for the component to keep its assets. While Fed-BioMed uses default folder name for each component type it is also possible to use custom paths to address or initialize components with different folder names. For the components that are not existing, the CLI asks for the permission before creating the them.   While this feature allows to create component quickly, CLI also provide a specific option just for initializing/creating <a href="#creating-components-beforehand">components explicitly</a>.</p>
+
+<p>It is important to note that, <strong>unless specified, the component directory will be generated in the directory where the command is executed.</strong> This behavior applies to both the <strong>Researcher</strong> and <strong>Node</strong> components.</p>
+
+<p>!!! note “-y option to create components automatically”
+    To avoid approving component creation option <code class="language-plaintext highlighter-rouge">-y</code> can be used. e.g <code class="language-plaintext highlighter-rouge">fedbiomed node -y [ACTION]</code> or <code class="language-plaintext highlighter-rouge">fedbiomed researcher -y [ACTION]</code>. <code class="language-plaintext highlighter-rouge">-y</code> option should be specified right after component type specification.</p>
+
+<h3 id="component-directories">Component directories</h3>
+
+<p>Component configurations, and other necessary assets to provide components to function properly are located in its own directory of the component. These directories are called <strong>component directory</strong>, and the directory name (folder name) refers to <strong>component name</strong>.  While Fed-BioMed components come with default components names, it is also possible to use different folder names. This functionality is useful especially if several components are hosted in the same parent directory of the same file system.</p>
+
+<p>First execution of the following command will create will create a component directory called <code class="language-plaintext highlighter-rouge">fbm-node</code> (default component name) located in the directory where this command is executed, and it will ask for permission to initialize component directory if it is not existing.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fedbiomed node dataset list
+</code></pre></div></div>
+
+<p>Once the default component is created, Fed-BioMed CLI command execution in the same directory will use the default component named <code class="language-plaintext highlighter-rouge">fbm-node</code>. However, it is also possible to indicate component directory to be able to execute Fed-BioMed command from different directories.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fedbiomed node <span class="nt">--path</span> some/other/directory/fbm-node dataset list
+</code></pre></div></div>
+
+<p>This functionality is also same for researcher component.</p>
+
+<h3 id="creating-components-beforehand">Creating components beforehand</h3>
+
+<p>Creating components beforehand using the CLI is recommended when creating multiple components before performing any actions on them. A good practice is also to create a separate directory to keep all generated components in one place. For example,  a directory called <code class="language-plaintext highlighter-rouge">fbm-components</code> can be created to hold all Fed-BioMed components. This will allow to access these component easily.</p>
+
+<p>To create a Node component:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fedbiomed component create <span class="nt">--component</span> node <span class="nt">--path</span> fbm-components/my-node
+</code></pre></div></div>
+
+<p>To create another Node component:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fedbiomed component create <span class="nt">--component</span> node <span class="nt">--path</span> fbm-components/my-second-node
+</code></pre></div></div>
+
+<p>The Researcher component is also essential for every Fed-BioMed setup:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fedbiomed component create <span class="nt">--component</span> researcher <span class="nt">--path</span> fbm-components/my-researcher
+</code></pre></div></div>
+
+<h2 id="managing-components">Managing Components</h2>
+
+<p>The Fed-BioMed CLI is designed to manage different types of components and their sub-components. It also enables managing multiple components by specifying the path where each component is initialized. This section explains how to address distinct components and minimize errors caused by incorrect component specifications.</p>
+
+<h3 id="managing-node-component">Managing Node Component</h3>
+
+<p>All the actions that are specific to Node component should be declared after the option <code class="language-plaintext highlighter-rouge">node</code> of <code class="language-plaintext highlighter-rouge">fedbiomed</code> command. For example, <code class="language-plaintext highlighter-rouge">fedbiomed node dataset list</code> will list all the datasets deployed on the dataset. You can list all possible options and action by executing <code class="language-plaintext highlighter-rouge">fedbiomed node --help</code>.</p>
+
+<p>The execution of <code class="language-plaintext highlighter-rouge">fedbiomed node</code> without <code class="language-plaintext highlighter-rouge">--path</code> option will assume the working directory is the directory where the command is executed, and look for <code class="language-plaintext highlighter-rouge">fbm-node</code> folder to chose default node instantiation. If this folder is not existing it will ask permission to create one.  Therefore, it is important to double check the directory that <code class="language-plaintext highlighter-rouge">fedbiomed</code> command is going to me executed.</p>
+
+<h4 id="multi-node-setup">Multi-node setup</h4>
+
+<p>As it is mentioned before, <code class="language-plaintext highlighter-rouge">--path</code> option allows to chose distinct node initialization. This option accepts relative or absolute paths. While managing multiple components it is highly recommended to use <code class="language-plaintext highlighter-rouge">--path</code> option address correct component initialization.</p>
+
+<p>You can find an example of multi-node initialization;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd my-nodes/
+fedbiomed component create --component node --path ./my-node
+fedbiomed component create --component node --path ./my-second-node
+</code></pre></div></div>
+<p>Here is how these components are chosen for specific actions;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># List datasets in component initialized in `./my-node`
+fedbiomed node --path ./my-node dataset list
+</code></pre></div></div>
+
+<p>or,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fedbiomed node --path ./my-second-node training-plan list
+</code></pre></div></div>
+
+<h4 id="single-node-setup">Single-node setup</h4>
+
+<p>When working with a single-node setup, it is recommended to use default component names to avoid the need for the <code class="language-plaintext highlighter-rouge">--path</code> declaration each time a <code class="language-plaintext highlighter-rouge">fedbiomed</code> command is executed.</p>
+
+<h5 id="initializing-a-default-node-component">Initializing a default node component</h5>
+
+<p>The following command initializes a default Node component:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fedbiomed component create <span class="nt">-c</span> node
+</code></pre></div></div>
+
+<p>After initializing a default component, the <code class="language-plaintext highlighter-rouge">fedbiomed node</code> command can be executed without specifying the <code class="language-plaintext highlighter-rouge">--path</code> option, <strong>unless it is run from a different directory than where <code class="language-plaintext highlighter-rouge">fbm-node</code> is located.</strong></p>
+
+<p>Example:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># List datasets deployed on the default node</span>
+fedbiomed node dataset list
+</code></pre></div></div>
+
+<h5 id="initializing-a-default-node-component-in-a-specific-directory">Initializing a default node component in a specific directory</h5>
+
+<p>To initialize a default Node component in a specific directory, component path has to be declared, and the folder should be named <code class="language-plaintext highlighter-rouge">fbm-node</code>:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fedbiomed component create <span class="nt">-c</span> node <span class="nt">-p</span> /path/to/fbm-node
+</code></pre></div></div>
+
+<p>If the <code class="language-plaintext highlighter-rouge">fedbiomed</code> command is executed from a directory other than <code class="language-plaintext highlighter-rouge">/path/to/fbm-node</code>, the <code class="language-plaintext highlighter-rouge">--path</code> option must be used to specify the correct Node component:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Example with explicit path</span>
+fedbiomed node dataset list <span class="nt">--path</span> /path/to/fbm-node
+</code></pre></div></div>
+
+<p>!!! note “More about configuring nodes”
+    Please visit node user guide to find out more about <a href="../user-guide/node/configuring-nodes.md">configuring nodes</a> and <a href="../user-guide/node/deploying-datasets.md">deploying dataset</a>.</p>
+
+<h3 id="managing-researcher-component">Managing researcher component</h3>
+
+<p>Unlike the Node component, the <strong>Researcher</strong> serves as the server in the Fed-BioMed federated learning infrastructure. There can only be one active Researcher that Nodes connect to at a time. The default component name for the Researcher is <code class="language-plaintext highlighter-rouge">fbm-researcher</code>.</p>
+
+<p>While it is possible to create multiple Researcher components, this is only useful when different Researcher configurations are needed to support separate federated learning setups.</p>
+
+<h4 id="creating-and-managing-researcher-components">Creating and Managing Researcher Components</h4>
+
+<p>The process of creating and selecting a Researcher component is similar to that of a Node. You can specify a particular Researcher component using the <code class="language-plaintext highlighter-rouge">--path</code> option.</p>
+
+<p>Example: Default component creation</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fedbiomed component create <span class="nt">-c</span> researcher
+</code></pre></div></div>
+
+<p>Example: using a researcher component from a specific directory</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fedbiomed researcher <span class="nt">--path</span> /path/to/fbm-researcher start
+</code></pre></div></div>
+
+<h4 id="choosing-the-correct-component-initialization">Choosing the Correct Component Initialization</h4>
+
+<p>Unlike Node components, the Researcher component runs within a Python session rather than as a standalone process. This session must be correctly configured to use the intended Researcher component. The <code class="language-plaintext highlighter-rouge">start</code> command for the Researcher has been designed to ensure to use correct initialization.</p>
+
+<p>Example: Default component creation and starting</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Default component creation</span>
+fedbiomed component create <span class="nt">-c</span> researcher
+
+<span class="c"># Start a jupyter notebook for this component</span>
+fedbiomed researcher start
+</code></pre></div></div>
+
+<p>The commands above will create a default Researcher component (<code class="language-plaintext highlighter-rouge">fbm-researcher</code>) and start a Jupyter Notebook that is pre-configured to use the created Researcher.</p>
+
+<p>This behavior can also be achieved by specifying the <code class="language-plaintext highlighter-rouge">--path</code> option when starting the Researcher from a different directory:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fedbiomed researcher <span class="nt">--path</span> /path/to/fbm-researcher start
+</code></pre></div></div>
+
+<h4 id="executing-plain-python-scripts-without-fedbiomed-researcher">Executing Plain Python Scripts Without <code class="language-plaintext highlighter-rouge">fedbiomed researcher</code></h4>
+
+<p>The Researcher does not need to be started using a Jupyter Notebook. You can use a plain Python script to define and execute experiments. However, in this case, the correct Researcher initialization directory must be set at the beginning of the script.</p>
+
+<p>Example: using environment variables in a script</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">os</span>
+<span class="n">os</span><span class="p">.</span><span class="n">environ</span><span class="p">[</span><span class="sh">"</span><span class="s">FBM_RESEARCHER_COMPONENT_ROOT</span><span class="sh">"</span><span class="p">]</span> <span class="o">=</span> <span class="sh">'</span><span class="s">/path/to/fbm-researcher</span><span class="sh">'</span>
+
+<span class="c1"># Remaining code for the experiment
+# ...
+</span></code></pre></div></div>
+
+<p>Example: Setting environment variables in the command Line</p>
+
+<p>You can achieve the same behavior by exporting the <code class="language-plaintext highlighter-rouge">FBM_RESEARCHER_COMPONENT_ROOT</code> environment variable before running your script:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">FBM_RESEARCHER_COMPONENT_ROOT</span><span class="o">=</span>/path/to/fbm-researcher
+python my-experiment.py
+</code></pre></div></div>
+
+<p>Alternatively, you can set the environment variable inline:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">FBM_RESEARCHER_COMPONENT_ROOT</span><span class="o">=</span>/path/to/fbm-researcher python my-experiment.py
+</code></pre></div></div>
+
+<h2 id="cleaning">Cleaning</h2>
+
+<p>A Fed-BioMed instance can handle successive operations like adding and then removing nodes or datasets, conducting sequential experiments. But after testing, thing may get wrong. At this point, you may want to clean all things. Afterwards, you will need to restart from scratch (add datasets to nodes, start nodes, etc…)</p>
+
+<p>To clean your Fed-BioMed instance :</p>
+
+<ul>
+  <li>stop the researcher : shutdown the notebook kernel (<code class="language-plaintext highlighter-rouge">Quit</code> in on the notebook interface or <code class="language-plaintext highlighter-rouge">ctrl-C</code> on the console)</li>
+  <li>stop the nodes : interrupt (<code class="language-plaintext highlighter-rouge">ctrl-C</code>) on the nodes console</li>
+  <li>remove all configuration files, dataset sharing configuration, temporary files, caches for all Fed-BioMed components with :</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ rm -rf COMPONENT_DIR
+</code></pre></div></div>
+
+<p>Where <code class="language-plaintext highlighter-rouge">COMPONENT_DIR</code> is:</p>
+
+<ul>
+  <li>for a node, the parameter provided as <code class="language-plaintext highlighter-rouge">fedbiomed node -p COMPONENT_DIR</code> or by default <code class="language-plaintext highlighter-rouge">fbm-node</code> if no parameter was given</li>
+  <li>for a researcher, the parameter provided as <code class="language-plaintext highlighter-rouge">fedbiomed researcher -p COMPONENT_DIR</code> or by default <code class="language-plaintext highlighter-rouge">fbm-researcher</code> if no parameter was given</li>
+</ul>
+
+<p>When you restart a node after cleaning the Fed-BioMed instance, the node doesn’t provides any dataset, as the dataset sharing configuration was reset in the cleaning process. Of course, Fed-BioMed did not delete any data, it just stopped sharing them.</p>
+
+              </div>
+            </div>
+          </div>
+        </div> 
+        
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-gradient-reverse-primary ">
+  
+  
+  
+  
+  
+  
+
+    <div class="bg-white shadow-lg" aria-label="newsletter-title">
+  <div class="container  py-10">
+    <div class="row align-items-center justify-content-between">
+        <div class="col-lg-5 mb-4 mb-lg-0 text-center text-lg-start">
+            <h2 id="newsletter-title" class="display-2 mb-3 text-fedbiomed-primary">
+            Stay <span class="text-fedbiomed-tertiary">updated</span>
+            </h2>
+            <p class="mb-0 text-fedbiomed-primary fw-lighter">
+            Get the latest Fed-BioMed updates to your inbox
+            </p>
+        </div>
+
+        <div class="col-lg-4">
+            <form action="https://sympa.inria.fr/sympa/subscribe/fedbiomed-support" method="get" target="_blank" class="position-relative">
+            <label for="newsletter-email" class="visually-hidden">Email address</label>
+              <input
+                id="newsletter-email"
+                type="email"
+                name="email"
+                class="form-control rounded-pill pe-5 bg-soft-blue text-fedbiomed-primary border-0"
+                placeholder="Enter your email"
+                required>
+            <button
+                type="submit"
+                class="btn border-0 bg-transparent shadow-none position-absolute top-50 end-0 translate-middle-y pe-3 text-primary"
+                aria-label="Subscribe to newsletter">
+                ➤
+            </button>
+            </form>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="container py-10 py-md-12">
+  <div class="row gy-8 align-items-stretch">
+
+    <!-- LOGO / BRAND -->
+    <div class="col-12 col-lg-4 order-1 order-lg-2 text-center d-flex">
+        <div class="d-flex flex-column align-items-center justify-content-center w-100">
+        
+          <img
+            src="/test-fbm-site/assets/img/logo_icon.png"
+            alt="Fed-BioMed"
+            class="mb-4"
+            style="max-width: 130px; height: auto;">
+        
+
+        <h3 class="mb-1 text-fedbiomed-primary">
+          Fed-BioMed
+        </h3>
+
+        <p class="mb-0 text-fedbiomed-primary fw-lighter">
+          Copyright ©2026
+        </p>
+      </div>
+    </div>
+
+    <!-- LEFT LINKS -->
+    <div class="col-12 col-md-6 col-lg-4 order-2 order-lg-1">
+      <div class="row gy-6 text-center text-md-start">
+        <div class="col-12">
+          <h4 class="mb-3 text-fedbiomed-primary">
+            Helpful links
+          </h4>
+          <div class="row row-cols-1 row-cols-sm-2 gy-2 text-fedbiomed-secondary fw-lighter">
+            
+              <div class="col">
+                <a href="/test-fbm-site/project#what-is-fedbiomed" class=" hover">Fed-BioMed</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/how-it-works#what-is-federated_learning" class=" hover">Federated Learning</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/how-it-works#architecture" class=" hover">Architecture</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/how-it-works#workflow" class=" hover">Workflow</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/how-it-works#security-in-practice" class=" hover">Security in Practice</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/realworld_projects/" class=" hover">Real world projects</a>
+              </div>
+            
+          </div>
+        </div>
+
+        <div class="col-12 pt-8">
+          <h4 class="mb-3 text-fedbiomed-primary">
+            Documentation
+          </h4>
+          <div class="row row-cols-1 row-cols-sm-2 gy-2 text-fedbiomed-secondary fw-lighter">
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/getting-started/what-is-fedbiomed/" class=" hover">Get Started</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/getting-started/installation/" class=" hover">Installation</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/tutorials/pytorch/01_PyTorch_MNIST_Single_Node_Tutorial/" class=" hover">Tutorials</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/user-guide/glossary/" class=" hover">User Guide</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/developer/usage_and_tools/" class=" hover">Developer</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/getting-started/basic-example/" class=" hover">Examples</a>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT LINKS + SOCIAL + ADDRESS -->
+    <div class="col-12 col-md-6 col-lg-4 order-3 order-lg-3">
+      <div class="row gy-6 text-center text-md-start text-lg-end h-100">
+        <div class="col-12">
+          <h4 class="mb-3 text-fedbiomed-primary">
+            About
+          </h4>
+          <div class="row row-cols-1 row-cols-sm-2 gy-2 text-fedbiomed-secondary fw-lighter">
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#funding" class=" hover">Funding & Institutional Support</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#roadmap" class=" hover">Roadmap</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/faq/" class=" hover">FAQ</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#contacts" class=" hover">Support & Contacts</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#how-to-cite-us" class=" hover">How to cite</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#team" class=" hover">Team</a>
+              </div>
+            
+          </div>
+        </div>
+
+        <div class="col-12 pt-8 mt-lg-auto text-fedbiomed-primary">
+          <nav class="nav social justify-content-center justify-content-md-start justify-content-lg-end mb-4" aria-label="Social media">
+            
+              <a
+                href="https://github.com/fedbiomed/fedbiomed"
+                class="ms-2"
+                style="font-size: 1.35rem;"
+                aria-label="GitHub"
+                target="_blank" rel="noopener noreferrer">
+                <i class="uil uil-github text-fedbiomed-primary" aria-hidden="true"></i>
+              </a>
+            
+              <a
+                href="https://www.linkedin.com/groups/12606640/"
+                class="ms-2"
+                style="font-size: 1.35rem;"
+                aria-label="LinkedIn"
+                target="_blank" rel="noopener noreferrer">
+                <i class="uil uil-linkedin text-fedbiomed-primary" aria-hidden="true"></i>
+              </a>
+            
+              <a
+                href="mailto:fedbiomed@inria.fr"
+                class="ms-2"
+                style="font-size: 1.35rem;"
+                aria-label="Email"
+                >
+                <i class="uil uil-envelope text-fedbiomed-primary" aria-hidden="true"></i>
+              </a>
+            
+          </nav>
+
+          <address class="mb-0 text-center text-md-start text-lg-end">
+            2004 Rte des Lucioles, 06902 Sophia Antipolis, France
+          </address>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+  
+  <!-- /.container -->
+</footer>
+
+  <!-- Modals -->
+  
+
+  
+
+  <!-- Scroll To Top Button -->
+  
+  <!-- Site Scripts-->
+  <script src="/test-fbm-site/assets/js/bootstrap.bundle.js"></script>
+<script src="/test-fbm-site/assets/js/plugins.js"></script>
+<script src="/test-fbm-site/assets/js/theme.js"></script>
+
+  <script>
+    (function () {
+      const NAVBAR_H = 90;
+      const KNOWN_TYPES = { note: 'ℹ', info: 'ℹ', tip: '✓', warning: '⚠', danger: '✕' };
+
+      // ── Admonitions ──────────────────────────────────────────
+      const content = document.querySelector('.col-xl-8 .content');
+      if (content) {
+        content.querySelectorAll('p, li').forEach(el => {
+          const text = el.textContent;
+          const m = text.match(/^!!!\s+(\w+)\s+"([^"]+)"\s*([\s\S]*)$/);
+          if (!m) return;
+          const type = KNOWN_TYPES[m[1]] ? m[1] : 'note';
+          const div = document.createElement('div');
+          div.className = 'doc-admonition doc-admonition--' + type;
+          const body = m[3].trim();
+          div.innerHTML =
+            '<span class="doc-admonition__icon">' + KNOWN_TYPES[type] + '</span>' +
+            '<span class="doc-admonition__title">' + m[2] + '</span>' +
+            (body ? '<div class="doc-admonition__body">' + body + '</div>' : '');
+          el.replaceWith(div);
+        });
+      }
+
+      // ── TOC scrollspy ─────────────────────────────────────────
+      const nav = document.getElementById('sidebar-nav');
+      if (!nav) return;
+
+      const headings = Array.from(
+        document.querySelectorAll('.col-xl-8 .content h2[id], .col-xl-8 .content h3[id]')
+      );
+      if (!headings.length) return;
+
+      let currentLink = null;
+      function setActive(id) {
+        const next = nav.querySelector('a[href="#' + id + '"]');
+        if (next === currentLink) return;
+        if (currentLink) currentLink.classList.remove('active');
+        if (next) next.classList.add('active');
+        currentLink = next;
+      }
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => { if (entry.isIntersecting) setActive(entry.target.id); });
+      }, { rootMargin: '0px 0px -80% 0px', threshold: 0 });
+
+      headings.forEach(h => observer.observe(h));
+
+      nav.addEventListener('click', e => {
+        const link = e.target.closest('a[href^="#"]');
+        if (!link) return;
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        const target = document.getElementById(link.getAttribute('href').slice(1));
+        if (!target) return;
+        window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - NAVBAR_H, behavior: 'smooth' });
+      });
+    })();
+  </script>
+  <!-- MathJax for LaTeX rendering -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+</body>
+</html>

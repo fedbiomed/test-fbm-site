@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- Primary Meta Tags -->
+<title> What is Fed-BioMed </title>
+<meta name="title" content=" What is Fed-BioMed ">
+<meta name="description" content=" Fed-BioMed, an open-source collaborative learning framework ">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content=" /docs/getting-started/what-is-fedbiomed/ ">
+<meta property="og:title" content=" What is Fed-BioMed ">
+<meta property="og:description" content=" Fed-BioMed, an open-source collaborative learning framework ">
+
+<meta property="og:image" content="/test-fbm-site/assets/img/logo_fbm_og.webp" />
+
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="/docs/getting-started/what-is-fedbiomed/">
+<meta property="twitter:title" content=" What is Fed-BioMed ">
+<meta property="twitter:description" content=" Fed-BioMed, an open-source collaborative learning framework ">
+
+<meta property="twitter:image" content="/test-fbm-site/assets/img/logo_fbm_og.webp" />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Stylesheets-->
+  <link rel="shortcut icon" href="/test-fbm-site/assets/img/favicon.png" />
+<link rel="stylesheet" href="/test-fbm-site/assets/css/plugins.css">
+
+<link rel="stylesheet" href="/test-fbm-site/assets/css/styles.css">
+
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""
+/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""
+></script>
+  
+</head>
+<body class="">
+    <div class="content-wrapper">
+        <header class="wrapper bg-soft-primary">
+        
+
+<nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
+  
+    <div class="container flex-lg-row flex-nowrap align-items-center">
+  
+    <div class="navbar-brand w-100">
+      <a href="/test-fbm-site/">
+        
+          <img src="/test-fbm-site/assets/img/logo_full.webp" 
+               srcset="/test-fbm-site/assets/img/logo_full@2x.webp 2x" alt="" />
+        
+      </a>
+    </div>
+    <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+      <!-- DEBUG START -->
+      <div class="offcanvas-header d-lg-none">
+        <h3 class="text-white fs-30 mb-0">Fed-BioMed</h3>
+        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <!-- DEBUG END -->
+      <div class="offcanvas-body  d-flex flex-column h-100">
+        
+          <!-- Standard Navigation -->
+          
+<ul class="navbar-nav"> 
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/test-fbm-site/project/"><span class="hover">Project</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><span class="hover">How it works</span></a>
+    <ul class="dropdown-menu">
+      
+      
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/federated_infrastructure/"><span class="hover">Federated Infrastructure</span></a></li>
+      
+      
+      
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/federated_discovery/"><span class="hover">Federated Discovery</span></a></li>
+      
+      
+      
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/federated_analytics/"><span class="hover">Federated Analytics</span></a></li>
+      
+      
+      
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/federated_learning/"><span class="hover">Federated Learning</span></a></li>
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/test-fbm-site/about/"><span class="hover">About</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/test-fbm-site/realworld_projects/"><span class="hover">Real-world projects</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/test-fbm-site/faq/"><span class="hover">FAQ</span></a>
+  </li>
+  
+  
+</ul>
+
+
+        
+        
+        <div class="offcanvas-footer d-lg-none">
+          <div>
+            <a href="mailto:fedbiomed@inria.fr" class="link-inverse">fedbiomed@inria.fr</a>
+            <nav class="nav social social-white mt-4">
+              
+            </nav>
+          </div>
+        </div>
+        <!-- /.offcanvas-footer -->
+      </div>
+      <!-- /.offcanvas-body -->
+    </div>
+    <!-- /.navbar-collapse -->
+    
+    <div class="navbar-other w-100 d-flex ms-auto">
+      <ul class="navbar-nav flex-row align-items-center ms-auto">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          <li class="nav-item d-none d-md-block">
+            <a href="https://fedbiomed.org/fedbiomed-docs/latest/getting-started/what-is-fedbiomed/"
+              class="btn btn-primary btn-gradient bg-gradient-dark-button border-0 rounded-xl"
+              target="_blank">
+              Documentation
+            </a>
+          </li>
+        
+        
+        
+        
+        
+        
+        <li class="nav-item d-lg-none">
+          <button class="hamburger offcanvas-nav-btn"><span></span></button>
+        </li>
+      </ul>
+    </div>
+  
+    </div>
+    <!-- /.container -->
+  
+</nav>
+<!-- /.navbar -->
+
+
+
+
+
+
+
+
+
+
+        </header>
+        <!-- /header -->
+        <section class="wrapper bg-soft-primary">
+          <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+            <div class="row">
+              <div class="col-md-9 col-lg-7 col-xl-5 mx-auto">
+                <h1 class="display-1 mb-3">What is Fed-BioMed</h1>
+                <p class="lead px-xxl-11">Fed-BioMed, an open-source collaborative learning framework</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        
+         <div class="container">
+          <div class="row">
+            <aside class="col-xl-2 sidebar doc-sidebar mt-md-0 py-16 d-none d-xl-block">
+    
+    
+  </aside>
+  
+            <aside class="col-xl-2 order-xl-3 sidebar sticky-sidebar mt-md-0 py-16 d-none d-xl-block">
+              <div class="widget">
+                <h6 class="widget-title fs-17 mb-2 ps-xl-5">On this page</h6>
+                <nav class="ps-xl-5" id="sidebar-nav">
+                  <ul id="toc" class="list-unstyled fs-sm lh-sm text-reset">
+<li class="nav-link scroll snippet-h2"><a href="#what-is-fed-biomed">What is Fed-BioMed?</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#what-is-federated-learning-">What is Federated Learning ?</a>
+<ul class="list-unstyled pt-2 ps-2 fs-sm lh-sm text-reset">
+<li class="nav-link scroll snippet-h3"><a href="#introduction">Introduction</a></li>
+</ul>
+</li>
+<li class="nav-link scroll snippet-h2"><a href="#federated-learning">Federated Learning</a>
+<ul class="list-unstyled pt-2 ps-2 fs-sm lh-sm text-reset">
+<li class="nav-link scroll snippet-h3"><a href="#infrastructure-of-a-federated-learning-setting-in-healthcare">Infrastructure of a federated learning setting in healthcare</a></li>
+<li class="nav-link scroll snippet-h3"><a href="#theoretical-background">Theoretical background</a></li>
+<li class="nav-link scroll snippet-h3"><a href="#challenges-in-federated-learning">Challenges in federated learning</a></li>
+</ul>
+</li>
+<li class="nav-link scroll snippet-h2"><a href="#references">References</a></li>
+</ul>
+                </nav>
+              </div>
+            </aside>
+        
+            <div class="col-xl-8 order-xl-2">
+              <div class="content"> 
+                <p><img src="../../assets/img/logo_icon.png" alt="fedbiomed-logo" /></p>
+
+<p>Fed-BioMed, an open-source collaborative learning framework</p>
+
+<h2 id="what-is-fed-biomed">What is Fed-BioMed?</h2>
+
+<p>Fed-BioMed is an open source project focused on empowering biomedical research using non-centralized approaches for statistical analysis. 
+The project is currently based on Python and PyTorch, and enables developing and deploying federated learning and federated analytics in real-world machine learning application.</p>
+
+<p>The goal of Fed-BioMed is to provide a simplified and secured environment to:</p>
+
+<ul>
+  <li>Easily deploy state-of-the art collaborative learning frameworks,</li>
+  <li>Provide a friendly user interface to share data for collaborative learning experiments,</li>
+  <li>Allow researchers to easily deploy their models and analysis methods,</li>
+  <li>Foster research and collaborations in collaborative learning.</li>
+</ul>
+
+<p>Fed-BioMed is an ongoing initiative, and the code is available on <a href="https://github.com/fedbiomed/fedbiomed">GitHub</a>.</p>
+
+<h2 id="what-is-federated-learning-">What is Federated Learning ?</h2>
+<!--
+TODO: shorten this section about FL
+-->
+<h3 id="introduction">Introduction</h3>
+
+<p>Standard machine learning approaches require to have a centralized dataset in order to train a model. In certain scenarios like in the biomedical field, this is not straightforward due to several reasons like:</p>
+
+<ul>
+  <li>Privacy concerns:
+    <ul>
+      <li>General Data Protection Regulation (GDPR): <a href="https://gdpr-info.eu/">General Data Protection Regulation (GDPR) – Official Legal Text</a></li>
+      <li>Californian Consumer Privacy Act (CCPA): <a href="https://oag.ca.gov/privacy/ccpa">California Consumer Privacy Act (CCPA) | State of California - Department of Justice - Office of the Attorney General</a></li>
+      <li>Health Insurance Portability and Accountability (HIPAA): <a href="https://www.cdc.gov/phlp/publications/topic/hipaa.html">Health Information Privacy regulation | U.S. Department of Health and Human Service | HHS official website</a></li>
+      <li>Family Educational Rights and Privacy Act (FERPA): <a href="https://www2.ed.gov/policy/gen/guid/fpco/ferpa/index.html">Family Educational Rights and Privacy Act (FERPA) | U.S. Department of Education official website</a></li>
+    </ul>
+  </li>
+  <li>Ethical committee approval</li>
+  <li>Transferring data to a centralized location</li>
+</ul>
+
+<p>This slows down research in healthcare and limits the generalization of certain models.</p>
+
+<h2 id="federated-learning">Federated Learning</h2>
+
+<p>Federated learning (FL) is a machine learning procedure whose goal is to train a model without having data centralized. The goal of FL is to train higher quality models by having access to more data than centralized approaches, as well as to keep data securely decentralized.</p>
+
+<h3 id="infrastructure-of-a-federated-learning-setting-in-healthcare">Infrastructure of a federated learning setting in healthcare</h3>
+
+<p>A common scenario of federated learning in healthcare is shown as follows:</p>
+
+<p><img src="../assets/img/fl-graph.png#img-centered-md" alt="fl-in-health-care" /></p>
+
+<p>Hospitals (a.k.a. clients or nodes) across several geographical locations hold data of interest for a researcher. These data can be “made available” for local training but, only the model is authorized to be shared with a third thrusted party (e.g. research center). Once all the models are gathered, different techniques are proposed for <strong>aggregating</strong> them as a single global model. Then, the <strong>Aggregated model</strong> can be used as purposed (e.g. training a neural network for segmentation).</p>
+
+<h3 id="theoretical-background">Theoretical background</h3>
+
+<p>One of the critical points in FL is to know how to aggregate the models submitted by the clients. The main problem relies on finding the best set of <strong>parameters</strong> that define your model in function of the submissions made by the clients.</p>
+
+<p>In a canonical form:</p>
+
+\[\min_w F(w) ,\quad \textrm{where} F(w):=\sum_{k=1}^{m} p_k F_k(w)\]
+
+<p>Where $m$ is the total number of nodes, $p_k&gt;=0$, and $\sum_k p_k=1$ , and $F_k$ is the local objective function for the $k$-th node. The impact (contribution) of each node to the aggregation of the global model is given by $p_k$.</p>
+
+<p>One of the first proposed methodologies in FL for model aggregation was <strong>Federated Averaging <code class="language-plaintext highlighter-rouge">FedAVG</code></strong> by (MacMahan <em>et</em> al, 2016), the idea behind it was to define the contribution of each node as $p_k=\frac{n_k}{n}$ where $n_k$ is the number of datapoints in the node $k$ and $n$ is the total number of observations studied.</p>
+
+<h3 id="challenges-in-federated-learning">Challenges in federated learning</h3>
+
+<p>The main challenges in FL are associated to:</p>
+
+<ul>
+  <li>
+    <p><strong>Communication efficiency:</strong> number of iterations between nodes and central location to train an optimal model.</p>
+  </li>
+  <li>
+    <p><strong>Data heterogeneity:</strong> how to build generalized models with heterogeneous data?</p>
+  </li>
+  <li>
+    <p><strong>Security:</strong> adversarial attacks and data leakage.</p>
+  </li>
+</ul>
+
+<h2 id="references">References</h2>
+
+<ol>
+  <li>
+    <p><strong>Konečný, J., McMahan, et al. (2016).</strong> <em>Federated learning: Strategies for improving communication efficiency</em>. arXiv preprint arXiv:1610.05492.</p>
+  </li>
+  <li>
+    <p><strong>Li, T., Sahu, et al. (2018).</strong> <em>Federated optimization in heterogeneous networks.</em> arXiv preprint arXiv:1812.06127.</p>
+  </li>
+  <li>
+    <p><strong>Li, T., Sahu, A. K., Talwalkar, A., &amp; Smith, V. (2020).</strong> <em>Federated learning: Challenges, methods, and future directions</em>. IEEE Signal Processing Magazine, 37(3), 50-60.</p>
+  </li>
+</ol>
+
+              </div>
+            </div>
+          </div>
+        </div> 
+        
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-gradient-reverse-primary ">
+  
+  
+  
+  
+  
+  
+
+    <div class="bg-white shadow-lg" aria-label="newsletter-title">
+  <div class="container  py-10">
+    <div class="row align-items-center justify-content-between">
+        <div class="col-lg-5 mb-4 mb-lg-0 text-center text-lg-start">
+            <h2 id="newsletter-title" class="display-2 mb-3 text-fedbiomed-primary">
+            Stay <span class="text-fedbiomed-tertiary">updated</span>
+            </h2>
+            <p class="mb-0 text-fedbiomed-primary fw-lighter">
+            Get the latest Fed-BioMed updates to your inbox
+            </p>
+        </div>
+
+        <div class="col-lg-4">
+            <form action="https://sympa.inria.fr/sympa/subscribe/fedbiomed-support" method="get" target="_blank" class="position-relative">
+            <label for="newsletter-email" class="visually-hidden">Email address</label>
+              <input
+                id="newsletter-email"
+                type="email"
+                name="email"
+                class="form-control rounded-pill pe-5 bg-soft-blue text-fedbiomed-primary border-0"
+                placeholder="Enter your email"
+                required>
+            <button
+                type="submit"
+                class="btn border-0 bg-transparent shadow-none position-absolute top-50 end-0 translate-middle-y pe-3 text-primary"
+                aria-label="Subscribe to newsletter">
+                ➤
+            </button>
+            </form>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="container py-10 py-md-12">
+  <div class="row gy-8 align-items-stretch">
+
+    <!-- LOGO / BRAND -->
+    <div class="col-12 col-lg-4 order-1 order-lg-2 text-center d-flex">
+        <div class="d-flex flex-column align-items-center justify-content-center w-100">
+        
+          <img
+            src="/test-fbm-site/assets/img/logo_icon.png"
+            alt="Fed-BioMed"
+            class="mb-4"
+            style="max-width: 130px; height: auto;">
+        
+
+        <h3 class="mb-1 text-fedbiomed-primary">
+          Fed-BioMed
+        </h3>
+
+        <p class="mb-0 text-fedbiomed-primary fw-lighter">
+          Copyright ©2026
+        </p>
+      </div>
+    </div>
+
+    <!-- LEFT LINKS -->
+    <div class="col-12 col-md-6 col-lg-4 order-2 order-lg-1">
+      <div class="row gy-6 text-center text-md-start">
+        <div class="col-12">
+          <h4 class="mb-3 text-fedbiomed-primary">
+            Helpful links
+          </h4>
+          <div class="row row-cols-1 row-cols-sm-2 gy-2 text-fedbiomed-secondary fw-lighter">
+            
+              <div class="col">
+                <a href="/test-fbm-site/project#what-is-fedbiomed" class=" hover">Fed-BioMed</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/how-it-works#what-is-federated_learning" class=" hover">Federated Learning</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/how-it-works#architecture" class=" hover">Architecture</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/how-it-works#workflow" class=" hover">Workflow</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/how-it-works#security-in-practice" class=" hover">Security in Practice</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/realworld_projects/" class=" hover">Real world projects</a>
+              </div>
+            
+          </div>
+        </div>
+
+        <div class="col-12 pt-8">
+          <h4 class="mb-3 text-fedbiomed-primary">
+            Documentation
+          </h4>
+          <div class="row row-cols-1 row-cols-sm-2 gy-2 text-fedbiomed-secondary fw-lighter">
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/getting-started/what-is-fedbiomed/" class=" hover">Get Started</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/getting-started/installation/" class=" hover">Installation</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/tutorials/pytorch/01_PyTorch_MNIST_Single_Node_Tutorial/" class=" hover">Tutorials</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/user-guide/glossary/" class=" hover">User Guide</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/developer/usage_and_tools/" class=" hover">Developer</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/getting-started/basic-example/" class=" hover">Examples</a>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT LINKS + SOCIAL + ADDRESS -->
+    <div class="col-12 col-md-6 col-lg-4 order-3 order-lg-3">
+      <div class="row gy-6 text-center text-md-start text-lg-end h-100">
+        <div class="col-12">
+          <h4 class="mb-3 text-fedbiomed-primary">
+            About
+          </h4>
+          <div class="row row-cols-1 row-cols-sm-2 gy-2 text-fedbiomed-secondary fw-lighter">
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#funding" class=" hover">Funding & Institutional Support</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#roadmap" class=" hover">Roadmap</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/faq/" class=" hover">FAQ</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#contacts" class=" hover">Support & Contacts</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#how-to-cite-us" class=" hover">How to cite</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#team" class=" hover">Team</a>
+              </div>
+            
+          </div>
+        </div>
+
+        <div class="col-12 pt-8 mt-lg-auto text-fedbiomed-primary">
+          <nav class="nav social justify-content-center justify-content-md-start justify-content-lg-end mb-4" aria-label="Social media">
+            
+              <a
+                href="https://github.com/fedbiomed/fedbiomed"
+                class="ms-2"
+                style="font-size: 1.35rem;"
+                aria-label="GitHub"
+                target="_blank" rel="noopener noreferrer">
+                <i class="uil uil-github text-fedbiomed-primary" aria-hidden="true"></i>
+              </a>
+            
+              <a
+                href="https://www.linkedin.com/groups/12606640/"
+                class="ms-2"
+                style="font-size: 1.35rem;"
+                aria-label="LinkedIn"
+                target="_blank" rel="noopener noreferrer">
+                <i class="uil uil-linkedin text-fedbiomed-primary" aria-hidden="true"></i>
+              </a>
+            
+              <a
+                href="mailto:fedbiomed@inria.fr"
+                class="ms-2"
+                style="font-size: 1.35rem;"
+                aria-label="Email"
+                >
+                <i class="uil uil-envelope text-fedbiomed-primary" aria-hidden="true"></i>
+              </a>
+            
+          </nav>
+
+          <address class="mb-0 text-center text-md-start text-lg-end">
+            2004 Rte des Lucioles, 06902 Sophia Antipolis, France
+          </address>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+  
+  <!-- /.container -->
+</footer>
+
+  <!-- Modals -->
+  
+
+  
+
+  <!-- Scroll To Top Button -->
+  
+  <!-- Site Scripts-->
+  <script src="/test-fbm-site/assets/js/bootstrap.bundle.js"></script>
+<script src="/test-fbm-site/assets/js/plugins.js"></script>
+<script src="/test-fbm-site/assets/js/theme.js"></script>
+
+  <script>
+    (function () {
+      const NAVBAR_H = 90;
+      const KNOWN_TYPES = { note: 'ℹ', info: 'ℹ', tip: '✓', warning: '⚠', danger: '✕' };
+
+      // ── Admonitions ──────────────────────────────────────────
+      const content = document.querySelector('.col-xl-8 .content');
+      if (content) {
+        content.querySelectorAll('p, li').forEach(el => {
+          const text = el.textContent;
+          const m = text.match(/^!!!\s+(\w+)\s+"([^"]+)"\s*([\s\S]*)$/);
+          if (!m) return;
+          const type = KNOWN_TYPES[m[1]] ? m[1] : 'note';
+          const div = document.createElement('div');
+          div.className = 'doc-admonition doc-admonition--' + type;
+          const body = m[3].trim();
+          div.innerHTML =
+            '<span class="doc-admonition__icon">' + KNOWN_TYPES[type] + '</span>' +
+            '<span class="doc-admonition__title">' + m[2] + '</span>' +
+            (body ? '<div class="doc-admonition__body">' + body + '</div>' : '');
+          el.replaceWith(div);
+        });
+      }
+
+      // ── TOC scrollspy ─────────────────────────────────────────
+      const nav = document.getElementById('sidebar-nav');
+      if (!nav) return;
+
+      const headings = Array.from(
+        document.querySelectorAll('.col-xl-8 .content h2[id], .col-xl-8 .content h3[id]')
+      );
+      if (!headings.length) return;
+
+      let currentLink = null;
+      function setActive(id) {
+        const next = nav.querySelector('a[href="#' + id + '"]');
+        if (next === currentLink) return;
+        if (currentLink) currentLink.classList.remove('active');
+        if (next) next.classList.add('active');
+        currentLink = next;
+      }
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => { if (entry.isIntersecting) setActive(entry.target.id); });
+      }, { rootMargin: '0px 0px -80% 0px', threshold: 0 });
+
+      headings.forEach(h => observer.observe(h));
+
+      nav.addEventListener('click', e => {
+        const link = e.target.closest('a[href^="#"]');
+        if (!link) return;
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        const target = document.getElementById(link.getAttribute('href').slice(1));
+        if (!target) return;
+        window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - NAVBAR_H, behavior: 'smooth' });
+      });
+    })();
+  </script>
+  <!-- MathJax for LaTeX rendering -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+</body>
+</html>

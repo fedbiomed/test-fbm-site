@@ -152,15 +152,6 @@
     <div class="navbar-other w-100 d-flex ms-auto">
       <ul class="navbar-nav flex-row align-items-center ms-auto">
         
-        <li class="nav-item dropdown language-select text-uppercase">
-          <a class="nav-link dropdown-item dropdown-toggle hover" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            En
-          </a>
-          <ul class="dropdown-menu">
-            
-          </ul>
-        </li>
-        
         
         
         
@@ -170,7 +161,7 @@
         
         
           <li class="nav-item d-none d-md-block">
-            <a href="https://fedbiomed.org/latest/getting-started/what-is-fedbiomed/"
+            <a href="https://fedbiomed.org/fedbiomed-docs/latest/getting-started/what-is-fedbiomed/"
               class="btn btn-primary btn-gradient bg-gradient-dark-button border-0 rounded-xl"
               target="_blank">
               Documentation
@@ -2654,7 +2645,7 @@
 
 
 
-<footer class="bg-dark text-inverse">
+<footer class="bg-gradient-reverse-primary ">
   
   
   
@@ -2662,98 +2653,216 @@
   
   
 
-    <div class="container py-13 py-md-15">
-      
-      <div class="row gy-6 gy-lg-0">
-  <div class="col-md-4 col-lg-3">
-    <div class="widget">
-      
-        <img class="mb-4" src="/test-fbm-site/assets/img/logo_full.webp" 
-             srcset="/test-fbm-site/assets/img/logo_full@2x.webp 2x" alt="" />
-      
-      <p class="mb-4">© 2026 Sandbox. <br class="d-none d-lg-block" />All rights reserved.</p>
-      <nav class="nav social social-white">
-        
-          <a href="https://www.linkedin.com/groups/12606640/"><i class="uil uil-linkedin"></i></a>
-        
-          <a href="https://github.com/fedbiomed/fedbiomed"><i class="uil uil-github"></i></a>
-        
-          <a href="https://fedbiomed.org"><i class="uil uil-globe"></i></a>
-        
-      </nav>
-      <!-- /.social -->
-    </div>
-    <!-- /.widget -->
-  </div>
-  <!-- /column -->
-  <div class="col-md-4 col-lg-3">
-    <div class="widget">
-      <h4 class="widget-title text-white mb-3">Get in Touch</h4>
-      <address class="pe-xl-15 pe-xxl-17">2004 Rte des Lucioles, 06902 Sophia Antipolis, France</address>
-      <a href="mailto:fedbiomed@inria.fr" class="link-body">
-        fedbiomed@inria.fr
-      </a><br /> 
-      00 (123) 456 78 90
-    </div>
-    <!-- /.widget -->
-  </div>
-  <!-- /column -->
-  <div class="col-md-4 col-lg-3">
-    <div class="widget">
-      <h4 class="widget-title text-white mb-3">Learn More</h4>
-      <ul class="list-unstyled  text-reset mb-0">
-        
-        
-      </ul>
-    </div>
-    <!-- /.widget -->
-  </div>
-  <!-- /column -->
-  
-  <div class="col-md-4 col-lg-3">
-    <div class="widget">
-      <h4 class="widget-title text-white mb-3">Our Newsletter</h4>
-      <p class="mb-5">Subscribe to our newsletter to get our news & deals delivered to you.</p>
-      <div class="newsletter-wrapper">
-        
-        <!-- Begin Mailchimp Signup Form -->
-        <div id="mc_embed_signup">
-          <form action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a" 
-                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" 
-                class="validate dark-fields" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-              <div class="mc-field-group input-group form-floating">
-                <input type="email" value="" name="EMAIL" class="required email form-control" placeholder="Email Address" id="mce-EMAIL">
-                <label for="mce-EMAIL">Email Address</label>
-                <input type="submit" value="Join" 
-                       name="subscribe" id="mc-embedded-subscribe" 
-                       class="btn btn-primary ">
-              </div>
-              <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-              </div>
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <input type="text" name="b_ddc180777a163e0f9f66ee014_4b1bcfa0bc" tabindex="-1" value="">
-              </div>
-            </div>
-          </form>
+    <div class="bg-white shadow-lg" aria-label="newsletter-title">
+  <div class="container  py-10">
+    <div class="row align-items-center justify-content-between">
+        <div class="col-lg-5 mb-4 mb-lg-0 text-center text-lg-start">
+            <h2 id="newsletter-title" class="display-2 mb-3 text-fedbiomed-primary">
+            Stay <span class="text-fedbiomed-tertiary">updated</span>
+            </h2>
+            <p class="mb-0 text-fedbiomed-primary fw-lighter">
+            Get the latest Fed-BioMed updates to your inbox
+            </p>
         </div>
-        <!--End mc_embed_signup-->
-        
-      </div>
-      <!-- /.newsletter-wrapper -->
+
+        <div class="col-lg-4">
+            <form action="https://sympa.inria.fr/sympa/subscribe/fedbiomed-support" method="get" target="_blank" class="position-relative">
+            <label for="newsletter-email" class="visually-hidden">Email address</label>
+              <input
+                id="newsletter-email"
+                type="email"
+                name="email"
+                class="form-control rounded-pill pe-5 bg-soft-blue text-fedbiomed-primary border-0"
+                placeholder="Enter your email"
+                required>
+            <button
+                type="submit"
+                class="btn border-0 bg-transparent shadow-none position-absolute top-50 end-0 translate-middle-y pe-3 text-primary"
+                aria-label="Subscribe to newsletter">
+                ➤
+            </button>
+            </form>
+        </div>
     </div>
-    <!-- /.widget -->
   </div>
-  <!-- /column -->
-  
 </div>
-<!--/.row -->
 
+
+
+<footer class="container py-10 py-md-12">
+  <div class="row gy-8 align-items-stretch">
+
+    <!-- LOGO / BRAND -->
+    <div class="col-12 col-lg-4 order-1 order-lg-2 text-center d-flex">
+        <div class="d-flex flex-column align-items-center justify-content-center w-100">
+        
+          <img
+            src="/test-fbm-site/assets/img/logo_icon.png"
+            alt="Fed-BioMed"
+            class="mb-4"
+            style="max-width: 130px; height: auto;">
+        
+
+        <h3 class="mb-1 text-fedbiomed-primary">
+          Fed-BioMed
+        </h3>
+
+        <p class="mb-0 text-fedbiomed-primary fw-lighter">
+          Copyright ©2026
+        </p>
+      </div>
     </div>
 
+    <!-- LEFT LINKS -->
+    <div class="col-12 col-md-6 col-lg-4 order-2 order-lg-1">
+      <div class="row gy-6 text-center text-md-start">
+        <div class="col-12">
+          <h4 class="mb-3 text-fedbiomed-primary">
+            Helpful links
+          </h4>
+          <div class="row row-cols-1 row-cols-sm-2 gy-2 text-fedbiomed-secondary fw-lighter">
+            
+              <div class="col">
+                <a href="/test-fbm-site/project#what-is-fedbiomed" class=" hover">Fed-BioMed</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/how-it-works#what-is-federated_learning" class=" hover">Federated Learning</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/how-it-works#architecture" class=" hover">Architecture</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/how-it-works#workflow" class=" hover">Workflow</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/how-it-works#security-in-practice" class=" hover">Security in Practice</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/realworld_projects/" class=" hover">Real world projects</a>
+              </div>
+            
+          </div>
+        </div>
+
+        <div class="col-12 pt-8">
+          <h4 class="mb-3 text-fedbiomed-primary">
+            Documentation
+          </h4>
+          <div class="row row-cols-1 row-cols-sm-2 gy-2 text-fedbiomed-secondary fw-lighter">
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/getting-started/what-is-fedbiomed/" class=" hover">Get Started</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/getting-started/installation/" class=" hover">Installation</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/tutorials/pytorch/01_PyTorch_MNIST_Single_Node_Tutorial/" class=" hover">Tutorials</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/user-guide/glossary/" class=" hover">User Guide</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/developer/usage_and_tools/" class=" hover">Developer</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/getting-started/basic-example/" class=" hover">Examples</a>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT LINKS + SOCIAL + ADDRESS -->
+    <div class="col-12 col-md-6 col-lg-4 order-3 order-lg-3">
+      <div class="row gy-6 text-center text-md-start text-lg-end h-100">
+        <div class="col-12">
+          <h4 class="mb-3 text-fedbiomed-primary">
+            About
+          </h4>
+          <div class="row row-cols-1 row-cols-sm-2 gy-2 text-fedbiomed-secondary fw-lighter">
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#funding" class=" hover">Funding & Institutional Support</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#roadmap" class=" hover">Roadmap</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/faq/" class=" hover">FAQ</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#contacts" class=" hover">Support & Contacts</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#how-to-cite-us" class=" hover">How to cite</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#team" class=" hover">Team</a>
+              </div>
+            
+          </div>
+        </div>
+
+        <div class="col-12 pt-8 mt-lg-auto text-fedbiomed-primary">
+          <nav class="nav social justify-content-center justify-content-md-start justify-content-lg-end mb-4" aria-label="Social media">
+            
+              <a
+                href="https://github.com/fedbiomed/fedbiomed"
+                class="ms-2"
+                style="font-size: 1.35rem;"
+                aria-label="GitHub"
+                target="_blank" rel="noopener noreferrer">
+                <i class="uil uil-github text-fedbiomed-primary" aria-hidden="true"></i>
+              </a>
+            
+              <a
+                href="https://www.linkedin.com/groups/12606640/"
+                class="ms-2"
+                style="font-size: 1.35rem;"
+                aria-label="LinkedIn"
+                target="_blank" rel="noopener noreferrer">
+                <i class="uil uil-linkedin text-fedbiomed-primary" aria-hidden="true"></i>
+              </a>
+            
+              <a
+                href="mailto:fedbiomed@inria.fr"
+                class="ms-2"
+                style="font-size: 1.35rem;"
+                aria-label="Email"
+                >
+                <i class="uil uil-envelope text-fedbiomed-primary" aria-hidden="true"></i>
+              </a>
+            
+          </nav>
+
+          <address class="mb-0 text-center text-md-start text-lg-end">
+            2004 Rte des Lucioles, 06902 Sophia Antipolis, France
+          </address>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+  
   <!-- /.container -->
 </footer>
 
@@ -2769,5 +2878,72 @@
 <script src="/test-fbm-site/assets/js/plugins.js"></script>
 <script src="/test-fbm-site/assets/js/theme.js"></script>
 
+  <script>
+    (function () {
+      const NAVBAR_H = 90;
+      const KNOWN_TYPES = { note: 'ℹ', info: 'ℹ', tip: '✓', warning: '⚠', danger: '✕' };
+
+      // ── Admonitions ──────────────────────────────────────────
+      const content = document.querySelector('.col-xl-8 .content');
+      if (content) {
+        content.querySelectorAll('p, li').forEach(el => {
+          const text = el.textContent;
+          const m = text.match(/^!!!\s+(\w+)\s+"([^"]+)"\s*([\s\S]*)$/);
+          if (!m) return;
+          const type = KNOWN_TYPES[m[1]] ? m[1] : 'note';
+          const div = document.createElement('div');
+          div.className = 'doc-admonition doc-admonition--' + type;
+          const body = m[3].trim();
+          div.innerHTML =
+            '<span class="doc-admonition__icon">' + KNOWN_TYPES[type] + '</span>' +
+            '<span class="doc-admonition__title">' + m[2] + '</span>' +
+            (body ? '<div class="doc-admonition__body">' + body + '</div>' : '');
+          el.replaceWith(div);
+        });
+      }
+
+      // ── TOC scrollspy ─────────────────────────────────────────
+      const nav = document.getElementById('sidebar-nav');
+      if (!nav) return;
+
+      const headings = Array.from(
+        document.querySelectorAll('.col-xl-8 .content h2[id], .col-xl-8 .content h3[id]')
+      );
+      if (!headings.length) return;
+
+      let currentLink = null;
+      function setActive(id) {
+        const next = nav.querySelector('a[href="#' + id + '"]');
+        if (next === currentLink) return;
+        if (currentLink) currentLink.classList.remove('active');
+        if (next) next.classList.add('active');
+        currentLink = next;
+      }
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => { if (entry.isIntersecting) setActive(entry.target.id); });
+      }, { rootMargin: '0px 0px -80% 0px', threshold: 0 });
+
+      headings.forEach(h => observer.observe(h));
+
+      nav.addEventListener('click', e => {
+        const link = e.target.closest('a[href^="#"]');
+        if (!link) return;
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        const target = document.getElementById(link.getAttribute('href').slice(1));
+        if (!target) return;
+        window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - NAVBAR_H, behavior: 'smooth' });
+      });
+    })();
+  </script>
+  <!-- MathJax for LaTeX rendering -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
 </body>
 </html>

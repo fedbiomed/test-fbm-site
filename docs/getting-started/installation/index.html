@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- Primary Meta Tags -->
+<title> Installation </title>
+<meta name="title" content=" Installation ">
+<meta name="description" content=" Fed-BioMed installation ">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content=" /docs/getting-started/installation/ ">
+<meta property="og:title" content=" Installation ">
+<meta property="og:description" content=" Fed-BioMed installation ">
+
+<meta property="og:image" content="/test-fbm-site/assets/img/logo_fbm_og.webp" />
+
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="/docs/getting-started/installation/">
+<meta property="twitter:title" content=" Installation ">
+<meta property="twitter:description" content=" Fed-BioMed installation ">
+
+<meta property="twitter:image" content="/test-fbm-site/assets/img/logo_fbm_og.webp" />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Stylesheets-->
+  <link rel="shortcut icon" href="/test-fbm-site/assets/img/favicon.png" />
+<link rel="stylesheet" href="/test-fbm-site/assets/css/plugins.css">
+
+<link rel="stylesheet" href="/test-fbm-site/assets/css/styles.css">
+
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""
+/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""
+></script>
+  
+</head>
+<body class="">
+    <div class="content-wrapper">
+        <header class="wrapper bg-soft-primary">
+        
+
+<nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
+  
+    <div class="container flex-lg-row flex-nowrap align-items-center">
+  
+    <div class="navbar-brand w-100">
+      <a href="/test-fbm-site/">
+        
+          <img src="/test-fbm-site/assets/img/logo_full.webp" 
+               srcset="/test-fbm-site/assets/img/logo_full@2x.webp 2x" alt="" />
+        
+      </a>
+    </div>
+    <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+      <!-- DEBUG START -->
+      <div class="offcanvas-header d-lg-none">
+        <h3 class="text-white fs-30 mb-0">Fed-BioMed</h3>
+        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <!-- DEBUG END -->
+      <div class="offcanvas-body  d-flex flex-column h-100">
+        
+          <!-- Standard Navigation -->
+          
+<ul class="navbar-nav"> 
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/test-fbm-site/project/"><span class="hover">Project</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><span class="hover">How it works</span></a>
+    <ul class="dropdown-menu">
+      
+      
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/federated_infrastructure/"><span class="hover">Federated Infrastructure</span></a></li>
+      
+      
+      
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/federated_discovery/"><span class="hover">Federated Discovery</span></a></li>
+      
+      
+      
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/federated_analytics/"><span class="hover">Federated Analytics</span></a></li>
+      
+      
+      
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/federated_learning/"><span class="hover">Federated Learning</span></a></li>
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/test-fbm-site/about/"><span class="hover">About</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/test-fbm-site/realworld_projects/"><span class="hover">Real-world projects</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/test-fbm-site/faq/"><span class="hover">FAQ</span></a>
+  </li>
+  
+  
+</ul>
+
+
+        
+        
+        <div class="offcanvas-footer d-lg-none">
+          <div>
+            <a href="mailto:fedbiomed@inria.fr" class="link-inverse">fedbiomed@inria.fr</a>
+            <nav class="nav social social-white mt-4">
+              
+            </nav>
+          </div>
+        </div>
+        <!-- /.offcanvas-footer -->
+      </div>
+      <!-- /.offcanvas-body -->
+    </div>
+    <!-- /.navbar-collapse -->
+    
+    <div class="navbar-other w-100 d-flex ms-auto">
+      <ul class="navbar-nav flex-row align-items-center ms-auto">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          <li class="nav-item d-none d-md-block">
+            <a href="https://fedbiomed.org/fedbiomed-docs/latest/getting-started/what-is-fedbiomed/"
+              class="btn btn-primary btn-gradient bg-gradient-dark-button border-0 rounded-xl"
+              target="_blank">
+              Documentation
+            </a>
+          </li>
+        
+        
+        
+        
+        
+        
+        <li class="nav-item d-lg-none">
+          <button class="hamburger offcanvas-nav-btn"><span></span></button>
+        </li>
+      </ul>
+    </div>
+  
+    </div>
+    <!-- /.container -->
+  
+</nav>
+<!-- /.navbar -->
+
+
+
+
+
+
+
+
+
+
+        </header>
+        <!-- /header -->
+        <section class="wrapper bg-soft-primary">
+          <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+            <div class="row">
+              <div class="col-md-9 col-lg-7 col-xl-5 mx-auto">
+                <h1 class="display-1 mb-3">Installation</h1>
+                <p class="lead px-xxl-11">Fed-BioMed installation</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        
+         <div class="container">
+          <div class="row">
+            <aside class="col-xl-2 sidebar doc-sidebar mt-md-0 py-16 d-none d-xl-block">
+    
+    
+  </aside>
+  
+            <aside class="col-xl-2 order-xl-3 sidebar sticky-sidebar mt-md-0 py-16 d-none d-xl-block">
+              <div class="widget">
+                <h6 class="widget-title fs-17 mb-2 ps-xl-5">On this page</h6>
+                <nav class="ps-xl-5" id="sidebar-nav">
+                  <ul id="toc" class="list-unstyled fs-sm lh-sm text-reset">
+<li class="nav-link scroll snippet-h2"><a href="#system-requirements">System requirements</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#hardware-requirements">Hardware requirements</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#software-packages">Software packages</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#install-fed-biomed">Install Fed-BioMed</a></li>
+<li class="nav-link scroll snippet-h2"><a href="#the-next-step">The Next Step</a></li>
+</ul>
+                </nav>
+              </div>
+            </aside>
+        
+            <div class="col-xl-8 order-xl-2">
+              <div class="content"> 
+                <h1 id="fed-biomed-software-installation">Fed-BioMed software installation</h1>
+
+<p>This tutorial gives steps for installing Fed-BioMed components (node, researcher).</p>
+
+<p>!!! note “Deployment”
+    <a href="../user-guide/deployment/deployment.md">Deployment documentation</a> explains other available setups.</p>
+
+<h2 id="system-requirements">System requirements</h2>
+
+<p>Fed-BioMed is developed and tested under  Linux and MacOS distributions.</p>
+
+<p>It has not been fully tested on Windows under WSL2. Using Fed-BioMed on Windows can raise unexpected error.
+Check specific installation guidelines for <a href="../../user-guide/installation/windows-installation">Windows 11</a>.</p>
+
+<h2 id="hardware-requirements">Hardware requirements</h2>
+
+<p>16GB RAM recommended, 8GB RAM minimum for handling PyTorch &amp; ML packages, for each Fed-BioMed component.</p>
+
+<h2 id="software-packages">Software packages</h2>
+
+<p>Fed-BioMed is a Python-based framework that can be installed using the <code class="language-plaintext highlighter-rouge">pip</code> package manager. 
+Therefore, please ensure that Python is installed on your system.</p>
+
+<p>Fed-BioMed does not support a wide range of Python versions. 
+Currently, the required Python versions are <strong>3.10,3.11</strong>. 
+To configure a specific Python version in your workspace, it is recommended to use tools such as <a href="https://docs.conda.io/">Conda</a> or <a href="https://github.com/pyenv/pyenv">pyenv</a>.</p>
+
+<p>!!! info “Docker”
+    Docker is only needed for <a href="../user-guide/deployment/deployment.md">advanced usage scenarios</a> with additional VPN protection of Fed-BioMed communications.</p>
+
+<h2 id="install-fed-biomed">Install Fed-BioMed</h2>
+
+<p>The command below will perform a complete installation of Fed-BioMed. This installation allows you to test all Fed-BioMed functionalities.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install fedbiomed[node,researcher,gui]
+</code></pre></div></div>
+
+<p>Fed-BioMed consists of different components, each requiring specific dependencies. These components are <code class="language-plaintext highlighter-rouge">node</code> and <code class="language-plaintext highlighter-rouge">researcher</code>. In the context of Federated Learning, these components are typically used in different locations and environments. To avoid installing unnecessary packages that may not be used, the dependencies for these components have been made optional in the pip package.</p>
+
+<p>If you only need to install the <code class="language-plaintext highlighter-rouge">node</code> or the <code class="language-plaintext highlighter-rouge">researcher</code> component, you can use one of the following commands:</p>
+
+<p>For <code class="language-plaintext highlighter-rouge">node</code> only installation:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install fedbiomed[node]
+</code></pre></div></div>
+
+<p>For <code class="language-plaintext highlighter-rouge">researcher</code> only installation:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install fedbiomed[researcher]
+</code></pre></div></div>
+
+<p>For installing optional node GUI:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install fedbiomed[gui]
+</code></pre></div></div>
+
+<p>For installing optional dependency to FLamby:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install git+https://github.com/owkin/FLamby@main
+</code></pre></div></div>
+
+<p>Fed-BioMed is provided under <a href="https://github.com/fedbiomed/fedbiomed/blob/master/LICENSE.md">Apache 2.0 License</a>.</p>
+
+<h2 id="the-next-step">The Next Step</h2>
+
+<p>After the steps above are completed you will be ready to start Fed-BioMed components. In the following tutorial you will learn how to launch components and add data in Fed-BioMed to prepare an experiment.</p>
+
+              </div>
+            </div>
+          </div>
+        </div> 
+        
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-gradient-reverse-primary ">
+  
+  
+  
+  
+  
+  
+
+    <div class="bg-white shadow-lg" aria-label="newsletter-title">
+  <div class="container  py-10">
+    <div class="row align-items-center justify-content-between">
+        <div class="col-lg-5 mb-4 mb-lg-0 text-center text-lg-start">
+            <h2 id="newsletter-title" class="display-2 mb-3 text-fedbiomed-primary">
+            Stay <span class="text-fedbiomed-tertiary">updated</span>
+            </h2>
+            <p class="mb-0 text-fedbiomed-primary fw-lighter">
+            Get the latest Fed-BioMed updates to your inbox
+            </p>
+        </div>
+
+        <div class="col-lg-4">
+            <form action="https://sympa.inria.fr/sympa/subscribe/fedbiomed-support" method="get" target="_blank" class="position-relative">
+            <label for="newsletter-email" class="visually-hidden">Email address</label>
+              <input
+                id="newsletter-email"
+                type="email"
+                name="email"
+                class="form-control rounded-pill pe-5 bg-soft-blue text-fedbiomed-primary border-0"
+                placeholder="Enter your email"
+                required>
+            <button
+                type="submit"
+                class="btn border-0 bg-transparent shadow-none position-absolute top-50 end-0 translate-middle-y pe-3 text-primary"
+                aria-label="Subscribe to newsletter">
+                ➤
+            </button>
+            </form>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="container py-10 py-md-12">
+  <div class="row gy-8 align-items-stretch">
+
+    <!-- LOGO / BRAND -->
+    <div class="col-12 col-lg-4 order-1 order-lg-2 text-center d-flex">
+        <div class="d-flex flex-column align-items-center justify-content-center w-100">
+        
+          <img
+            src="/test-fbm-site/assets/img/logo_icon.png"
+            alt="Fed-BioMed"
+            class="mb-4"
+            style="max-width: 130px; height: auto;">
+        
+
+        <h3 class="mb-1 text-fedbiomed-primary">
+          Fed-BioMed
+        </h3>
+
+        <p class="mb-0 text-fedbiomed-primary fw-lighter">
+          Copyright ©2026
+        </p>
+      </div>
+    </div>
+
+    <!-- LEFT LINKS -->
+    <div class="col-12 col-md-6 col-lg-4 order-2 order-lg-1">
+      <div class="row gy-6 text-center text-md-start">
+        <div class="col-12">
+          <h4 class="mb-3 text-fedbiomed-primary">
+            Helpful links
+          </h4>
+          <div class="row row-cols-1 row-cols-sm-2 gy-2 text-fedbiomed-secondary fw-lighter">
+            
+              <div class="col">
+                <a href="/test-fbm-site/project#what-is-fedbiomed" class=" hover">Fed-BioMed</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/how-it-works#what-is-federated_learning" class=" hover">Federated Learning</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/how-it-works#architecture" class=" hover">Architecture</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/how-it-works#workflow" class=" hover">Workflow</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/how-it-works#security-in-practice" class=" hover">Security in Practice</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/realworld_projects/" class=" hover">Real world projects</a>
+              </div>
+            
+          </div>
+        </div>
+
+        <div class="col-12 pt-8">
+          <h4 class="mb-3 text-fedbiomed-primary">
+            Documentation
+          </h4>
+          <div class="row row-cols-1 row-cols-sm-2 gy-2 text-fedbiomed-secondary fw-lighter">
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/getting-started/what-is-fedbiomed/" class=" hover">Get Started</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/getting-started/installation/" class=" hover">Installation</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/tutorials/pytorch/01_PyTorch_MNIST_Single_Node_Tutorial/" class=" hover">Tutorials</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/user-guide/glossary/" class=" hover">User Guide</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/developer/usage_and_tools/" class=" hover">Developer</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://fedbiomed.org/fedbiomed-docs/latest/getting-started/basic-example/" class=" hover">Examples</a>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT LINKS + SOCIAL + ADDRESS -->
+    <div class="col-12 col-md-6 col-lg-4 order-3 order-lg-3">
+      <div class="row gy-6 text-center text-md-start text-lg-end h-100">
+        <div class="col-12">
+          <h4 class="mb-3 text-fedbiomed-primary">
+            About
+          </h4>
+          <div class="row row-cols-1 row-cols-sm-2 gy-2 text-fedbiomed-secondary fw-lighter">
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#funding" class=" hover">Funding & Institutional Support</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#roadmap" class=" hover">Roadmap</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/faq/" class=" hover">FAQ</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#contacts" class=" hover">Support & Contacts</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#how-to-cite-us" class=" hover">How to cite</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#team" class=" hover">Team</a>
+              </div>
+            
+          </div>
+        </div>
+
+        <div class="col-12 pt-8 mt-lg-auto text-fedbiomed-primary">
+          <nav class="nav social justify-content-center justify-content-md-start justify-content-lg-end mb-4" aria-label="Social media">
+            
+              <a
+                href="https://github.com/fedbiomed/fedbiomed"
+                class="ms-2"
+                style="font-size: 1.35rem;"
+                aria-label="GitHub"
+                target="_blank" rel="noopener noreferrer">
+                <i class="uil uil-github text-fedbiomed-primary" aria-hidden="true"></i>
+              </a>
+            
+              <a
+                href="https://www.linkedin.com/groups/12606640/"
+                class="ms-2"
+                style="font-size: 1.35rem;"
+                aria-label="LinkedIn"
+                target="_blank" rel="noopener noreferrer">
+                <i class="uil uil-linkedin text-fedbiomed-primary" aria-hidden="true"></i>
+              </a>
+            
+              <a
+                href="mailto:fedbiomed@inria.fr"
+                class="ms-2"
+                style="font-size: 1.35rem;"
+                aria-label="Email"
+                >
+                <i class="uil uil-envelope text-fedbiomed-primary" aria-hidden="true"></i>
+              </a>
+            
+          </nav>
+
+          <address class="mb-0 text-center text-md-start text-lg-end">
+            2004 Rte des Lucioles, 06902 Sophia Antipolis, France
+          </address>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+  
+  <!-- /.container -->
+</footer>
+
+  <!-- Modals -->
+  
+
+  
+
+  <!-- Scroll To Top Button -->
+  
+  <!-- Site Scripts-->
+  <script src="/test-fbm-site/assets/js/bootstrap.bundle.js"></script>
+<script src="/test-fbm-site/assets/js/plugins.js"></script>
+<script src="/test-fbm-site/assets/js/theme.js"></script>
+
+  <script>
+    (function () {
+      const NAVBAR_H = 90;
+      const KNOWN_TYPES = { note: 'ℹ', info: 'ℹ', tip: '✓', warning: '⚠', danger: '✕' };
+
+      // ── Admonitions ──────────────────────────────────────────
+      const content = document.querySelector('.col-xl-8 .content');
+      if (content) {
+        content.querySelectorAll('p, li').forEach(el => {
+          const text = el.textContent;
+          const m = text.match(/^!!!\s+(\w+)\s+"([^"]+)"\s*([\s\S]*)$/);
+          if (!m) return;
+          const type = KNOWN_TYPES[m[1]] ? m[1] : 'note';
+          const div = document.createElement('div');
+          div.className = 'doc-admonition doc-admonition--' + type;
+          const body = m[3].trim();
+          div.innerHTML =
+            '<span class="doc-admonition__icon">' + KNOWN_TYPES[type] + '</span>' +
+            '<span class="doc-admonition__title">' + m[2] + '</span>' +
+            (body ? '<div class="doc-admonition__body">' + body + '</div>' : '');
+          el.replaceWith(div);
+        });
+      }
+
+      // ── TOC scrollspy ─────────────────────────────────────────
+      const nav = document.getElementById('sidebar-nav');
+      if (!nav) return;
+
+      const headings = Array.from(
+        document.querySelectorAll('.col-xl-8 .content h2[id], .col-xl-8 .content h3[id]')
+      );
+      if (!headings.length) return;
+
+      let currentLink = null;
+      function setActive(id) {
+        const next = nav.querySelector('a[href="#' + id + '"]');
+        if (next === currentLink) return;
+        if (currentLink) currentLink.classList.remove('active');
+        if (next) next.classList.add('active');
+        currentLink = next;
+      }
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => { if (entry.isIntersecting) setActive(entry.target.id); });
+      }, { rootMargin: '0px 0px -80% 0px', threshold: 0 });
+
+      headings.forEach(h => observer.observe(h));
+
+      nav.addEventListener('click', e => {
+        const link = e.target.closest('a[href^="#"]');
+        if (!link) return;
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        const target = document.getElementById(link.getAttribute('href').slice(1));
+        if (!target) return;
+        window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - NAVBAR_H, behavior: 'smooth' });
+      });
+    })();
+  </script>
+  <!-- MathJax for LaTeX rendering -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+</body>
+</html>
