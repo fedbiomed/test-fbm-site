@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://fedbiomed.org/test-fbm-site/authors/fedbiomed-team/</loc>
-<lastmod>2026-04-20T16:22:28+02:00</lastmod>
+<lastmod>2026-04-21T16:13:10+02:00</lastmod>
 </url>
 <url>
 <loc>https://fedbiomed.org/test-fbm-site/news/3rd-Federated-Learning-Workshop-Sorbonne-University-Paris/</loc>
@@ -106,6 +106,9 @@
 <loc>https://fedbiomed.org/test-fbm-site/about/</loc>
 </url>
 <url>
+<loc>https://fedbiomed.org/test-fbm-site/access_control/</loc>
+</url>
+<url>
 <loc>https://fedbiomed.org/test-fbm-site/docs/elements/accordion/</loc>
 </url>
 <url>
@@ -202,10 +205,10 @@
 <loc>https://fedbiomed.org/test-fbm-site/federated_discovery/</loc>
 </url>
 <url>
-<loc>https://fedbiomed.org/test-fbm-site/federated_infrastructure/</loc>
+<loc>https://fedbiomed.org/test-fbm-site/federated_learning/</loc>
 </url>
 <url>
-<loc>https://fedbiomed.org/test-fbm-site/federated_learning/</loc>
+<loc>https://fedbiomed.org/test-fbm-site/federated_network/</loc>
 </url>
 <url>
 <loc>https://fedbiomed.org/test-fbm-site/docs/styleguide/fonts/</loc>
@@ -235,10 +238,10 @@
 <loc>https://fedbiomed.org/test-fbm-site/docs/elements/image-mask/</loc>
 </url>
 <url>
-<loc>https://fedbiomed.org/test-fbm-site/</loc>
+<loc>https://fedbiomed.org/test-fbm-site/docs/</loc>
 </url>
 <url>
-<loc>https://fedbiomed.org/test-fbm-site/docs/</loc>
+<loc>https://fedbiomed.org/test-fbm-site/</loc>
 </url>
 <url>
 <loc>https://fedbiomed.org/test-fbm-site/docs/getting-started/installation/</loc>
