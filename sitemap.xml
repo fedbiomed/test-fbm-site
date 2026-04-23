@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://fedbiomed.org/test-fbm-site/authors/fedbiomed-team/</loc>
-<lastmod>2026-04-21T16:13:10+02:00</lastmod>
+<lastmod>2026-04-23T11:29:58+02:00</lastmod>
 </url>
 <url>
 <loc>https://fedbiomed.org/test-fbm-site/news/3rd-Federated-Learning-Workshop-Sorbonne-University-Paris/</loc>
@@ -95,6 +95,10 @@
 <url>
 <loc>https://fedbiomed.org/test-fbm-site/realworld_projects/Fed-BioMed-for-Federated-PET-project/</loc>
 <lastmod>2026-01-15T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>https://fedbiomed.org/test-fbm-site/realworld_projects/DTRIP4H/</loc>
+<lastmod>2026-04-23T00:00:00+02:00</lastmod>
 </url>
 <url>
 <loc>https://fedbiomed.org/test-fbm-site/faq/</loc>
