@@ -242,7 +242,7 @@
         <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
 
         
-        <p class="lead fs-lg fw-lighter">Federated discovery enables users to explore <strong>what data exists</strong> across <strong>multiple institutions</strong> without accessing the raw data itself. Instead of moving sensitive datasets, institutions can expose <strong>shared metadata</strong> that helps identify available cohorts, modalities, or resources. Queries are performed across the federation while data remains <strong>locally protected</strong>. This supports study preparation and collaboration while preserving privacy.</p>
+        <p class="lead fs-lg fw-lighter">Federated discovery enables users to explore <strong>what data is available</strong> across multiple institutions without accessing or moving the raw data itself. Instead of centralizing sensitive data, each institution exposes <strong>structured metadata</strong> about its local datasets, helping identify available cohorts, modalities, and resources. Discovery queries are dispatched across the federation while the underlying data stays <strong>locally protected</strong>. This makes federated discovery the <strong>essential first step</strong> before any analytics or learning experiment — letting users assess the feasibility of a study, identify participating institutions, and configure experiments, all without compromising patient privacy.</p>
         
 
         
@@ -257,135 +257,162 @@
     </div>
   </div>
 </section>
-<section id="core-components" class="wrapper bg-transparent text-fedbiomed-primary">
-  <div class="container py-10 py-md-12 text-center text-lg-start">
-    <div class="row gy-10 gx-lg-8 gx-xl-12 align-items-center">
 
-      <!-- Header -->
-      <div class="col-12">
-        <h2 class="display-2 text-fedbiomed-primary mt-2">Core <span class="text-fedbiomed-tertiary">Components</span></h2>
-        <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
-        <p class="lead fs-lg fw-lighter mb-0"></p>
-      </div>
-
-      
-
-      <div class="col-lg-5 order-2">
-        <div class="accordion accordion-wrapper" id="accordionExample">
-          
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const hotspot = document.getElementById('architecture-hotspot');
-  if (!hotspot) return;
-
-  const clickAreas = hotspot.querySelectorAll('.architecture-half-click');
-
-  function openAccordionPanel(panelId) {
-    const targetEl = document.getElementById(panelId);
-    if (!targetEl) return;
-
-    const bsCollapse = bootstrap.Collapse.getOrCreateInstance(targetEl, {
-      toggle: false
-    });
-
-    bsCollapse.show();
-  }
-
-  function setHighlight(side) {
-    hotspot.classList.remove('is-left-active', 'is-right-active');
-
-    if (side === 'left') {
-      hotspot.classList.add('is-left-active');
-    } else if (side === 'right') {
-      hotspot.classList.add('is-right-active');
-    }
-  }
-
-  clickAreas.forEach(area => {
-    area.addEventListener('click', function () {
-      const panelId = this.getAttribute('data-target-collapse');
-      const side = this.getAttribute('data-highlight');
-
-      setHighlight(side);
-      openAccordionPanel(panelId);
-    });
-  });
-
-  const collapse1 = document.getElementById('collapse-1');
-  const collapse2 = document.getElementById('collapse-2');
-
-  if (collapse1) {
-    collapse1.addEventListener('show.bs.collapse', function () {
-      setHighlight('left');
-    });
-  }
-
-  if (collapse2) {
-    collapse2.addEventListener('show.bs.collapse', function () {
-      setHighlight('right');
-    });
-  }
-});
-</script>
 <section id="workflow" class="wrapper bg-light text-fedbiomed-primary">
   <div class="container py-14 pb-md-14">
 
-    <!-- Header -->
     <div class="row text-center text-lg-start">
       <div class="col-12">
-        <h2 class="display-2 text-fedbiomed-primary mt-2">Workflow</h2>
+        <h2 class="display-2 text-fedbiomed-primary mt-2">How <span class="text-fedbiomed-tertiary">Discovery</span> Works</h2>
         <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
-        <p class="lead fs-lg fw-lighter mb-0"></p>
+        <p class="lead fs-lg fw-lighter mb-0">A typical discovery workflow in Fed-BioMed follows four steps, from dataset registration to node selection.</p>
       </div>
     </div>
 
-    <!-- Cards -->
-    <div class="workflow-cards-row mt-8">
+    <div class="fi-workflow-cards-row mt-8">
       
-    </div>
-
-    <!-- Button -->
-    <div class="text-center mt-8">
-      <a href="" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl px-6 py-2">
-        
-      </a>
-    </div>
-
-  </div>
-</section>
-<section id="privacy-in-discovery" class="wrapper bg-light text-fedbiomed-primary">
-  <div class="container py-14 pb-md-14 ">
-    <!-- Header -->
-    <div class="row text-center text-lg-start">
-      <div class="col-12 col-lg-5">
-        <h2 class="display-2 text-fedbiomed-primary mt-2 ">Privacy in <span class="text-fedbiomed-tertiary">Discovery</span></h2>
-        <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
-        
-
-        
-
-        
-
-        <!-- Button -->
-        <div class="text-center text-lg-start mt-8">
-          <a href="" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl px-6 py-2">
+      <div class="fi-workflow-card-col pt-4">
+        <div class="fi-workflow-card card border-0 rounded-1 h-100 position-relative">
+          <span class="fi-workflow-card-number" aria-hidden="true">1</span>
+          <div class="card-body fi-workflow-card-body d-flex flex-column align-items-center text-center position-relative z-1 p-4 pb-5">
+            <h3 class="h4 text-fedbiomed-primary mb-3">Dataset Registration</h3>
+            <p class="text-fedbiomed-primary fw-lighter mb-0 display-8">A data administrator deploys a dataset and assigns it one or more tags. The dataset metadata is registered locally and becomes discoverable. Raw data files never leave the institution.</p>
             
-          </a>
+            <div class="fi-workflow-card-icon mt-auto">
+              <img alt="" src="/test-fbm-site/assets/icons/federated_discovery/outline/Dataset-Registration.svg" />
+            </div>
+            
+          </div>
         </div>
       </div>
-
-      <!-- Diagram -->
+      
+      <div class="fi-workflow-card-col pt-4">
+        <div class="fi-workflow-card card border-0 rounded-1 h-100 position-relative">
+          <span class="fi-workflow-card-number" aria-hidden="true">2</span>
+          <div class="card-body fi-workflow-card-body d-flex flex-column align-items-center text-center position-relative z-1 p-4 pb-5">
+            <h3 class="h4 text-fedbiomed-primary mb-3">Exploratory Listing</h3>
+            <p class="text-fedbiomed-primary fw-lighter mb-0 display-8">A researcher requests a broad inventory of all datasets available across participating institutions (names, types, shapes, and tags). No raw data is ever included.</p>
+            
+            <div class="fi-workflow-card-icon mt-auto">
+              <img alt="" src="/test-fbm-site/assets/icons/federated_discovery/outline/Exploratory-Listing.svg" />
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="fi-workflow-card-col pt-4">
+        <div class="fi-workflow-card card border-0 rounded-1 h-100 position-relative">
+          <span class="fi-workflow-card-number" aria-hidden="true">3</span>
+          <div class="card-body fi-workflow-card-body d-flex flex-column align-items-center text-center position-relative z-1 p-4 pb-5">
+            <h3 class="h4 text-fedbiomed-primary mb-3">Tag-Based Search</h3>
+            <p class="text-fedbiomed-primary fw-lighter mb-0 display-8">When initializing an experiment, the researcher specifies one or more tags. Fed-BioMed queries each participating institution and returns metadata from matching datasets only.</p>
+            
+            <div class="fi-workflow-card-icon mt-auto">
+              <img alt="" src="/test-fbm-site/assets/icons/federated_discovery/outline/Tag-Based-Search.svg" />
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="fi-workflow-card-col pt-4">
+        <div class="fi-workflow-card card border-0 rounded-1 h-100 position-relative">
+          <span class="fi-workflow-card-number" aria-hidden="true">4</span>
+          <div class="card-body fi-workflow-card-body d-flex flex-column align-items-center text-center position-relative z-1 p-4 pb-5">
+            <h3 class="h4 text-fedbiomed-primary mb-3">Institution Selection</h3>
+            <p class="text-fedbiomed-primary fw-lighter mb-0 display-8">The researcher can restrict the search to specific institutions. Those that do not match the tags or are not in the allowed list are silently excluded.</p>
+            
+            <div class="fi-workflow-card-icon mt-auto">
+              <img alt="" src="/test-fbm-site/assets/icons/federated_discovery/outline/Node-Selection.svg" />
+            </div>
+            
+          </div>
+        </div>
+      </div>
       
     </div>
+
+    
+
   </div>
 </section>
+
+
+<section id="privacy-in-discovery" class="wrapper bg-light text-fedbiomed-primary">
+  <div class="container py-14 pb-md-14">
+
+    <div class="row text-center text-lg-start">
+      <div class="col-12">
+        <h2 class="display-2 text-fedbiomed-primary mt-2">Privacy in <span class="text-fedbiomed-tertiary">Discovery</span></h2>
+        <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
+        
+        <p class="lead fs-lg fw-lighter">The discovery process is designed so that no sensitive information ever leaves the institutional boundary.</p>
+        
+      </div>
+    </div>
+
+    <div class="level-strips mt-10">
+      
+      <div class="level-strip">
+
+        <div class="level-strip-media">
+          <img src="/test-fbm-site/assets/icons/federated_discovery/outline/Only-metadata-is-exchanged.svg" alt="" class="level-strip-icon-img" aria-hidden="true" />
+        </div>
+
+        <div class="level-strip-body">
+          <h3 class="h4 text-fedbiomed-primary mb-3">Only metadata is exchanged</h3>
+          <p class="fw-lighter mb-0 display-8 text-fedbiomed-primary">Responses contain dataset name, type, shape, description, and tags. Never patient records, images, or raw values.</p>
+        </div>
+
+      </div>
+      
+      <div class="level-strip">
+
+        <div class="level-strip-media">
+          <img src="/test-fbm-site/assets/icons/federated_discovery/outline/Queries-are-pull-based.svg" alt="" class="level-strip-icon-img" aria-hidden="true" />
+        </div>
+
+        <div class="level-strip-body">
+          <h3 class="h4 text-fedbiomed-primary mb-3">Queries are pull-based</h3>
+          <p class="fw-lighter mb-0 display-8 text-fedbiomed-primary">Institutions respond only to explicit requests arriving through the authenticated federated channel. No information is ever broadcast unsolicited.</p>
+        </div>
+
+      </div>
+      
+      <div class="level-strip">
+
+        <div class="level-strip-media">
+          <img src="/test-fbm-site/assets/icons/federated_discovery/outline/Participation-is-controlled.svg" alt="" class="level-strip-icon-img" aria-hidden="true" />
+        </div>
+
+        <div class="level-strip-body">
+          <h3 class="h4 text-fedbiomed-primary mb-3">Participation is controlled</h3>
+          <p class="fw-lighter mb-0 display-8 text-fedbiomed-primary">Data administrators explicitly decide which datasets to register and which tags to assign.</p>
+        </div>
+
+      </div>
+      
+      <div class="level-strip">
+
+        <div class="level-strip-media">
+          <img src="/test-fbm-site/assets/icons/federated_discovery/outline/Discovery-is-decoupled-from-access.svg" alt="" class="level-strip-icon-img" aria-hidden="true" />
+        </div>
+
+        <div class="level-strip-body">
+          <h3 class="h4 text-fedbiomed-primary mb-3">Discovery is decoupled from access</h3>
+          <p class="fw-lighter mb-0 display-8 text-fedbiomed-primary">Knowing a dataset exists does not grant access to it. Analytics and training require separate authorization, managed independently.</p>
+        </div>
+
+      </div>
+      
+    </div>
+
+    
+
+  </div>
+</section>
+
 
 
 
