@@ -257,135 +257,195 @@
     </div>
   </div>
 </section>
-<section id="core-components" class="wrapper bg-transparent text-fedbiomed-primary">
-  <div class="container py-10 py-md-12 text-center text-lg-start">
-    <div class="row gy-10 gx-lg-8 gx-xl-12 align-items-center">
-
-      <!-- Header -->
-      <div class="col-12">
-        <h2 class="display-2 text-fedbiomed-primary mt-2">Core <span class="text-fedbiomed-tertiary">Components</span></h2>
-        <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
-        <p class="lead fs-lg fw-lighter mb-0"></p>
-      </div>
-
-      
-
-      <div class="col-lg-5 order-2">
-        <div class="accordion accordion-wrapper" id="accordionExample">
-          
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const hotspot = document.getElementById('architecture-hotspot');
-  if (!hotspot) return;
-
-  const clickAreas = hotspot.querySelectorAll('.architecture-half-click');
-
-  function openAccordionPanel(panelId) {
-    const targetEl = document.getElementById(panelId);
-    if (!targetEl) return;
-
-    const bsCollapse = bootstrap.Collapse.getOrCreateInstance(targetEl, {
-      toggle: false
-    });
-
-    bsCollapse.show();
-  }
-
-  function setHighlight(side) {
-    hotspot.classList.remove('is-left-active', 'is-right-active');
-
-    if (side === 'left') {
-      hotspot.classList.add('is-left-active');
-    } else if (side === 'right') {
-      hotspot.classList.add('is-right-active');
-    }
-  }
-
-  clickAreas.forEach(area => {
-    area.addEventListener('click', function () {
-      const panelId = this.getAttribute('data-target-collapse');
-      const side = this.getAttribute('data-highlight');
-
-      setHighlight(side);
-      openAccordionPanel(panelId);
-    });
-  });
-
-  const collapse1 = document.getElementById('collapse-1');
-  const collapse2 = document.getElementById('collapse-2');
-
-  if (collapse1) {
-    collapse1.addEventListener('show.bs.collapse', function () {
-      setHighlight('left');
-    });
-  }
-
-  if (collapse2) {
-    collapse2.addEventListener('show.bs.collapse', function () {
-      setHighlight('right');
-    });
-  }
-});
-</script>
 <section id="workflow" class="wrapper bg-light text-fedbiomed-primary">
   <div class="container py-14 pb-md-14">
 
     <!-- Header -->
     <div class="row text-center text-lg-start">
       <div class="col-12">
-        <h2 class="display-2 text-fedbiomed-primary mt-2">Workflow</h2>
+        <h2 class="display-2 text-fedbiomed-primary mt-2">How <span class="text-fedbiomed-tertiary">Federated Analytics</span> Works</h2>
         <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
-        <p class="lead fs-lg fw-lighter mb-0"></p>
+        
+        <p class="lead fs-lg fw-lighter mb-8">Running federated analytics requires a few setup steps on the institution side before a researcher can request statistics across the federation.</p>
+        
       </div>
     </div>
 
-    <!-- Cards -->
-    <div class="workflow-cards-row mt-8">
+    <!-- Tabs -->
+    <ul class="nav justify-content-center border-0 mb-6 gap-2 gap-md-3 flex-wrap text-center" role="tablist">
+      
+      <li class="nav-item" role="presentation">
+        <a id="workflow-tab-prerequisites" class="nav-link rounded-pill px-4 py-2 gui-tab active" data-bs-toggle="tab" href="#workflow-panel-prerequisites" role="tab" aria-controls="workflow-panel-prerequisites" aria-selected="true">
+          Prerequisites
+        </a>
+      </li>
+      
+      <li class="nav-item" role="presentation">
+        <a id="workflow-tab-execution" class="nav-link rounded-pill px-4 py-2 gui-tab " data-bs-toggle="tab" href="#workflow-panel-execution" role="tab" aria-controls="workflow-panel-execution" aria-selected="false">
+          Execution
+        </a>
+      </li>
+      
+    </ul>
+
+    <!-- Tab Panels -->
+    <div class="tab-content">
+      
+      <div class="tab-pane fade show active" id="workflow-panel-prerequisites" role="tabpanel" aria-labelledby="workflow-tab-prerequisites">
+        <div class="workflow-cards-row gap-4 gap-md-6">
+          
+          <div class="workflow-card-col">
+            <div class="workflow-card card border-0 rounded-1 h-100 position-relative">
+              <span class="workflow-card-number" aria-hidden="true">1</span>
+              <div class="card-body workflow-card-body d-flex flex-column align-items-center text-center position-relative z-1 p-4 pb-5">
+                <p class="text-fedbiomed-primary fw-lighter mb-4 display-8">A data administrator adds a dataset to the institution and assigns it tags, making it identifiable by researchers across the federation.</p>
+                <div class="workflow-card-icon mt-auto">
+                  <img alt="A data administrator adds a dataset to the institution and assigns it tags, making it identifiable by researchers across the federation." src="/test-fbm-site/assets/icons/federated_analytics/outline/dataset-registration.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="workflow-card-col">
+            <div class="workflow-card card border-0 rounded-1 h-100 position-relative">
+              <span class="workflow-card-number" aria-hidden="true">2</span>
+              <div class="card-body workflow-card-body d-flex flex-column align-items-center text-center position-relative z-1 p-4 pb-5">
+                <p class="text-fedbiomed-primary fw-lighter mb-4 display-8">Federated analytics must be explicitly enabled on the institution side by setting the corresponding flag in the configuration file.</p>
+                <div class="workflow-card-icon mt-auto">
+                  <img alt="Federated analytics must be explicitly enabled on the institution side by setting the corresponding flag in the configuration file." src="/test-fbm-site/assets/icons/federated_analytics/outline/analytics-enabled.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="tab-pane fade " id="workflow-panel-execution" role="tabpanel" aria-labelledby="workflow-tab-execution">
+        <div class="workflow-cards-row gap-4 gap-md-6">
+          
+          <div class="workflow-card-col">
+            <div class="workflow-card card border-0 rounded-1 h-100 position-relative">
+              <span class="workflow-card-number" aria-hidden="true">1</span>
+              <div class="card-body workflow-card-body d-flex flex-column align-items-center text-center position-relative z-1 p-4 pb-5">
+                <p class="text-fedbiomed-primary fw-lighter mb-4 display-8">The researcher requests statistics from the federation. Fed-BioMed first checks the cache and if results are already available, no new request is sent.</p>
+                <div class="workflow-card-icon mt-auto">
+                  <img alt="The researcher requests statistics from the federation. Fed-BioMed first checks the cache and if results are already available, no new request is sent." src="/test-fbm-site/assets/icons/federated_analytics/outline/statistics-request.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="workflow-card-col">
+            <div class="workflow-card card border-0 rounded-1 h-100 position-relative">
+              <span class="workflow-card-number" aria-hidden="true">2</span>
+              <div class="card-body workflow-card-body d-flex flex-column align-items-center text-center position-relative z-1 p-4 pb-5">
+                <p class="text-fedbiomed-primary fw-lighter mb-4 display-8">Each participating institution receives the request and computes statistics locally, returning only summable results and never raw data.</p>
+                <div class="workflow-card-icon mt-auto">
+                  <img alt="Each participating institution receives the request and computes statistics locally, returning only summable results and never raw data." src="/test-fbm-site/assets/icons/federated_analytics/outline/local-computation.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="workflow-card-col">
+            <div class="workflow-card card border-0 rounded-1 h-100 position-relative">
+              <span class="workflow-card-number" aria-hidden="true">3</span>
+              <div class="card-body workflow-card-body d-flex flex-column align-items-center text-center position-relative z-1 p-4 pb-5">
+                <p class="text-fedbiomed-primary fw-lighter mb-4 display-8">The researcher side collects responses from all institutions and aggregates them into the final statistics.</p>
+                <div class="workflow-card-icon mt-auto">
+                  <img alt="The researcher side collects responses from all institutions and aggregates them into the final statistics." src="/test-fbm-site/assets/icons/federated_analytics/outline/aggregation-analytics.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
       
     </div>
 
     <!-- Button -->
-    <div class="text-center mt-8">
-      <a href="" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl px-6 py-2">
-        
-      </a>
-    </div>
+    
 
   </div>
 </section>
-<section id="privacy-in-analytics" class="wrapper bg-light text-fedbiomed-primary">
-  <div class="container py-14 pb-md-14 ">
-    <!-- Header -->
+
+
+<section id="privacy-preserving-analytics" class="wrapper bg-light text-fedbiomed-primary">
+  <div class="container py-14 pb-md-14">
+
     <div class="row text-center text-lg-start">
-      <div class="col-12 col-lg-5">
-        <h2 class="display-2 text-fedbiomed-primary mt-2 ">Privacy-Preserving <span class="text-fedbiomed-tertiary">Analytics</span></h2>
+      <div class="col-12">
+        <h2 class="display-2 text-fedbiomed-primary mt-2"><span class="text-fedbiomed-tertiary">Privacy-Preserving</span> Analytics</h2>
         <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
         
-
+        <p class="lead fs-lg fw-lighter">Fed-BioMed enforces privacy at every step of the analytics process, ensuring that individual institution data is never exposed.</p>
         
-
-        
-
-        <!-- Button -->
-        <div class="text-center text-lg-start mt-8">
-          <a href="" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl px-6 py-2">
-            
-          </a>
-        </div>
       </div>
+    </div>
 
-      <!-- Diagram -->
+    <div class="level-strips mt-10">
+      
+      <div class="level-strip">
+
+        <div class="level-strip-media">
+          <img src="/test-fbm-site/assets/icons/federated_analytics/outline/secure-aggregation.svg" alt="" class="level-strip-icon-img" aria-hidden="true" />
+        </div>
+
+        <div class="level-strip-body">
+          <h3 class="h4 text-fedbiomed-primary mb-3">Secure Aggregation</h3>
+          <p class="fw-lighter mb-0 display-8 text-fedbiomed-primary">Data returned by institutions can be encrypted using secure aggregation. This can be enforced by the institution or requested by the researcher.</p>
+        </div>
+
+      </div>
+      
+      <div class="level-strip">
+
+        <div class="level-strip-media">
+          <img src="/test-fbm-site/assets/icons/federated_analytics/outline/aggregated-results.svg" alt="" class="level-strip-icon-img" aria-hidden="true" />
+        </div>
+
+        <div class="level-strip-body">
+          <h3 class="h4 text-fedbiomed-primary mb-3">Aggregated Results Only</h3>
+          <p class="fw-lighter mb-0 display-8 text-fedbiomed-primary">When secure aggregation is active, only the final aggregated statistics are accessible. Per-institution results are never visible.</p>
+        </div>
+
+      </div>
+      
+      <div class="level-strip">
+
+        <div class="level-strip-media">
+          <img src="/test-fbm-site/assets/icons/federated_analytics/outline/summable-stats.svg" alt="" class="level-strip-icon-img" aria-hidden="true" />
+        </div>
+
+        <div class="level-strip-body">
+          <h3 class="h4 text-fedbiomed-primary mb-3">Summable Statistics</h3>
+          <p class="fw-lighter mb-0 display-8 text-fedbiomed-primary">To enable secure aggregation, institutions return summable values (for example, when 'mean' is requested, 'sum' and 'count' are sent instead).</p>
+        </div>
+
+      </div>
+      
+      <div class="level-strip">
+
+        <div class="level-strip-media">
+          <img src="/test-fbm-site/assets/icons/federated_analytics/outline/supported-stats.svg" alt="" class="level-strip-icon-img" aria-hidden="true" />
+        </div>
+
+        <div class="level-strip-body">
+          <h3 class="h4 text-fedbiomed-primary mb-3">Supported Data &amp; Statistics</h3>
+          <p class="fw-lighter mb-0 display-8 text-fedbiomed-primary">Currently, tabular data is supported. Available statistics include count, mean, and variance. Histogram support is under validation.</p>
+        </div>
+
+      </div>
       
     </div>
+
+    
+
   </div>
 </section>
+
 
 
 
