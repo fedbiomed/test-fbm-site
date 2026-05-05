@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Sfumatura_senza_nome_11);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        filter: url(#drop-shadow-133);
+        stroke: url(#Sfumatura_senza_nome_9);
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3, .cls-5, .cls-6, .cls-7, .cls-8 {
+        stroke-width: 6.49px;
+      }
+
+      .cls-4 {
+        filter: url(#drop-shadow-135);
+        stroke: url(#Sfumatura_senza_nome_9-3);
+        stroke-width: 9.27px;
+      }
+
+      .cls-5 {
+        filter: url(#drop-shadow-136);
+        stroke: url(#Sfumatura_senza_nome_9-4);
+      }
+
+      .cls-6 {
+        filter: url(#drop-shadow-134);
+        stroke: url(#Sfumatura_senza_nome_9-2);
+      }
+
+      .cls-7 {
+        filter: url(#drop-shadow-138);
+        stroke: url(#Sfumatura_senza_nome_9-6);
+      }
+
+      .cls-8 {
+        filter: url(#drop-shadow-137);
+        stroke: url(#Sfumatura_senza_nome_9-5);
+      }
+
+      .cls-9 {
+        filter: url(#drop-shadow-132);
+      }
+
+      .cls-10 {
+        fill: url(#Sfumatura_senza_nome_8);
+      }
+
+      .cls-11 {
+        fill: url(#Sfumatura_senza_nome_113);
+      }
+    </style>
+    <linearGradient id="Sfumatura_senza_nome_8" data-name="Sfumatura senza nome 8" x1="137.52" y1="431.4" x2="558.59" y2="431.4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00b4d8"/>
+      <stop offset="1" stop-color="#0077b6"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_113" data-name="Sfumatura senza nome 113" x1="8416.14" y1="668.63" x2="8524.17" y2="668.63" gradientTransform="translate(8974.72 1327.22) rotate(-180)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0077b6"/>
+      <stop offset="1" stop-color="#03045e"/>
+    </linearGradient>
+    <filter id="drop-shadow-132" x="499.52" y="463.96" width="389" height="479" filterUnits="userSpaceOnUse">
+      <feOffset dx="4.29" dy="4.29"/>
+      <feGaussianBlur result="blur" stdDeviation="6.87"/>
+      <feFlood flood-color="#000" flood-opacity=".2"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="Sfumatura_senza_nome_11" data-name="Sfumatura senza nome 11" x1="516.4" y1="698.64" x2="862.48" y2="698.64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#90e0ef"/>
+      <stop offset="1" stop-color="#00b4d8"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_9" data-name="Sfumatura senza nome 9" x1="483.36" y1="516.75" x2="576.92" y2="516.75" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0077b6"/>
+      <stop offset="1" stop-color="#03045e"/>
+    </linearGradient>
+    <filter id="drop-shadow-133" x="465.46" y="495.27" width="139" height="53" filterUnits="userSpaceOnUse">
+      <feOffset dx="4.63" dy="4.63"/>
+      <feGaussianBlur result="blur-2" stdDeviation="7.41"/>
+      <feFlood flood-color="#000" flood-opacity=".2"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="Sfumatura_senza_nome_9-2" data-name="Sfumatura senza nome 9" x1="-9166.64" y1="-11511.46" x2="-9073.08" y2="-11511.46" gradientTransform="translate(-8371.46 -10994.71) rotate(-180)" xlink:href="#Sfumatura_senza_nome_9"/>
+    <filter id="drop-shadow-134" x="683.46" y="495.27" width="140" height="53" filterUnits="userSpaceOnUse">
+      <feOffset dx="4.63" dy="4.63"/>
+      <feGaussianBlur result="blur-3" stdDeviation="7.41"/>
+      <feFlood flood-color="#000" flood-opacity=".2"/>
+      <feComposite in2="blur-3" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="Sfumatura_senza_nome_9-3" data-name="Sfumatura senza nome 9" x1="1835.26" y1="-10302.66" x2="1835.26" y2="-10302.66" gradientTransform="translate(-9683.09 -1311.63) rotate(90)" xlink:href="#Sfumatura_senza_nome_9"/>
+    <filter id="drop-shadow-135" x="619.57" y="523.63" width="4.63" height="4.63" filterUnits="userSpaceOnUse">
+      <feOffset dx="4.63" dy="4.63"/>
+      <feGaussianBlur result="blur-4" stdDeviation="7.41"/>
+      <feFlood flood-color="#000" flood-opacity=".2"/>
+      <feComposite in2="blur-4" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="Sfumatura_senza_nome_9-4" data-name="Sfumatura senza nome 9" x1="1675.67" y1="-10324.49" x2="1769.23" y2="-10324.49" gradientTransform="translate(-9683.09 -1311.63) rotate(90)" xlink:href="#Sfumatura_senza_nome_9"/>
+    <filter id="drop-shadow-136" x="620.46" y="346.27" width="52" height="139" filterUnits="userSpaceOnUse">
+      <feOffset dx="4.63" dy="4.63"/>
+      <feGaussianBlur result="blur-5" stdDeviation="7.41"/>
+      <feFlood flood-color="#000" flood-opacity=".2"/>
+      <feComposite in2="blur-5" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="Sfumatura_senza_nome_9-5" data-name="Sfumatura senza nome 9" x1="-3474.38" y1="-13232.03" x2="-3380.82" y2="-13232.03" gradientTransform="translate(-11052.66 -6497.48) rotate(135)" xlink:href="#Sfumatura_senza_nome_9"/>
+    <filter id="drop-shadow-137" x="675.46" y="383.27" width="114" height="114" filterUnits="userSpaceOnUse">
+      <feOffset dx="4.63" dy="4.63"/>
+      <feGaussianBlur result="blur-6" stdDeviation="7.41"/>
+      <feFlood flood-color="#000" flood-opacity=".2"/>
+      <feComposite in2="blur-6" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="Sfumatura_senza_nome_9-6" data-name="Sfumatura senza nome 9" x1="3352.22" y1="-4720.25" x2="3445.77" y2="-4720.25" gradientTransform="translate(-5185.85 1369.57) rotate(45)" xlink:href="#Sfumatura_senza_nome_9"/>
+    <filter id="drop-shadow-138" x="503.46" y="383.27" width="114" height="114" filterUnits="userSpaceOnUse">
+      <feOffset dx="4.63" dy="4.63"/>
+      <feGaussianBlur result="blur-7" stdDeviation="7.41"/>
+      <feFlood flood-color="#000" flood-opacity=".2"/>
+      <feComposite in2="blur-7" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path class="cls-10" d="M450.56,711.75H148.75c-.75,0-4.72-.08-7.94-3.29-2.03-2.03-3.29-4.84-3.29-7.94V162.28c0-6.21,5.04-11.23,11.23-11.23h398.61c6.21,0,11.23,5.02,11.23,11.23v443.14"/>
+  <rect class="cls-2" x="168.59" y="237.14" width="357.56" height="19.35" rx="9.68" ry="9.68"/>
+  <rect class="cls-2" x="169.89" y="186.51" width="357.56" height="19.35" rx="9.68" ry="9.68"/>
+  <rect class="cls-2" x="168.59" y="287.76" width="358.92" height="19.35" rx="9.68" ry="9.68"/>
+  <rect class="cls-2" x="168.59" y="389.01" width="358.92" height="19.35" rx="9.68" ry="9.68"/>
+  <rect class="cls-2" x="168.59" y="338.39" width="358.92" height="19.35" rx="9.68" ry="9.68"/>
+  <rect class="cls-2" x="168.59" y="439.63" width="358.92" height="19.35" rx="9.68" ry="9.68"/>
+  <rect class="cls-2" x="168.59" y="540.88" width="358.92" height="19.35" rx="9.68" ry="9.68"/>
+  <rect class="cls-2" x="168.59" y="490.26" width="358.92" height="19.35" rx="9.68" ry="9.68"/>
+  <rect class="cls-2" x="168.59" y="591.51" width="358.92" height="19.35" rx="9.68" ry="9.68"/>
+  <rect class="cls-2" x="168.59" y="642.13" width="358.92" height="19.35" rx="9.68" ry="9.68"/>
+  <path class="cls-11" d="M450.56,711.75v-95.08c0-.75.08-4.73,3.29-7.94,2.03-2.03,4.84-3.29,7.94-3.29v-.02h96.8"/>
+  <g class="cls-9">
+    <path class="cls-1" d="M671.48,637.33l4.49-11.58c20.91-35.34,57.36-11.18,57.18,22.87l2.83-8.01c17.59-38.65,61.12-20.24,60.57,17.57l2.73-6.38c17.1-23.92,61.7-9.8,62.44,19.82-1.95,48.1,2.5,98.1-.04,145.97-2.6,48.97-30.85,92.27-82.08,98.6-78.52-3.12-138.8,18.94-189.26-54.77-25.19-36.8-56.99-99.2-71.5-141.32-10.81-31.37,16.21-48.77,44.77-37.83,17.28,6.61,30.41,21.95,42.74,35v-212.4c0-.56,3.75-9.07,4.49-10.28,11.02-18.24,43.39-19.13,55.3-1.74,1.12,1.64,5.35,10.53,5.35,12.02v132.48Z"/>
+  </g>
+  <line class="cls-3" x1="486.61" y1="516.75" x2="573.67" y2="516.75"/>
+  <line class="cls-6" x1="791.93" y1="516.75" x2="704.87" y2="516.75"/>
+  <path class="cls-4" d="M619.57,523.63"/>
+  <line class="cls-5" x1="641.4" y1="367.29" x2="641.4" y2="454.36"/>
+  <line class="cls-8" x1="758.26" y1="404.52" x2="696.7" y2="466.08"/>
+  <line class="cls-7" x1="524.54" y1="404.52" x2="586.1" y2="466.08"/>
+</svg>

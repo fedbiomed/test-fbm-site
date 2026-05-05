@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Sfumatura_senza_nome_11);
+      }
+
+      .cls-2 {
+        fill: url(#Sfumatura_senza_nome_11-8);
+      }
+
+      .cls-3 {
+        fill: url(#Sfumatura_senza_nome_11-9);
+      }
+
+      .cls-4 {
+        fill: url(#Sfumatura_senza_nome_11-5);
+      }
+
+      .cls-5 {
+        fill: url(#Sfumatura_senza_nome_11-6);
+      }
+
+      .cls-6 {
+        fill: url(#Sfumatura_senza_nome_11-7);
+      }
+
+      .cls-7 {
+        fill: url(#Sfumatura_senza_nome_11-4);
+      }
+
+      .cls-8 {
+        fill: url(#Sfumatura_senza_nome_11-3);
+      }
+
+      .cls-9 {
+        fill: url(#Sfumatura_senza_nome_11-2);
+      }
+
+      .cls-10 {
+        fill: url(#Sfumatura_senza_nome_113-30);
+      }
+
+      .cls-11 {
+        fill: url(#Sfumatura_senza_nome_113-13);
+      }
+
+      .cls-12 {
+        fill: url(#Sfumatura_senza_nome_113-18);
+      }
+
+      .cls-13 {
+        fill: url(#Sfumatura_senza_nome_113-19);
+      }
+
+      .cls-14 {
+        fill: url(#Sfumatura_senza_nome_113-11);
+      }
+
+      .cls-15 {
+        fill: url(#Sfumatura_senza_nome_113-12);
+      }
+
+      .cls-16 {
+        fill: url(#Sfumatura_senza_nome_113-10);
+      }
+
+      .cls-17 {
+        fill: url(#Sfumatura_senza_nome_113-15);
+      }
+
+      .cls-18 {
+        fill: url(#Sfumatura_senza_nome_113-16);
+      }
+
+      .cls-19 {
+        fill: url(#Sfumatura_senza_nome_113-14);
+      }
+
+      .cls-20 {
+        fill: url(#Sfumatura_senza_nome_113-17);
+      }
+
+      .cls-21 {
+        fill: url(#Sfumatura_senza_nome_113-29);
+      }
+
+      .cls-22 {
+        fill: url(#Sfumatura_senza_nome_113-23);
+      }
+
+      .cls-23 {
+        fill: url(#Sfumatura_senza_nome_113-25);
+      }
+
+      .cls-24 {
+        fill: url(#Sfumatura_senza_nome_113-22);
+      }
+
+      .cls-25 {
+        fill: url(#Sfumatura_senza_nome_113-26);
+      }
+
+      .cls-26 {
+        fill: url(#Sfumatura_senza_nome_113-24);
+      }
+
+      .cls-27 {
+        fill: url(#Sfumatura_senza_nome_113-21);
+      }
+
+      .cls-28 {
+        fill: url(#Sfumatura_senza_nome_113-28);
+      }
+
+      .cls-29 {
+        fill: url(#Sfumatura_senza_nome_113-27);
+      }
+
+      .cls-30 {
+        fill: url(#Sfumatura_senza_nome_113-39);
+      }
+
+      .cls-31 {
+        fill: url(#Sfumatura_senza_nome_113-35);
+      }
+
+      .cls-32 {
+        fill: url(#Sfumatura_senza_nome_113-36);
+      }
+
+      .cls-33 {
+        fill: url(#Sfumatura_senza_nome_113-20);
+      }
+
+      .cls-34 {
+        fill: url(#Sfumatura_senza_nome_113-33);
+      }
+
+      .cls-35 {
+        fill: url(#Sfumatura_senza_nome_113-34);
+      }
+
+      .cls-36 {
+        fill: url(#Sfumatura_senza_nome_113-31);
+      }
+
+      .cls-37 {
+        fill: url(#Sfumatura_senza_nome_113-32);
+      }
+
+      .cls-38 {
+        fill: url(#Sfumatura_senza_nome_113-37);
+      }
+
+      .cls-39 {
+        fill: url(#Sfumatura_senza_nome_113-38);
+      }
+
+      .cls-40 {
+        fill: url(#Sfumatura_senza_nome_113-41);
+      }
+
+      .cls-41 {
+        fill: url(#Sfumatura_senza_nome_113-42);
+      }
+
+      .cls-42 {
+        fill: url(#Sfumatura_senza_nome_113-43);
+      }
+
+      .cls-43 {
+        fill: url(#Sfumatura_senza_nome_113-40);
+      }
+
+      .cls-44 {
+        fill: url(#Sfumatura_senza_nome_113-44);
+      }
+
+      .cls-45 {
+        fill: url(#Sfumatura_senza_nome_113-45);
+      }
+
+      .cls-46 {
+        fill: url(#Sfumatura_senza_nome_113-46);
+      }
+
+      .cls-47 {
+        fill: url(#Sfumatura_senza_nome_113-47);
+      }
+
+      .cls-48 {
+        fill: url(#Sfumatura_senza_nome_11-10);
+      }
+
+      .cls-49 {
+        fill: url(#Sfumatura_senza_nome_11-11);
+      }
+
+      .cls-50 {
+        fill: url(#Sfumatura_senza_nome_113-4);
+      }
+
+      .cls-51 {
+        fill: url(#Sfumatura_senza_nome_113-3);
+      }
+
+      .cls-52 {
+        fill: url(#Sfumatura_senza_nome_113-2);
+      }
+
+      .cls-53 {
+        fill: url(#Sfumatura_senza_nome_113-5);
+      }
+
+      .cls-54 {
+        fill: url(#Sfumatura_senza_nome_113-6);
+      }
+
+      .cls-55 {
+        fill: url(#Sfumatura_senza_nome_113-8);
+      }
+
+      .cls-56 {
+        fill: url(#Sfumatura_senza_nome_113-7);
+      }
+
+      .cls-57 {
+        fill: url(#Sfumatura_senza_nome_113-9);
+      }
+
+      .cls-58 {
+        fill: url(#Sfumatura_senza_nome_8);
+      }
+
+      .cls-59 {
+        fill: url(#Sfumatura_senza_nome_6);
+      }
+
+      .cls-60 {
+        fill: url(#Sfumatura_senza_nome_113);
+      }
+    </style>
+    <linearGradient id="Sfumatura_senza_nome_11" data-name="Sfumatura senza nome 11" x1="701.81" y1="793.06" x2="718.48" y2="793.06" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#90e0ef"/>
+      <stop offset="1" stop-color="#00b4d8"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_11-2" data-name="Sfumatura senza nome 11" x1="13691.66" y1="2055.4" x2="14118.33" y2="2055.4" gradientTransform="translate(2636.58 -13171.06) rotate(90)" xlink:href="#Sfumatura_senza_nome_11"/>
+    <linearGradient id="Sfumatura_senza_nome_113" data-name="Sfumatura senza nome 113" x1="695.06" y1="938.94" x2="725.23" y2="938.94" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0077b6"/>
+      <stop offset="1" stop-color="#03045e"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_11-3" data-name="Sfumatura senza nome 11" x1="518.31" y1="670.52" x2="903.02" y2="670.52" xlink:href="#Sfumatura_senza_nome_11"/>
+    <linearGradient id="Sfumatura_senza_nome_113-2" data-name="Sfumatura senza nome 113" x1="550.1" y1="670.52" x2="575.47" y2="670.52" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-3" data-name="Sfumatura senza nome 113" x1="603.02" y1="670.52" x2="628.39" y2="670.52" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-4" data-name="Sfumatura senza nome 113" x1="655.94" y1="670.52" x2="681.31" y2="670.52" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-5" data-name="Sfumatura senza nome 113" x1="747.85" y1="657.84" x2="778.76" y2="657.84" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-6" data-name="Sfumatura senza nome 113" x1="747.85" y1="683.21" x2="778.76" y2="683.21" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-7" data-name="Sfumatura senza nome 113" x1="790.99" y1="657.84" x2="867.4" y2="657.84" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-8" data-name="Sfumatura senza nome 113" x1="790.99" y1="683.21" x2="867.4" y2="683.21" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_11-4" data-name="Sfumatura senza nome 11" x1="517.79" y1="755.58" x2="902.5" y2="755.58" xlink:href="#Sfumatura_senza_nome_11"/>
+    <linearGradient id="Sfumatura_senza_nome_113-9" data-name="Sfumatura senza nome 113" x1="549.58" y1="755.58" x2="574.94" y2="755.58" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-10" data-name="Sfumatura senza nome 113" x1="602.5" y1="755.58" x2="627.87" y2="755.58" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-11" data-name="Sfumatura senza nome 113" x1="655.42" y1="755.58" x2="680.79" y2="755.58" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-12" data-name="Sfumatura senza nome 113" x1="747.33" y1="742.9" x2="778.24" y2="742.9" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-13" data-name="Sfumatura senza nome 113" x1="747.33" y1="768.27" x2="778.24" y2="768.27" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-14" data-name="Sfumatura senza nome 113" x1="790.47" y1="742.9" x2="866.87" y2="742.9" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-15" data-name="Sfumatura senza nome 113" x1="790.47" y1="768.27" x2="866.87" y2="768.27" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_11-5" data-name="Sfumatura senza nome 11" x1="518.31" y1="840.64" x2="903.02" y2="840.64" xlink:href="#Sfumatura_senza_nome_11"/>
+    <linearGradient id="Sfumatura_senza_nome_113-16" data-name="Sfumatura senza nome 113" x1="550.1" y1="840.64" x2="575.47" y2="840.64" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-17" data-name="Sfumatura senza nome 113" x1="603.02" y1="840.64" x2="628.39" y2="840.64" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-18" data-name="Sfumatura senza nome 113" x1="655.94" y1="840.64" x2="681.31" y2="840.64" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-19" data-name="Sfumatura senza nome 113" x1="747.85" y1="827.96" x2="778.76" y2="827.96" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-20" data-name="Sfumatura senza nome 113" x1="747.85" y1="853.33" x2="778.76" y2="853.33" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-21" data-name="Sfumatura senza nome 113" x1="790.99" y1="827.96" x2="867.4" y2="827.96" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-22" data-name="Sfumatura senza nome 113" x1="790.99" y1="853.33" x2="867.4" y2="853.33" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-23" data-name="Sfumatura senza nome 113" x1="225.6" y1="315.22" x2="408.45" y2="315.22" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_8" data-name="Sfumatura senza nome 8" x1="78.71" y1="438.61" x2="554.71" y2="438.61" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00b4d8"/>
+      <stop offset="1" stop-color="#0077b6"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_11-6" data-name="Sfumatura senza nome 11" x1="312.28" y1="317.97" x2="319.28" y2="317.97" xlink:href="#Sfumatura_senza_nome_11"/>
+    <linearGradient id="Sfumatura_senza_nome_11-7" data-name="Sfumatura senza nome 11" x1="13546.76" y1="2320.8" x2="13553.76" y2="2320.8" gradientTransform="translate(-13234.48 -1941.6)" xlink:href="#Sfumatura_senza_nome_11"/>
+    <linearGradient id="Sfumatura_senza_nome_113-24" data-name="Sfumatura senza nome 113" x1="309.45" y1="379.2" x2="322.11" y2="379.2" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_11-8" data-name="Sfumatura senza nome 11" x1="235.26" y1="266.54" x2="396.74" y2="266.54" xlink:href="#Sfumatura_senza_nome_11"/>
+    <linearGradient id="Sfumatura_senza_nome_113-25" data-name="Sfumatura senza nome 113" x1="248.61" y1="266.54" x2="259.25" y2="266.54" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-26" data-name="Sfumatura senza nome 113" x1="270.82" y1="266.54" x2="281.47" y2="266.54" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-27" data-name="Sfumatura senza nome 113" x1="293.03" y1="266.54" x2="303.68" y2="266.54" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-28" data-name="Sfumatura senza nome 113" x1="331.61" y1="261.22" x2="344.58" y2="261.22" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-29" data-name="Sfumatura senza nome 113" x1="331.61" y1="271.86" x2="344.58" y2="271.86" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-30" data-name="Sfumatura senza nome 113" x1="349.71" y1="261.22" x2="381.78" y2="261.22" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-31" data-name="Sfumatura senza nome 113" x1="349.71" y1="271.86" x2="381.78" y2="271.86" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_11-9" data-name="Sfumatura senza nome 11" x1="235.04" y1="302.24" x2="396.52" y2="302.24" xlink:href="#Sfumatura_senza_nome_11"/>
+    <linearGradient id="Sfumatura_senza_nome_113-32" data-name="Sfumatura senza nome 113" x1="248.39" y1="302.24" x2="259.03" y2="302.24" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-33" data-name="Sfumatura senza nome 113" x1="270.6" y1="302.24" x2="281.25" y2="302.24" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-34" data-name="Sfumatura senza nome 113" x1="292.81" y1="302.24" x2="303.46" y2="302.24" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-35" data-name="Sfumatura senza nome 113" x1="331.39" y1="296.92" x2="344.36" y2="296.92" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-36" data-name="Sfumatura senza nome 113" x1="331.39" y1="307.56" x2="344.36" y2="307.56" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-37" data-name="Sfumatura senza nome 113" x1="349.5" y1="296.92" x2="381.56" y2="296.92" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-38" data-name="Sfumatura senza nome 113" x1="349.5" y1="307.56" x2="381.56" y2="307.56" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_11-10" data-name="Sfumatura senza nome 11" x1="235.26" y1="337.94" x2="396.74" y2="337.94" xlink:href="#Sfumatura_senza_nome_11"/>
+    <linearGradient id="Sfumatura_senza_nome_113-39" data-name="Sfumatura senza nome 113" x1="248.61" y1="337.94" x2="259.25" y2="337.94" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-40" data-name="Sfumatura senza nome 113" x1="270.82" y1="337.94" x2="281.47" y2="337.94" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-41" data-name="Sfumatura senza nome 113" x1="293.03" y1="337.94" x2="303.68" y2="337.94" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-42" data-name="Sfumatura senza nome 113" x1="331.61" y1="332.62" x2="344.58" y2="332.62" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-43" data-name="Sfumatura senza nome 113" x1="331.61" y1="343.27" x2="344.58" y2="343.27" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-44" data-name="Sfumatura senza nome 113" x1="349.71" y1="332.62" x2="381.78" y2="332.62" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-45" data-name="Sfumatura senza nome 113" x1="349.71" y1="343.27" x2="381.78" y2="343.27" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-46" data-name="Sfumatura senza nome 113" x1="254.79" y1="493.37" x2="376.99" y2="493.37" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_6" data-name="Sfumatura senza nome 6" x1="175.05" y1="-5974.6" x2="458.13" y2="-5974.6" gradientTransform="translate(0 -5618.57) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a1ddec"/>
+      <stop offset="1" stop-color="#50b0d3"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_11-11" data-name="Sfumatura senza nome 11" x1="261.57" y1="151.65" x2="382.65" y2="151.65" xlink:href="#Sfumatura_senza_nome_11"/>
+    <linearGradient id="Sfumatura_senza_nome_113-47" data-name="Sfumatura senza nome 113" x1="261.57" y1="151.65" x2="382.65" y2="151.65" xlink:href="#Sfumatura_senza_nome_113"/>
+  </defs>
+  <g>
+    <rect class="cls-1" x="701.81" y="647.18" width="16.68" height="291.76" rx="4.93" ry="4.93"/>
+    <path class="cls-9" d="M306.9,940.48v-3.09c0-1.88-1.24-413.57-.01-414.8s13.93-1.99,15.8-1.99l-.45,410h526.98c3.75,0,6.79,3.04,6.79,6.79v3.09c0,3.75-3.04,6.79-6.79,6.79H313.7c-3.75,0-6.79-3.04-6.79-6.79Z"/>
+    <circle class="cls-60" cx="710.14" cy="938.94" r="15.09"/>
+  </g>
+  <g>
+    <rect class="cls-8" x="518.31" y="633.74" width="384.72" height="73.56" rx="18.85" ry="18.85"/>
+    <circle class="cls-52" cx="562.78" cy="670.52" r="12.68"/>
+    <circle class="cls-51" cx="615.71" cy="670.52" r="12.68"/>
+    <circle class="cls-50" cx="668.63" cy="670.52" r="12.68"/>
+    <rect class="cls-53" x="747.85" y="651.08" width="30.91" height="13.52" rx="6.76" ry="6.76"/>
+    <rect class="cls-54" x="747.85" y="676.44" width="30.91" height="13.52" rx="6.76" ry="6.76"/>
+    <rect class="cls-56" x="790.99" y="651.08" width="76.4" height="13.52" rx="6.76" ry="6.76"/>
+    <rect class="cls-55" x="790.99" y="676.44" width="76.4" height="13.52" rx="6.76" ry="6.76"/>
+  </g>
+  <g>
+    <rect class="cls-7" x="517.79" y="718.8" width="384.72" height="73.56" rx="18.85" ry="18.85"/>
+    <circle class="cls-57" cx="562.26" cy="755.58" r="12.68"/>
+    <circle class="cls-16" cx="615.18" cy="755.58" r="12.68"/>
+    <circle class="cls-14" cx="668.1" cy="755.58" r="12.68"/>
+    <rect class="cls-15" x="747.33" y="736.14" width="30.91" height="13.52" rx="6.76" ry="6.76"/>
+    <rect class="cls-11" x="747.33" y="761.5" width="30.91" height="13.52" rx="6.76" ry="6.76"/>
+    <rect class="cls-19" x="790.47" y="736.14" width="76.4" height="13.52" rx="6.76" ry="6.76"/>
+    <rect class="cls-17" x="790.47" y="761.5" width="76.4" height="13.52" rx="6.76" ry="6.76"/>
+  </g>
+  <g>
+    <rect class="cls-4" x="518.31" y="803.86" width="384.72" height="73.56" rx="18.85" ry="18.85"/>
+    <circle class="cls-18" cx="562.78" cy="840.64" r="12.68"/>
+    <circle class="cls-20" cx="615.71" cy="840.64" r="12.68"/>
+    <circle class="cls-12" cx="668.63" cy="840.64" r="12.68"/>
+    <rect class="cls-13" x="747.85" y="821.2" width="30.91" height="13.52" rx="6.76" ry="6.76"/>
+    <rect class="cls-33" x="747.85" y="846.57" width="30.91" height="13.52" rx="6.76" ry="6.76"/>
+    <rect class="cls-27" x="790.99" y="821.2" width="76.4" height="13.52" rx="6.76" ry="6.76"/>
+    <rect class="cls-24" x="790.99" y="846.57" width="76.4" height="13.52" rx="6.76" ry="6.76"/>
+  </g>
+  <g>
+    <path class="cls-22" d="M408.45,238.44v153.57c0,2.84-2.3,5.14-5.14,5.14h-172.57c-2.84,0-5.14-2.3-5.14-5.14v-153.57c0-2.84,2.3-5.13,5.14-5.13h172.57c2.84,0,5.14,2.3,5.14,5.13Z"/>
+    <path class="cls-58" d="M554.71,338.71v199.8c0,3.07-2.46,5.55-5.48,5.55H84.2c-3.03,0-5.48-2.49-5.48-5.55v-199.8c0-3.07,2.46-5.55,5.48-5.55h128.54v82.94c0,6.65,5.35,12.07,11.92,12.07h184.11c6.58,0,11.92-5.42,11.92-12.07v-82.94h128.54c3.03,0,5.48,2.49,5.48,5.55Z"/>
+    <g>
+      <rect class="cls-5" x="312.28" y="256.74" width="7" height="122.46" rx="2.07" ry="2.07"/>
+      <rect class="cls-6" x="312.28" y="317.97" width="7" height="122.46" rx="2.07" ry="2.07" transform="translate(694.98 63.42) rotate(90)"/>
+      <circle class="cls-26" cx="315.78" cy="379.2" r="6.33"/>
+    </g>
+    <g>
+      <rect class="cls-2" x="235.26" y="251.1" width="161.47" height="30.88" rx="7.91" ry="7.91"/>
+      <circle class="cls-23" cx="253.93" cy="266.54" r="5.32"/>
+      <circle class="cls-25" cx="276.14" cy="266.54" r="5.32"/>
+      <circle class="cls-29" cx="298.35" cy="266.54" r="5.32"/>
+      <rect class="cls-28" x="331.61" y="258.38" width="12.97" height="5.68" rx="2.84" ry="2.84"/>
+      <rect class="cls-21" x="331.61" y="269.02" width="12.97" height="5.68" rx="2.84" ry="2.84"/>
+      <rect class="cls-10" x="349.71" y="258.38" width="32.07" height="5.68" rx="2.84" ry="2.84"/>
+      <rect class="cls-36" x="349.71" y="269.02" width="32.07" height="5.68" rx="2.84" ry="2.84"/>
+    </g>
+    <g>
+      <rect class="cls-3" x="235.04" y="286.8" width="161.47" height="30.88" rx="7.91" ry="7.91"/>
+      <circle class="cls-37" cx="253.71" cy="302.24" r="5.32"/>
+      <circle class="cls-34" cx="275.92" cy="302.24" r="5.32"/>
+      <circle class="cls-35" cx="298.14" cy="302.24" r="5.32"/>
+      <rect class="cls-31" x="331.39" y="294.08" width="12.97" height="5.68" rx="2.84" ry="2.84"/>
+      <rect class="cls-32" x="331.39" y="304.73" width="12.97" height="5.68" rx="2.84" ry="2.84"/>
+      <rect class="cls-38" x="349.5" y="294.08" width="32.07" height="5.68" rx="2.84" ry="2.84"/>
+      <rect class="cls-39" x="349.5" y="304.73" width="32.07" height="5.68" rx="2.84" ry="2.84"/>
+    </g>
+    <g>
+      <rect class="cls-48" x="235.26" y="322.5" width="161.47" height="30.88" rx="7.91" ry="7.91"/>
+      <circle class="cls-30" cx="253.93" cy="337.94" r="5.32"/>
+      <circle class="cls-43" cx="276.14" cy="337.94" r="5.32"/>
+      <circle class="cls-40" cx="298.35" cy="337.94" r="5.32"/>
+      <rect class="cls-41" x="331.61" y="329.78" width="12.97" height="5.68" rx="2.84" ry="2.84"/>
+      <rect class="cls-42" x="331.61" y="340.43" width="12.97" height="5.68" rx="2.84" ry="2.84"/>
+      <rect class="cls-44" x="349.71" y="329.78" width="32.07" height="5.68" rx="2.84" ry="2.84"/>
+      <rect class="cls-45" x="349.71" y="340.43" width="32.07" height="5.68" rx="2.84" ry="2.84"/>
+    </g>
+    <polygon class="cls-46" points="360.64 543.96 272.86 544.58 254.79 442.16 376.99 443.07 360.64 543.96"/>
+    <path class="cls-59" d="M452.69,168.1h-63.64v34.39c0,5.4-4.39,9.79-9.79,9.79h-114.27c-5.4,0-9.8-4.39-9.8-9.79v-34.39h-74.68c-3,0-5.45,2.44-5.45,5.45v364.97c0,3,2.44,5.45,5.45,5.45h92.41v-82.14c0-3.01-2.45-5.45-5.45-5.45-3.73.53-8.14-1.07-8.08-5.45,0-1.51.61-2.86,1.6-3.85s2.35-1.59,3.85-1.59h103.9c3.01,0,5.45,2.44,5.45,5.45.04,4.39-4.35,5.96-8.08,5.45-3.01,0-5.45,2.44-5.45,5.45v82.14h92.05c3.01,0,5.45-2.44,5.45-5.45V173.55c0-3-2.44-5.45-5.45-5.45ZM420.29,395.69c0,6.53-5.31,11.84-11.84,11.84h-182.85c-6.53,0-11.84-5.31-11.84-11.84v-162.72c0-6.52,5.31-11.83,11.84-11.83h182.85c6.53,0,11.84,5.31,11.84,11.83v162.72Z"/>
+    <path class="cls-49" d="M379.25,97.4h-114.27c-1.88,0-3.41,1.52-3.41,3.4v101.69c0,1.88,1.53,3.4,3.41,3.4h114.27c1.88,0,3.4-1.52,3.4-3.4v-101.69c0-1.88-1.52-3.4-3.4-3.4ZM365.08,166.26c0,.66-.15,1.28-.42,1.85-.68,1.45-2.17,2.45-3.88,2.45h-15.46c-2.37,0-4.3,1.92-4.3,4.3v15.45c0,2.38-1.92,4.3-4.3,4.3h-29.21c-2.37,0-4.3-1.92-4.3-4.3v-15.45c0-2.38-1.92-4.3-4.3-4.3h-15.46c-1.71,0-3.2-1-3.88-2.45-.27-.56-.42-1.19-.42-1.85v-29.21c0-2.38,1.92-4.3,4.3-4.3h15.46c2.37,0,4.3-1.92,4.3-4.3v-15.46c0-2.37,1.93-4.3,4.3-4.3h29.21c2.38,0,4.3,1.93,4.3,4.3v15.46c0,2.38,1.93,4.3,4.3,4.3h15.46c2.38,0,4.3,1.92,4.3,4.3v29.21Z"/>
+    <path class="cls-47" d="M379.25,97.4h-114.27c-1.88,0-3.41,1.52-3.41,3.4v101.69c0,1.88,1.53,3.4,3.41,3.4h114.27c1.88,0,3.4-1.52,3.4-3.4v-101.69c0-1.88-1.52-3.4-3.4-3.4ZM365.08,166.26c0,.66-.15,1.28-.42,1.85-.68,1.45-2.17,2.45-3.88,2.45h-15.46c-2.37,0-4.3,1.92-4.3,4.3v15.45c0,2.38-1.92,4.3-4.3,4.3h-29.21c-2.37,0-4.3-1.92-4.3-4.3v-15.45c0-2.38-1.92-4.3-4.3-4.3h-15.46c-1.71,0-3.2-1-3.88-2.45-.27-.56-.42-1.19-.42-1.85v-29.21c0-2.38,1.92-4.3,4.3-4.3h15.46c2.37,0,4.3-1.92,4.3-4.3v-15.46c0-2.37,1.93-4.3,4.3-4.3h29.21c2.38,0,4.3,1.93,4.3,4.3v15.46c0,2.38,1.93,4.3,4.3,4.3h15.46c2.38,0,4.3,1.92,4.3,4.3v29.21Z"/>
+  </g>
+</svg>

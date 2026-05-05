@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Sfumatura_senza_nome_11);
+      }
+
+      .cls-2 {
+        fill: url(#Sfumatura_senza_nome_11-2);
+      }
+
+      .cls-3 {
+        fill: #fff;
+        filter: url(#drop-shadow-141);
+        stroke: url(#Sfumatura_senza_nome_14);
+        stroke-miterlimit: 10;
+        stroke-width: 5.06px;
+      }
+
+      .cls-4 {
+        fill: url(#Sfumatura_senza_nome_113-4);
+      }
+
+      .cls-5 {
+        fill: url(#Sfumatura_senza_nome_113-3);
+      }
+
+      .cls-6 {
+        fill: url(#Sfumatura_senza_nome_113-2);
+      }
+
+      .cls-7 {
+        fill: url(#Sfumatura_senza_nome_113);
+      }
+    </style>
+    <linearGradient id="Sfumatura_senza_nome_11" data-name="Sfumatura senza nome 11" x1="220.48" y1="-8369.02" x2="770.13" y2="-8369.02" gradientTransform="translate(0 -7810.86) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#90e0ef"/>
+      <stop offset="1" stop-color="#00b4d8"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_113" data-name="Sfumatura senza nome 113" x1="220.48" y1="-8079.18" x2="770.12" y2="-8079.18" gradientTransform="translate(0 -7810.86) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0077b6"/>
+      <stop offset="1" stop-color="#03045e"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_113-2" data-name="Sfumatura senza nome 113" y1="-8274.49" y2="-8274.49" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_113-3" data-name="Sfumatura senza nome 113" y1="-8461.81" y2="-8461.81" xlink:href="#Sfumatura_senza_nome_113"/>
+    <linearGradient id="Sfumatura_senza_nome_14" data-name="Sfumatura senza nome 14" x1="254.32" y1="555.77" x2="745.68" y2="555.77" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#90e0ef"/>
+      <stop offset="1" stop-color="#00b4d8"/>
+    </linearGradient>
+    <filter id="drop-shadow-141" x="231.44" y="414.57" width="547" height="293" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5"/>
+      <feGaussianBlur result="blur" stdDeviation="10"/>
+      <feFlood flood-color="#000" flood-opacity=".35"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="Sfumatura_senza_nome_11-2" data-name="Sfumatura senza nome 11" x1="416.27" y1="558.53" x2="583.73" y2="558.53" gradientTransform="matrix(1,0,0,1,0,0)" xlink:href="#Sfumatura_senza_nome_11"/>
+    <linearGradient id="Sfumatura_senza_nome_113-4" data-name="Sfumatura senza nome 113" x1="-93.68" y1="819.49" x2="-73.65" y2="819.49" gradientTransform="translate(630.93 -255.16) scale(1.62 1)" xlink:href="#Sfumatura_senza_nome_113"/>
+  </defs>
+  <g>
+    <path class="cls-1" d="M770.12,782.54c0,36.16-123.05,65.47-274.82,65.47s-274.82-29.32-274.82-65.47V268.32h549.65v514.23h-.01Z"/>
+    <ellipse class="cls-7" cx="495.3" cy="268.33" rx="274.82" ry="65.47"/>
+    <path class="cls-6" d="M770.12,455.65c0,36.16-123.05,65.47-274.82,65.47s-274.82-29.32-274.82-65.47v-49.5c0,36.16,123.05,65.47,274.82,65.47s274.82-29.32,274.82-65.47v49.5Z"/>
+    <path class="cls-5" d="M770.12,642.97c0,36.16-123.05,65.47-274.82,65.47s-274.82-29.32-274.82-65.47v-49.5c0,36.16,123.05,65.47,274.82,65.47s274.82-29.32,274.82-65.47v49.5Z"/>
+  </g>
+  <path class="cls-3" d="M675.44,503.44c-1.49-1.18-2.99-2.34-4.5-3.48-21.89-16.61-45.6-29.62-70.34-39.03-64.88-24.69-136.85-24.63-201.69.19-24.75,9.46-48.46,22.54-70.34,39.22-1.34,1.02-2.67,2.05-4,3.1l-66.17,52.33,66.17,52.32c18.78,14.85,38.97,26.99,60.06,36.41,74.31,33.21,159.76,32.76,233.76-1.37,20-9.22,39.17-20.9,57.05-35.04l66.17-52.32-66.17-52.33Z"/>
+  <path class="cls-2" d="M583.73,558.53c0,46.23-37.49,83.72-83.74,83.72s-83.73-37.49-83.73-83.72c0-17.17,5.16-33.12,14.03-46.41,15-22.51,40.62-37.33,69.69-37.33s54.58,14.75,69.6,37.18c8.93,13.3,14.13,29.32,14.13,46.56Z"/>
+  <rect class="cls-4" x="479.07" y="343.95" width="32.48" height="440.76" transform="translate(348.52 -172.05) rotate(30)"/>
+</svg>
